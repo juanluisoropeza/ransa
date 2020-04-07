@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>..:: RANSA ::..</title>
+    <!-- HOJAS DE ESTILO CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="top_header">
+            <div class="cnt_logo">
+                <a href="home.html"><img src="images/logo.svg" alt="logo" class="img-fluid"></a>
+            </div>
+            <div class="cnt_right">
+                <div class="input-group dropdown search_input">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text icon_search"><i class="icon-icon_search"></i></span>
+                    </div>
+                    <form id="form1">
+                        <input type="text" class="form-control input-search" />
+                    </form>
+                    <a class="btn btn-outline-success button-search-custom dropdown-toggle" href="#" role="button" id="busquedaHeader" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="busquedaHeader">
+                        <form class="px-4 py-3 form-inline" id="form2">
+                            <div class="row">
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group input-group floating-label-form-group controls">
+                                        <label for="txt_tipo">Tipo</label>
+                                        <select class="form-control" id="txt_tipo" name="txt_tipo">
+                                            <option value="">-- Seleccione --</option>
+                                            <option value="tipo 1">tipo 1</option>
+                                            <option value="tipo 2">tipo 2</option>
+                                            <option value="tipo 3">tipo 3</option>
+                                        </select>
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group input-group floating-label-form-group controls">
+                                        <label for="txt_propetario">Propietario</label>
+                                        <select class="form-control w-50" id="txt_propetario" name="txt_propetario">
+                                            <option value="">-- Seleccione --</option>
+                                            <option value="Cualquier usuario">Cualquier usuario</option>
+                                            <option value="De mi propiedad">De mi propiedad</option>
+                                            <option value="Propiedad de otro usuario">Propiedad de otro usuario</option>
+                                            <option value="Persona específica">Persona específica</option>
+                                        </select>
+                                        <input type="text" class="form-control w-50" name="txt_nombre" id="txt_nombre" placeholder="Ingrese nombre" />
+                                    </div>
+                                </div>
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group input-group floating-label-form-group controls">
+                                        <label for="txt_ubicacion">Ubicación</label>
+                                        <select class="form-control w-50" id="txt_ubicacion" name="txt_ubicacion">
+                                            <option value="">-- Seleccione --</option>
+                                            <option value="Mis Accesos">Mis Accesos</option>
+                                            <option value="Mis Archivos">Mis Archivos</option>
+                                            <option value="Mis Compartidos">Mis Compartidos</option>
+                                            <option value="Compartidos conmigo">Compartidos conmigo</option>
+                                        </select>
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group input-group floating-label-form-group controls">
+                                        <label for="txt_inc_palabras">Incluye palabras</label>
+                                        <input type="text" class="form-control" id="txt_inc_palabras" name="txt_inc_palabras" placeholder="Ingrese palabras">
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group input-group floating-label-form-group controls">
+                                        <label for="txt_tamano">Tamaño</label>
+                                        <select class="form-control w-33" id="txt_tamano" name="txt_tamano">
+                                            <option value="">-- Seleccione --</option>
+                                            <option value="Mayor que">Mayor que</option>
+                                            <option value="Menor que">Menor que</option>
+                                            <option value="Igual a">Igual a</option>
+                                        </select>
+                                        <input type="text" class="form-control w-33" id="txt_tam_nro" name="txt_tam_nro" placeholder="">
+                                        <select class="form-control w-33" id="txt_tam_medida" name="txt_tam_medida">
+                                            <option value="">-- Seleccione --</option>
+                                            <option value="MB">MB</option>
+                                            <option value="GB">GB</option>
+                                            <option value="TB">TB</option>
+                                        </select>
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group floating-label-form-group controls">
+                                        <label for="txt_rfechas_dias">Rango de fechas</label>
+                                        <div class="input-group w-50">
+                                            <select class="form-control w-33" id="txt_rfechas_dias" name="txt_rfechas_dias">
+                                                <option value="">-- Seleccione --</option>
+                                                <option value="4 días">4 días</option>
+                                                <option value="8 días">8 días</option>
+                                                <option value="12 días">12 días</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group w-50">
+                                            <input type="text" class="form-control ici_append" id="datepicker" placeholder="Seleccione fecha" name="txt_rfechas_fecha" required data-validation-required-message="Por favor, Seleccione una <b>Fecha</b>.">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">
+                                                    <i class="icon-icon_calendar"><span class="path1"></span><span class="path2"></span></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="col-lg-12 mt-4 mb-4 text-right boton">
+                                    <button type="submit" class="btn btn-outline-success">Buscar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <ul class="navbar-nav ml-4 right_links">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dw-profile" href="#" id="navbarProfile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/user1.jpg" alt="user1" class="img-fluid">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarProfile">
+                            <a class="dropdown-item" href="profile.html">Mi perfil</a>
+                            <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="icon-icon_bell"></span>
+                            <span class="badge badge-warning">4</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="profile">
+        <div class="container-fluid">
+            <div class="row row_ppal">
+                <div class="col-lg-4 profile_info">
+                    <div class="info_box">
+                        <h5 class="txt_ppal">Jose Zapatar Robles</h5>
+                        <h5 class="txt_info">Ing. Industrial</h5>
+                        <h5 class="txt_info"><span class="icon-icon_phone"></span>9872 72 601</h5>
+                        <h5 class="txt_status online"><span class="icon-icon_ellipse-point"></span>On Line</h5>
+                    </div>
+                    <div class="profile_img">
+                        <figure><img src="./images/user1.jpg" alt="user1" class="img-fluid"></figure>
+                        <span class="icon-icon_plus"></span>
+                    </div>
+                    <h2>¡Hola José!</h2>
+                </div>
+                <div class="col-lg-8 profile_data">
+                    <div class="row">
+                        <div class="col-lg-6 box">
+                            <div class="w-100 box-card pd_into_boxcard">
+                                <h4>Mis datos</h4>
+                                <div class="label_info">
+                                    <span class="icon-icon_mail"></span>
+                                    <span class="txt">Josezapatar@ransa.net</span>
+                                </div>
+                                <div class="label_info">
+                                    <span class="icon-icon_commerce"></span>
+                                    <span class="txt">Ransa Comercial  S A</span>
+                                </div>
+                                <div class="label_info">
+                                    <span class="icon-icon_ruc"></span>
+                                    <span class="txt">20100039207</span>
+                                </div>
+                                <div class="label_info">
+                                    <span class="icon-icon_location"></span>
+                                    <span class="txt">Ransa  Argentina</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 box">
+                            <div class="w-100 box-card pd_into_boxcard2">
+                                <h4>Ajustes</h4>
+                                <form id="edit_profile" novalidate>
+                                    <div class="control-group">
+                                        <div class="form-group input-group floating-label-form-group controls">
+                                            <label for="txt_usuario">Usuario</label>
+                                            <input type="text" class="form-control w-50" name="txt_usuario" id="txt_usuario" placeholder="Josezapatar@ransa.net" data-validation-required-message="Por favor, Ingrese el <b>usuario</b>." />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="form-group input-group floating-label-form-group controls">
+                                            <label for="txt_clavea">Contraseña actual</label>
+                                            <input type="password" class="form-control w-50" name="txt_clavea" id="txt_clavea" placeholder="&#9679&#9679&#9679&#9679&#9679&#9679&#9679" data-validation-required-message="Por favor, Ingrese la <b>contraseña actual</b>." />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="form-group input-group floating-label-form-group controls">
+                                            <label for="txt_nclave">Cambiar contraseña</label>
+                                            <input type="password" class="form-control w-50" name="txt_nclave" id="txt_nclave" placeholder="&#9679&#9679&#9679&#9679&#9679&#9679&#9679" data-validation-required-message="Por favor, Ingrese la <b>nueva contraseña</b>."  />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="form-group input-group floating-label-form-group controls">
+                                            <label for="txt_rep_nclave">Repetir nueva contraseña</label>
+                                            <input type="password" class="form-control w-50" name="txt_rep_nclave" id="txt_rep_nclave" placeholder="&#9679&#9679&#9679&#9679&#9679&#9679&#9679" data-validation-required-message="Por favor, repita la <b>nueva contraseña</b>." />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="text-center boton">
+                                        <div id="success"></div>
+                                        <button type="submit" class="btn btn-success" id="btnCambiar">Cambiar</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="w-100 box-card pd_into_boxcard2">
+                                <h4>Almacenamiento</h4>
+                                <h5>3.1 GB utilizados</h5>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 content_footer">
+                    <p>©Docublock. Todos lo derechos reservados 2019</p>
+                    <ul>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-datepicker.es.min.js"></script>
+    <script type="text/javascript" src="./js/datepicker.js"></script>
+    <script type="text/javascript" src="./js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="./js/profile.js"></script>
+</body>
+</html>
