@@ -35,4 +35,13 @@ $(document).ready(function () {
     autoclose: true,
     language: "es"
   });
+  $('#fecha4').datepicker({
+    todayBtn: "linked",
+    keyboardNavigation: false,
+    forceParse: false,
+    calendarWeeks: true,
+    format: "dd/mm/yyyy",
+    autoclose: true,
+    language: "es"
+  });
 });

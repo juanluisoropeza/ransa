@@ -1,14 +1,15 @@
 @font-face {
   font-family: 'iconos';
-  src:  url('../fonts/icomoon.eot?ovqjlp');
-  src:  url('../fonts/icomoon.eot?ovqjlp#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?ovqjlp') format('truetype'),
-    url('../fonts/icomoon.woff?ovqjlp') format('woff'),
-    url('../fonts/icomoon.svg?ovqjlp#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?4uzyrs');
+  src:  url('../fonts/icomoon.eot?4uzyrs#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?4uzyrs') format('truetype'),
+    url('../fonts/icomoon.woff?4uzyrs') format('woff'),
+    url('../fonts/icomoon.svg?4uzyrs#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
+
 
 
 [class^="icon-"], [class*=" icon-"] {
@@ -26,94 +27,130 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-icon_open:before {
-  content: "\e919";
-  color: #999;
-}
-.icon-icon_share:before {
-  content: "\e91a";
-  color: #999;
+.icon-icon_arrow-down1:before {
+  content: "\e900";
 }
 .icon-icon_arrow-next:before {
-  content: "\e917";
-}
-.icon-icon_arrow-prev:before {
-  content: "\e918";
-}
-.icon-icon_clock:before {
-  content: "\e914";
-  color: #009a3c;
-}
-.icon-icon_plus2:before {
-  content: "\e915";
-}
-.icon-icon_three-bullets:before {
-  content: "\e916";
-  color: #8a8c8e;
-}
-.icon-icon_plus:before {
-  content: "\e90e";
-}
-.icon-icon_ruc:before {
-  content: "\e90f";
-}
-.icon-icon_search:before {
-  content: "\e910";
-}
-.icon-icon_signature:before {
-  content: "\e911";
-}
-.icon-icon_user:before {
-  content: "\e912";
-}
-.icon-icon_workflows:before {
-  content: "\e913";
-  color: #fff;
-}
-.icon-icon_arrow-down1:before {
   content: "\e901";
 }
-.icon-icon_bell:before {
+.icon-icon_arrow-prev:before {
   content: "\e902";
 }
-.icon-icon_calendar .path1:before {
+.icon-icon_arrow-right:before {
   content: "\e903";
+}
+.icon-icon_bell:before {
+  content: "\e904";
+}
+.icon-icon_calendar .path1:before {
+  content: "\e905";
   color: rgb(153, 153, 153);
 }
 .icon-icon_calendar .path2:before {
-  content: "\e904";
+  content: "\e906";
   margin-left: -1em;
   color: rgb(1, 154, 64);
 }
-.icon-icon_cloud:before {
-  content: "\e905";
-}
-.icon-icon_commerce:before {
-  content: "\e906";
-}
-.icon-icon_ellipse-point:before {
+.icon-icon_clock:before {
   content: "\e907";
+  color: #009a3c;
 }
-.icon-icon_files:before {
+.icon-icon_cloud:before {
   content: "\e908";
 }
-.icon-icon_home:before {
+.icon-icon_commerce:before {
   content: "\e909";
+}
+.icon-icon_copy:before {
+  content: "\e90a";
+  color: #999;
+}
+.icon-icon_details:before {
+  content: "\e90b";
+  color: #999;
+}
+.icon-icon_download:before {
+  content: "\e90c";
+}
+.icon-icon_ellipse-point:before {
+  content: "\e90d";
+}
+.icon-icon_files:before {
+  content: "\e90e";
+}
+.icon-icon_history:before {
+  content: "\e90f";
+  color: #8a8c8e;
+}
+.icon-icon_home:before {
+  content: "\e910";
   color: #fff;
 }
 .icon-icon_location:before {
-  content: "\e90a";
+  content: "\e911";
 }
 .icon-icon_mail:before {
-  content: "\e90b";
+  content: "\e912";
 }
 .icon-icon_menu:before {
-  content: "\e90c";
+  content: "\e913";
   color: #fff;
 }
+.icon-icon_open:before {
+  content: "\e914";
+  color: #999;
+}
 .icon-icon_password:before {
-  content: "\e90d";
+  content: "\e915";
+}
+.icon-icon_pdf:before {
+  content: "\e916";
+  color: #da251c;
+}
+.icon-icon_pencil:before {
+  content: "\e917";
+  color: #999;
 }
 .icon-icon_phone:before {
-  content: "\e900";
+  content: "\e918";
+}
+.icon-icon_plus:before {
+  content: "\e919";
+}
+.icon-icon_plus2:before {
+  content: "\e91a";
+}
+.icon-icon_ruc:before {
+  content: "\e91b";
+}
+.icon-icon_search:before {
+  content: "\e91c";
+}
+.icon-icon_share:before {
+  content: "\e91d";
+  color: #999;
+}
+.icon-icon_signature:before {
+  content: "\e91e";
+  color: #fff;
+}
+.icon-icon_sort:before {
+  content: "\e91f";
+}
+.icon-icon_sort2:before {
+  content: "\e920";
+}
+.icon-icon_three-bullets:before {
+  content: "\e921";
+  color: #8a8c8e;
+}
+.icon-icon_upload:before {
+  content: "\e922";
+}
+.icon-icon_user:before {
+  content: "\e923";
+}
+.icon-icon_workflows:before {
+  content: "\e924";
+  color: #fff;
 }
