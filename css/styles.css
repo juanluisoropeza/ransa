@@ -2225,6 +2225,11 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   width: calc(100% - 124px);
 }
 
+.files_details .content_files_details .right_section .details_box .bd_body_comments .comments .form {
+  position: relative;
+  width: calc(100% - 62px);
+}
+
 .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .myself_msg {
   background-color: var(--myselfMsg);
   border-top-left-radius: 10px;
@@ -2291,6 +2296,19 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   margin-bottom: 2px;
 }
 
+.files_details .content_files_details .right_section .details_box .bd_body_comments .comments .form .form-control {
+  border: 1px solid;
+  border-color: var(--grisSexto);
+  border-radius: 0;
+  height: 43px;
+}
+
+.files_details .content_files_details .right_section .details_box .bd_body_comments .comments .form .buttons .btn {
+  font-size: 16px;
+  line-height: 32px;
+  min-width: 0;
+  width: 100px;
+}
 
 
 
