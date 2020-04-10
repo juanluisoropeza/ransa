@@ -1,16 +1,14 @@
 @font-face {
   font-family: 'iconos';
-  src:  url('../fonts/icomoon.eot?4uzyrs');
-  src:  url('../fonts/icomoon.eot?4uzyrs#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?4uzyrs') format('truetype'),
-    url('../fonts/icomoon.woff?4uzyrs') format('woff'),
-    url('../fonts/icomoon.svg?4uzyrs#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?x66fl5');
+  src:  url('../fonts/icomoon.eot?x66fl5#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?x66fl5') format('truetype'),
+    url('../fonts/icomoon.woff?x66fl5') format('woff'),
+    url('../fonts/icomoon.svg?x66fl5#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
-
-
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -58,8 +56,9 @@
 .icon-icon_cloud:before {
   content: "\e908";
 }
-.icon-icon_commerce:before {
+.icon-icon_comments:before {
   content: "\e909";
+  color: #8a8c8e;
 }
 .icon-icon_copy:before {
   content: "\e90a";
@@ -134,18 +133,19 @@
   content: "\e91e";
   color: #fff;
 }
-.icon-icon_sort:before {
+.icon-icon_sort2:before {
   content: "\e91f";
 }
-.icon-icon_sort2:before {
-  content: "\e920";
-}
 .icon-icon_three-bullets:before {
-  content: "\e921";
+  content: "\e920";
   color: #8a8c8e;
 }
 .icon-icon_upload:before {
+  content: "\e921";
+}
+.icon-icon_upload2:before {
   content: "\e922";
+  color: #8a8c8e;
 }
 .icon-icon_user:before {
   content: "\e923";

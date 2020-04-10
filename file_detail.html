@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>..:: RANSA ::..</title>
+    <!-- HOJAS DE ESTILO CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="top_header">
+            <div class="cnt_logo">
+                <a href="home.html"><img src="images/logo.svg" alt="logo" class="img-fluid"></a>
+            </div>
+            <div class="cnt_right">
+                <div class="input-group dropdown search_input">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text icon_search"><i class="icon-icon_search"></i></span>
+                    </div>
+                    <form id="form1">
+                        <input type="text" class="form-control input-search" />
+                    </form>
+                    <a class="btn btn-outline-success button-search-custom dropdown-toggle" href="#" role="button" id="busquedaHeader" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="busquedaHeader">
+                        <form class="px-4 py-3 form-inline" id="form2">
+                            <div class="row">
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group input-group floating-label-form-group controls">
+                                        <label for="txt_tipo">Tipo</label>
+                                        <select class="form-control" id="txt_tipo" name="txt_tipo">
+                                            <option value="">-- Seleccione --</option>
+                                            <option value="tipo 1">tipo 1</option>
+                                            <option value="tipo 2">tipo 2</option>
+                                            <option value="tipo 3">tipo 3</option>
+                                        </select>
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group input-group floating-label-form-group controls">
+                                        <label for="txt_propetario">Propietario</label>
+                                        <select class="form-control w-50" id="txt_propetario" name="txt_propetario">
+                                            <option value="">-- Seleccione --</option>
+                                            <option value="Cualquier usuario">Cualquier usuario</option>
+                                            <option value="De mi propiedad">De mi propiedad</option>
+                                            <option value="Propiedad de otro usuario">Propiedad de otro usuario</option>
+                                            <option value="Persona específica">Persona específica</option>
+                                        </select>
+                                        <input type="text" class="form-control w-50" name="txt_nombre" id="txt_nombre" placeholder="Ingrese nombre" />
+                                    </div>
+                                </div>
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group input-group floating-label-form-group controls">
+                                        <label for="txt_ubicacion">Ubicación</label>
+                                        <select class="form-control w-50" id="txt_ubicacion" name="txt_ubicacion">
+                                            <option value="">-- Seleccione --</option>
+                                            <option value="Mis Accesos">Mis Accesos</option>
+                                            <option value="Mis Archivos">Mis Archivos</option>
+                                            <option value="Mis Compartidos">Mis Compartidos</option>
+                                            <option value="Compartidos conmigo">Compartidos conmigo</option>
+                                        </select>
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group input-group floating-label-form-group controls">
+                                        <label for="txt_inc_palabras">Incluye palabras</label>
+                                        <input type="text" class="form-control" id="txt_inc_palabras" name="txt_inc_palabras" placeholder="Ingrese palabras">
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group input-group floating-label-form-group controls">
+                                        <label for="txt_tamano">Tamaño</label>
+                                        <select class="form-control w-33" id="txt_tamano" name="txt_tamano">
+                                            <option value="">-- Seleccione --</option>
+                                            <option value="Mayor que">Mayor que</option>
+                                            <option value="Menor que">Menor que</option>
+                                            <option value="Igual a">Igual a</option>
+                                        </select>
+                                        <input type="text" class="form-control w-33" id="txt_tam_nro" name="txt_tam_nro" placeholder="">
+                                        <select class="form-control w-33" id="txt_tam_medida" name="txt_tam_medida">
+                                            <option value="">-- Seleccione --</option>
+                                            <option value="MB">MB</option>
+                                            <option value="GB">GB</option>
+                                            <option value="TB">TB</option>
+                                        </select>
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group floating-label-form-group controls">
+                                        <label for="txt_rfechas_dias">Rango de fechas</label>
+                                        <div class="input-group w-50">
+                                            <select class="form-control w-33" id="txt_rfechas_dias" name="txt_rfechas_dias">
+                                                <option value="">-- Seleccione --</option>
+                                                <option value="4 días">4 días</option>
+                                                <option value="8 días">8 días</option>
+                                                <option value="12 días">12 días</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group w-50">
+                                            <input type="text" class="form-control ici_append" id="datepicker" placeholder="Seleccione fecha" name="txt_rfechas_fecha" required data-validation-required-message="Por favor, Seleccione una <b>Fecha</b>.">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">
+                                                    <i class="icon-icon_calendar"><span class="path1"></span><span class="path2"></span></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="col-lg-12 mt-4 mb-4 text-right boton">
+                                    <button type="submit" class="btn btn-outline-success">Buscar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <ul class="navbar-nav ml-4 right_links">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dw-profile" href="#" id="navbarProfile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/user1.jpg" alt="user1" class="img-fluid">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarProfile">
+                            <a class="dropdown-item" href="profile.html">Mi perfil</a>
+                            <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="icon-icon_bell"></span>
+                            <span class="badge badge-warning">4</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="screens_with_tables">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="fixed-nav sidebar_menu">
+                    <div class="fixed-nav-inner">
+                        <ul class="text-center">
+                        <a href="#" id="menu-toggle" class="waves-light menu-toggle" data-toggle="offcanvas">
+                            <li><i class="icon-icon_menu"></i></li>
+                            <li>X</li>
+                        </a>
+                        <a href="home.html" class="waves-light" data-toggle="tooltip" data-placement="right" title="Inicio">
+                            <li><i class="icon-icon_home"></i></li>
+                            <li>Inicio</li>
+                        </a>
+                        <a href="#" class="waves-light" data-toggle="tooltip" data-placement="right" title="Lorem Ipsum">
+                            <li><span class="icon-icon_commerce"></span></li>
+                            <li>Lorem Ipsum</li>
+                        </a>
+                        <a href="legajos.html" class="waves-light active" data-toggle="tooltip" data-placement="right" title="Legajos">
+                            <li><i class="icon-icon_signature"></i></li>
+                            <li>Legajos</li>
+                        </a>
+                        <a href="accesos.html" class="waves-light" data-toggle="tooltip" data-placement="right" title="Mis Accesos">
+                            <li><i class="icon-icon_files"></i></li>
+                            <li>Mis Accesos</li>
+                        </a>
+                        <a href="almacenamiento.html" class="waves-light" data-toggle="tooltip" data-placement="right" title="Almacenamiento">
+                            <li><i class="icon-icon_cloud"></i></li>
+                            <li>Almacenamiento</li>
+                        </a>
+                        <a href="workflows.html" class="waves-light" data-toggle="tooltip" data-placement="right" title="Workflows">
+                            <li><i class="icon-icon_workflows"></i></li>
+                            <li>Workflows</li>
+                        </a>
+                        </ul>
+                    </div>
+                </div>
+                <article class="swt_box files_details">
+                    <div class="top_info_details">
+                        <div class="row w-100">
+                            <div class="col-lg-6 col-xl-5 info_left">
+                                <div class="left_badge">
+                                    <span class="badge badge-success">V1</span>
+                                </div>
+                                <div class="info_file">
+                                    <span class="txt_file_name">
+                                        Flores Escobar Katherine Paola.pdf
+                                    </span>
+                                    <span class="txt_breadcumb">
+                                        <span class="txt_gray">
+                                            Mis Accesos
+                                        </span>
+                                        <span class="txt_green"> 
+                                            <span class="icon-icon_arrow-right"></span> <span class="icon-icon_files"></span> Legajos. 30/12/19
+                                        </span>                                         
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-7 actions_right">
+                                <div class="row">
+                                    <div class="dropdown dw_details_options">
+                                        <a class="btn btn-outline-success" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="icon-icon_three-bullets"></span>
+                                        </a>
+                                      
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#"><span class="icon-icon_upload2"></span> Subir nueva versión</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#" id="btn_view_detail"><span class="icon-icon_details"></span> Ver detalles</a>
+                                            <a class="dropdown-item" href="#" id="btn_view_comments"><span class="icon-icon_comments"></span> Ver comentarios</a>
+                                            <a class="dropdown-item" href="#"><span class="icon-icon_share"></span> Compartir</a>
+                                            <a class="dropdown-item" href="#"><span class="icon-icon_copy"></span> Mover o copiar</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#" id="btn_view_history"><span class="icon-icon_history"></span> Historial de versiones</a>
+                                            <a class="dropdown-item" href="#"><span class="icon-icon_download"></span> Descargar Original</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-success">
+                                        <span class="icon-icon_upload2 mr-2"></span> Subir nueva versión
+                                    </a>
+                                    <a href="#" class="btn btn-outline-success">
+                                        <span class="icon-icon_download mr-2"></span> Descarga
+                                    </a>
+                                    <a href="#" class="btn btn-outline-success">
+                                        <span class="icon-icon_share mr-2"></span> Compartir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_table content_files_details">
+                        <div class="row sm">
+                            <div class="col-lg-8 preview_file">
+                                <span class="icon-icon_pdf"></span>
+                            </div>
+                            <div class="col-lg-4 right_section">
+                                <div class="details_box" id="cnt_view_details">
+                                    <div class="db_title">Detalles</div>
+                                    <div class="db_body">
+                                        <ul class="list_details_files">
+                                            <li>
+                                                <h5 class="dbbody_label">Nombre:</h5>
+                                                <h5>Flores Escobar Katherine Paola.pdf</h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="dbbody_label">Tipo:</h5>
+                                                <h5>Comunicaciones</h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="dbbody_label">Modificado:</h5>
+                                                <h5>03/10/2019 21:57</h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="dbbody_label">Sociedad:</h5>
+                                                <h5>Agencias Ransa</h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="dbbody_label">Codigo:</h5>
+                                                <h5>417317</h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="dbbody_label">Colaborador:</h5>
+                                                <h5>Flores Escobar Ketherine Paola</h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="dbbody_label">DNI:</h5>
+                                                <h5>80686760</h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="dbbody_label">Fecha de Documento:</h5>
+                                                <h5>14/12/2018</h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="dbbody_label">Fecha de Caducidad:</h5>
+                                                <h5>31/12/1899</h5>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="details_box" id="cnt_view_comments">
+                                    <div class="db_title">Comentarios</div>
+                                    <div class="db_body bd_body_comments">
+                                        <div class="comments">
+                                            <div class="photo">
+                                                <figure><img src="images/photo.jpg" alt="photo" class="img-fluid rounded-circle"></figure>
+                                            </div>
+                                            <div class="comment">
+                                                <div class="txt_name_comment">Raúl González</div>
+                                                <div class="txt_date_comment">Hoy a las 9:00 am</div>
+                                                <div class="txt_comment">Se subieron nuevos cambios</div>
+                                            </div>
+                                        </div>
+                                        <div class="comments">
+                                            <div class="photo">
+                                                <figure><img src="images/photo4.jpg" alt="photo" class="img-fluid rounded-circle"></figure>
+                                            </div>
+                                            <div class="comment">
+                                                <div class="txt_name_comment">Ana Maria López</div>
+                                                <div class="txt_date_comment">Hoy a las 10:00 am</div>
+                                                <div class="txt_comment">Se sube el cambio pendiente</div>
+                                            </div>
+                                        </div>
+                                        <div class="comments">
+                                            <div class="photo">
+                                                <div class="dropdown">
+                                                    <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="icon-icon_three-bullets"></span>
+                                                    </a>
+                                                  
+                                                    <div class="dropdown-menu">
+                                                      <a class="dropdown-item" href="#">Editar</a>
+                                                      <a class="dropdown-item" href="#">Eliminar</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment myself_msg">
+                                                <div class="txt_name_comment">Jose Zapatar Robles</div>
+                                                <div class="txt_date_comment">Hoy a las 11:30 am</div>
+                                                <div class="txt_comment">Se agrega un nuevo cambio</div>
+                                            </div>
+                                            <div class="photo photo_right">
+                                                <figure><img src="images/user1.jpg" alt="user1" class="img-fluid rounded-circle"></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="details_box" id="cnt_view_history">
+                                    <div class="db_title">Historial de versiones</div>
+                                    <div class="db_body">
+                                        hola
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 content_footer">
+                    <p>©Docublock. Todos lo derechos reservados 2019</p>
+                    <ul>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-datepicker.es.min.js"></script>
+    <script type="text/javascript" src="./js/datepicker.js"></script>
+    <script type="text/javascript" src="./js/sidebar.js"></script>
+    <script type="text/javascript" src="./js/file_detail.js"></script>
+</body>
+</html>
