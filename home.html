@@ -34,25 +34,50 @@
                                 <div class="control-group col-lg-12">
                                     <div class="form-group input-group floating-label-form-group controls">
                                         <label for="txt_tipo">Tipo</label>
-                                        <select class="form-control" id="txt_tipo" name="txt_tipo">
+                                        <!-- <select class="form-control" id="txt_tipo" name="txt_tipo">
                                             <option value="">-- Seleccione --</option>
                                             <option value="tipo 1">tipo 1</option>
                                             <option value="tipo 2">tipo 2</option>
                                             <option value="tipo 3">tipo 3</option>
-                                        </select>
+                                        </select> -->
+                                        <div class="select_new">
+                                            <a class="btn btn-warning btn-select w-100 btn-select-light">
+                                                <input type="hidden" class="btn-select-input" id="txt_srv" name="txt_srv" value="" />
+                                                <span class="btn-select-value">Seleccione</span>
+                                                <span class='btn-select-arrow'></span>
+                                                <ul>
+                                                    <li>tipo 1</li>
+                                                    <li>tipo 2</li>
+                                                    <li>tipo 3</li>
+                                                </ul>
+                                            </a>
+                                        </div>
                                     </div>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group col-lg-12">
                                     <div class="form-group input-group floating-label-form-group controls">
                                         <label for="txt_propetario">Propietario</label>
-                                        <select class="form-control w-50" id="txt_propetario" name="txt_propetario">
+                                        <!-- <select class="form-control w-50" id="txt_propetario" name="txt_propetario">
                                             <option value="">-- Seleccione --</option>
                                             <option value="Cualquier usuario">Cualquier usuario</option>
                                             <option value="De mi propiedad">De mi propiedad</option>
                                             <option value="Propiedad de otro usuario">Propiedad de otro usuario</option>
                                             <option value="Persona específica">Persona específica</option>
-                                        </select>
+                                        </select> -->
+                                        <div class="select_new mr-10">
+                                            <a class="btn btn-warning btn-select btn-select-light">
+                                                <input type="hidden" class="btn-select-input" id="txt_srv" name="txt_srv" value="" />
+                                                <span class="btn-select-value">Persona específica</span>
+                                                <span class='btn-select-arrow'></span>
+                                                <ul>
+                                                    <li>Cualquier usuario</li>
+                                                    <li>De mi propiedad</li>
+                                                    <li>Propiedad de otro usuario</li>
+                                                    <li>Persona específica</li>
+                                                </ul>
+                                            </a>
+                                        </div>
                                         <input type="text" class="form-control w-50" name="txt_nombre" id="txt_nombre" placeholder="Ingrese nombre" />
                                     </div>
                                     <p class="help-block text-danger"></p>
@@ -60,13 +85,26 @@
                                 <div class="control-group col-lg-12">
                                     <div class="form-group input-group floating-label-form-group controls">
                                         <label for="txt_ubicacion">Ubicación</label>
-                                        <select class="form-control w-50" id="txt_ubicacion" name="txt_ubicacion">
+                                        <!-- <select class="form-control w-50" id="txt_ubicacion" name="txt_ubicacion">
                                             <option value="">-- Seleccione --</option>
                                             <option value="Mis Accesos">Mis Accesos</option>
                                             <option value="Mis Archivos">Mis Archivos</option>
                                             <option value="Mis Compartidos">Mis Compartidos</option>
                                             <option value="Compartidos conmigo">Compartidos conmigo</option>
-                                        </select>
+                                        </select> -->
+                                        <div class="select_new">
+                                            <a class="btn btn-warning btn-select w-100 btn-select-light">
+                                                <input type="hidden" class="btn-select-input" id="txt_srv" name="txt_srv" value="" />
+                                                <span class="btn-select-value">Seleccione</span>
+                                                <span class='btn-select-arrow'></span>
+                                                <ul>
+                                                    <li>Mis Accesos</li>
+                                                    <li>Mis Archivos</li>
+                                                    <li>Mis Compartidos</li>
+                                                    <li>Compartidos conmigo</li>
+                                                </ul>
+                                            </a>
+                                        </div>
                                     </div>
                                     <p class="help-block text-danger"></p>
                                 </div>
@@ -80,12 +118,24 @@
                                 <div class="control-group col-lg-12">
                                     <div class="form-group input-group floating-label-form-group controls">
                                         <label for="txt_tamano">Tamaño</label>
-                                        <select class="form-control w-33" id="txt_tamano" name="txt_tamano">
+                                        <!-- <select class="form-control w-33" id="txt_tamano" name="txt_tamano">
                                             <option value="">-- Seleccione --</option>
                                             <option value="Mayor que">Mayor que</option>
                                             <option value="Menor que">Menor que</option>
                                             <option value="Igual a">Igual a</option>
-                                        </select>
+                                        </select> -->
+                                        <div class="select_new">
+                                            <a class="btn btn-warning btn-select w-50 btn-select-light">
+                                                <input type="hidden" class="btn-select-input" id="txt_srv" name="txt_srv" value="" />
+                                                <span class="btn-select-value">Seleccione</span>
+                                                <span class='btn-select-arrow'></span>
+                                                <ul>
+                                                    <li>Mayor que</li>
+                                                    <li>Menor que</li>
+                                                    <li>Igual a</li>
+                                                </ul>
+                                            </a>
+                                        </div>
                                         <input type="text" class="form-control w-33" id="txt_tam_nro" name="txt_tam_nro" placeholder="">
                                         <select class="form-control w-33" id="txt_tam_medida" name="txt_tam_medida">
                                             <option value="">-- Seleccione --</option>
@@ -221,5 +271,6 @@
     <script type="text/javascript" src="./js/swiper.min.js"></script>
     <script type="text/javascript" src="./js/datepicker.js"></script>
     <script type="text/javascript" src="./js/home.js"></script>
+    <script type="text/javascript" src="./js/imput_menu.js"></script>
 </body>
 </html>
