@@ -1480,6 +1480,7 @@ footer .content_footer ul li a:hover {
   bottom: 0;
   right: auto;
 }*/
+
 .fixed-nav .fixed-nav-inner ul a:hover,
 .fixed-nav .fixed-nav-inner ul a.active {
   background-color: white;
@@ -2560,21 +2561,23 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   }
   .files_details .top_info_details .info_left .info_file .txt_file_name,
   .files_details .top_info_details .info_left .info_file .txt_breadcumb {
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 14px;
+    line-height: 17px;
   }
   .files_details .top_info_details .info_left .left_badge {
     margin-right: 10px;
   }
   .files_details .top_info_details .actions_right .btn-outline-success {
-    font-size: 15px;
-    height: 40px;
+    font-size: 14px;
+    height: 36px;
     line-height: 17px;
     margin-right: 7px;
     padding: 6px 10px;
   }
   .files_details .top_info_details .actions_right .get_back {
-    padding-top: 8px;
+    font-size: 18px;
+    margin-left: 10px;
+    padding-top: 0px;
   }
   .files_details .content_files_details .right_section {
     padding: 8px 10px;
@@ -2624,6 +2627,10 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   }
   .files_details .content_files_details .right_section .details_box .db_body .update .version_box .photo {
     margin-left: 7px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body ul.list_details_files li h5 {
+    font-size: 15px;
+    line-height: 19px;
   }
 }
 
@@ -2676,6 +2683,30 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   }
   .files_details .content_files_details .right_section .details_box .db_body .update .version_box .photo {
     margin-left: 9px;
+  }
+  .files_details .top_info_details {
+    padding: 0px 21px 0px 46px;
+  }
+  .files_details .top_info_details .info_left .left_badge {
+    margin-right: 14px;
+  }
+  .files_details .top_info_details .actions_right .btn-outline-success {
+    margin-right: 11px;
+  }
+  .files_details .top_info_details .actions_right .btn-outline-success:not(.button-search-custom) {
+    font-size: 18px;
+    height: 40px;
+  }
+  .files_details .top_info_details .actions_right .btn-outline-success [class^="icon-"], 
+  .files_details .top_info_details .actions_right .btn-outline-success [class*=" icon-"], 
+  .files_details .top_info_details .actions_right .btn-outline-success [class^="icon-"]:before, 
+  .files_details .top_info_details .actions_right .btn-outline-success [class*=" icon-"]:before {
+    font-size: 1em;
+  }
+  .files_details .top_info_details .info_left .info_file .txt_file_name,
+  .files_details .top_info_details .info_left .info_file .txt_breadcumb {
+    font-size: 18px;
+    line-height: 21px;
   }
 }
 
@@ -3084,11 +3115,16 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   }
 }
 
+/***********************************************/
+/*************** CUSTOM SELECTS ****************/
+/***********************************************/
+
 .select_new .btn-warning {
   background-color: white;
   border: 1px solid var(--bordeInputs);
   color: var(--verdePrincipal);
 }
+
 .select_new .btn-select {
   position: relative;
   padding: 0;
@@ -3096,12 +3132,15 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   width: 100%;
   height: 40px;
 } 
+
 .select_new .btn-select.w-100 {
   min-width: 780px;
 }
+
 .select_new .btn-select.w-50 {
   min-width: 230px;
 }
+
 .select_new .btn-select:active,
 .select_new .btn-select:link,
 .select_new .btn-select:focus,
@@ -3120,7 +3159,6 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   font-size: 18px;
   line-height: 21px;
 }
-
 
 .select_new .btn-select  .btn-select-arrow {
   float: right;
