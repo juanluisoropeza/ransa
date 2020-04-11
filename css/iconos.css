@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconos';
-  src:  url('../fonts/icomoon.eot?x66fl5');
-  src:  url('../fonts/icomoon.eot?x66fl5#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?x66fl5') format('truetype'),
-    url('../fonts/icomoon.woff?x66fl5') format('woff'),
-    url('../fonts/icomoon.svg?x66fl5#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?6p76z2');
+  src:  url('../fonts/icomoon.eot?6p76z2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?6p76z2') format('truetype'),
+    url('../fonts/icomoon.woff?6p76z2') format('woff'),
+    url('../fonts/icomoon.svg?6p76z2#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -51,7 +51,6 @@
 }
 .icon-icon_clock:before {
   content: "\e907";
-  color: #009a3c;
 }
 .icon-icon_cloud:before {
   content: "\e908";
@@ -59,6 +58,9 @@
 .icon-icon_comments:before {
   content: "\e909";
   color: #8a8c8e;
+}
+.icon-icon_commerce:before {
+  content: "\e925";
 }
 .icon-icon_copy:before {
   content: "\e90a";
@@ -132,6 +134,9 @@
 .icon-icon_signature:before {
   content: "\e91e";
   color: #fff;
+}
+.icon-icon_sort:before {
+  content: "\e926";
 }
 .icon-icon_sort2:before {
   content: "\e91f";
