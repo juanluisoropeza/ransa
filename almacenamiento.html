@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>..:: RANSA ::..</title>
+    <!-- HOJAS DE ESTILO CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="top_header">
+            <div class="cnt_logo">
+                <a href="home.html"><img src="images/logo.svg" alt="logo" class="img-fluid"></a>
+            </div>
+            <div class="cnt_right">
+                <div class="input-group dropdown search_input">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text icon_search"><i class="icon-icon_search"></i></span>
+                    </div>
+                    <form id="form1">
+                        <input type="text" class="form-control input-search" />
+                    </form>
+                    <a class="btn btn-outline-success button-search-custom dropdown-toggle" href="#" role="button" id="busquedaHeader" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="busquedaHeader">
+                        <form class="px-4 py-3 form-inline" id="form2">
+                            <div class="row">
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group input-group floating-label-form-group controls">
+                                        <label for="txt_tipo">Tipo</label>
+                                        <select class="form-control" id="txt_tipo" name="txt_tipo">
+                                            <option value="">-- Seleccione --</option>
+                                            <option value="tipo 1">tipo 1</option>
+                                            <option value="tipo 2">tipo 2</option>
+                                            <option value="tipo 3">tipo 3</option>
+                                        </select>
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group input-group floating-label-form-group controls">
+                                        <label for="txt_propetario">Propietario</label>
+                                        <select class="form-control w-50" id="txt_propetario" name="txt_propetario">
+                                            <option value="">-- Seleccione --</option>
+                                            <option value="Cualquier usuario">Cualquier usuario</option>
+                                            <option value="De mi propiedad">De mi propiedad</option>
+                                            <option value="Propiedad de otro usuario">Propiedad de otro usuario</option>
+                                            <option value="Persona específica">Persona específica</option>
+                                        </select>
+                                        <input type="text" class="form-control w-50" name="txt_nombre" id="txt_nombre" placeholder="Ingrese nombre" />
+                                    </div>
+                                </div>
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group input-group floating-label-form-group controls">
+                                        <label for="txt_ubicacion">Ubicación</label>
+                                        <select class="form-control w-50" id="txt_ubicacion" name="txt_ubicacion">
+                                            <option value="">-- Seleccione --</option>
+                                            <option value="Mis Accesos">Mis Accesos</option>
+                                            <option value="Mis Archivos">Mis Archivos</option>
+                                            <option value="Mis Compartidos">Mis Compartidos</option>
+                                            <option value="Compartidos conmigo">Compartidos conmigo</option>
+                                        </select>
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group input-group floating-label-form-group controls">
+                                        <label for="txt_inc_palabras">Incluye palabras</label>
+                                        <input type="text" class="form-control" id="txt_inc_palabras" name="txt_inc_palabras" placeholder="Ingrese palabras">
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group input-group floating-label-form-group controls">
+                                        <label for="txt_tamano">Tamaño</label>
+                                        <select class="form-control w-33" id="txt_tamano" name="txt_tamano">
+                                            <option value="">-- Seleccione --</option>
+                                            <option value="Mayor que">Mayor que</option>
+                                            <option value="Menor que">Menor que</option>
+                                            <option value="Igual a">Igual a</option>
+                                        </select>
+                                        <input type="text" class="form-control w-33" id="txt_tam_nro" name="txt_tam_nro" placeholder="">
+                                        <select class="form-control w-33" id="txt_tam_medida" name="txt_tam_medida">
+                                            <option value="">-- Seleccione --</option>
+                                            <option value="MB">MB</option>
+                                            <option value="GB">GB</option>
+                                            <option value="TB">TB</option>
+                                        </select>
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-lg-12">
+                                    <div class="form-group floating-label-form-group controls">
+                                        <label for="txt_rfechas_dias">Rango de fechas</label>
+                                        <div class="input-group w-50">
+                                            <select class="form-control w-33" id="txt_rfechas_dias" name="txt_rfechas_dias">
+                                                <option value="">-- Seleccione --</option>
+                                                <option value="4 días">4 días</option>
+                                                <option value="8 días">8 días</option>
+                                                <option value="12 días">12 días</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group w-50">
+                                            <input type="text" class="form-control ici_append" id="datepicker" placeholder="Seleccione fecha" name="txt_rfechas_fecha" required data-validation-required-message="Por favor, Seleccione una <b>Fecha</b>.">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">
+                                                    <i class="icon-icon_calendar"><span class="path1"></span><span class="path2"></span></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="col-lg-12 mt-4 mb-4 text-right boton">
+                                    <button type="submit" class="btn btn-outline-success">Buscar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <ul class="navbar-nav ml-4 right_links">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dw-profile" href="#" id="navbarProfile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/user1.jpg" alt="user1" class="img-fluid">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarProfile">
+                            <a class="dropdown-item" href="profile.html">Mi perfil</a>
+                            <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="icon-icon_bell"></span>
+                            <span class="badge badge-warning">4</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="screens_with_tables">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="fixed-nav sidebar_menu">
+                    <div class="fixed-nav-inner">
+                        <ul class="text-center">
+                        <a href="#" id="menu-toggle" class="waves-light menu-toggle" data-toggle="offcanvas">
+                            <li><i class="icon-icon_menu"></i></li>
+                            <li>X</li>
+                        </a>
+                        <a href="home.html" class="waves-light" data-toggle="tooltip" data-placement="right" title="Inicio">
+                            <li><i class="icon-icon_home"></i></li>
+                            <li>Inicio</li>
+                        </a>
+                        <a href="legajos.html" class="waves-light" data-toggle="tooltip" data-placement="right" title="Legajos">
+                            <li><i class="icon-icon_signature"></i></li>
+                            <li>Legajos</li>
+                        </a>
+                        <a href="accesos.html" class="waves-light" data-toggle="tooltip" data-placement="right" title="Mis Accesos">
+                            <li><i class="icon-icon_files"></i></li>
+                            <li>Mis Accesos</li>
+                        </a>
+                        <a href="almacenamiento.html" class="waves-light active" data-toggle="tooltip" data-placement="right" title="Almacenamiento">
+                            <li><i class="icon-icon_cloud"></i></li>
+                            <li>Almacenamiento</li>
+                        </a>
+                        <a href="workflows.html" class="waves-light" data-toggle="tooltip" data-placement="right" title="Workflows">
+                            <li><i class="icon-icon_workflows"></i></li>
+                            <li>Workflows</li>
+                        </a>
+                        </ul>
+                    </div>
+                </div>
+                <article class="swt_box">
+                    <div class="row">
+                        <div class="col-lg-5 top_info">
+                            <h1 class="title">Mis Archivos <span class="icon-icon_arrow-down1"></span></h1>
+                            <h2 class="subtitle">Recientes</h2>
+                        </div>
+                        <div class="col-lg-7 buttons_right">
+                            <a href="#" class="btn btn-outline-success">
+                                <span class="icon-icon_add-files-light"></span> Correo
+                            </a>
+                            <a href="#" class="btn btn-outline-success">
+                                <span class="icon-icon_mail-light"></span> Correo
+                            </a>
+                            <a href="#" class="btn btn-outline-success">
+                                <span class="icon-icon_upload2"></span> Subir
+                            </a>
+                            <a href="#" class="btn btn-outline-success">
+                                <span class="icon-icon_download-light"></span> Descarga
+                            </a>
+                            <a href="#" class="btn btn-outline-success">
+                                <span class="icon-icon_trash-light"></span> Eliminar
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="top_folders">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3 folders_cards">
+                                <a href="#" class="card">
+                                    <div class="card-header">
+                                        <img src="./images/yellow-folder.svg" alt="folder" class="img-fluid">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="txt_dark_gray">Tesoreria</h6>
+                                        <h6 class="txt_light_gray">09/01/2020</h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 folders_cards">
+                                <a href="#" class="card">
+                                    <div class="card-header">
+                                        <img src="./images/logo.svg" alt="logo" class="img-fluid">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="txt_dark_gray">Logo .jpg</h6>
+                                        <h6 class="txt_light_gray">10/01/2020</h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 folders_cards">
+                                <a href="#" class="card">
+                                    <div class="card-header">
+                                        <img src="./images/red_pdf.svg" alt="red_pdf" class="img-fluid">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="txt_dark_gray">Presentación .jpg </h6>
+                                        <h6 class="txt_light_gray">11/01/2020</h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 folders_cards">
+                                <a href="#" class="card">
+                                    <div class="card-header">
+                                        <img src="./images/yellow-folder.svg" alt="folder" class="img-fluid">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="txt_dark_gray">Recursos Humanos </h6>
+                                        <h6 class="txt_light_gray">12/01/2020</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_table">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-6 text-right search_button">
+                                <label>
+                                    <div class="input-group-prepend"> 
+                                        <span class="input-group-text icon_search"> 
+                                            <i class="icon-icon_search"></i> 
+                                        </span> 
+                                    </div>
+                                    <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="table_id">
+                                    <button type="button" data-toggle="modal" data-target="#modalTableSearch2"> 
+                                        <span class="dropdown-toggle"></span> 
+                                    </button>
+                                </label>
+                            </div>
+                        </div>                        
+                        <div class="w-100 cont_hz_scroll">
+                            <div class="container-fluid w-100 div_table">
+                                <div class="div_thead">
+                                    <div class="table_row h-100">
+                                        <div class="col-lg-1 thdiv_elements"></div>
+                                        <div class="col-lg-4 thdiv_elements">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Nombre <span class="icon-icon_arrow-down1"></span>
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Ascendente</a>
+                                                <a class="dropdown-item" href="#">Descendente</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 thdiv_elements">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Última modificación <span class="icon-icon_arrow-down1"></span>
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Ascendente</a>
+                                                <a class="dropdown-item" href="#">Descendente</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Tipo</a>
+                                                <a class="dropdown-item" href="#">Extensión</a>
+                                                <a class="dropdown-item" href="#">Tamaño</a>
+                                                <a class="dropdown-item" href="#">Modificado</a>
+                                                <a class="dropdown-item" href="#">Autor</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 thdiv_elements">
+                                            <a href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Tamaño de archivo <span class="icon-icon_arrow-down1"></span>
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Ascendente</a>
+                                                <a class="dropdown-item" href="#">Descendente</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Tipo</a>
+                                                <a class="dropdown-item" href="#">Extensión</a>
+                                                <a class="dropdown-item" href="#">Tamaño</a>
+                                                <a class="dropdown-item" href="#">Modificado</a>
+                                                <a class="dropdown-item" href="#">Autor</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1 thdiv_elements">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="div_tbody">
+                                    <div class="table_row h-100 align-items-center">
+                                        <div class="col-lg-1 text-center tddiv_elements">
+                                            <img src="./images/yellow-folder.svg" alt="folder" class="img-fluid" />
+                                        </div>
+                                        <div class="col-lg-4 tddiv_elements">
+                                            Contratos de personal
+                                        </div>
+                                        <div class="col-lg-4 tddiv_elements datetime">
+                                            <span class="txt">30/12/2019</span>
+                                            <span class="icon-icon_clock"></span>
+                                            <span class="txt">11:35 am</span>
+                                        </div>
+                                        <div class="col-lg-2 tddiv_elements">
+                                            -
+                                        </div>
+                                        <div class="col-lg-1 text-center tddiv_elements">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-icon_three-bullets"></span>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#"><span class="icon-icon_open"></span> Abrir</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#" id="btn_view_detail" data-toggle="modal" data-target="#modalViewDetail"><span class="icon-icon_details"></span> Ver detalles</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalRenameFile"><span class="icon-icon_pencil"></span> Renombrar</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalShareFiles"><span class="icon-icon_share"></span> Compartir</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalMoveAndCopy"><span class="icon-icon_copy"></span> Mover o copiar</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalDownloadfiles"><span class="icon-icon_download"></span> Descargar</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalDeletefile"><span class="icon-icon_trash-light"></span> Eliminar</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalActivityCompleted"><span class="icon-icon_plus2"></span> Act. Completada</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_row h-100 align-items-center">
+                                        <div class="col-lg-1 text-center tddiv_elements">
+                                            <img src="./images/red_pdf.svg" alt="pdf" class="img-fluid" />
+                                        </div>
+                                        <div class="col-lg-4 tddiv_elements">
+                                            Guía de colores Ransa.pdf
+                                        </div>
+                                        <div class="col-lg-4 tddiv_elements datetime">
+                                            <span class="txt">26/12/2019</span>
+                                            <span class="icon-icon_clock"></span>
+                                            <span class="txt">11:00 am</span>
+                                        </div>
+                                        <div class="col-lg-2 tddiv_elements">
+                                            35KB
+                                        </div>
+                                        <div class="col-lg-1 text-center tddiv_elements">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-icon_three-bullets"></span>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#"><span class="icon-icon_open"></span> Abrir</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#" id="btn_view_detail" data-toggle="modal" data-target="#modalViewDetail"><span class="icon-icon_details"></span> Ver detalles</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalRenameFile"><span class="icon-icon_pencil"></span> Renombrar</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalShareFiles"><span class="icon-icon_share"></span> Compartir</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalMoveAndCopy"><span class="icon-icon_copy"></span> Mover o copiar</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalDownloadfiles"><span class="icon-icon_download"></span> Descargar</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalDeletefile"><span class="icon-icon_trash-light"></span> Eliminar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_row h-100 align-items-center">
+                                        <div class="col-lg-1 text-center tddiv_elements">
+                                            <img src="./images/logo.svg" alt="ransa" class="img-fluid" />
+                                        </div>
+                                        <div class="col-lg-4 tddiv_elements">
+                                            Logo de Ransa.jpg
+                                        </div>
+                                        <div class="col-lg-4 tddiv_elements datetime">
+                                            <span class="txt">23/11/2019</span>
+                                            <span class="icon-icon_clock"></span>
+                                            <span class="txt">11:00 am</span>
+                                        </div>
+                                        <div class="col-lg-2 tddiv_elements">
+                                            2MB
+                                        </div>
+                                        <div class="col-lg-1 text-center tddiv_elements">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-icon_three-bullets"></span>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#"><span class="icon-icon_open"></span> Abrir</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#" id="btn_view_detail" data-toggle="modal" data-target="#modalViewDetail"><span class="icon-icon_details"></span> Ver detalles</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalRenameFile"><span class="icon-icon_pencil"></span> Renombrar</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalShareFiles"><span class="icon-icon_share"></span> Compartir</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalMoveAndCopy"><span class="icon-icon_copy"></span> Mover o copiar</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalDownloadfiles"><span class="icon-icon_download"></span> Descargar</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalDeletefile"><span class="icon-icon_trash-light"></span> Eliminar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_row h-100 align-items-center">
+                                        <div class="col-lg-1 text-center tddiv_elements">
+                                            <img src="./images/yellow-folder.svg" alt="folder" class="img-fluid" />
+                                        </div>
+                                        <div class="col-lg-4 tddiv_elements">
+                                            Lista de Proveedores 
+                                        </div>
+                                        <div class="col-lg-4 tddiv_elements datetime">
+                                            <span class="txt">16/11/2019</span>
+                                            <span class="icon-icon_clock"></span>
+                                            <span class="txt">07:35 pm</span>
+                                        </div>
+                                        <div class="col-lg-2 tddiv_elements">
+                                            -
+                                        </div>
+                                        <div class="col-lg-1 text-center tddiv_elements">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-icon_three-bullets"></span>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#"><span class="icon-icon_open"></span> Abrir</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#" id="btn_view_detail" data-toggle="modal" data-target="#modalViewDetail"><span class="icon-icon_details"></span> Ver detalles</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalRenameFile"><span class="icon-icon_pencil"></span> Renombrar</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalShareFiles"><span class="icon-icon_share"></span> Compartir</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalMoveAndCopy"><span class="icon-icon_copy"></span> Mover o copiar</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalDownloadfiles"><span class="icon-icon_download"></span> Descargar</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalDeletefile"><span class="icon-icon_trash-light"></span> Eliminar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_row h-100 align-items-center">
+                                        <div class="col-lg-1 text-center tddiv_elements">
+                                            <img src="./images/yellow-folder.svg" alt="folder" class="img-fluid" />
+                                        </div>
+                                        <div class="col-lg-4 tddiv_elements">
+                                            Contratos de personal
+                                        </div>
+                                        <div class="col-lg-4 tddiv_elements datetime">
+                                            <span class="txt">16/11/2019</span>
+                                            <span class="icon-icon_clock"></span>
+                                            <span class="txt">11:35 am</span>
+                                        </div>
+                                        <div class="col-lg-2 tddiv_elements">
+                                            -
+                                        </div>
+                                        <div class="col-lg-1 text-center tddiv_elements">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-icon_three-bullets"></span>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#"><span class="icon-icon_open"></span> Abrir</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#" id="btn_view_detail" data-toggle="modal" data-target="#modalViewDetail"><span class="icon-icon_details"></span> Ver detalles</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalRenameFile"><span class="icon-icon_pencil"></span> Renombrar</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalShareFiles"><span class="icon-icon_share"></span> Compartir</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalMoveAndCopy"><span class="icon-icon_copy"></span> Mover o copiar</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalDownloadfiles"><span class="icon-icon_download"></span> Descargar</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalDeletefile"><span class="icon-icon_trash-light"></span> Eliminar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_row h-100 align-items-center">
+                                        <div class="col-lg-1 text-center tddiv_elements">
+                                            <img src="./images/red_pdf.svg" alt="pdf" class="img-fluid" />
+                                        </div>
+                                        <div class="col-lg-4 tddiv_elements">
+                                            Guía de colores Ransa.pdf
+                                        </div>
+                                        <div class="col-lg-4 tddiv_elements datetime">
+                                            <span class="txt">16/11/2019</span>
+                                            <span class="icon-icon_clock"></span>
+                                            <span class="txt">09:05 am</span>
+                                        </div>
+                                        <div class="col-lg-2 tddiv_elements">
+                                            8KB
+                                        </div>
+                                        <div class="col-lg-1 text-center tddiv_elements">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-icon_three-bullets"></span>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#"><span class="icon-icon_open"></span> Abrir</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#" id="btn_view_detail" data-toggle="modal" data-target="#modalViewDetail"><span class="icon-icon_details"></span> Ver detalles</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalRenameFile"><span class="icon-icon_pencil"></span> Renombrar</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalShareFiles"><span class="icon-icon_share"></span> Compartir</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalMoveAndCopy"><span class="icon-icon_copy"></span> Mover o copiar</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalDownloadfiles"><span class="icon-icon_download"></span> Descargar</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalDeletefile"><span class="icon-icon_trash-light"></span> Eliminar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_row h-100 align-items-center">
+                                        <div class="col-lg-1 text-center tddiv_elements">
+                                            <img src="./images/fabicon_png.png" alt="ransa" class="img-fluid" />
+                                        </div>
+                                        <div class="col-lg-4 tddiv_elements">
+                                            Logo de Ransa.jpg
+                                        </div>
+                                        <div class="col-lg-4 tddiv_elements datetime">
+                                            <span class="txt">16/11/2019</span>
+                                            <span class="icon-icon_clock"></span>
+                                            <span class="txt">11:00 am</span>
+                                        </div>
+                                        <div class="col-lg-2 tddiv_elements">
+                                            1KB
+                                        </div>
+                                        <div class="col-lg-1 text-center tddiv_elements">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-icon_three-bullets"></span>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#"><span class="icon-icon_open"></span> Abrir</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#" id="btn_view_detail" data-toggle="modal" data-target="#modalViewDetail"><span class="icon-icon_details"></span> Ver detalles</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalRenameFile"><span class="icon-icon_pencil"></span> Renombrar</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalShareFiles"><span class="icon-icon_share"></span> Compartir</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalMoveAndCopy"><span class="icon-icon_copy"></span> Mover o copiar</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalDownloadfiles"><span class="icon-icon_download"></span> Descargar</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalDeletefile"><span class="icon-icon_trash-light"></span> Eliminar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 text-right mt-4 col_pagination">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination justify-content-end">
+                                      <li class="page-item previous disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><span class="icon-icon_arrow-prev"></span></a>
+                                      </li>
+                                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><span class="icon-icon_three-bullets"></span></li>
+                                      <li class="page-item"><a class="page-link" href="#">30</a></li>
+                                      <li class="page-item next disabled">
+                                        <a class="page-link" href="#"><span class="icon-icon_arrow-next"></span></a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 content_footer">
+                    <p>©Docublock. Todos lo derechos reservados 2019</p>
+                    <ul>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal #modalViewDetail -->
+    <div class="modal fade" id="modalViewDetail" tabindex="-1" role="dialog" aria-labelledby="modalViewDetailTitle" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header padding-equeal-body">
+                <h5 class="modal-title" id="modalTableSearchTitle">Detalles</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="list_detail">
+                    <li>
+                        <h5>Nombre:</h5>
+                        <p>Guía de colores Ransa</p>
+                    </li>
+                    <li>
+                        <h5>Tipo:</h5>
+                        <p>Comunicaciones</p>
+                    </li>
+                    <li>
+                        <h5>Extensión:</h5>
+                        <p>Pdf</p>
+                    </li>
+                    <li>
+                        <h5>Peso</h5>
+                        <p>1.39KB</p>
+                    </li>
+                    <li>
+                        <h5>Modificado</h5>
+                        <p>09/01/2019</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal #modalRenameFile -->
+    <div class="modal fade" id="modalRenameFile" tabindex="-1" role="dialog" aria-labelledby="modalRenameFileTitle" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header padding-equeal-body">
+                <h5 class="modal-title" id="modalTableSearchTitle">Renombrar Archivo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row">
+                        <div class="control-group col-xs-12 col-md-6 col-lg-12">
+                            <label for="txt_rename_file_name">Nombre</label>
+                            <div class="form-group floating-label-form-group controls">
+                              <input type="text" class="form-control" placeholder="Nombre" id="txt_rename_file_name" name="txt_rename_file_name" required="required" data-validation-required-message="Por favor, Ingrese el <b>Nombre del archivo</b>." aria-invalid="false">
+                              <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success">Buscar</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal #modalShareFiles -->
+    <div class="modal fade" id="modalShareFiles" tabindex="-1" role="dialog" aria-labelledby="modalShareFilesTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header padding-equeal-body">
+                <h5 class="modal-title" id="modalTableSearchTitle">Compartir</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="form-inline form_search">
+                    <div class="row w-100">
+                        <div class="control-group col-lg-7">
+                            <div class="form-group input-group floating-label-form-group controls">
+                                <label for="txt_mbusq_tipo_doc">Texto a buscar</label>
+                                <input class="form-control" id="txt_tipo_doc" name="txt_mbusq_tipo_doc" placeholder="Texto a buscar" />
+                            </div>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="col-lg-5 buttons">
+                            <button type="button" class="btn btn-outline-success">Buscar</button>
+                            <button type="button" class="btn btn-outline-success">Aceptar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal #modalDeletefile -->
+    <div class="modal fade" id="modalDeletefile" tabindex="-1" role="dialog" aria-labelledby="modalDeletefileTitle" aria-hidden="true">
+        <div class="modal-dialog modal-707 modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header padding-equeal-body">
+                <h5 class="modal-title" id="modalTableSearchTitle"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4 class="text-center msj_question">¿Estás seguro que quieres eliminar este elemento?</h4>
+                <figure class="img_message"><img src="images/delete_files.svg" alt="delete-img" class="img-fluid"></figure>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-outline-success" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-success">Ok</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal #modalDownloadfiles -->
+    <div class="modal fade" id="modalDownloadfiles" tabindex="-1" role="dialog" aria-labelledby="modalDownloadfilesTitle" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header padding-equeal-body">
+                <h5 class="modal-title" id="modalTableSearchTitle"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4 class="text-center msj_question">Descarga Completa</h4>
+                <figure class="img_message"><img src="images/download_files_complete.svg" alt="download_files_complete" class="img-fluid"></figure>
+            </div>
+            <div class="modal-footer justify-content-center">
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal #modalActivityCompleted -->
+    <div class="modal fade" id="modalActivityCompleted" tabindex="-1" role="dialog" aria-labelledby="modalActivityCompletedTitle" aria-hidden="true">
+        <div class="modal-dialog modal-707 modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header padding-equeal-body">
+                <h5 class="modal-title" id="modalTableSearchTitle"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4 class="text-center msj_question fs-36 mb-34">¡Actividad completada!</h4>
+                <p class="text-center">
+                    Felicidades, haz completado tu actividad correctamente.
+                </p>
+                <p class="text-center">
+                    ¡Muchas gracias!
+                </p>
+                <figure class="img_message"><img src="images/actividad_completada.svg" alt="actividad_completada" class="img-fluid"></figure>
+            </div>
+            <div class="modal-footer justify-content-center">
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal #modalMoveAndCopy -->
+    <div class="modal fade" id="modalMoveAndCopy" tabindex="-1" role="dialog" aria-labelledby="modalMoveAndCopyTitle" aria-hidden="true">
+        <div class="modal-dialog modal-707 modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header padding-equeal-body">
+                <h5 class="modal-title" id="modalTableSearchTitle">Mover o copiar</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h6 class="txt_info mb-35">Seleccione una carpeta de destino </h6>
+                <div class="form-group has-search mb-4">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="icon-icon_search form-control-feedback"></span>
+                </div>
+                <hr>
+                <div class="mdb_breadcrumb">
+                    <a href="#" class="link_back"><span class="icon-icon_arrow-left"></span></a>
+                </div>
+                <form action="" class="form-inline form_search">
+                    <div class="row w-100">
+                        <div class="control-group col-lg-7">
+                            <div class="form-group input-group floating-label-form-group controls">
+                                <label for="txt_mbusq_tipo_doc">Texto a buscar</label>
+                                <input class="form-control" id="" name="txt_mbusq_tipo_doc" placeholder="Texto a buscar" />
+                            </div>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="col-lg-5 buttons">
+                            <button type="button" class="btn btn-success">Copiar</button>
+                            <button type="button" class="btn btn-success">Mover</button>
+                            <button type="button" class="btn btn-outline-success"  data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-datepicker.es.min.js"></script>
+    <script type="text/javascript" src="./js/datepicker.js"></script>
+    <script type="text/javascript" src="./js/sidebar.js"></script>
+</body>
+</html>
