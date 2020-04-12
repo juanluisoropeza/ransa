@@ -55,6 +55,13 @@ button:hover,
   outline: 0 !important;
 }
 
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
 .btn {
   -webkit-transition: .3s all;
   -moz-transition: .3s all;
@@ -96,12 +103,17 @@ a:hover {
   margin-right: 10px;
 }
 
-.w-50 {
-  width: 50%;
+.w-100 {
+  width: 100%;
 }
 
-.w-33 {
-  width: 33.333333%;
+.wm-100 {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.m-75 {
+  padding-left: 75px !important;
 }
 
 .sp {
@@ -156,6 +168,7 @@ a:hover {
 .form-control:focus {
   outline: 0;
   box-shadow: none;
+  border: 1px solid var(--bordeInputs);
 }
 
 .form-control.ici_prepend {
@@ -181,11 +194,11 @@ a:hover {
   border-color: var(--bordeInputs);
   border-left: 0;
 }
-
+/* 
 .form-control:hover + .input-group-append .input-group-text,
 .form-control:focus + .input-group-append .input-group-text {
   border-color: var(--verdePrincipal) !important;
-}
+} */
 
 .btn-success {
   background-color: var(--verdePrincipal);
@@ -217,10 +230,6 @@ a:hover {
   color: white;
 }
 
-.control-group {
-  margin-bottom: .5rem;
-}
-
 .control-group.error .help-block {
   margin-bottom: 0;
   width: 100%;
@@ -250,6 +259,14 @@ a:hover {
   color: white !important;
 }
 
+.dropdown-menu {
+  padding: 13px 0px 27px 39px;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
 .dropdown-menu li a {
   font-size: 18px;
   height: 34px;
@@ -260,6 +277,22 @@ a:hover {
 .dropdown-item:hover {
   color: var(--verdePrincipal);
   background-color: transparent;
+}
+
+.dropdown_table {
+  padding: 15px 0px 28px 0px;
+  min-width: 230px;
+}
+
+.dropdown_table .dropdown-item {
+  padding: 0px 0px 12px 13px;
+  color: #999999;
+}
+
+.dropdown_table .separador {
+  margin: 0px;
+  margin-bottom: 18px;
+  border: 1px solid #E0E0E0;
 }
 
 /*** SWIPER SLIDER ***/
@@ -724,15 +757,14 @@ header .top_header .cnt_right .input-group .form-group {
 }
 
 header .top_header .cnt_right .input-group .form-group label {
-  margin-right: 20px;
   justify-content: flex-start;
   -webkit-justify-content: flex-start;
-  width: 150px;
 }
 
 header .top_header .cnt_right .input-group .form-control {
   border-radius: 5px;
-  width: calc(100% - 170px);
+  width: 100%;
+  padding-left: 21px;
 }
 
 header .top_header .cnt_right .input-group .input-search {
@@ -813,12 +845,6 @@ header .top_header .cnt_right .right_links .nav-item .nav-link .badge {
 }
 
 /*** media query's ***/
-
-@media screen and (min-width: 1201px) and (max-width: 1399px) {
-  header .top_header .cnt_right .search_input.dropdown .dropdown-menu {
-    min-width: 750px !important;
-  }
-}
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   header .top_header .cnt_right .input-group .input-search {
@@ -1584,6 +1610,11 @@ footer .content_footer ul li a:hover {
   -webkit-flex-flow: row wrap;
 	align-items: center;
 	-webkit-align-items: center;
+}
+
+
+.screens_with_tables .swt_box .top_info h1.title span.active {
+  color: var(--verdePrincipal);
 }
 
 .screens_with_tables .swt_box .top_info h2.subtitle {
@@ -3128,7 +3159,6 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .select_new .btn-select {
   position: relative;
   padding: 0;
-  min-width: 432px;
   width: 100%;
   height: 40px;
 } 
@@ -3150,7 +3180,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 
 .select_new .btn-select .btn-select-value {
-  padding-left: 75px;
+  padding-left: 21px;
   display: flex;
   align-items: center;
   position: absolute;
@@ -3186,7 +3216,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  padding: 20px 65px;
+  padding: 20px 21px;
 }
 
 .select_new .btn-select ul li {
@@ -3249,4 +3279,67 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   color: var(--verdePrincipal);
   background-color:white;
   border-color: #ced4da;
+}
+
+/***********************************************/
+/****************** CALENDARIO *****************/
+/***********************************************/
+
+.datepicker .datepicker-switch {
+  width: 208px;
+}
+
+.datepicker .datepicker-days .table-condensed thead tr:nth-child(2n) {
+  border: 2px solid var(--verdePrincipal);
+  color: var(--verdePrincipal);
+}
+
+.datepicker .datepicker-days .table-condensed thead tr th:hover {
+  background-color: transparent;
+}
+
+.datepicker .datepicker-days .table-condensed thead tr:nth-child(3n) {
+  display: none;
+}
+
+.datepicker .datepicker-days .table-condensed thead {
+  width: 100%;
+}
+
+.datepicker .datepicker-days .table-condensed tbody {
+  margin: 25px 15px 10px 0px;
+}
+
+.datepicker .datepicker-days .table-condensed tbody tr td.active {
+  border-radius: 50%;
+}
+
+.datepicker .datepicker-days .table-condensed  tbody tr td:first-child {
+  opacity: 0;
+}
+
+.datepicker .datepicker-days .table-condensed tfoot {
+  display: none;
+}
+
+.datepicker .datepicker-days .table-condensed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.datepicker table tr td.day:hover, .datepicker table tr td.focused {
+  background: transparent;
+  cursor: pointer;
+  color: var(--verdePrincipal);
+}
+
+.datepicker table tr td, .datepicker table tr th {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  padding: 8px 8px;
 }
