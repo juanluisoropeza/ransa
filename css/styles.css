@@ -846,6 +846,106 @@ header .top_header .cnt_right .right_links .nav-item .nav-link .badge {
 }
 
 /*** media query's ***/
+@media screen and (max-width: 992px) {
+  header .top_header {
+    align-items: flex-start; 
+    -webkit-align-items: flex-start; 
+    margin-top: 15px;
+    height: 125px;
+  }
+  header .top_header .cnt_right .input-group {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+  }
+  header .top_header .cnt_right .right_links {
+    position: absolute;
+    top: 80px;
+    right: 30px;
+  }
+  header .top_header .cnt_right .input-group .input-search {
+    min-width: 465px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 474px) {
+  header .top_header .cnt_right .input-group .input-search {
+    min-width: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  header .top_header .cnt_right .search_input .input-group-prepend,
+  header .top_header .cnt_right .button-search-custom {
+    height: 30px;
+  }
+
+  header .top_header {
+    padding: 0 16px 0 16px;
+  }
+
+  header .top_header .cnt_right .input-group {
+    left: 16px;
+    top: 65px;
+  }
+
+  header .top_header .cnt_right .right_links {
+    right: 16px;
+    top: 65px;
+  }
+
+  header .top_header .cnt_right .right_links li {
+    margin-right: 6px;
+  }
+
+  header .top_header .cnt_right .right_links li:last-child {
+    font-size: 12px;
+  }
+
+  header .top_header .cnt_logo a img {
+    max-height: 30px;
+  }
+
+  header .top_header .cnt_right .right_links .dropdown-toggle img {
+    border-radius: 30px;
+    max-height: 30px;
+  }
+
+  header .top_header .cnt_right .search_input .input-group-text.icon_search i{
+    font-size: 18px;
+  }
+
+  header .top_header .cnt_right .search_input .dropdown-toggle::after {
+    top: 11px;
+  }
+
+  header .top_header {
+    height: 90px;
+  }
+
+  .screens_with_tables {
+    padding-top: 110px;
+  }
+}
+
+@media screen and (min-width: 475px) and (max-width: 532px) {
+  header .top_header .cnt_right .input-group .input-search {
+    min-width: 0;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 533px) and (max-width: 669px) {
+  header .top_header .cnt_right .input-group .input-search {
+    min-width: 255px;
+  }
+}
+
+@media screen and (min-width: 670px) and (max-width: 767px) {
+  header .top_header .cnt_right .input-group .input-search {
+    min-width: 380px;
+  }
+}
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   header .top_header .cnt_right .input-group .input-search {
@@ -860,6 +960,27 @@ header .top_header .cnt_right .right_links .nav-item .nav-link .badge {
 @media screen and (min-width: 1201px) and (max-width: 1550px) {
   header .top_header .cnt_right .search_input.dropdown .dropdown-menu {
     min-width: 900px;
+  }
+}
+
+/***********************************************/
+/******************** SIDEBAR MOVIL*******************/
+/***********************************************/
+header .top_header .button_sidebar_movil {
+  display: none;
+}
+
+header .top_header .button_sidebar_movil a li {
+  list-style: none;
+}
+
+header .top_header .button_sidebar_movil a li i:before {
+  color: var(--verdePrincipal);
+}
+
+@media screen and (max-width: 992px) {
+  header .top_header .button_sidebar_movil {
+    display: initial!important;
   }
 }
 
@@ -1574,6 +1695,32 @@ footer .content_footer ul li a:hover {
   transform: translateX(0.75rem);
 }
 
+
+@media screen and (max-width: 992px) {
+  .fixed-nav .fixed-nav-inner.open-nav {
+    padding-top: 15px;
+  }
+
+  .fixed-nav .fixed-nav-inner ul a li i.icon-icon_menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1680px) { 
+  .fixed-nav {
+    min-width: 0px;
+  }
+  .fixed-nav .fixed-nav-inner {
+    width: 0px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 474px) {
+  .fixed-nav .fixed-nav-inner ul a li i {
+    font-size: 18px;
+  }
+}
+
 /***********************************************/
 /************** VISTAS CON TABLAS **************/
 /***********************************************/
@@ -2155,6 +2302,18 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   position: relative;
   z-index: 2;
   width: 38px;
+}
+
+@media screen and (max-width: 992px) {
+  .screens_with_tables {
+    padding-top: 145px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 474px) {
+  .screens_with_tables {
+    padding-top: 110px;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
