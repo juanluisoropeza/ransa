@@ -20,7 +20,7 @@
   --bgComentarios: #FAFAFA;
   --colorDateCommet: #CFCECE;
   --myselfMsg: #CAFFAA;
-  --verdeScroll: #4FB725;
+  --verdeStatusBar: #4FB725;
 }
 
 /*** CSS INICIAL ***/
@@ -1427,7 +1427,7 @@ footer .content_footer ul li a:hover {
 }
 
 #profile .profile_data .box .box-card .progress .bg-success {
-  background-color: var(--verdeScroll) !important;
+  background-color: var(--verdeStatusBar) !important;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -2213,6 +2213,11 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   margin: 0px 8px 0px 16px;
 }
 
+.content_table .div_table .div_tbody .tddiv_elements.datetime [class^="icon-"], 
+.content_table .div_table .div_tbody .tddiv_elements.datetime [class*=" icon-"] {
+  color: var(--verdePrincipal);
+}
+
 .content_table .div_table .div_thead .thdiv_elements:last-child,
 .content_table .div_table .div_tbody .tddiv_elements:first-child,
 .content_table .div_table .div_tbody .tddiv_elements:last-child {
@@ -2317,6 +2322,9 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+  .screens_with_tables .swt_box {
+    padding: 40px 50px;
+  }
   .screens_with_tables .swt_box .top_folders .card .card-header {
     height: 80px;
   }
@@ -2331,6 +2339,37 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   }
   .screens_with_tables .swt_box .top_folders .card .card-body .txt_light_gray {
     font-size: .8em;
+  }
+  .screens_with_tables .swt_box .buttons_right .btn-outline-success {
+    font-size: 14px;
+    height: 36px;
+    margin-right: 7px;
+    min-width: 100px;
+  }
+  .screens_with_tables .swt_box .top_info h1.title {
+    font-size: 19px;
+  }
+  .screens_with_tables .swt_box .top_info h2.subtitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements, 
+  .content_table .div_table .div_thead .thdiv_elements {
+    padding: 0px 10px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements, 
+  .content_table .div_table .div_thead .thdiv_elements a {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements:first-child img {
+    max-height: 26px;
+    max-width: 50px;
   }
 }
 
@@ -2349,6 +2388,15 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   }
   .screens_with_tables .swt_box .top_folders .card .card-body .txt_light_gray {
     font-size: .9em;
+  }
+  .screens_with_tables .swt_box .buttons_right .btn-outline-success {
+    font-size: 18px;
+    height: 40px;
+    margin-right: 11px;
+    min-width: 128px;
+  }
+  .screens_with_tables .swt_box .top_info h1.title {
+    font-size: 22px;
   }
 }
 
@@ -3171,10 +3219,6 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   margin-bottom: 0;
   cursor: pointer;
   font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   width: 100%;
 }
 
@@ -3288,6 +3332,10 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   margin-bottom: 0;
 }
 
+.modal .modal-content {
+  border: 0;
+}
+
 .modal .modal-content .modal-body h4.msj_question {
   color: var(--verdePrincipal);
   font-weight: 400;
@@ -3295,6 +3343,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   line-height: 28px;
   margin-bottom: 3em;
 }
+
 .modal .modal-content .modal-body h4.fs-36 {
   font-size: 36px;
   line-height: 42px;
@@ -3373,9 +3422,20 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   padding-bottom: 35px;
 }
 
+.modal .modal-content .modal-body .mdb_breadcrumb {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
 .modal .modal-content .modal-body .mdb_breadcrumb .link_back {
   border: 1px solid var(--bordeInputs);
   height: 35px;
+  margin-right: 20px;
   width: 35px;
   display: flex;
   display: -ms-flexbox;
@@ -3389,7 +3449,202 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .modal .modal-content .modal-body .mdb_breadcrumb .link_back span {
+  color: var(--colorTextoClaro);
   font-size: 1em;
+}
+
+.modal .modal-content .modal-body .mdb_breadcrumb .link_back.active span,
+.modal .modal-content .modal-body .mdb_breadcrumb .link_back.active span:before {
+  color: var(--verdePrincipal);
+}
+
+.modal .modal-content .modal-body .mdb_breadcrumb .gray_item,
+.modal .modal-content .modal-body .mdb_breadcrumb .green_item {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.modal .modal-content .modal-body .mdb_breadcrumb .gray_item {
+  color: var(--colorTextoClaro);
+}
+
+.modal .modal-content .modal-body .mdb_breadcrumb .green_item {
+  color: var(--verdePrincipal);
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.modal .modal-content .modal-body .list_files_cp {
+  list-style: none;
+}
+
+.modal .modal-content .modal-body .list_files_cp li {
+  color: var(--colorTextoClaro);
+  margin-bottom: 11px;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.modal .modal-content .modal-body .list_files_cp li figure {
+  margin-bottom: 0;
+}
+
+.modal .modal-content .modal-body .list_files_cp li img {
+  max-height: 32px;
+}
+
+.modal .modal-content .modal-body .list_files_cp li label {
+  margin-bottom: 0;
+}
+
+.modal .modal-content .modal-body .list_files_cp li label:not(.cont_item) {
+  font-size: 18px;
+  line-height: 21px;
+  margin-left: 24px;
+  min-width: 180px;
+}
+
+.modal .modal-content .modal-body .list_files_cp li .icon {
+  height: 30px;
+  margin-left: 20px;
+  width: 30px;
+}
+
+.modal .modal-content .modal-body .list_files_cp li .icon span:before {
+  color: var(--verdePrincipal);
+}
+
+.modal .modal-content .modal-body .list_files_cp li .cont_item {
+  width: calc(100% - 300px);
+}
+
+.modal .modal-content .modal-body .list_files_cp li .cont_item .checkmark {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 14px;
+  width: 14px;
+}
+
+.modal .modal-content .modal-body .list_files_cp li .cont_item .checkmark:after {
+  display: none !important;
+}
+
+.modal .modal-content .modal-body .content_table .cont_hz_scroll {
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  overflow: visible;
+}
+
+.modal .modal-content .modal-body .content_table .div_table .div_thead,
+.modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements {
+  height: 56px;
+}
+
+.modal .modal-content .modal-body .content_table .div_table .div_thead .thdiv_elements, 
+.modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements {
+  text-align: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.modal .modal-content .modal-body .content_table .div_table .div_thead .thdiv_elements:nth-child(-n+2), 
+.modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements:nth-child(-n+2) {
+  text-align: left;
+  justify-content: left;
+  -webkit-justify-content: left;
+}
+
+.modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements .clean_link {
+  color: var(--hrColor);
+  font-size: 1.4em;
+}
+
+.modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements .clean_link span:before {
+  color: var(--hrColor);
+}
+
+.modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements .clean_link:hover span:before {
+  color: var(--verdePrincipal);
+}
+
+.modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements .profile_photo {
+  margin-bottom: 0;
+}
+
+.modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements .profile_photo img {
+  margin-right: 8px;
+  max-height: 32px;
+}
+
+.modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements .dropdown {  
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements .dropdown a {
+  color: var(--colorTextoClaro);
+}
+
+.modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements .dropdown span {
+  font-size: 1em;
+}
+
+.modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements .dropdown span:before {
+  color: var(--verdePrincipal);
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #modalShareFiles.modal .modal-content .modal-body .content_table .div_table .div_tbody,
+  #modalShareFiles.modal .modal-content .modal-body .content_table .div_table .div_thead {
+    margin: 0px -40px 0px -10px;
+  }
+  .modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements,
+  .modal .modal-content .modal-body .content_table .div_table .div_thead .thdiv_elements {
+    padding: 0px 10px;
+  }
+  #modalShareFiles.modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements {
+    font-size: 13.5px;
+    line-height: 16px;
+  }
+  #modalShareFiles.modal .modal-content .modal-body .buttons .btn {
+    font-size: 14px;
+    height: 36px;
+    margin-right: 7px;
+    width: 114px;
+  }
+  .modal .modal-content .modal-header.padding-equeal-body {
+    padding: 27px 34px 0px 34px;
+  }
+  .modal .modal-content .modal-body {
+    padding: 27px 34px 24px 34px;
+  }
+  .modal .modal-content .modal-body .mdb_breadcrumb .gray_item, 
+  .modal .modal-content .modal-body .mdb_breadcrumb .green_item {    
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .modal .modal-content .modal-body .list_files_cp li label:not(.cont_item) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1399px) {
@@ -3663,6 +3918,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .select_new .btn-select.btn-select-light .btn-select-value {
   background-color: white;
+  border-radius: 10px;
   color: #999999;
 }
 
