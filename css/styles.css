@@ -222,11 +222,6 @@ a:hover {
   border-color: var(--bordeInputs);
   border-left: 0;
 }
-/* 
-.form-control:hover + .input-group-append .input-group-text,
-.form-control:focus + .input-group-append .input-group-text {
-  border-color: var(--verdePrincipal) !important;
-} */
 
 .btn-success {
   background-color: var(--verdePrincipal);
@@ -3793,6 +3788,14 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .modal .modal-content .modal-body .info {
   color: var(--colorTextoClaro);
+}
+
+.modal .modal-content .modal-body .buttons .btn-outline-success.h40 {
+  height: 40px;
+}
+
+.modal .modal-content .modal-body .mgx_auto {
+  margin: 0 auto;
 }
 
 /*** fin estilos de los checkbox para agregar columnas ***/
