@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>..:: RANSA ::..</title>
+    <!-- HOJAS DE ESTILO CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="top_header">
+            <div class="cnt_logo">
+                <a href="home.html"><img src="images/logo.svg" alt="logo" class="img-fluid"></a>
+            </div>
+            <div class="cnt_right">
+                <div class="input-group dropdown search_input">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text icon_search"><i class="icon-icon_search"></i></span>
+                    </div>
+                    <form id="form2">
+                        <input type="text" class="form-control input-search" />
+                    </form>
+                    <a class="btn btn-outline-success button-search-custom dropdown-toggle" href="#" role="button" id="busquedaHeader" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="busquedaHeader">
+                        <form class="px-4 py-3 form-inline" id="form1">
+                            <div class="row wm-100">
+                                <div class="col-sm-2 col-md-2 col-lg-2 form-group input-group floating-label-form-group controls">
+                                    <label for="txt_tipo">Tipo</label>
+                                </div>
+                                <div class="col-sm-10 col-md-10 col-lg-10 control-group">
+                                    <div class="select_new">
+                                        <a class="btn btn-warning btn-select btn-select-light">
+                                            <input type="hidden" class="btn-select-input" id="txt_srv" name="txt_srv" value="" />
+                                            <span class="btn-select-value">Seleccione</span>
+                                            <span class='btn-select-arrow'></span>
+                                            <ul>
+                                                <li>tipo 1</li>
+                                                <li>tipo 2</li>
+                                                <li>tipo 3</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="row wm-100">
+                                <div class="col-sm-2 col-md-2 col-lg-2 form-group input-group floating-label-form-group controls">
+                                    <label for="txt_propetario">Propietario</label>
+                                </div>
+                                <div class="col-6 col-sm-5 col-md-5 col-lg-5 control-group">
+                                    <div class="select_new mr-10">
+                                        <a class="btn btn-warning btn-select btn-select-light">
+                                            <input type="hidden" class="btn-select-input" id="txt_prop" name="txt_prop" value="" />
+                                            <span class="btn-select-value m-75">Persona específica</span>
+                                            <span class='btn-select-arrow'></span>
+                                            <ul class="m-75">
+                                                <li>Cualquier usuario</li>
+                                                <li>De mi propiedad</li>
+                                                <li>Propiedad de otro usuario</li>
+                                                <li>Persona específica</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-5 col-md-5 col-lg-5 control-group">
+                                    <input type="text" class="form-control" name="txt_nombre" id="txt_nombre" placeholder="Ingrese nombre" />
+                                </div>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="row wm-100">
+                                <div class="col-sm-2 col-md-2 col-lg-2 form-group input-group floating-label-form-group controls">
+                                    <label for="txt_ubicacion">Ubicación</label>
+                                </div>
+                                <div class="col-sm-10 col-md-10 col-lg-10 control-group">
+                                    <div class="select_new">
+                                        <a class="btn btn-warning btn-select btn-select-light">
+                                            <input type="hidden" class="btn-select-input" id="txt_ubic" name="txt_ubic"/>
+                                            <span class="btn-select-value  m-75">Seleccione</span>
+                                            <span class='btn-select-arrow'></span>
+                                            <ul class="m-75">
+                                                <li>Mis Accesos</li>
+                                                <li>Mis Archivos</li>
+                                                <li>Mis Compartidos</li>
+                                                <li>Compartidos conmigo</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="row wm-100">
+                                <div class="col-sm-2 col-md-2 col-lg-2 form-group input-group floating-label-form-group controls">
+                                    <label for="txt_inc_palabras">Incluye palabras</label>
+                                </div>
+                                <div class="col-sm-10 col-md-10 col-lg-10 control-group">
+                                    <input type="text" class="form-control" id="txt_inc_palabras" name="txt_inc_palabras" placeholder="Ingrese palabras">
+                                </div>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="row wm-100">
+                                <div class="col-sm-2 col-md-2 col-lg-2 form-group input-group floating-label-form-group controls">
+                                    <label for="txt_tamano">Tamaño</label>
+                                </div>
+                                <div class="col-12 col-sm control-group mb_mobile_15">
+                                    <div class="select_new">
+                                        <a class="btn btn-warning btn-select btn-select-light">
+                                            <input type="hidden" class="btn-select-input" id="txt_tamn" name="txt_tamn" value="" />
+                                            <span class="btn-select-value">Seleccione</span>
+                                            <span class='btn-select-arrow'></span>
+                                            <ul>
+                                                <li>Mayor que</li>
+                                                <li>Menor que</li>
+                                                <li>Igual a</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm control-group">
+                                    <input type="text" class="form-control" id="txt_tam_nro" name="txt_tam_nro" placeholder="">
+                                </div>
+                                <div class="col-6 col-sm control-group">
+                                    <div class="select_new">
+                                        <a class="btn btn-warning btn-select btn-select-light">
+                                            <input type="hidden" class="btn-select-input" id="txt_tam_uni" name="txt_tam_uni" value="" />
+                                            <span class="btn-select-value">Seleccione</span>
+                                            <span class='btn-select-arrow'></span>
+                                            <ul>
+                                                <li>MB</li>
+                                                <li>GB</li>
+                                                <li>TB</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="row wm-100">
+                                <div class="col-sm-2 col-md-2 col-lg-2 form-group floating-label-form-group controls">
+                                    <label for="txt_rfechas_dias">Rango de fechas</label>
+                                </div>
+                                <div class="col-6 col-sm-5 col-md-5 col-lg-5 control-group">
+                                    <div class="select_new">
+                                        <a class="btn btn-warning btn-select btn-select-light">
+                                            <input type="hidden" class="btn-select-input" id="txt_rang_fec" name="txt_rang_fec" value="" />
+                                            <span class="btn-select-value">Seleccione</span>
+                                            <span class='btn-select-arrow'></span>
+                                            <ul>
+                                                <li>4 días</li>
+                                                <li>8 días</li>
+                                                <li>12 días</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-5 col-md-5 col-lg-5 control-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control ici_append" id="datepicker" placeholder="Seleccione fecha" name="txt_rfechas_fecha" required data-validation-required-message="Por favor, Seleccione una <b>Fecha</b>.">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">
+                                                <i class="icon-icon_calendar"><span class="path1"></span><span class="path2"></span></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="row w-100">
+                                <div class="col-lg-12 mt-4 mb-4 text-right boton">
+                                    <button id="btnSubmit" type="submit" class="btn btn-outline-success">Buscar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <ul class="navbar-nav ml-4 right_links">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dw-profile" href="#" id="navbarProfile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/user1.jpg" alt="user1" class="img-fluid">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarProfile">
+                            <a class="dropdown-item" href="profile.html">Mi perfil</a>
+                            <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="icon-icon_bell"></span>
+                            <span class="badge badge-warning">4</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="button_sidebar_movil">
+                <a href="#" id="menu-toggle" class="waves-light menu-toggle" data-toggle="offcanvas">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="screens_with_tables">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="fixed-nav sidebar_menu">
+                    <div class="fixed-nav-inner">
+                        <ul class="text-center">
+                        <a href="#" id="menu-toggle" class="waves-light menu-toggle" data-toggle="offcanvas">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+                            </li>
+                            <li>X</li>
+                        </a>
+                        <a href="home.html" class="waves-light" data-toggle="tooltip" data-placement="right" title="Inicio">
+                            <li><i class="icon-icon_home"></i></li>
+                            <li>Inicio</li>
+                        </a>
+                        <a href="legajos.html" class="waves-light" data-toggle="tooltip" data-placement="right" title="Legajos">
+                            <li><i class="icon-icon_signature"></i></li>
+                            <li>Legajos</li>
+                        </a>
+                        <a href="accesos.html" class="waves-light" data-toggle="tooltip" data-placement="right" title="Mis Accesos">
+                            <li><i class="icon-icon_files"></i></li>
+                            <li>Mis Accesos</li>
+                        </a>
+                        <a href="almacenamiento.html" class="waves-light" data-toggle="tooltip" data-placement="right" title="Almacenamiento">
+                            <li><i class="icon-icon_cloud"></i></li>
+                            <li>Almacenamiento</li>
+                        </a>
+                        <a href="workflows.html" class="waves-light active" data-toggle="tooltip" data-placement="right" title="Workflows">
+                            <li><i class="icon-icon_workflows"></i></li>
+                            <li>Workflows</li>
+                        </a>
+                        </ul>
+                    </div>
+                </div>
+                <article class="swt_box swb_wflow">
+                    <div class="row">
+                        <div class="col-lg-5 top_info">
+                            <h1 class="title">Mis workflows <span class="icon-icon_arrow-down1"></span></h1>
+                        </div>
+                        <div class="col-lg-7 buttons_right br_wflows">
+                            <a href="#" class="btn btn-success">
+                                Iniciar Workflow
+                            </a>
+                        </div>
+                    </div>
+                    <div class="top_folders">
+                        <div class="row justify-content-center align-items-center mb-70">
+                            <div class="col-lg-4 text-center folders_cards wf">
+                                <div class="card">
+                                    <div class="icon_box">
+                                        <div class="box">
+                                            <span class="icon-icon_arrow-next"></span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center icon_info">
+                                        <h2>8</h2>
+                                        <p>En proceso</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 text-center folders_cards wf">
+                                <div class="card">
+                                    <div class="icon_box">
+                                        <div class="box">
+                                            <span class="icon-icon_check"></span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center icon_info">
+                                        <h2>8</h2>
+                                        <p>Finalizado</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 text-center folders_cards wf">
+                                <div class="card">
+                                    <div class="icon_box">
+                                        <div class="box">
+                                            <span class="icon-icon_clock_negate"></span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center icon_info">
+                                        <h2>8</h2>
+                                        <p>Cerrado</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-2 items_search_wof">
+                                <div class="control-group input-group">
+                                    <input type="text" class="form-control ici_append" id="fecha3" placeholder="Seleccione fecha" name="txt_rfechas_fecha" required="" data-validation-required-message="Por favor, Seleccione una <b>Fecha</b>.">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+                                            <i class="icon-icon_calendar"><span class="path1"></span><span class="path2"></span></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 items_search_wof">
+                                <div class="control-group">
+                                    <div class="select_new">
+                                        <a class="btn btn-warning btn-select btn-select-light">
+                                            <input type="hidden" class="btn-select-input" id="txt_cat_wfl" name="txt_cat_wfl" value="">
+                                            <span class="btn-select-value">Categoria</span>
+                                            <span class="btn-select-arrow"></span>
+                                            <ul style="display: none;">
+                                                <li>Categoria 1</li>
+                                                <li>Categoria 2</li>
+                                                <li>Categoria 3</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 items_search_wof">
+                                <div class="control-group">
+                                    <div class="select_new">
+                                        <a class="btn btn-warning btn-select btn-select-light">
+                                            <input type="hidden" class="btn-select-input" id="txt_workfl_wfl" name="txt_workfl_wfl" value="">
+                                            <span class="btn-select-value">Workflow</span>
+                                            <span class="btn-select-arrow"></span>
+                                            <ul style="display: none;">
+                                                <li>Workflow 1</li>
+                                                <li>Workflow 2</li>
+                                                <li>Workflow 3</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 items_search_wof">
+                                <div class="control-group">
+                                    <div class="select_new">
+                                        <a class="btn btn-warning btn-select btn-select-light">
+                                            <input type="hidden" class="btn-select-input" id="txt_sede_wfl" name="txt_sede_wfl" value="">
+                                            <span class="btn-select-value">Sede</span>
+                                            <span class="btn-select-arrow"></span>
+                                            <ul style="display: none;">
+                                                <li>Sede 1</li>
+                                                <li>Sede 2</li>
+                                                <li>Sede 3</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 items_search_wof">
+                                <div class="control-group">
+                                    <input type="text" class="form-control" name="txt_escribir_wfl" id="txt_escribir_wfl" placeholder="Escribir">
+                                </div>
+                            </div>
+                            <div class="col-lg-2 items_search_wof">
+                                <a href="#" class="btn btn-success">Buscar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_table">
+                        <div class="w-100 cont_hz_scroll">
+                            <div class="container-fluid w-100 div_table div_table_wfl">
+                                <div class="div_thead">
+                                    <div class="table_row h-100">
+                                        <div class="col thdiv_elements"></div>
+                                        <div class="col col-lg-2 col-xl-1 thdiv_elements">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-icon_arrow-down2"></span> Código
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Ascendente</a>
+                                                <a class="dropdown-item" href="#">Descendente</a>
+                                            </div>
+                                        </div>
+                                        <div class="col col-lg-3 col-xl-2 thdiv_elements">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-icon_arrow-down2"></span> Nombre del workflow
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Ascendente</a>
+                                                <a class="dropdown-item" href="#">Descendente</a>
+                                            </div>
+                                        </div>
+                                        <div class="col thdiv_elements">
+                                            Tracking
+                                        </div>
+                                        <div class="col thdiv_elements">
+                                            Fecha de inicio
+                                        </div>
+                                        <div class="col thdiv_elements">
+                                            Fecha de fin
+                                        </div>
+                                        <div class="col thdiv_elements">
+                                            Estado
+                                        </div>
+                                        <div class="col thdiv_elements">
+                                            Responsable
+                                        </div>
+                                        <div class="col thdiv_elements">
+                                            Tipo
+                                        </div>
+                                        <div class="col thdiv_elements">
+                                            <a href="#" data-toggle="modal" data-target="#modalTableAddColumn">
+                                                <span class="icon-icon_plus2"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="div_tbody">
+                                    <div class="table_row h-100 align-items-center row_wbg">
+                                        <div class="col tddiv_elements">
+                                            <div class="icon_box">
+                                                <span class="icon-icon_arrow-down1"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements">
+                                            WF0023
+                                        </div>
+                                        <div class="col col-lg-3 col-xl-2 tddiv_elements">
+                                            Trabajo de Alto Riesgo
+                                        </div>
+                                        <div class="col tddiv_elements">
+                                            0 de 11
+                                        </div>
+                                        <div class="col tddiv_elements">
+                                            10/01/2020
+                                        </div>
+                                        <div class="col tddiv_elements">
+                                            10/01/2020
+                                        </div>
+                                        <div class="col tddiv_elements">
+                                            <span class="icon-icon_ellipse-point status pendiente"></span> Pendiente
+                                        </div>
+                                        <div class="col tddiv_elements">
+                                            <figure class="resp_photo">
+                                                <img src="images/user1.jpg" alt="user1" class="img-fluid rounded-circle">
+                                            </figure>
+                                            <p class="mb-0 info_respo">Ayer a las 4:40 pm</p>
+                                        </div>
+                                        <div class="col tddiv_elements"> </div>
+                                        <div class="col tddiv_elements">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-icon_three-bullets"></span>
+                                            </a>
+                                            <div class="dropdown-menu dropdown_table" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon-icon_pencil"></span> Editar
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon-icon_trash-light"></span> Eliminar
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_row h-100 align-items-center row_wbg">
+                                        <div class="col tddiv_elements">
+                                            <div class="icon_box">
+                                                <span class="icon-icon_arrow-down1"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements">
+                                            WF0024
+                                        </div>
+                                        <div class="col col-lg-3 col-xl-2 tddiv_elements">
+                                            Validación de seguridad
+                                        </div>
+                                        <div class="col tddiv_elements">
+                                            0 de 12
+                                        </div>
+                                        <div class="col tddiv_elements">
+                                            10/01/2020
+                                        </div>
+                                        <div class="col tddiv_elements">
+                                            10/01/2020
+                                        </div>
+                                        <div class="col tddiv_elements">
+                                            <span class="icon-icon_ellipse-point status pendiente"></span> Pendiente
+                                        </div>
+                                        <div class="col tddiv_elements">
+                                            <figure class="resp_photo">
+                                                <img src="images/user1.jpg" alt="user1" class="img-fluid rounded-circle">
+                                            </figure>
+                                            <p class="mb-0 info_respo">Ayer a las 3:20 pm</p>
+                                        </div>
+                                        <div class="col tddiv_elements"> </div>
+                                        <div class="col tddiv_elements">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-icon_three-bullets"></span>
+                                            </a>
+                                            <div class="dropdown-menu dropdown_table" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon-icon_pencil"></span> Editar
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon-icon_trash-light"></span> Eliminar
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_row h-100 align-items-center row_wbg">
+                                        <div class="col tddiv_elements">
+                                            <div class="icon_box">
+                                                <span class="icon-icon_arrow-right"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements">
+                                            WF0025
+                                        </div>
+                                        <div class="col col-lg-3 col-xl-2 tddiv_elements">
+                                            Procedimiento horas extras
+                                        </div>
+                                        <div class="col tddiv_elements">
+                                            0 de 2
+                                        </div>
+                                        <div class="col tddiv_elements">
+                                            25/03/2020
+                                        </div>
+                                        <div class="col tddiv_elements">
+                                            10/01/2020
+                                        </div>
+                                        <div class="col tddiv_elements">
+                                            <span class="cerrado"></span> En Proceso
+                                        </div>
+                                        <div class="col tddiv_elements">
+                                            <figure class="resp_photo">
+                                                <img src="images/user1.jpg" alt="user1" class="img-fluid rounded-circle">
+                                            </figure>
+                                            <p class="mb-0 info_respo">Ayer a las 3:20 pm</p>
+                                        </div>
+                                        <div class="col tddiv_elements"> </div>
+                                        <div class="col tddiv_elements">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-icon_three-bullets"></span>
+                                            </a>
+                                            <div class="dropdown-menu dropdown_table" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon-icon_pencil"></span> Editar
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon-icon_trash-light"></span> Eliminar
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 text-right mt-4 col_pagination">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination justify-content-end">
+                                      <li class="page-item previous disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><span class="icon-icon_arrow-prev"></span></a>
+                                      </li>
+                                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><span class="icon-icon_three-bullets"></span></li>
+                                      <li class="page-item"><a class="page-link" href="#">30</a></li>
+                                      <li class="page-item next disabled">
+                                        <a class="page-link" href="#"><span class="icon-icon_arrow-next"></span></a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 content_footer">
+                    <p>©Docublock. Todos lo derechos reservados 2019</p>
+                    <ul>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-datepicker.es.min.js"></script>
+    <script type="text/javascript" src="./js/datepicker.js"></script>
+    <script type="text/javascript" src="./js/sidebar.js"></script>
+    <script type="text/javascript" src="./js/select_custom.js"></script>
+</body>
+</html>
+
