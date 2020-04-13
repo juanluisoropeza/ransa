@@ -1836,64 +1836,132 @@ footer .content_footer ul li a:hover {
   background-color: var(--verdeStatusBar) !important;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  #profile .profile_info {
-    -ms-flex: 0 0 22.95%;
-    flex: 0 0 22.95%;
-    max-width: 22.95%;
-  }
-  #profile .profile_data {
-    padding: 1.75em 1.4em 0.8em 2.5em;
-    -ms-flex: 0 0 77.05%;
-    flex: 0 0 77.05%;
-    max-width: 77.05%;
+
+@media screen and (max-width: 574px) {
+  #profile {
+    padding-top: 91px;  
   }
   #profile .profile_info h2 {
-    font-size: 1.4rem;
-    padding: 0px .4em;
+    top: 49px !important;
+    font-size: 22px;
+  }
+  #profile .profile_info .profile_img {
+    margin-top: 90px !important;
   }
   #profile .profile_info .profile_img img {
-    max-height: 8em;
+    max-height: 125px;
   }
-  #profile .profile_info .profile_img [class^="icon-"], 
-  #profile .profile_info .profile_img [class*=" icon-"] {
-    bottom: .7em;
-    right: .1em;
+  #profile .profile_info .info_box {
+    top: 135px!important;
   }
-  #profile .profile_info .info_box h5 {
-    font-size: 1.15em;
+  #profile .profile_info .info_box {
+    height: 100% !important;
+    flex-flow: column !important;
+    -webkit-flex-flow: column !important;
+    background-color: var(--fondoSwt)!important;
   }
-  #profile .profile_data .pd_into_boxcard {
-    padding: 1.5em;
+  .txt_ppal,
+  .txt_info,
+  .txt_status   {
+    font-size: 16px !important;
+    line-height: 20px !important;
   }
+  #profile .profile_info .info_box h5.txt_status {
+    margin-top: 0px !important;
+  }
+  #profile .profile_data {
+    padding: 135px 20px 40px !important;
+  }
+  #profile .profile_data .pd_into_boxcard,
   #profile .profile_data .pd_into_boxcard2 {
-    padding: 1.1em;
+    padding: 2em 1em 2em 1em;
   }
-  #profile .profile_data .box:first-child {
-    padding-right: 20px;
+  #profile .profile_data .box .box-card h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
   }
+  #profile .profile_data .box .box-card .label_info, #profile .profile_data .box .box-card .form-control {
+    padding: 0px 10px;
+    width: 100%!important;
+    min-height: 35px !important;
+    font-size: 16px !important;
+  }
+  #profile .profile_data .box .box-card .label_info [class^="icon-"], #profile .profile_data .box .label_info [class*=" icon-"] {
+    margin-right:0px;
+  }
+  #profile .profile_data .box .box-card #edit_profile .controls {
+    flex-flow: column;
+    -webkit-flex-flow: column;
+  }
+  #profile .profile_data .box .box-card #edit_profile label {
+    width: 100%;
+    padding: 0px 0px 10px 10px;
+  }
+  #profile .profile_data .box .box-card h5 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 575px) and (max-width: 767px) {
+  #profile .profile_info .info_box {
+    height: 90% !important;
+    justify-content: flex-start !important;
+    -webkit-justify-content: flex-start !important;
+    top: 200px !important;
+    background-color: var(--fondoSwt) !important;
+  }
+  #profile .profile_data {
+    padding: 178px 20px 40px;
+  }
+  #profile .profile_info .info_box h5.txt_status {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #profile .profile_info .info_box {
+    height: 75%;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    top: 375px;
+  }
+  #profile .profile_info .info_box h5.txt_ppal {
+    margin-top: 30px;
+  }
+  #profile .profile_data {
+    padding: 35px 20px;
+  }
+  #profile .profile_info {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #profile .profile_data {
+    padding: 1em 2em 1em 2em;
+  }
+  #profile .profile_data .box .box-card {
+    padding: 1.6em 1em 1.6em 1em;
+  }
+  #profile .profile_data .box:first-child,
   #profile .profile_data .box:last-child {
-    padding-left: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
-  #profile .profile_data .box .box-card .label_info, 
-  #profile .profile_data .box .box-card .form-control {
+  #profile .profile_data .box .box-card .label_info, #profile .profile_data .box .box-card .form-control {
     padding: 0px 10px;
   }
-  #profile .profile_data .box .box-card .label_info [class^="icon-"], 
-  #profile .profile_data .box .label_info [class*=" icon-"] {
-    font-size: 1.2em;
-    margin-right: 0;
+  #profile .profile_data .box .box-card .form-control {
+    font-size: 12px;
   }
   #profile .profile_data .box .box-card h4 {
     margin-bottom: 1em;
   }
-  #profile .profile_data .box .box-card {
-    margin-bottom: 1.4em;
-  }
-  #profile .profile_data .box .box-card #edit_profile .boton {
-    margin-top: 16px;
+  #profile .profile_data .box .box-card .label_info [class^="icon-"], #profile .profile_data .box .label_info [class*=" icon-"] {
+    margin-right:0px;
   }
 }
+
 
 @media screen and (min-width: 1201px) and (max-width: 1550px) {
   #profile .profile_info {
@@ -4601,12 +4669,40 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   }
 }
 
+@media screen and (max-width: 991px) {
+  #profile .profile_data .box:first-child {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  #profile .profile_data .box:last-child {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 30px;
+  }
+
+  #profile .profile_info .profile_img {
+    margin-top: -44em;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .main-login .right-side {
     padding: 15px !important;
   }
 }
 
+@media screen and (min-width: 575px) and (max-width: 767px) {
+  #profile .profile_info h2 {
+    top: 48px;
+  }
+  #profile .profile_info .profile_img {
+    margin-top: 110px;
+  }
+  #profile .profile_info .profile_img img {
+    max-height: 175px;
+  }
+}
 
 /***********************************************/
 /****************** CALENDARIO *****************/
