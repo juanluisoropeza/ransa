@@ -1408,6 +1408,8 @@ footer .content_footer ul li a:hover {
     height: auto;
     padding: 15px;
     text-align: center;
+    justify-content: center;
+    -webkit-justify-content: center;
   }
   footer .content_footer p {
     margin: 0px 0px 15px 0px;
@@ -1417,13 +1419,6 @@ footer .content_footer ul li a:hover {
   footer .content_footer ul {
     text-align: center;
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  footer .content_footer {
-	justify-content: center;
-	-webkit-justify-content: center;
   }
 }
 
