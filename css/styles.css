@@ -288,7 +288,7 @@ a:hover {
 }
 
 .dropdown-menu {
-  padding: 13px 0px 27px 39px;
+  padding: 13px 0px 27px 0px;
   border: 1px solid #E5E5E5;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -899,11 +899,10 @@ header .top_header .cnt_right .right_links .nav-item .nav-link .badge {
 }
 
 /*** media query's ***/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   header .top_header {
     align-items: flex-start; 
-    -webkit-align-items: flex-start; 
-    margin-top: 15px;
+    -webkit-align-items: flex-start;
     height: 125px;
   }
   header .top_header .cnt_right .input-group {
@@ -934,17 +933,22 @@ header .top_header .cnt_right .right_links .nav-item .nav-link .badge {
   }
 
   header .top_header {
-    padding: 0 16px 0 16px;
+    padding: 15px 16px 0 16px;
   }
 
   header .top_header .cnt_right .input-group {
     left: 16px;
-    top: 65px;
+    top: 52px;
   }
 
   header .top_header .cnt_right .right_links {
     right: 16px;
-    top: 65px;
+    top: 52px;
+  }
+
+  header .top_header .cnt_right .right_links .dropdown-menu {
+    left: auto !important;
+    right: auto;
   }
 
   header .top_header .cnt_right .right_links li {
@@ -1031,7 +1035,7 @@ header .top_header .button_sidebar_movil a li i:before {
   color: var(--verdePrincipal);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   header .top_header .button_sidebar_movil {
     display: initial!important;
   }
@@ -1103,6 +1107,23 @@ footer .content_footer ul li a {
 
 footer .content_footer ul li a:hover {
   color: var(--verdePrincipal);
+}
+
+@media screen and (max-width: 991px) {
+  footer .content_footer {
+    height: auto;
+    padding: 15px;
+    text-align: center;
+  }
+  footer .content_footer p {
+    margin: 0px 0px 15px 0px;
+    text-align: center;
+    width: 100%;
+  }
+  footer .content_footer ul {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 /***********************************************/
@@ -1705,12 +1726,22 @@ footer .content_footer ul li a:hover {
 
 .fixed-nav .fixed-nav-inner ul a li {
   color: white;
+  min-height: 57px;
   padding: 0.25rem 0;
   width: 100%;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
 }
 
 .fixed-nav .fixed-nav-inner.open-nav ul a li {
   padding: 0.25rem 1rem 0.25rem 0rem;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
 }
 
 .fixed-nav .fixed-nav-inner ul a li i {
@@ -1725,6 +1756,8 @@ footer .content_footer ul li a:hover {
 
 .fixed-nav .fixed-nav-inner.open-nav ul a:first-child li:last-child {
   padding: 0.25rem 1rem;
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
 }
 
 .fixed-nav .fixed-nav-inner ul a li:nth-child(2n) {
@@ -1749,17 +1782,17 @@ footer .content_footer ul li a:hover {
 }
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .fixed-nav .fixed-nav-inner.open-nav {
     padding-top: 15px;
   }
-
+  .fixed-nav .fixed-nav-inner ul a li svg,
   .fixed-nav .fixed-nav-inner ul a li i.icon-icon_menu {
     display: none;
   }
 }
 
-@media screen and (max-width: 992px) { 
+@media screen and (max-width: 991px) { 
   .fixed-nav {
     min-width: 0px;
   }
@@ -2252,6 +2285,14 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   -webkit-align-items: center;
 }
 
+.content_table .div_table .div_thead .thdiv_elements .dropdown-menu {
+  min-width: 208px;
+}
+
+.content_table .div_table .div_thead .thdiv_elements .dropdown-menu .dropdown-item {
+  padding-left: 39px;
+}
+
 .content_table .div_table .div_thead .thdiv_elements a span {
   color: var(--verdePrincipal);
   font-size: 1em;
@@ -2429,7 +2470,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   width: 38px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .screens_with_tables {
     padding-top: 145px;
   }
@@ -2437,7 +2478,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 @media screen and (min-width: 320px) and (max-width: 474px) {
   .screens_with_tables {
-    padding-top: 110px;
+    padding-top: 90px;
   }
 }
 
