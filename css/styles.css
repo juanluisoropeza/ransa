@@ -1556,6 +1556,12 @@ footer .content_footer ul li a:hover {
   background-color: var(--verdeStatusBar) !important;
 }
 
+@media screen and (max-width: 991px) {
+  #profile .profile_info {
+    height: auto;
+  }
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   #profile .profile_info {
     -ms-flex: 0 0 22.95%;
@@ -1614,6 +1620,21 @@ footer .content_footer ul li a:hover {
     margin-top: 16px;
   }
 }
+@media screen and (max-width: 991px) {
+  #profile .profile_info .info_box {
+    height: 75%;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    top: 375px;
+  }
+  #profile .profile_info .info_box h5.txt_ppal {
+    margin-top: 30px;
+  }
+  #profile .profile_data {
+    padding: 35px 20px;
+  }
+}
+
 
 @media screen and (min-width: 1201px) and (max-width: 1550px) {
   #profile .profile_info {
@@ -4059,6 +4080,23 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   }
   #profile .profile_data .box .box-card #edit_profile .boton {
     margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #profile .profile_data .box:first-child {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  #profile .profile_data .box:last-child {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 30px;
+  }
+
+  #profile .profile_info .profile_img {
+    margin-top: -44em;
   }
 }
 
