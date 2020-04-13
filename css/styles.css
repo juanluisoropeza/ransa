@@ -112,6 +112,10 @@ a:hover {
   margin-bottom: 15px;
 }
 
+.mb-18 {
+  margin-bottom: 18px;
+}
+
 .m-75 {
   padding-left: 75px !important;
 }
@@ -122,6 +126,14 @@ a:hover {
 
 .sm {
   margin: 0;
+}
+
+.mb_18 {
+  margin-bottom: 18px !important;
+}
+
+.w-input-50 {
+  max-width: 216px;
 }
 
 .badge-success {
@@ -188,6 +200,21 @@ a:hover {
   background-color: white;
   border-color: var(--bordeInputs);
   border-right: 0;
+}
+
+.input-group-prepend .input-group-none-borde {
+  background-color: white;
+  border-color: transparent;
+  border-right: 0;
+  padding: 0px 5px 0px 0px !important;
+}
+
+.input-group-apend .input-group-text {
+  background-color: white;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: 0;
+  border-left-color: transparent;
 }
 
 .input-group-append .input-group-text {
@@ -639,6 +666,32 @@ a.box-card {
   .main-login .left-side .img-background {
     max-height: 350px;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .left-side {
+    display: none!important;
+  }
+  .main-login {
+    width: calc(100% - 90px);
+    height: calc(100vh - 85px);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .bg-login {
+    min-height: auto;
+  }
+
+  .main-login {
+    width: calc(100% - 40px);
+    height: calc(100vh - 40px);
+  }
+
+  .main-login .right-side figure img{
+    max-width: 200px;
+  }
+
 }
 
 /***********************************************/
@@ -1706,7 +1759,7 @@ footer .content_footer ul li a:hover {
   }
 }
 
-@media screen and (max-width: 1680px) { 
+@media screen and (max-width: 992px) { 
   .fixed-nav {
     min-width: 0px;
   }
@@ -3147,6 +3200,15 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   -webkit-justify-content: flex-start;
 }
 
+.modal .modal-content .modal-body .form-inline .form-group .label_end {
+  width: 100%;
+  min-width: auto;
+  margin: 0px;
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+
+
 .modal .modal-content .modal-body .form-inline .form-control {
   border-radius: 5px;
   border-color: var(--bordeInputs);
@@ -3162,10 +3224,22 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .modal .modal-content .modal-body .form-inline .fechas_modal .form-control {
-  border-left: 0;
   border-right: 1px solid var(--bordeInputs);
   border-radius: 0px 5px 5px 0px !important;
   padding-left: 0;
+}
+
+.modal .modal-content .modal-body .form-inline .fechas_modal .form-control.border-left {
+  border-right: 0;
+  border-radius: 5px 0px 0px 5px !important;
+  padding-left: 10px;
+  max-width: 165px;
+}
+
+.modal .modal-content .modal-body .form-inline .fechas_modal .form-control.input_date {
+  border-right: 1px solid var(--bordeInputs);
+  border-radius: 5px 5px 5px 5px !important;
+  padding-left: 10px;
 }
 
 .modal .modal-content .modal-body .list-group {
@@ -3809,6 +3883,12 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   }
 }
 
+@media screen and (max-width: 420px) {
+  .main-login .right-side {
+    padding: 15px !important;
+  }
+}
+
 /***********************************************/
 /*************** CUSTOM SELECTS ****************/
 /***********************************************/
@@ -3947,6 +4027,10 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 /***********************************************/
 /****************** CALENDARIO *****************/
 /***********************************************/
+
+.datepicker.datepicker-dropdown {
+  padding: 4px !important;
+}
 
 .datepicker .datepicker-switch {
   width: 208px;
