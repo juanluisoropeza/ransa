@@ -1245,12 +1245,13 @@ header .top_header .cnt_right .right_links .nav-item .nav-link .badge {
   }
   .btn-outline-success:not(.button-search-custom) {
     font-size: 14px;
-    height: 36px;
+    height: 47px;
     margin-right: 6px;
     min-width: 110px;
     justify-content: center;
     -webkit-justify-content: center;
   }
+  
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -3115,15 +3116,112 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   width: 38px;
 }
 
-@media screen and (max-width: 991px) {
-  .screens_with_tables {
-    padding-top: 125px;
+@media screen and (max-width: 395px) {
+  .content_footer {
+    font-size: 12px;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 474px) {
+@media screen and (max-width: 575px) {
   .screens_with_tables {
-    padding-top: 90px;
+    padding-top: 90px !important;
+  }
+  .screens_with_tables {
+    padding-top: 125px;
+  }
+  .swt_box {
+    width: 100% !important;
+    padding: 1.5em 2em!important;
+  }
+  .screens_with_tables .swt_box .top_folders .folders_cards {
+    padding: 20px 10px;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements.datetime [class^="icon-"], .content_table .div_table .div_tbody .tddiv_elements.datetime [class*=" icon-"] {
+    margin: 0px 5px 0px 5px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements, .content_table .div_table .div_thead .thdiv_elements a,
+  .content_table .div_table .div_tbody .tddiv_elements {
+    font-size: 14px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements a span {
+    margin-left: 0px;
+  }
+  .screens_with_tables .swt_box .top_info h1.title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .screens_with_tables .swt_box .top_info h2.subtitle {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .screens_with_tables .swt_box hr {
+    margin: 8px 0px;
+  }
+  .screens_with_tables .swt_box .top_folders .card .card-body .txt_dark_gray,
+  .screens_with_tables .swt_box .top_folders .card .card-body .txt_light_gray {
+    font-size: 16px;
+  }
+  .content_table .search_button label {
+    justify-content: center;
+    -webkit-justify-content: center;
+    margin-bottom: 2.25em;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements {
+    text-align: initial;
+  }
+  .screens_with_tables .swt_box .top_folders {
+    margin-bottom: 1.25em;
+  }
+  .screens_with_tables .swt_box {
+    margin-bottom:0px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .screens_with_tables {
+    padding-top: 125px;
+  }
+  .swt_box {
+    width: 100% !important;
+    padding: 1.5em 2.875em!important;
+  }
+  .screens_with_tables .swt_box .top_folders .folders_cards {
+    padding: 20px 10px;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements.datetime [class^="icon-"], .content_table .div_table .div_tbody .tddiv_elements.datetime [class*=" icon-"] {
+    margin: 0px 5px 0px 5px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements, .content_table .div_table .div_thead .thdiv_elements a,
+  .content_table .div_table .div_tbody .tddiv_elements {
+    font-size: 14px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements a span {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .screens_with_tables {
+    padding-top: 125px;
+  }
+  .swt_box {
+    width: 100% !important;
+    padding: 1.5em 2.875em!important;
+  }
+  .screens_with_tables .swt_box .top_folders .folders_cards {
+    padding: 20px 10px;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements.datetime [class^="icon-"], .content_table .div_table .div_tbody .tddiv_elements.datetime [class*=" icon-"] {
+    margin: 0px 5px 0px 5px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements, .content_table .div_table .div_thead .thdiv_elements a,
+  .content_table .div_table .div_tbody .tddiv_elements {
+    font-size: 14px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements a span {
+    margin-left: 0px;
   }
 }
 
@@ -3895,7 +3993,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .modal .modal-content .modal-header {
   border-bottom: 0;
-  padding: 30px 27px 0px 27px;
+  padding: 45px 27px 0px 27px;
   flex-flow: column wrap;
   -webkit-flex-flow: column wrap;
 }
@@ -4473,6 +4571,127 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   color: var(--verdePrincipal);
 }
 
+@media screen and (max-width: 577px) {
+  .modal .modal-dialog {
+    max-width: 565px;
+  }
+  .modal .modal-content .modal-body {
+    padding: 20px 20px 45px 20px;
+  }
+  .modal .modal-content .modal-body .form-inline {
+    justify-content: center;
+  }
+  .modal .modal-content .modal-body .form-inline .form-group label,
+  .select_new .btn-select .btn-select-value {
+    font-size: 16px;
+  }
+  .modal .modal-content .modal-body .form-inline .fechas_modal .form-control.input_date {
+    font-size: 16px;
+    height: 40px;
+  }
+  .modal .modal-content .modal-body .form-inline .form-group .label_end {
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+  }
+  .w-input-50 {
+    max-width: initial;
+  }
+  .modal .modal-content .modal-header .modal-title {
+    font-size: 18px;
+  }
+  .modal .modal-content .modal-body .filter_top {
+    margin-bottom: 10px;
+  }
+  .modal .modal-content .modal-body .form-inline .fechas_modal .form-control.border-left {
+    max-width: initial;
+  }
+  .modal-footer {
+    justify-content: center;
+  }
+  .modal .modal-content .modal-body .filter_top .form-control {
+    font-size: 15px;
+  }
+
+  .modal .modal-content .modal-body .cont_item,
+  .modal .modal-content .modal-body .list-group .list-group-item {
+    font-size: 16px;
+  }
+
+  .modal .modal-content .modal-header .modal-title,
+  .modal .modal-content .modal-body p {
+    font-size: 16px;
+    text-align: center;
+    margin: 0px;
+  }
+  .modal .modal-content .modal-header {
+    padding: 40px 27px 0px 27px;
+  }
+  .modal .modal-content .modal-header hr {
+    margin-top: 18px;
+  }
+  .modal .modal-content .modal-body .checkmark {
+    height: 18px;
+    width: 18px;
+  }
+  .dropdown-item {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .modal .modal-dialog {
+    max-width: 565px;
+  }
+  .modal .modal-content .modal-body {
+    padding: 27px 35px 45px 35px;
+  }
+  .modal .modal-content .modal-body .form-inline .form-group label,
+  .select_new .btn-select .btn-select-value {
+    font-size: 16px;
+  }
+  .modal .modal-content .modal-body .form-inline .fechas_modal .form-control.input_date {
+    font-size: 10px;
+    height: 40px;
+  }
+  .modal .modal-content .modal-body .form-inline .form-group .label_end {
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+  }
+  .w-input-50 {
+    width: initial;
+  }
+  .modal .modal-content .modal-body .cont_item,
+  .modal .modal-content .modal-body .list-group .list-group-item {
+    font-size: 16px;
+  }
+  .modal .modal-content .modal-header .modal-title,
+  .modal .modal-content .modal-body p {
+    font-size: 18px;
+  }
+  .modal .modal-content .modal-header {
+    padding: 40px 27px 0px 27px;
+  }
+  .modal .modal-content .modal-header hr {
+    margin-top: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .modal .modal-dialog {
+    max-width: 650px;
+  }
+  .modal .modal-content .modal-body {
+    padding: 27px 35px 45px 35px;
+  }
+  .modal .modal-content .modal-body .form-inline .form-group label,
+  .select_new .btn-select .btn-select-value {
+    font-size: 16px;
+  }
+  .modal .modal-content .modal-body .form-inline .fechas_modal .form-control.input_date {
+    font-size: 14px;
+  }
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   #modalShareFiles.modal .modal-content .modal-body .content_table .div_table .div_tbody,
   #modalShareFiles.modal .modal-content .modal-body .content_table .div_table .div_thead {
@@ -4506,6 +4725,9 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   .modal .modal-content .modal-body .list_files_cp li label:not(.cont_item) {
     font-size: 16px;
     line-height: 19px;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements.datetime [class^="icon-"], .content_table .div_table .div_tbody .tddiv_elements.datetime [class*=" icon-"] { 
+    margin: 0px 10px 0px 10px;
   }
 }
 
