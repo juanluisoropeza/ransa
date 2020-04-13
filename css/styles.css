@@ -400,6 +400,29 @@ a.box-card {
   -webkit-align-items: center;
 }
 
+@media screen and (max-width: 991px) {
+  .box-card,
+  a.box-card {
+    width: 100%;
+    height: 100%;
+  }
+  #home, #profile {
+    min-height: 0px !important;
+    height: auto !important;
+  }
+  #home .slider_left .swiper-container {
+    padding: 65px 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #home .content_right .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 /*** DATE PICKER ***/
 .datepicker table tr td span.active.active, 
 .datepicker table tr td span.active.disabled.active, 
@@ -1397,6 +1420,13 @@ footer .content_footer ul li a:hover {
   }
 }
 
+@media screen and (max-width: 991px) {
+  footer .content_footer {
+	justify-content: center;
+	-webkit-justify-content: center;
+  }
+}
+
 /***********************************************/
 /******************** HOME *********************/
 /***********************************************/
@@ -1496,6 +1526,28 @@ footer .content_footer ul li a:hover {
 #home .content_right .box-content {
   margin-bottom: 20px;
   text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  #home .content_right {
+    margin-top: 145px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #home .slider_left .swiper-container .swiper-slide figure img {
+    max-height: 300px;
+  }
+  #home .slider_left h1 {
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 100%;
+    width: 100%;
+    padding: 0px 15px;
+  }
+  #home .content_right {
+    margin-top: 50px;
+  }
 }
 
 /***********************************************/
