@@ -890,6 +890,9 @@
     line-height: 19px;
     margin-bottom: 8px;
   }
+  #profile .profile_data .box .box-card .label_info .icon-icon_ruc:before {
+    font-size: 26px;
+  }
   /* Pantallas con tablas */
   .screens_with_tables .swt_box {
     padding: 40px 50px;
@@ -1073,6 +1076,7 @@
     height: 32px;
   }
   .select2-container--default .select2-selection--single .select2-selection__rendered,
+  .select2-results__option,
   header .top_header .cnt_right .input-group .form-group label,
   header .top_header .cnt_right .dropdown-menu .form-control {
     font-size: 14px;
@@ -1440,6 +1444,7 @@
     height: 32px;
   }
   .select2-container--default .select2-selection--single .select2-selection__rendered,
+  .select2-results__option,
   header .top_header .cnt_right .input-group .form-group label,
   header .top_header .cnt_right .dropdown-menu .form-control {
     font-size: 14px;
