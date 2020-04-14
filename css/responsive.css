@@ -1165,7 +1165,15 @@
   #profile .profile_data .pd_into_boxcard2 {
     padding: 1.85em;
   }
+  /* Sidebar */
+  .fixed-nav {
+    min-height: calc(100vh - 147px);
+  }
   /* Pantallas con tablas */
+  .screens_with_tables {
+    min-height: calc(100vh - 147px);
+    padding-top: 90px;
+  }
   .screens_with_tables .swt_box .top_folders .card .card-header {
     height: 84px;
   }
