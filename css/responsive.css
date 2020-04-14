@@ -1413,13 +1413,15 @@
 }
 
 /* Media querys para los MAX HEIGHT */
-
-@media screen and (max-height: 749px) {
-  /* Home */
+@media screen and (max-height: 657px) {
   #home,
   #profile {
-    min-height: 500px;
+    overflow: auto;
+    min-height: 600px;
   }
+}
+
+@media screen and (max-height: 749px) {
   #home .slider_left figure img {
     max-height: 230px;
   }
