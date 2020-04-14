@@ -167,6 +167,8 @@ a:hover {
   border: 1px solid var(--bordeInputs);
   box-sizing: border-box;
   border-radius: 5px;
+  color: var(--colorTextoClaro);
+  font-weight: 300;
   font-size: 18px;
   line-height: 21px;
 }
@@ -335,6 +337,66 @@ a:hover {
   margin: 0px;
   margin-bottom: 18px;
   border: 1px solid #E0E0E0;
+}
+
+/*** SELECT 2 ***/
+
+.select2-container {
+  z-index: 9999;
+}
+
+.select2-container .select2-selection--single {
+  height: 40px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: transparent;
+  color: var(--verdePrincipal);
+}
+
+.select2-container--default .select2-selection--single {
+  border: 1px solid var(--bordeInputs);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow,
+.select2-selection__rendered {
+  height: 100%;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #999999;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 0px 24px;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  bottom: 0;
+  border-color: var(--verdePrincipal) transparent transparent transparent;
+  margin: auto 0;
+  top: 0;
+  border-width: .3em .3em 0em .3em;
+  right: 17px;
+  left: auto;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color:  transparent transparent var(--verdePrincipal) transparent;
+}
+
+.select2-results__option {
+  color: var(--colorTextoClaro);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 /*** SWIPER SLIDER ***/
