@@ -1261,9 +1261,10 @@ footer .content_footer ul li a:hover {
 
 #profile .profile_info h2 {
   color: white;
-  position: absolute;
+  font-weight: 400;
   left: 0;
   margin: 0 auto;
+  position: absolute;
   padding: 0px 1.4em;
   right: 0;
   top: 3em;
@@ -1388,6 +1389,10 @@ footer .content_footer ul li a:hover {
 
 #profile .profile_data .box .box-card #edit_profile .boton {
   margin-top: 30px;
+}
+
+#profile .profile_data .box .box-card #edit_profile .boton .btn-success {
+  margin: 0 auto;
 }
 
 #profile .profile_data .box .box-card h5 {

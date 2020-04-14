@@ -709,6 +709,11 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+  .btn-success {
+    font-size: 14px;
+    height: 38px;
+    min-width: 120px;
+  }
   .box-card,
   a.box-card {
     height: 160px;
@@ -806,25 +811,84 @@
   #profile .profile_data {
     padding: 1em 2em 1em 2em;
   }
+  #profile .profile_info h2 {
+    font-size: 22px;
+    line-height: 25px;
+    top: 2em;
+  }
+  #profile .profile_info .profile_img img {
+    max-height: 150px;
+  }
+  #profile .profile_info .profile_img [class^="icon-"], 
+  #profile .profile_info .profile_img [class*=" icon-"] {
+    bottom: .8em;
+    right: .2em;
+  }
+  #profile .profile_info .info_box h5 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  #profile .profile_info .info_box h5.txt_status {
+    margin-top: 8px;
+  }
+  #profile .profile_data .pd_into_boxcard {
+    padding: 2em;
+  }
   #profile .profile_data .box .box-card {
-    padding: 1.6em 1em 1.6em 1em;
+    padding: 1.8em;
   }
   #profile .profile_data .box:first-child,
   #profile .profile_data .box:last-child {
-    padding-right: 15px;
-    padding-left: 15px;
+    height: 40px;
+    padding: 0px 15px;
+    margin-bottom: 8px;
   }
-  #profile .profile_data .box .box-card .label_info, #profile .profile_data .box .box-card .form-control {
+  #profile .profile_data .box .box-card #edit_profile label {
+    min-width: 136px;
+    max-width: 136px;
+  }
+  #profile .profile_data .box .box-card .label_info, 
+  #profile .profile_data .box .box-card .form-control {
+    height: 40px;
     padding: 0px 10px;
+    margin-bottom: 8px;
+  }
+  #profile .profile_data .box .box-card #edit_profile .controls {
+    margin-bottom: 6px;
   }
   #profile .profile_data .box .box-card .form-control {
     font-size: 12px;
+    margin-bottom: 0;
   }
   #profile .profile_data .box .box-card h4 {
     margin-bottom: 1em;
   }
-  #profile .profile_data .box .box-card .label_info [class^="icon-"], #profile .profile_data .box .label_info [class*=" icon-"] {
+  #profile .profile_data .box .box-card .label_info [class^="icon-"], 
+  #profile .profile_data .box .label_info [class*=" icon-"] {
+    font-size: 1.1em;
     margin-right:0px;
+  }
+  #profile .profile_data .box .box-card #edit_profile .controls {
+    margin-bottom: 6px;
+  }
+  #profile .profile_data .box .box-card .txt {
+    font-size: 14px;
+  }
+  #profile .profile_data .box .box-card {
+    margin-bottom: 12px;
+  }
+  #profile .profile_data .box .box-card h4 {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 6px;
+  }
+  #profile .profile_data .box .box-card #edit_profile .boton {
+    margin-top: 20px;
+  }
+  #profile .profile_data .box .box-card h5 {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
   }
   /* Pantallas con tablas */
   .screens_with_tables .swt_box {
@@ -1017,6 +1081,11 @@
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1439px) {
+  .btn-success {
+    font-size: 14px;
+    height: 38px;
+    min-width: 120px;
+  }
   .box-card,
   a.box-card {
     height: 165px;
@@ -1123,47 +1192,83 @@
     max-width: 22.95%;
   }
   #profile .profile_data {
-    padding: 3.13em 2.49em 1.42em 4.69em;
+    padding: 35px 35px 10px 65px;
     -ms-flex: 0 0 77.05%;
     flex: 0 0 77.05%;
     max-width: 77.05%;
   }
   #profile .profile_info h2 {
-    top: 1.2em;
+    font-size: 22px;
+    line-height: 25px;
+    top: 2em;
   }
   #profile .profile_info .profile_img {
-    margin-top: -6em;
+    margin-top: -3em;
   }
   #profile .profile_data .pd_into_boxcard {
     padding: 2em;
   }
+  #profile .profile_data .box .box-card #edit_profile .controls {
+    margin-bottom: 6px;
+  }
+  #profile .profile_data .box .box-card #edit_profile .control-group:nth-child(4) .controls {
+    margin-bottom: 0px;
+  }
   #profile .profile_data .box .box-card .label_info, 
   #profile .profile_data .box .box-card .form-control {
-    padding: 0px 20px;
+    height: 40px;
+    padding: 0px 15px;
+    margin-bottom: 8px;
+  }
+  #profile .profile_data .box .box-card .form-control {
+    font-size: 14px;
+    margin-bottom: 0;
   }
   #profile .profile_data .box .box-card .label_info [class^="icon-"], 
   #profile .profile_data .box .label_info [class*=" icon-"] {
+    font-size: 1.1em;
     margin-right: 1em;
   }
+  #profile .profile_data .box .box-card .txt {
+    font-size: 14px;
+  }
   #profile .profile_info .profile_img img {
-    max-height: 12em;
+    max-height: 150px;
   }
   #profile .profile_info .profile_img [class^="icon-"], 
   #profile .profile_info .profile_img [class*=" icon-"] {
-    bottom: 1em;
-    right: .4em;
+    bottom: .8em;
+    right: .2em;
   }
   #profile .profile_data .box .box-card {
-    margin-bottom: 1.69em;
+    margin-bottom: 16px;
   }
   #profile .profile_data .box .box-card #edit_profile label {
     min-width: 11.3em;
   }
   #profile .profile_data .box .box-card h4 {
-    margin-bottom: 1em;
+    margin-bottom: 10px;
   }
   #profile .profile_data .pd_into_boxcard2 {
-    padding: 1.85em;
+    padding: 26px;
+  }
+  #profile .profile_info .info_box {
+    padding-top: 1.4em;
+  }
+  #profile .profile_info .info_box h5 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  #profile .profile_info .info_box h5.txt_status {
+    margin-top: 8px;
+  }
+  #profile .profile_data .box .box-card #edit_profile .boton {
+    margin-top: 20px;
+  }
+  #profile .profile_data .box .box-card h5 {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
   }
   /* Sidebar */
   .fixed-nav {
