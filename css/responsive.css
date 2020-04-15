@@ -921,28 +921,28 @@
     height: 38px;
     min-width: 120px;
   }
-  .box-card,
-  a.box-card {
-    height: 160px;
-    width: 180px;
-  }
-  .box-card figure img {
+  #home .content_right .box-card figure img {
     max-height: 80px;
   }
-  .box-card h4 {
+  #home .content_right .box-card h4 {
     font-size: 20px;
     line-height: 22px;
   }
   #home .slider_left h1 {
     font-weight: 300;
-    font-size: 28px;
-    line-height: 35px;
+    font-size: 24px;
+    line-height: 27px;
   }
   #home .slider_left figure img {
-    max-width: 380px;
+    max-width: 330px;
   }
   #home .content_right .box-content {
     height: 160px;
+  }
+  #home .content_right .box-card, 
+  #home .content_right a.box-card {
+    height: 150px;
+    width: 165px;
   }
   /* Select custom */
   .select_new .btn-select .btn-select-value {
