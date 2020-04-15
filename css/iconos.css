@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconos';
-  src:  url('../fonts/icomoon.eot?bvd2hq');
-  src:  url('../fonts/icomoon.eot?bvd2hq#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?bvd2hq') format('truetype'),
-    url('../fonts/icomoon.woff?bvd2hq') format('woff'),
-    url('../fonts/icomoon.svg?bvd2hq#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?lby4kf');
+  src:  url('../fonts/icomoon.eot?lby4kf#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?lby4kf') format('truetype'),
+    url('../fonts/icomoon.woff?lby4kf') format('woff'),
+    url('../fonts/icomoon.svg?lby4kf#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-icon_three-bullets-vertical:before {
+  content: "\e933";
+  color: #8a8c8e;
+}
 .icon-icon_activities:before {
   content: "\e900";
 }

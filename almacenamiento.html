@@ -627,79 +627,58 @@
                     </div>
                 </div>
                 <form action="" class="form-inline">
-                    <div class="row w-100">
-                        <div class="control-group col-lg-4">
+                    <div class="row w-100 sep_bottom">
+                        <div class="control-group col-lg-3 lbl_text">
                             <div class="form-group input-group floating-label-form-group controls">
-                                <label for="txt_mbusq_tipo_doc" class="label_end">Tipo documental</label>
+                                <label for="txt_mbusq2_tipo_doc" class="label_end">Tipo documental</label>
                             </div>
                         </div>
-                        <div class="control-group col-lg-8">
-                            <div class="select_new" id="txt_srv" name="txt_mbusq_tipo_doc">
-                                <a class="btn btn-success btn-select btn-select-light mb-18">
-                                    <input type="hidden" class="btn-select-input" id="txt_srv" name="txt_srv" value="" />
-                                    <span class="btn-select-value">Seleccione</span>
-                                    <span class='btn-select-arrow'></span>
-                                    <ul>
-                                        <li>tipo 1</li>
-                                        <li>tipo 2</li>
-                                        <li>tipo 3</li>
-                                    </ul>
-                                </a>
-                            </div>
+                        <div class="control-group col-lg-9">
+                            <select id="txt_mbusq2_tipo_doc" class="select_custon_select2 form-control" name="txt_mbusq2_tipo_doc">
+                                <option value="">Seleccione</option>
+                                <option value="td1">Contiene</option>
+                                <option value="td2">Es igual a</option>
+                                <option value="td3">es distinto a</option>
+                            </select>
                         </div>
-                        <p class="help-block text-danger"></p>
                     </div>
-                    <div class="row w-100">
-                        <div class="control-group col-lg-4">
+                    <div class="row w-100 sep_bottom">
+                        <div class="control-group col-lg-3 lbl_text">
                             <div class="form-group input-group floating-label-form-group controls">
-                                <label for="txt_mbusq_tipo_doc" class="label_end">Sede</label>
+                                <label for="txt_mbusq2_sede" class="label_end">Sede</label>
                             </div>
                         </div>
-                        <div class="control-group col-lg-8">
-                            <div class="select_new" id="sede" name="txt_mbusq_tipo_doc">
-                                <a class="btn btn-success btn-select btn-select-light w-input-50 mb_18">
-                                    <input type="hidden" class="btn-select-input" id="sede" name="sede" value="" />
-                                    <span class="btn-select-value">Seleccione</span>
-                                    <span class='btn-select-arrow'></span>
-                                    <ul>
-                                        <li>uno</li>
-                                        <li>dos</li>
-                                        <li>tres</li>
-                                    </ul>
-                                </a>
-                            </div>
-                        </div>
-                        <p class="help-block text-danger"></p>
-                    </div>
-                    <div class="row w-100">
                         <div class="control-group col-lg-4">
-                            <div class="form-group input-group floating-label-form-group controls">
-                                <label for="txt_mbusq_tipo_doc" class="label_end">Tipo de workflow</label>
-                            </div>
+                            <select id="txt_mbusq2_sede" class="select_custon_select2 form-control" name="txt_mbusq2_sede">
+                                <option value="">Seleccione</option>
+                                <option value="sede1">Contiene</option>
+                                <option value="sede2">Es igual a</option>
+                                <option value="sede3">es distinto a</option>
+                            </select>
                         </div>
-                        <div class="control-group col-lg-8">
-                            <div class="select_new" id="workflow" name="txt_mbusq_tipo_doc">
-                                <a class="btn btn-success btn-select btn-select-light w-input-50 mb_18">
-                                    <input type="hidden" class="btn-select-input" id="workflow" name="workflow" value="" />
-                                    <span class="btn-select-value">Seleccione</span>
-                                    <span class='btn-select-arrow'></span>
-                                    <ul>
-                                        <li>uno</li>
-                                        <li>dos</li>
-                                        <li>tres</li>
-                                    </ul>
-                                </a>
-                            </div>
-                        </div>
-                        <p class="help-block text-danger"></p>
                     </div>
-                    <div class="row w-100">
-                        <div class="control-group col-lg-4 fechas_modal">
+                    <div class="row w-100 sep_bottom">
+                        <div class="control-group col-lg-3 lbl_text">
+                            <div class="form-group input-group floating-label-form-group controls">
+                                <label for="txt_mbusq2_tipwfl" class="label_end">Tipo de workflow</label>
+                            </div>
+                        </div>
+                        <div class="control-group col-lg-4">
+                            <select id="txt_mbusq2_tipwfl" class="select_custon_select2 form-control" name="txt_mbusq2_tipwfl">
+                                <option value="">Seleccione</option>
+                                <option value="wfl1">Uno</option>
+                                <option value="wfl2">Dos</option>
+                                <option value="wfl3">Tres</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row w-100 sep_bottom">
+                        <div class="control-group col-lg-3 lbl_text fechas_modal">
                             <div class="form-group input-group floating-label-form-group controls">
                                 <label for="txt_mbusq_opfcre" class="label_end">Fecha de creación</label>
                             </div>
                         </div>
-                        <div class="control-group col-lg-8 fechas_modal">
+                        <div class="control-group col-lg-4 fechas_modal">
                             <div class="form-group input-group floating-label-form-group controls">   
                                 <input type="text" class="form-control ici_append border-left" id="fecha3" placeholder="Seleccione fecha" name="txt_mbusq_opfcre" required data-validation-required-message="Por favor, Seleccione una <b>Fecha</b>.">
                                 <div class="input-group-apend">
@@ -708,74 +687,52 @@
                                     </span>
                                 </div>      
                             </div>
-                            <p class="help-block text-danger"></p>
                         </div>
                     </div>
-                    <div class="row w-100">
+                    <div class="row w-100 sep_bottom">
+                        <div class="control-group col-lg-3 lbl_text">
+                            <div class="form-group input-group floating-label-form-group controls">
+                                <label for="txt_mbusq2_espec" class="label_end">Específico</label>
+                            </div>
+                        </div>
                         <div class="control-group col-lg-4">
+                            <select id="txt_mbusq2_espec" class="select_custon_select2 form-control" name="txt_mbusq2_espec">
+                                <option value="">Seleccione</option>
+                                <option value="esp1">Uno</option>
+                                <option value="esp2">Dos</option>
+                                <option value="esp3">Tres</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row w-100 sep_bottom">
+                        <div class="control-group col-lg-3 lbl_text">
+                            <div class="form-group input-group floating-label-form-group controls">
+                                <label for="txt_mbusq2_espec2" class="label_end">Específico</label>
+                            </div>
+                        </div>
+                        <div class="control-group col-lg-4">
+                            <select id="txt_mbusq2_espec2" class="select_custon_select2 form-control" name="txt_mbusq2_espec2">
+                                <option value="">Seleccione</option>
+                                <option value="esp21">Uno</option>
+                                <option value="esp22">Dos</option>
+                                <option value="esp23">Tres</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row w-100 sep_bottom">
+                        <div class="control-group col-lg-3 lbl_text">
                             <div class="form-group input-group floating-label-form-group controls">
                                 <label for="txt_mbusq_tipo_doc" class="label_end">Específico</label>
                             </div>
                         </div>
-                        <div class="control-group col-lg-8">
-                            <div class="select_new" id="especifico1" name="txt_mbusq_tipo_doc">
-                                <a class="btn btn-success btn-select btn-select-light w-input-50 mb_18">
-                                    <input type="hidden" class="btn-select-input" id="especifico1" name="especifico1" />
-                                    <span class="btn-select-value">Seleccione</span>
-                                    <span class='btn-select-arrow'></span>
-                                    <ul>
-                                        <li>uno</li>
-                                        <li>dos</li>
-                                        <li>tres</li>
-                                    </ul>
-                                </a>
-                            </div>
-                        </div>
-                        <p class="help-block text-danger"></p>
-                    </div>
-                    <div class="row w-100">
                         <div class="control-group col-lg-4">
-                            <div class="form-group input-group floating-label-form-group controls">
-                                <label for="txt_mbusq_tipo_doc" class="label_end">Específico</label>
-                            </div>
+                            <select id="txt_mbusq2_espec3" class="select_custon_select2 form-control" name="txt_mbusq2_espec3">
+                                <option value="">Seleccione</option>
+                                <option value="esp31">Uno</option>
+                                <option value="esp32">Dos</option>
+                                <option value="esp33">Tres</option>
+                            </select>
                         </div>
-                        <div class="control-group col-lg-8">
-                            <div class="select_new" id="especifico2" name="txt_mbusq_tipo_doc">
-                                <a class="btn btn-success btn-select btn-select-light w-input-50 mb_18">
-                                    <input type="hidden" class="btn-select-input" id="especifico2" name="especifico2" />
-                                    <span class="btn-select-value">Seleccione</span>
-                                    <span class='btn-select-arrow'></span>
-                                    <ul>
-                                        <li>uno</li>
-                                        <li>dos</li>
-                                        <li>tres</li>
-                                    </ul>
-                                </a>
-                            </div>
-                        </div>
-                        <p class="help-block text-danger"></p>
-                    </div>
-                    <div class="row w-100">
-                        <div class="control-group col-lg-4">
-                            <div class="form-group input-group floating-label-form-group controls">
-                                <label for="txt_mbusq_tipo_doc" class="label_end">Específico</label>
-                            </div>
-                        </div>
-                        <div class="control-group col-lg-8">
-                            <div class="select_new" id="especifico3" name="txt_mbusq_tipo_doc">
-                                <a class="btn btn-success btn-select btn-select-light w-input-50 mb_18">
-                                    <input type="hidden" class="btn-select-input" id="especifico3" name="especifico3" />
-                                    <span class="btn-select-value">Seleccione</span>
-                                    <span class='btn-select-arrow'></span>
-                                    <ul>
-                                        <li>uno</li>
-                                        <li>dos</li>
-                                        <li>tres</li>
-                                    </ul>
-                                </a>
-                            </div>
-                        </div>
-                        <p class="help-block text-danger"></p>
                     </div>
                 </form>
             </div>
