@@ -910,6 +910,8 @@ header .top_header .cnt_right .search_input.show>.btn-outline-success.dropdown-t
 
 header .top_header .cnt_right .search_input.dropdown .dropdown-menu {
   right: 0px;
+  transform: none !important;
+  top: 45px !important;
   left: auto !important;
   width: calc(100% - 22px);
   min-width: 1000px;
