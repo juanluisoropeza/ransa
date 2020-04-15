@@ -326,15 +326,16 @@ a:hover {
 .dropdown_table {
   padding: 15px 0px 28px 0px;
   min-width: 230px;
-  /*transform: none !important;*/
+  transform: none !important;
   left: auto !important;
   right: 14px !important;
   top: 36px !important;
 }
 
 .dropdown_table .dropdown-item {
-  padding: 0px 0px 12px 13px;
   color: #999999;
+  padding: 0px 0px 0px 13px;
+  margin-bottom: 12px;
 }
 
 .dropdown_table .separador {
@@ -1636,7 +1637,7 @@ footer .content_footer ul li a:hover {
 
 .screens_with_tables {
   min-height: calc(100vh - 164px);
-  overflow: hidden;
+  /*overflow: hidden;*/
   padding-top: 107px;
   position: relative;
   height: auto;
@@ -1646,6 +1647,7 @@ footer .content_footer ul li a:hover {
   background-color: var(--fondoSwt);
   padding: 3.5em 4.875em;
   min-height: calc(100vh - 164px);
+  height: auto;
   width: calc(100% - 102px);
 }
 
@@ -3086,7 +3088,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .modal .modal-content .modal-header {
   border-bottom: 0;
-  padding: 45px 27px 0px 27px;
+  padding: 45px 64px 0px 64px;
   flex-flow: column wrap;
   -webkit-flex-flow: column wrap;
 }
@@ -3097,7 +3099,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .modal .modal-content .modal-header .close {
   position: absolute;
-  right: 30px;
+  right: 22px;
   top: 20px;
 }
 
@@ -3160,6 +3162,10 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   color: var(--verdePrincipal);
 }
 
+.modal .modal-content .modal-body .sep_bottom {
+  margin-bottom: 12px;
+}
+
 .modal .modal-content .modal-body .form-inline .form-group label {
   color: var(--colorTextoClaro);
   font-weight: 400;
@@ -3167,6 +3173,18 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   line-height: 21px;
   margin-right: 20px;
   min-width: 175px;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+}
+
+.modal .modal-content .modal-body .form-inline .lbl_text {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  align-items: center;
+  -webkit-align-items: center;
   justify-content: flex-start;
   -webkit-justify-content: flex-start;
 }

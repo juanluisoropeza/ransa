@@ -658,160 +658,114 @@
                     </div>
                 </div>
                 <form action="" class="form-inline">
-                    <div class="row w-100">
-                        <div class="control-group col-lg-4">
+                    <div class="row w-100 sep_bottom">
+                        <div class="control-group col-lg-4 lbl_text">
                             <div class="form-group input-group floating-label-form-group controls">
                                 <label for="txt_mbusq_tipo_doc" class="label_end">Tipo documental</label>
                             </div>
                         </div>
                         <div class="control-group col-lg-8">
-                            <div class="select_new" id="txt_tipo_doc" name="txt_mbusq_tipo_doc">
-                                <a class="btn btn-success btn-select btn-select-light mb-18">
-                                    <input type="hidden" class="btn-select-input" id="txt_srv" name="txt_srv" value="" />
-                                    <span class="btn-select-value  m-75">Seleccione</span>
-                                    <span class='btn-select-arrow'></span>
-                                    <ul class="m-75">
-                                        <li>tipo 1</li>
-                                        <li>tipo 2</li>
-                                        <li>tipo 3</li>
-                                    </ul>
-                                </a>
-                            </div>
+                            <select id="txt_mbusq_tipo_doc" class="select_custon_select2 form-control" name="txt_mbusq_tipo_doc">
+                                <option value="">Seleccione</option>
+                                <option value="td1">Contiene</option>
+                                <option value="td2">Es igual a</option>
+                                <option value="td3">es distinto a</option>
+                            </select>
                         </div>
-                        <p class="help-block text-danger"></p>
                     </div>
-                    <div class="row w-100">
-                        <div class="col-lg-4">
+                    <div class="row w-100 sep_bottom">
+                        <div class="control-group col-lg-4 lbl_text">
                             <div class="form-group input-group floating-label-form-group controls">
                                 <label for="txt_mbusq_sociedad" class="label_end">Sociedad</label>
                             </div>
                         </div>
                         <div class="control-group col-lg-4">
-                            <div class="select_new" id="txt_mbusq_sociedad" name="txt_mbusq_tipo_doc">
-                                <a class="btn btn-success btn-select btn-select-light w-input-50">
-                                    <input type="hidden" class="btn-select-input" id="txt_mbusq_sociedad" name="txt_mbusq_sociedad" value="" />
-                                    <span class="btn-select-value">Seleccione</span>
-                                    <span class='btn-select-arrow'></span>
-                                    <ul>
-                                        <li>Contiene</li>
-                                        <li>Es igual a</li>
-                                        <li>es distinto a</li>
-                                    </ul>
-                                </a>
-                            </div>
-                            <p class="help-block text-danger"></p>
+                            <select class="select_custon_select2 form-control"  id="txt_mbusq_sociedad" name="txt_mbusq_sociedad">
+                                <option value="">Seleccione</option>
+                                <option value="sociedad1">Contiene</option>
+                                <option value="sociedad2">Es igual a</option>
+                                <option value="sociedad3">es distinto a</option>
+                            </select>
                         </div>
                         <div class="control-group col-lg-4">
                             <div class="form-group input-group floating-label-form-group controls">
                                 <input type="text" class="form-control" id="txt_mbusq_soc2" name="txt_mbusq_soc2" placeholder="">
                             </div>
-                            <p class="help-block text-danger"></p>
                         </div>
                     </div>
-                    <div class="row w-100">
-                        <div class="col-lg-4">
+                    <div class="row w-100 sep_bottom">
+                        <div class="control-group col-lg-4 lbl_text">
                             <div class="form-group input-group floating-label-form-group controls">
                                 <label for="txt_mbusq_codigo" class="label_end">Codigo</label>
                             </div>
                         </div>
                         <div class="control-group col-lg-4">
-                            <div class="select_new" id="txt_mbusq_optcod" name="txt_mbusq_tipo_doc">
-                                <a class="btn btn-success btn-select btn-select-light w-input-50">
-                                    <input type="hidden" class="btn-select-input" id="txt_mbusq_optcod" name="txt_mbusq_optcod" value="" />
-                                    <span class="btn-select-value">Seleccione</span>
-                                    <span class='btn-select-arrow'></span>
-                                    <ul>
-                                        <li>Contiene</li>
-                                        <li>Es igual a</li>
-                                        <li>es distinto a</li>
-                                    </ul>
-                                </a>
-                            </div>
-                            <p class="help-block text-danger"></p>
+                            <select class="select_custon_select2 form-control"  id="txt_mbusq_codigo" name="txt_mbusq_codigo">
+                                <option value="">Seleccione</option>
+                                <option value="codigo1">Contiene</option>
+                                <option value="codigo2">Es igual a</option>
+                                <option value="codigo3">es distinto a</option>
+                            </select>
                         </div>
                         <div class="control-group col-lg-4">
                             <div class="form-group input-group floating-label-form-group controls">
                                 <input type="text" class="form-control" id="txt_mbusq_cod" name="txt_mbusq_cod" placeholder="">
                             </div>
-                            <p class="help-block text-danger"></p>
                         </div>
                     </div>
-                    <div class="row w-100">
-                        <div class="col-lg-4">
+                    <div class="row w-100 sep_bottom">
+                        <div class="control-group col-lg-4 lbl_text">
                             <div class="form-group input-group floating-label-form-group controls">
-                                <label for="txt_mbusq_colaborador" class="label_end">Colaborador</label>
+                                <label for="txt_mbusq_cont" class="label_end">Colaborador</label>
                             </div>
                         </div>
                         <div class="control-group col-lg-4">
-                            <div class="select_new" id="txt_mbusq_optcol" name="txt_mbusq_tipo_doc">
-                                <a class="btn btn-success btn-select btn-select-light w-input-50">
-                                    <input type="hidden" class="btn-select-input" id="txt_mbusq_optcol" name="txt_mbusq_optcol" value="" />
-                                    <span class="btn-select-value">Seleccione</span>
-                                    <span class='btn-select-arrow'></span>
-                                    <ul>
-                                        <li>Contiene</li>
-                                        <li>Es igual a</li>
-                                        <li>es distinto a</li>
-                                    </ul>
-                                </a>
-                            </div>
-                            <p class="help-block text-danger"></p>
+                            <select class="select_custon_select2 form-control"  id="txt_mbusq_cont" name="txt_mbusq_cont">
+                                <option value="">Seleccione</option>
+                                <option value="colab1">Contiene</option>
+                                <option value="colab2">Es igual a</option>
+                                <option value="colab3">es distinto a</option>
+                            </select>
                         </div>
                         <div class="control-group col-lg-4">
                             <div class="form-group input-group floating-label-form-group controls">
                                 <input type="text" class="form-control" id="txt_mbusq_col" name="txt_mbusq_col" placeholder="">
                             </div>
-                            <p class="help-block text-danger"></p>
                         </div>
                     </div>
-                    <div class="row w-100">
-                        <div class="col-lg-4">
+                    <div class="row w-100 sep_bottom">
+                        <div class="control-group col-lg-4 lbl_text">
                             <div class="form-group input-group floating-label-form-group controls">
                                 <label for="txt_mbusq_dni" class="label_end">DNI</label>
                             </div>
                         </div>
                         <div class="control-group col-lg-4">
-                            <div class="select_new" id="txt_mbusq_optcol" name="txt_mbusq_tipo_doc">
-                                <a class="btn btn-success btn-select btn-select-light w-input-50">
-                                    <input type="hidden" class="btn-select-input" id="txt_mbusq_optcol" name="txt_mbusq_optcol" value="" />
-                                    <span class="btn-select-value">Seleccione</span>
-                                    <span class='btn-select-arrow'></span>
-                                    <ul>
-                                        <li>Contiene</li>
-                                        <li>Es igual a</li>
-                                        <li>es distinto a</li>
-                                    </ul>
-                                </a>
-                            </div>
-                            <p class="help-block text-danger"></p>
+                            <select class="select_custon_select2 form-control"  id="txt_mbusq_dni" name="txt_mbusq_dni">
+                                <option value="">Seleccione</option>
+                                <option value="dni1">Contiene</option>
+                                <option value="dni2">Es igual a</option>
+                                <option value="dni3">es distinto a</option>
+                            </select>
                         </div>
                         <div class="control-group col-lg-4">
                             <div class="form-group input-group floating-label-form-group controls">
-                                <input type="text" class="form-control" id="txt_mbusq_dni" name="txt_mbusq_dni" placeholder="">
+                                <input type="text" class="form-control" id="txt_mbusq_dninro" name="txt_mbusq_dninro" placeholder="">
                             </div>
-                            <p class="help-block text-danger"></p>
                         </div>
                     </div>
-                    <div class="row w-100">
-                        <div class="col-lg-4">
+                    <div class="row w-100 sep_bottom">
+                        <div class="control-group col-lg-4 lbl_text">
                             <div class="form-group input-group floating-label-form-group controls">
                                 <label for="txt_mbusq_vencimiento" class="label_end">Fecha de vencimiento</label>
                             </div>
                         </div>
                         <div class="control-group col-lg-4">
-                            <div class="select_new" id="txt_mbusq_optcol" name="txt_mbusq_tipo_doc">
-                                <a class="btn btn-success btn-select btn-select-light w-input-50">
-                                    <input type="hidden" class="btn-select-input" id="txt_mbusq_optcol" name="txt_mbusq_optcol" value="" />
-                                    <span class="btn-select-value">Seleccione</span>
-                                    <span class='btn-select-arrow'></span>
-                                    <ul>
-                                        <li>Contiene</li>
-                                        <li>Es igual a</li>
-                                        <li>es distinto a</li>
-                                    </ul>
-                                </a>
-                            </div>
-                            <p class="help-block text-danger"></p>
+                            <select class="select_custon_select2 form-control"  id="txt_mbusq_vencimiento" name="txt_mbusq_vencimiento">
+                                <option value="">Seleccione</option>
+                                <option value="fecn1">Contiene</option>
+                                <option value="fecn2">Es igual a</option>
+                                <option value="fecn3">es distinto a</option>
+                            </select>
                         </div>
                         <div class="control-group col-lg-4 fechas_modal">
                             <div class="form-group input-group floating-label-form-group controls">
@@ -822,29 +776,21 @@
                                 </div>          
                                 <input type="text" class="form-control ici_append input_date input-group-none-borde" id="fecha1" placeholder="Seleccione fecha" name="txt_mbusq_fven" required data-validation-required-message="Por favor, Seleccione una <b>Fecha</b>.">
                             </div>
-                            <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row w-100">
-                        <div class="col-lg-4">
+                        <div class="control-group col-lg-4 lbl_text">
                             <div class="form-group input-group floating-label-form-group controls">
                                 <label for="txt_mbusq_caducidad" class="label_end">Fecha de caducidad</label>
                             </div>
                         </div>
                         <div class="control-group col-lg-4">
-                            <div class="select_new" id="txt_mbusq_optcol" name="txt_mbusq_tipo_doc">
-                                <a class="btn btn-success btn-select btn-select-light w-input-50">
-                                    <input type="hidden" class="btn-select-input" id="txt_mbusq_optcol" name="txt_mbusq_optcol" value="" />
-                                    <span class="btn-select-value">Seleccione</span>
-                                    <span class='btn-select-arrow'></span>
-                                    <ul>
-                                        <li>Contiene</li>
-                                        <li>Es igual a</li>
-                                        <li>es distinto a</li>
-                                    </ul>
-                                </a>
-                            </div>
-                            <p class="help-block text-danger"></p>
+                            <select class="select_custon_select2 form-control"  id="txt_mbusq_caducidad" name="txt_mbusq_caducidad">
+                                <option value="">Seleccione</option>
+                                <option value="fecc1">Contiene</option>
+                                <option value="fecc2">Es igual a</option>
+                                <option value="fecc3">es distinto a</option>
+                            </select>
                         </div>
                         <div class="control-group col-lg-4 fechas_modal">
                             <div class="form-group input-group floating-label-form-group controls">
