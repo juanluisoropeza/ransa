@@ -1290,7 +1290,8 @@
     margin-right: 4px;
   }
   .screens_with_tables .swt_box .top_info h1.title {
-    font-size: 19px;
+    font-size: 18px;
+    line-height: 21px;
   }
   .screens_with_tables .swt_box .top_info h2.subtitle {
     font-size: 16px;
@@ -1320,6 +1321,62 @@
   .screens_with_tables .swt_box .top_folders .card .card-body .users .badge {
     height: 25px;
     width: 25px;
+  }
+  .content_table .div_table .div_thead,
+  .content_table .div_table .div_tbody .tddiv_elements {
+    height: 54px;
+  }
+  .content_table .div_table_wfl .div_thead .thdiv_elements, 
+  .content_table .div_table_wfl .div_thead .thdiv_elements a {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .content_table .search_button label .input-group-text.icon_search,
+  .content_table .search_button label button,
+  .content_table .search_button label input {
+    height: 30px;
+  }
+  .content_table .search_button label .icon_search [class^="icon-"], 
+  .content_table .search_button label .icon_search [class*=" icon-"] {
+    font-size: 1.2em;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements:first-child img {
+    max-height: 24px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark,
+  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
+    height: 13px;
+    left: -4px;
+    top: 7px;
+    width: 13px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark:after, 
+  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark:after {
+    border-width: 0 2px 2px 0;
+    left: 4px;
+    top: 2px;
+    width: 4px;
+    height: 7px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements, 
+  .content_table .div_table .div_thead .thdiv_elements a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .dropdown_table {
+    padding: 10px 0px 0px 0px;
+    min-width: 200px;
+  }
+  .screens_with_tables .swt_box hr {
+    margin-bottom: 12px;
+  }
+  .screens_with_tables .swt_box .dropdown-item {
+    font-size: 16px;
+    line-height: 19px;
   }
   /* File details */
   .files_details .top_info_details {
@@ -1745,6 +1802,9 @@
     min-height: calc(100vh - 147px);
     padding-top: 90px;
   }
+  .screens_with_tables .swt_box {
+    padding: 40px 55px;
+  }
   .screens_with_tables .swt_box .top_folders .card .card-header {
     height: 84px;
   }
@@ -1767,7 +1827,8 @@
     min-width: 140px;
   }
   .screens_with_tables .swt_box .top_info h1.title {
-    font-size: 22px;
+    font-size: 19px;
+    line-height: 22px;
   }
   .screens_with_tables .swt_box .top_folders .card .card-body .users img {
     max-height: 26px;
@@ -1779,10 +1840,60 @@
   .screens_with_tables .swb_wflow {
     padding: 40px 55px;
   }
+  .content_table .div_table .div_thead,
+  .content_table .div_table .div_tbody .tddiv_elements {
+    height: 54px;
+  }
   .content_table .div_table_wfl .div_thead .thdiv_elements, 
   .content_table .div_table_wfl .div_thead .thdiv_elements a {
     font-size: 14px;
     line-height: 16px;
+  }
+  .content_table .search_button label .input-group-text.icon_search,
+  .content_table .search_button label button,
+  .content_table .search_button label input {
+    height: 30px;
+  }
+  .content_table .search_button label .icon_search [class^="icon-"], 
+  .content_table .search_button label .icon_search [class*=" icon-"] {
+    font-size: 1.2em;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements:first-child img {
+    max-height: 26px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark,
+  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
+    height: 14px;
+    width: 14px;
+    top: 6px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark:after, 
+  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark:after {
+    border-width: 0 2px 2px 0;
+    left: 4px;
+    top: 2px;
+    width: 4px;
+    height: 7px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements, 
+  .content_table .div_table .div_thead .thdiv_elements a {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .dropdown_table {
+    padding: 10px 0px 0px 0px;
+    min-width: 200px;
+  }
+  .screens_with_tables .swt_box hr {
+    margin-bottom: 12px;
+  }
+  .screens_with_tables .swt_box .dropdown-item {
+    font-size: 16px;
+    line-height: 19px;
   }
   /* File Details */
   .files_details .content_files_details .right_section {
