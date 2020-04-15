@@ -2560,6 +2560,16 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   display: -webkit-flex;
 }
 
+.files_details .top_info_details .info_left .box {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+
+.files_details .top_info_details .info_left .buttons_movil {
+  display: none;
+}
+
 .files_details .top_info_details .info_left,
 .files_details .top_info_details .actions_right {
   display: flex;
