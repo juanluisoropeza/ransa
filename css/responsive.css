@@ -544,7 +544,7 @@
   }
   .swt_box {
     width: 100% !important;
-    padding: 1.5em 2em!important;
+    padding: 0.5em 0.5em!important;
   }
   .screens_with_tables .swt_box .top_folders .folders_cards {
     padding: 20px 10px;
@@ -653,6 +653,150 @@
   .dropdown-item {
     font-size: 15px;
   }
+  /* File Details */
+  .files_details .content_files_details .preview_file {
+    min-height: 400px;
+  }
+  .files_details .content_files_details .right_section {
+    padding: 15px 10px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_title {
+    padding: 0px 28px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body {
+    padding: 8px 24px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update:after {
+    left: -28px;
+    right: -28px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box {
+    padding: 17px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box .left_badge .badge {
+    font-size: 15px;
+    line-height: 22px;
+    height: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box .info_version .vb_title,
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box .info_version .vb_updatedby {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box .info_version .vb_updated {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment {
+    padding: 10px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment .txt_name_comment,
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment .txt_comment {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .photo {
+    margin-right: 18px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .photo_right {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment {
+    width: calc(100% - 94px);
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box .photo {
+    margin-left: 9px;
+  }
+  .files_details .top_info_details {
+    padding: 0px 10px 0px 10px;
+    min-height: 50px;
+  }
+  .files_details .top_info_details .row:first-child {
+    min-height: 50px;
+    margin: 0;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+  }
+  .files_details .top_info_details .info_left .left_badge {
+    font-size: 15px;
+    line-height: 22px;
+    height: 100%;
+    width: 35px;
+  }
+  .files_details .top_info_details .actions_right .btn-outline-success {
+    margin-right: 4px;
+  }
+  .files_details .top_info_details .info_left {
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: self-start;
+  }
+  .files_details .top_info_details .actions_right {
+    padding: 0px;
+    margin-top: 10px;
+  }
+  .files_details .top_info_details .actions_right .row {
+    margin: 0px;
+  }
+  .files_details .top_info_details .actions_right .btn-outline-success:not(.button-search-custom) {
+    font-size: 13px;
+    line-height: 12px;
+    height: 35px;
+    padding: 16px;
+    min-width: 137px;
+    max-width: 137px;
+    margin-bottom: 10px;
+  }
+  .files_details .top_info_details .actions_right .get_back {
+    font-size: 16px;
+    line-height: 23px;
+    padding-top: 0px;
+    position: absolute;
+    right: 10px;
+    top: -85px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_title {
+    font-size: 17px;
+    height: 40px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body ul.list_details_files li h5 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .files_details .content_files_details .right_section {
+    max-height: initial;
+    height: 100%;
+  }
+  .files_details .top_info_details .actions_right .btn-outline-success [class^="icon-"], 
+  .files_details .top_info_details .actions_right .btn-outline-success [class*=" icon-"], 
+  .files_details .top_info_details .actions_right .btn-outline-success [class^="icon-"]:before, 
+  .files_details .top_info_details .actions_right .btn-outline-success [class*=" icon-"]:before {
+    font-size: 1em;
+  }
+  .files_details .top_info_details .info_left .info_file .txt_file_name,
+  .files_details .top_info_details .info_left .info_file .txt_breadcumb {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .files_details .top_info_details .info_left .left_badge .badge {
+    font-size: 17px;
+    line-height: 22px;
+    height: 40px;
+    width: 40px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body ul.list_details_files li {
+    margin-bottom: 8px;
+  }
+  .files_details .top_info_details .actions_right .dw_details_options .dropdown-menu .dropdown-item {
+    margin-bottom: 8px;
+  }
 }
 
 @media screen and (max-width: 395px) {
@@ -744,7 +888,7 @@
   }
   .swt_box {
     width: 100% !important;
-    padding: 1.5em 2.875em!important;
+    padding: 1em 1em!important;
   }
   .screens_with_tables .swt_box .top_folders .folders_cards {
     padding: 20px 10px;
@@ -845,6 +989,135 @@
     height: 18px;
     margin: 0px 0px 0px -20px;
     width: 18px;
+  }
+  /* File Details */
+  .files_details .content_files_details .preview_file {
+    min-height: 400px;
+  }
+  .files_details .content_files_details .right_section {
+    padding: 15px 10px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_title {
+    padding: 0px 28px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body {
+    padding: 8px 24px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update:after {
+    left: -28px;
+    right: -28px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box {
+    padding: 17px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box .left_badge .badge {
+    margin-right: 21px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box .info_version .vb_title,
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box .info_version .vb_updatedby {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box .info_version .vb_updated {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment {
+    padding: 10px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment .txt_name_comment,
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment .txt_comment {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .photo {
+    margin-right: 18px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .photo_right {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment {
+    width: calc(100% - 94px);
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box .photo {
+    margin-left: 9px;
+  }
+  .files_details .top_info_details {
+    padding: 0px 0px 0px 0px;
+    min-height: 50px;
+  }
+  .files_details .top_info_details .row:first-child {
+    min-height: 50px;
+    margin: 0;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    margin-left: 18px;
+  }
+  .files_details .top_info_details .info_left .left_badge {
+    font-size: 15px;
+    line-height: 22px;
+    height: 35px;
+    width: 35px;
+  }
+  .files_details .top_info_details .actions_right .btn-outline-success {
+    margin-right: 4px;
+  }
+  .files_details .top_info_details .info_left {
+    padding: 0px;
+  }
+  .files_details .top_info_details .actions_right {
+    padding: 0px;
+    margin-top: 10px;
+  }
+  .files_details .top_info_details .actions_right .row {
+    margin: 0px;
+  }
+  .files_details .top_info_details .actions_right .btn-outline-success:not(.button-search-custom) {
+    font-size: 13px;
+    height: 35px;
+    padding: 5px;
+    min-width: 155px;
+  }
+  .files_details .top_info_details .actions_right .get_back {
+    font-size: 14px;
+    line-height: 23px;
+    padding-top: 0px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_title {
+    font-size: 17px;
+    height: 40px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body ul.list_details_files li h5 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .files_details .content_files_details .right_section {
+    max-height: initial;
+    height: 100%;
+  }
+  .files_details .top_info_details .actions_right .btn-outline-success [class^="icon-"], 
+  .files_details .top_info_details .actions_right .btn-outline-success [class*=" icon-"], 
+  .files_details .top_info_details .actions_right .btn-outline-success [class^="icon-"]:before, 
+  .files_details .top_info_details .actions_right .btn-outline-success [class*=" icon-"]:before {
+    font-size: 1em;
+  }
+  .files_details .top_info_details .info_left .info_file .txt_file_name,
+  .files_details .top_info_details .info_left .info_file .txt_breadcumb {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .files_details .top_info_details .info_left .left_badge .badge {
+    font-size: 17px;
+    line-height: 22px;
+    height: 35px;
+    width: 40px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body ul.list_details_files li {
+    margin-bottom: 8px;
+  }
+  .files_details .top_info_details .info_left, .files_details .top_info_details .actions_right .align-items-center .dw_details_options a {
+    min-width: auto!important;
   }
 }
 
@@ -954,7 +1227,7 @@
   }
   .swt_box {
     width: 100% !important;
-    padding: 1.5em 2.875em!important;
+    padding: 1em 0em 1em 1em!important;
   }
   .screens_with_tables .swt_box .top_folders .folders_cards {
     padding: 20px 10px;
@@ -1055,6 +1328,126 @@
     height: 18px;
     margin: 0px 0px 0px -20px;
     width: 18px;
+  }
+  /* File Details */
+  .files_details .content_files_details .preview_file {
+    min-height: 400px;
+  }
+  .files_details .content_files_details .right_section {
+    padding: 15px 10px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_title {
+    padding: 0px 28px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body {
+    padding: 8px 24px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update:after {
+    left: -28px;
+    right: -28px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box {
+    padding: 17px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box .left_badge .badge {
+    margin-right: 21px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box .info_version .vb_title,
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box .info_version .vb_updatedby {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box .info_version .vb_updated {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment {
+    padding: 10px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment .txt_name_comment,
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment .txt_comment {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .photo {
+    margin-right: 18px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .photo_right {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment {
+    width: calc(100% - 94px);
+  }
+  .files_details .content_files_details .right_section .details_box .db_body .update .version_box .photo {
+    margin-left: 9px;
+  }
+  .files_details .top_info_details {
+    padding: 0px 0px 0px 0px;
+    min-height: 50px;
+  }
+  .files_details .top_info_details .row:first-child {
+    min-height: 50px;
+  }
+  .files_details .top_info_details .info_left .left_badge {
+    font-size: 15px;
+    line-height: 22px;
+    height: 35px;
+    width: 35px;
+  }
+  .files_details .top_info_details .actions_right .btn-outline-success {
+    margin-right: 4px;
+  }
+  .files_details .top_info_details .actions_right {
+    padding: 0px;
+  }
+  .files_details .top_info_details .actions_right .row {
+    margin: 0px;
+  }
+  .files_details .top_info_details .actions_right .btn-outline-success:not(.button-search-custom) {
+    font-size: 13px;
+    height: 35px;
+    padding: 5px;
+  }
+  .files_details .top_info_details .actions_right .get_back {
+    font-size: 14px;
+    line-height: 23px;
+    padding-top: 0px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_title {
+    font-size: 17px;
+    height: 40px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body ul.list_details_files li h5 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .files_details .content_files_details .right_section {
+    max-height: initial;
+    height: 100%;
+  }
+  .files_details .top_info_details .actions_right .btn-outline-success [class^="icon-"], 
+  .files_details .top_info_details .actions_right .btn-outline-success [class*=" icon-"], 
+  .files_details .top_info_details .actions_right .btn-outline-success [class^="icon-"]:before, 
+  .files_details .top_info_details .actions_right .btn-outline-success [class*=" icon-"]:before {
+    font-size: 1em;
+  }
+  .files_details .top_info_details .info_left .info_file .txt_file_name,
+  .files_details .top_info_details .info_left .info_file .txt_breadcumb {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .files_details .top_info_details .info_left .left_badge .badge {
+    font-size: 17px;
+    line-height: 22px;
+    height: 35px;
+    width: 40px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body ul.list_details_files li {
+    margin-bottom: 8px;
+  }
+  .files_details .top_info_details .info_left, .files_details .top_info_details .actions_right .align-items-center .dw_details_options a {
+    min-width: auto!important;
   }
 }
 
@@ -1322,6 +1715,7 @@
     height: 25px;
     width: 25px;
   }
+ /* File Details */
   .content_table .div_table .div_thead,
   .content_table .div_table .div_tbody .tddiv_elements {
     height: 54px;
@@ -1403,57 +1797,112 @@
     padding-top: 0px;
   }
   .files_details .content_files_details .right_section {
-    padding: 8px 10px;
+    padding: 15px 10px;
   }
   .files_details .content_files_details .right_section .details_box .db_title {
-    padding: 0px 15px;
+    padding: 0px 28px;
   }
   .files_details .content_files_details .right_section .details_box .db_body {
-    padding: 10px 20px;
+    padding: 8px 24px;
   }
   .files_details .content_files_details .right_section .details_box .db_body .update:after {
-    left: -20px;
-    right: -20px;
+    left: -28px;
+    right: -28px;
   }
   .files_details .content_files_details .right_section .details_box .db_body .update .version_box {
-    padding: 12px;
+    padding: 17px;
   }
   .files_details .content_files_details .right_section .details_box .db_body .update .version_box .left_badge .badge {
-    margin-right: 15px;
+    margin-right: 21px;
   }
   .files_details .content_files_details .right_section .details_box .db_body .update .version_box .info_version .vb_title,
   .files_details .content_files_details .right_section .details_box .db_body .update .version_box .info_version .vb_updatedby {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 19px;
   }
   .files_details .content_files_details .right_section .details_box .db_body .update .version_box .info_version .vb_updated {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 13px;
+    line-height: 15px;
   }
   .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment {
-    padding: 8px;
+    padding: 10px;
   }
   .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment .txt_name_comment,
   .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment .txt_comment {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 19px;
   }
   .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .photo {
-    margin-right: 13px;
+    margin-right: 18px;
   }
   .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .photo_right {
     margin-right: 0;
-    margin-left: 9px;
+    margin-left: 12px;
   }
   .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment {
-    width: calc(100% - 84px);
+    width: calc(100% - 94px);
   }
   .files_details .content_files_details .right_section .details_box .db_body .update .version_box .photo {
-    margin-left: 7px;
+    margin-left: 9px;
+  }
+  .files_details .top_info_details {
+    padding: 0px 0px 0px 35px;
+    min-height: 65px;
+  }
+  .files_details .top_info_details .row:first-child {
+    min-height: 65px;
+  }
+  .files_details .top_info_details .info_left .left_badge {
+    margin-right: 14px;
+  }
+  .files_details .top_info_details .actions_right .btn-outline-success {
+    margin-right: 8px;
+  }
+  .files_details .top_info_details .actions_right {
+    padding: 0px;
+  }
+  .files_details .top_info_details .actions_right .btn-outline-success:not(.button-search-custom) {
+    font-size: 13px;
+    height: 35px;
+  }
+  .files_details .top_info_details .actions_right .get_back {
+    font-size: 14px;
+    line-height: 23px;
+    padding-top: 0px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_title {
+    font-size: 17px;
+    height: 40px;
   }
   .files_details .content_files_details .right_section .details_box .db_body ul.list_details_files li h5 {
     font-size: 15px;
-    line-height: 19px;
+    line-height: 20px;
+  }
+  .files_details .content_files_details .right_section {
+    max-height: calc(100vh - 235px);
+  }
+  .files_details .top_info_details .actions_right .btn-outline-success [class^="icon-"], 
+  .files_details .top_info_details .actions_right .btn-outline-success [class*=" icon-"], 
+  .files_details .top_info_details .actions_right .btn-outline-success [class^="icon-"]:before, 
+  .files_details .top_info_details .actions_right .btn-outline-success [class*=" icon-"]:before {
+    font-size: 1em;
+  }
+  .files_details .top_info_details .info_left .info_file .txt_file_name,
+  .files_details .top_info_details .info_left .info_file .txt_breadcumb {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .files_details .top_info_details .info_left .left_badge .badge {
+    font-size: 17px;
+    line-height: 22px;
+    height: 35px;
+    width: 40px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body ul.list_details_files li {
+    margin-bottom: 8px;
+  }
+  .files_details .top_info_details .info_left, .files_details .top_info_details .actions_right .align-items-center .dw_details_options a {
+    min-width: auto!important;
   }
   /* Modals */
   #modalShareFiles.modal .modal-content .modal-body .content_table .div_table .div_tbody,
@@ -1946,17 +2395,37 @@
     margin-left: 9px;
   }
   .files_details .top_info_details {
-    padding: 0px 21px 0px 46px;
+    padding: 0px 16px 0px 35px;
+    min-height: 72px;
+  }
+  .files_details .top_info_details .row:first-child {
+    min-height: 72px;
   }
   .files_details .top_info_details .info_left .left_badge {
     margin-right: 14px;
   }
   .files_details .top_info_details .actions_right .btn-outline-success {
-    margin-right: 11px;
+    margin-right: 8px;
   }
   .files_details .top_info_details .actions_right .btn-outline-success:not(.button-search-custom) {
-    font-size: 18px;
+    font-size: 15px;
+    height: 35px;
+  }
+  .files_details .top_info_details .actions_right .get_back {
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 0px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_title {
+    font-size: 17px;
     height: 40px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body ul.list_details_files li h5 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .files_details .content_files_details .right_section {
+    max-height: calc(100vh - 235px);
   }
   .files_details .top_info_details .actions_right .btn-outline-success [class^="icon-"], 
   .files_details .top_info_details .actions_right .btn-outline-success [class*=" icon-"], 
@@ -1966,8 +2435,20 @@
   }
   .files_details .top_info_details .info_left .info_file .txt_file_name,
   .files_details .top_info_details .info_left .info_file .txt_breadcumb {
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .files_details .top_info_details .info_left .left_badge .badge {
+    font-size: 20px;
+    line-height: 22px;
+    height: 40px;
+    width: 50px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body ul.list_details_files li {
+    margin-bottom: 8px;
+  }
+  .files_details .top_info_details .info_left, .files_details .top_info_details .actions_right .align-items-center .dw_details_options a {
+    min-width: auto!important;
   }
   /* Search Top Bar */
   .select2-container .select2-selection--single,
