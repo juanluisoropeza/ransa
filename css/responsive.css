@@ -45,7 +45,8 @@
     padding: 1.2em 1.6em 0.6em 1.6em;
   }
   #profile .profile_data .pd_into_boxcard {
-    padding: 1.3em;
+    margin-bottom: 2.5em;
+    max-width: 500px;
   }
   #profile .profile_data .box:first-child {
     padding-right: 15px;
@@ -54,13 +55,14 @@
     padding-left: 15px;
   }
   #profile .profile_data .box .box-card {
-    margin-bottom: 1.2em;
+    margin-bottom: 2.5em;
+    max-width: 500px;
   }
   #profile .profile_data .pd_into_boxcard2 {
     padding: 1.2em;
   }
   #profile .profile_data .box .box-card h4 {
-    margin-bottom: .5em;
+    margin-bottom: 1.5em;
   }
   #profile .profile_data .box .box-card #edit_profile .boton {
     margin-top: 12px;
@@ -207,7 +209,10 @@
     padding-top: 30px;
   }
   #profile .profile_info .profile_img {
-    margin-top: -44em;
+    margin-top: -35em;
+  }
+  #profile .profile_info .profile_img img {
+    max-height: 13em;
   }
   /* Sidebar */
   .fixed-nav .fixed-nav-inner.open-nav {
@@ -228,17 +233,61 @@
 @media screen and (max-width: 575px) {
   /* Login */
   .bg-login {
-    min-height: auto;
+    min-height: 560px;
   }
   .main-login {
-    width: calc(100% - 40px);
-    height: calc(100vh - 40px);
+    width: calc(100% - 70px);
+    height: calc(100vh - 70px);
   }
-  .main-login .right-side {
-    padding: 15px !important;
+  .main-login .right-side .login-box {
+    max-width: 225px;
   }
-  .main-login .right-side figure img{
-    max-width: 200px;
+  .main-login .right-side .login-box h3 {
+    font-size: 22px;
+    margin-bottom: 38px;
+  }
+  .main-login .right-side .login-box .input-group-prepend {
+    height: 32px;
+  }
+  .main-login .right-side .login-box .input-group-prepend .input-group-text [class^="icon-"], 
+  .main-login .right-side .login-box .input-group-prepend .input-group-text [class*=" icon-"] {
+    font-size: 1em;
+  }
+  .main-login .right-side .login-box .form-control {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 32px;
+  }
+  .main-login .right-side .login-box .form-control::-webkit-input-placeholder { /* Edge */
+    font-size: 16px;
+    line-height: 19px;
+  }  
+  .main-login .right-side .login-box .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 16px;
+    line-height: 19px;
+  }  
+  .main-login .right-side .login-box .form-control::placeholder {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .main-login .right-side .login-box .btn-success {
+    font-size: 15px;
+    line-height: 19px;
+    height: 36px;
+  }
+  .main-login .right-side .login-box .link_forget {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .main-login .right-side .login-box .control-group .form-check-label {
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 10px;
+  }
+  .main-login .right-side .login-box .control-group .form-check-input {
+    height: 18px;
+    margin: 0px 0px 0px -20px;
+    width: 18px;
   }
   /* Search Top Bar */
   header .top_header .cnt_right .input-group {
@@ -711,8 +760,58 @@
   .modal .modal-content .modal-header hr {
     margin-top: 18px;
   }
+  /* Login */
+  .main-login .right-side .login-box {
+    max-width: 225px;
+  }
+  .main-login .right-side .login-box h3 {
+    font-size: 22px;
+    margin-bottom: 38px;
+  }
+  .main-login .right-side .login-box .input-group-prepend {
+    height: 32px;
+  }
+  .main-login .right-side .login-box .input-group-prepend .input-group-text [class^="icon-"], 
+  .main-login .right-side .login-box .input-group-prepend .input-group-text [class*=" icon-"] {
+    font-size: 1em;
+  }
+  .main-login .right-side .login-box .form-control {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 32px;
+  }
+  .main-login .right-side .login-box .form-control::-webkit-input-placeholder { /* Edge */
+    font-size: 16px;
+    line-height: 19px;
+  }  
+  .main-login .right-side .login-box .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 16px;
+    line-height: 19px;
+  }  
+  .main-login .right-side .login-box .form-control::placeholder {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .main-login .right-side .login-box .btn-success {
+    font-size: 15px;
+    line-height: 19px;
+    height: 36px;
+  }
+  .main-login .right-side .login-box .link_forget {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .main-login .right-side .login-box .control-group .form-check-label {
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 10px;
+  }
+  .main-login .right-side .login-box .control-group .form-check-input {
+    height: 18px;
+    margin: 0px 0px 0px -20px;
+    width: 18px;
+  }
 }
-
 
 @media screen and (min-width: 670px) and (max-width: 767px) {
   header .top_header .cnt_right .input-group .input-search {
@@ -778,6 +877,33 @@
     top: 0;
     left: 0; 
   }
+  /* Home */
+  .btn-success {
+    font-size: 14px;
+    height: 38px;
+    min-width: 120px;
+  }
+  .box-card,
+  a.box-card {
+    height: 160px;
+    width: 180px;
+  }
+  .box-card figure img {
+    max-height: 80px;
+  }
+  .box-card h4 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  #home .slider_left h1 {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 35px;
+  }
+  #home .slider_left figure img {
+    max-width: 380px;
+  }
+
   /* Select custom */
   .select_new .btn-select .btn-select-value {
     padding-left: 15px;
@@ -817,9 +943,83 @@
   .modal .modal-content .modal-body .form-inline .fechas_modal .form-control.input_date {
     font-size: 14px;
   }
+  /* Login */
+  .main-login {
+    width: calc(100% - 120px);
+    height: calc(100vh - 72px);
+  }
+  .main-login .right-side figure img {
+    max-height: 35px;
+  }
+  .main-login .left-side .content h1 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .main-login .left-side .content h2 {
+    font-size: 21px;
+    line-height: 25px;
+    max-width: 320px;
+  }
+  .main-login .left-side .img-background {
+    max-height: 330px !important;
+  }
+  .main-login .left-side .content {
+    padding-top: 15em;
+  }
+  .main-login .right-side .login-box {
+    max-width: 225px;
+  }
+  .main-login .right-side .login-box h3 {
+    font-size: 22px;
+    margin-bottom: 38px;
+  }
+  .main-login .right-side .login-box .input-group-prepend {
+    height: 32px;
+  }
+  .main-login .right-side .login-box .input-group-prepend .input-group-text [class^="icon-"], 
+  .main-login .right-side .login-box .input-group-prepend .input-group-text [class*=" icon-"] {
+    font-size: 1em;
+  }
+  .main-login .right-side .login-box .form-control {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 32px;
+  }
+  .main-login .right-side .login-box .form-control::-webkit-input-placeholder { /* Edge */
+    font-size: 16px;
+    line-height: 19px;
+  }  
+  .main-login .right-side .login-box .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 16px;
+    line-height: 19px;
+  }  
+  .main-login .right-side .login-box .form-control::placeholder {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .main-login .right-side .login-box .btn-success {
+    font-size: 15px;
+    line-height: 19px;
+    height: 36px;
+  }
+  .main-login .right-side .login-box .link_forget {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .main-login .right-side .login-box .control-group .form-check-label {
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 10px;
+  }
+  .main-login .right-side .login-box .control-group .form-check-input {
+    height: 18px;
+    margin: 0px 0px 0px -20px;
+    width: 18px;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* Home */
   .btn-success {
     font-size: 14px;
     height: 38px;
@@ -836,6 +1036,14 @@
   .box-card h4 {
     font-size: 20px;
     line-height: 22px;
+  }
+  #home .slider_left h1 {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 35px;
+  }
+  #home .slider_left figure img {
+    max-width: 380px;
   }
   /* Login */
   .main-login {

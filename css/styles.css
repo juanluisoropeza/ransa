@@ -413,6 +413,11 @@ a:hover {
   width: 15px;
 }
 
+.swiper-container-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 54px;
+}
+
 #home .slider_left .swiper-container .swiper-pagination-bullet:focus {
   outline: 0;
   box-shadow: none;
