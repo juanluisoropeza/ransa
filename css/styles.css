@@ -326,6 +326,10 @@ a:hover {
 .dropdown_table {
   padding: 15px 0px 28px 0px;
   min-width: 230px;
+  /*transform: none !important;*/
+  left: auto !important;
+  right: 14px !important;
+  top: 36px !important;
 }
 
 .dropdown_table .dropdown-item {
@@ -2149,6 +2153,14 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   display: -webkit-flex;
 }
 
+.content_table .cont_hz_scroll .row_checked {
+  background-color: var(--fondoSwt);
+}
+
+.content_table .div_table .div_tbody .row_checked .tddiv_elements {
+  border-bottom: 2px solid var(--hrColor);
+}
+
 .content_table .cont_hz_scroll .row_wbg:hover {
   background-color: var(--fondoSwt);
 }
@@ -2258,6 +2270,8 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   display: -webkit-flex;
   flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
+  align-content: center;
+  -webkit-align-content: center;
   align-items: center;
   -webkit-align-items: center;
 }
@@ -2356,6 +2370,40 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   -webkit-justify-content: flex-start;
 }
 
+/* INICIO CHECBOX PERSONALIZADOS PARA LAS TABLAS TIPO OUTLOOCK */
+.content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark,
+.content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
+  height: 18px;
+  width: 18px;
+  left: 0;
+  top: 6px;
+}
+
+.content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.content_table .div_table .div_thead .thdiv_elements .cont_item_chkb input:checked ~ .checkmark,
+.content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb input:checked ~ .checkmark {
+  background-color: white;
+}
+
+.content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb:hover input ~ .checkmark,
+.content_table .div_table .div_thead .thdiv_elements .cont_item_chkb:hover input ~ .checkmark {
+  background-color: #EFEFEF;
+}
+
+.content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark:after,
+.content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 8px;
+}
+/* FIN CHECBOX PERSONALIZADOS PARA LAS TABLAS TIPO OUTLOOCK */
+
 .content_table .div_table .div_tbody .tddiv_elements .icon_box {
   background-color: var(--verdePrincipal);
   border-radius: 22px;
@@ -2391,6 +2439,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .content_table .div_table .div_tbody .tddiv_elements:first-child img {
+  margin-left: 12px;
   max-height: 32px;
   max-width: 75px;
 }
@@ -3207,7 +3256,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 /*** inicio estilos de los checkbox para agregar columnas ***/
-.modal .modal-content .modal-body .cont_item {
+.cont_item_chkb {
   display: block;
   position: relative;
   padding-right: 35px;
@@ -3217,7 +3266,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   width: 100%;
 }
 
-.modal .modal-content .modal-body .cont_item input {
+.cont_item_chkb input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -3225,7 +3274,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   width: 0;
 }
 
-.modal .modal-content .modal-body .checkmark {
+.checkmark {
   position: absolute;
   top: 0;
   right: 0;
@@ -3236,26 +3285,26 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   border-radius: 50%;
 }
 
-.modal .modal-content .modal-body .cont_item:hover input ~ .checkmark {
+.cont_item_chkb:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
-.modal .modal-content .modal-body .cont_item input:checked ~ .checkmark {
+.cont_item_chkb input:checked ~ .checkmark {
   background-color: var(--verdePrincipal);
   border-radius: 50%;
 }
 
-.modal .modal-content .modal-body .checkmark:after {
+ .cont_item_chkb .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.modal .modal-content .modal-body .cont_item input:checked ~ .checkmark:after {
+.cont_item_chkb input:checked ~ .checkmark:after {
   display: block;
 }
 
-.modal .modal-content .modal-body .cont_item .checkmark:after {
+.cont_item_chkb .checkmark:after {
   left: 9px;
   top: 5px;
   width: 5px;
