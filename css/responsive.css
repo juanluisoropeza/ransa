@@ -1098,6 +1098,9 @@
     line-height: 19px;
     margin-bottom: 8px;
   }
+  #profile .profile_data .box .box-card .label_info .icon-icon_ruc:before {
+    font-size: 26px;
+  }
   /* Pantallas con tablas */
   .screens_with_tables .swt_box {
     padding: 40px 50px;
@@ -1274,6 +1277,47 @@
   .content_table .div_table .div_tbody .tddiv_elements.datetime [class^="icon-"], .content_table .div_table .div_tbody .tddiv_elements.datetime [class*=" icon-"] { 
     margin: 0px 10px 0px 10px;
   }
+  /* Search Top Bar */
+  .select2-container .select2-selection--single,
+  header .top_header .cnt_right .dropdown-menu .form-control,
+  header .top_header .cnt_right .dropdown-menu .input-group-append .input-group-text {
+    height: 32px;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__rendered,
+  .select2-results__option,
+  header .top_header .cnt_right .input-group .form-group label,
+  header .top_header .cnt_right .dropdown-menu .form-control {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  header .top_header .cnt_right .dropdown-menu .boton {
+    margin: 14px 0px 0px !important;
+  }
+  header .top_header .cnt_right .dropdown-menu .boton .btn-outline-success {
+    height: 38px !important;
+  }
+  header .top_header .cnt_right .dropdown-menu form {
+    padding: 4px 20px !important;
+  }
+  header .top_header .cnt_right .dropdown-menu .wm-100 {
+    margin-bottom: 6px;
+  }
+  /* datepicker */
+  .datepicker {
+    max-width: 225px;
+  }
+  .datepicker table tr td, .datepicker table tr th {
+    padding: 4px 6px;
+  }
+  .datepicker .datepicker-switch,
+  .datepicker table tr td, 
+  .datepicker table tr th {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .datepicker .datepicker-days .table-condensed tbody {
+    margin: 8px 10px 0px 0px;
+  }
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1399px) {
@@ -1289,7 +1333,8 @@
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1439px) {
-  .btn-success {
+  .btn-success,
+  .btn-outline-success {
     font-size: 14px;
     height: 38px;
     min-width: 120px;
@@ -1599,6 +1644,47 @@
   .files_details .top_info_details .info_left .info_file .txt_breadcumb {
     font-size: 18px;
     line-height: 21px;
+  }
+  /* Search Top Bar */
+  .select2-container .select2-selection--single,
+  header .top_header .cnt_right .dropdown-menu .form-control,
+  header .top_header .cnt_right .dropdown-menu .input-group-append .input-group-text {
+    height: 32px;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__rendered,
+  .select2-results__option,
+  header .top_header .cnt_right .input-group .form-group label,
+  header .top_header .cnt_right .dropdown-menu .form-control {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  header .top_header .cnt_right .dropdown-menu .boton {
+    margin: 14px 0px 0px !important;
+  }
+  header .top_header .cnt_right .dropdown-menu .boton .btn-outline-success {
+    height: 38px !important;
+  }
+  header .top_header .cnt_right .dropdown-menu form {
+    padding: 4px 20px !important;
+  }
+  header .top_header .cnt_right .dropdown-menu .wm-100 {
+    margin-bottom: 6px;
+  }
+  /* datepicker */
+  .datepicker {
+    max-width: 225px;
+  }
+  .datepicker table tr td, .datepicker table tr th {
+    padding: 4px 6px;
+  }
+  .datepicker .datepicker-switch,
+  .datepicker table tr td, 
+  .datepicker table tr th {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .datepicker .datepicker-days .table-condensed tbody {
+    margin: 8px 10px 0px 0px;
   }
 }
 

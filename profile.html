@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/datepicker.min.css">
+    <link rel="stylesheet" href="./css/select2.min.css">
+    <link rel="stylesheet" href="./css/select2-bootstrap4.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
@@ -26,8 +28,7 @@
                         <input type="text" class="form-control input-search" />
                     </form>
                     <a class="btn btn-outline-success button-search-custom dropdown-toggle" href="#" role="button" id="busquedaHeader" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    </a>
-                  
+                    </a>                  
                     <div class="dropdown-menu" aria-labelledby="busquedaHeader">
                         <form class="px-4 py-3 form-inline" id="form1">
                             <div class="row wm-100">
@@ -35,63 +36,42 @@
                                     <label for="txt_tipo">Tipo</label>
                                 </div>
                                 <div class="col-sm-10 col-md-10 col-lg-10 control-group">
-                                    <div class="select_new">
-                                        <a class="btn btn-success btn-select btn-select-light">
-                                            <input type="hidden" class="btn-select-input" id="txt_srv" name="txt_srv" value="" />
-                                            <span class="btn-select-value">Seleccione</span>
-                                            <span class='btn-select-arrow'></span>
-                                            <ul>
-                                                <li>tipo 1</li>
-                                                <li>tipo 2</li>
-                                                <li>tipo 3</li>
-                                            </ul>
-                                        </a>
-                                    </div>
+                                    <select class="select_custon_select2 form-control" name="txt_ts_tipo">
+                                        <option value="">Seleccione</option>
+                                        <option value="t1">tipo 1</option>
+                                        <option value="t2">tipo 2</option>
+                                        <option value="t3">tipo 3</option>
+                                    </select>
                                 </div>
-                                <p class="help-block text-danger"></p>
                             </div>
                             <div class="row wm-100">
                                 <div class="col-sm-2 col-md-2 col-lg-2 form-group input-group floating-label-form-group controls">
                                     <label for="txt_propetario">Propietario</label>
                                 </div>
                                 <div class="col-6 col-sm-5 col-md-5 col-lg-5 control-group">
-                                    <div class="select_new mr-10">
-                                        <a class="btn btn-success btn-select btn-select-light">
-                                            <input type="hidden" class="btn-select-input" id="txt_prop" name="txt_prop" value="" />
-                                            <span class="btn-select-value m-75">Persona específica</span>
-                                            <span class='btn-select-arrow'></span>
-                                            <ul class="m-75">
-                                                <li>Cualquier usuario</li>
-                                                <li>De mi propiedad</li>
-                                                <li>Propiedad de otro usuario</li>
-                                                <li>Persona específica</li>
-                                            </ul>
-                                        </a>
-                                    </div>
+                                    <select class="select_custon_select2 form-control" name="txt_ts_prop">
+                                        <option value="ts_prop1">Cualquier usuario</option>
+                                        <option value="ts_prop2">De mi propiedad</option>
+                                        <option value="ts_prop3">Propiedad de otro usuario</option>
+                                        <option value="ts_prop4" selected>Persona específica</option>
+                                    </select>
                                 </div>
                                 <div class="col-6 col-sm-5 col-md-5 col-lg-5 control-group">
                                     <input type="text" class="form-control" name="txt_nombre" id="txt_nombre" placeholder="Ingrese nombre" />
                                 </div>
-                                <p class="help-block text-danger"></p>
                             </div>
                             <div class="row wm-100">
                                 <div class="col-sm-2 col-md-2 col-lg-2 form-group input-group floating-label-form-group controls">
                                     <label for="txt_ubicacion">Ubicación</label>
                                 </div>
                                 <div class="col-sm-10 col-md-10 col-lg-10 control-group">
-                                    <div class="select_new">
-                                        <a class="btn btn-success btn-select btn-select-light">
-                                            <input type="hidden" class="btn-select-input" id="txt_ubic" name="txt_ubic"/>
-                                            <span class="btn-select-value  m-75">Seleccione</span>
-                                            <span class='btn-select-arrow'></span>
-                                            <ul class="m-75">
-                                                <li>Mis Accesos</li>
-                                                <li>Mis Archivos</li>
-                                                <li>Mis Compartidos</li>
-                                                <li>Compartidos conmigo</li>
-                                            </ul>
-                                        </a>
-                                    </div>
+                                    <select class="select_custon_select2 form-control" name="txt_ts_ubic">
+                                        <option value="">Seleccione</option>
+                                        <option value="ts_ubic1">Mis Accesos</option>
+                                        <option value="ts_ubic2">Mis Archivos</option>
+                                        <option value="ts_ubic3">Mis Compartidos</option>
+                                        <option value="ts_ubic4">Compartidos conmigo</option>
+                                    </select>
                                 </div>
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -109,35 +89,23 @@
                                     <label for="txt_tamano">Tamaño</label>
                                 </div>
                                 <div class="col-12 col-sm control-group mb_mobile_15">
-                                    <div class="select_new">
-                                        <a class="btn btn-success btn-select btn-select-light">
-                                            <input type="hidden" class="btn-select-input" id="txt_tamn" name="txt_tamn" value="" />
-                                            <span class="btn-select-value">Seleccione</span>
-                                            <span class='btn-select-arrow'></span>
-                                            <ul>
-                                                <li>Mayor que</li>
-                                                <li>Menor que</li>
-                                                <li>Igual a</li>
-                                            </ul>
-                                        </a>
-                                    </div>
+                                    <select class="select_custon_select2 form-control" name="txt_ts_tamn" id="txt_ts_tamn">
+                                        <option value="">Seleccione</option>
+                                        <option value="ts_tamn1">Mayor que</option>
+                                        <option value="ts_tamn2">Menor que</option>
+                                        <option value="ts_tamn3">Igual a</option>
+                                    </select>
                                 </div>
                                 <div class="col-6 col-sm control-group">
                                     <input type="text" class="form-control" id="txt_tam_nro" name="txt_tam_nro" placeholder="">
                                 </div>
                                 <div class="col-6 col-sm control-group">
-                                    <div class="select_new">
-                                        <a class="btn btn-success btn-select btn-select-light">
-                                            <input type="hidden" class="btn-select-input" id="txt_tam_uni" name="txt_tam_uni" value="" />
-                                            <span class="btn-select-value">Seleccione</span>
-                                            <span class='btn-select-arrow'></span>
-                                            <ul>
-                                                <li>MB</li>
-                                                <li>GB</li>
-                                                <li>TB</li>
-                                            </ul>
-                                        </a>
-                                    </div>
+                                    <select class="select_custon_select2 form-control" name="txt_ts_tamn_uni" id="txt_ts_tamn_uni">
+                                        <option value="">Seleccione</option>
+                                        <option value="ts_tamn_uni1">MB</option>
+                                        <option value="ts_tamn_uni2">GB</option>
+                                        <option value="ts_tamn_uni3">TB</option>
+                                    </select>
                                 </div>
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -146,18 +114,12 @@
                                     <label for="txt_rfechas_dias">Rango de fechas</label>
                                 </div>
                                 <div class="col-6 col-sm-5 col-md-5 col-lg-5 control-group">
-                                    <div class="select_new">
-                                        <a class="btn btn-success btn-select btn-select-light">
-                                            <input type="hidden" class="btn-select-input" id="txt_rang_fec" name="txt_rang_fec" value="" />
-                                            <span class="btn-select-value">Seleccione</span>
-                                            <span class='btn-select-arrow'></span>
-                                            <ul>
-                                                <li>4 días</li>
-                                                <li>8 días</li>
-                                                <li>12 días</li>
-                                            </ul>
-                                        </a>
-                                    </div>
+                                    <select class="select_custon_select2 form-control" name="txt_ts_rang_fec" id="txt_ts_rang_fec">
+                                        <option value="">Seleccione</option>
+                                        <option value="ts_rang_fec1">4 días</option>
+                                        <option value="ts_rang_fec2">8 días</option>
+                                        <option value="ts_rang_fec3">12 días</option>
+                                    </select>
                                 </div>
                                 <div class="col-6 col-sm-5 col-md-5 col-lg-5 control-group">
                                     <div class="input-group">
@@ -314,8 +276,9 @@
     <script type="text/javascript" src="./js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap-datepicker.es.min.js"></script>
     <script type="text/javascript" src="./js/datepicker.js"></script>
+    <script type="text/javascript" src="./js/select2.min.js"></script>
+    <script type="text/javascript" src="./js/select2_initializate.js"></script>
     <script type="text/javascript" src="./js/jqBootstrapValidation.js"></script>
     <script type="text/javascript" src="./js/profile.js"></script>
-    <script type="text/javascript" src="./js/select_custom.js"></script>
 </body>
 </html>
