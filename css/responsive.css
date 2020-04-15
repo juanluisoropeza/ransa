@@ -206,6 +206,18 @@
   #home .content_right .row:first-child {
     height: 100%;
   }
+  #home .content_right .box-card,
+  #home .content_right a.box-card {
+    height: 165px;
+    width: 190px;
+  }
+  #home .content_right .box-card figure img {
+    max-height: 75px;
+  }
+  #home .content_right .box-card h4 {
+    font-size: 18px;
+    line-height: 20px;
+  }
   /* Profile */  
   #profile .profile_info .info_box {
     height: 75%;
@@ -1521,18 +1533,6 @@
     font-size: 14px;
     height: 38px;
     min-width: 120px;
-  }
-  .box-card,
-  a.box-card {
-    height: 165px;
-    width: 190px;
-  }
-  .box-card figure img {
-    max-height: 75px;
-  }
-  .box-card h4 {
-    font-size: 18px;
-    line-height: 20px;
   }
   /* Login */
   .main-login {
