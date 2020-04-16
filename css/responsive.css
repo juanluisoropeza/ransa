@@ -263,6 +263,25 @@
   .fixed-nav .fixed-nav-inner {
     width: 0px;
   }
+   /* Modal */
+  .modal .modal-body .list_detail li h5,
+  .modal .modal-body .list_detail li p {
+    font-size: 16px;
+    text-align: initial;
+  }
+  .modal .modal-body .list_detail li {
+    margin-bottom: 10px;
+  }
+  .modal .modal-content .modal-header.padding-equeal-body {
+    padding: 45px 64px 0px 20px;
+  }
+  .modal .modal-content .modal-body {
+    padding: 20px 20px 5px 20px !important;
+  }
+  .modal .modal-content .txt_rename_file_name,
+  .modal .modal-content .controls input {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -359,7 +378,7 @@
     top: 52px;
   }
   header .top_header .cnt_right .right_links .dropdown-menu {
-    left: auto !important;
+    left: 0 !important;
     right: auto;
   }
   header .top_header .cnt_right .right_links li {
@@ -386,7 +405,7 @@
   }
   header .top_header .cnt_right .search_input.dropdown .dropdown-menu {
     min-width: 310px;
-    left: 0 !important;
+    left: -11px !important;
     right: 0;
     margin: 0 auto;
   }
@@ -591,6 +610,11 @@
     margin-bottom:0px;
   }
   /* Modals */  
+  .modal .modal-content .modal-header .close {
+    position: absolute;
+    right: 22px;
+    top: 10px;
+  }
   .modal .modal-dialog {
     max-width: 565px;
   }
@@ -652,6 +676,9 @@
   }
   .dropdown-item {
     font-size: 15px;
+  }
+  .cont_item_chkb {
+    font-size: 16px;
   }
   /* File Details */
   .files_details .content_files_details .preview_file {
