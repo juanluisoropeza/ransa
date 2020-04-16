@@ -1047,7 +1047,7 @@ header .top_header .button_sidebar_movil a li i:before {
 footer {
   background-color: white;
   position: relative;
-  z-index: 9555;
+  z-index: 3;
 }
 
 footer .content_footer {
@@ -2503,7 +2503,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .content_table .div_table .div_tbody .tddiv_elements:last-child {
-  position: fixed;
+  position: absolute;
   background-color: white;
   right: 55px;
   z-index: 4;
