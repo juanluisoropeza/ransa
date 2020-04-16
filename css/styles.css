@@ -2502,6 +2502,13 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   -webkit-justify-content: center;
 }
 
+.content_table .div_table .div_tbody .tddiv_elements:last-child {
+  position: fixed;
+  background-color: white;
+  right: 55px;
+  z-index: 4;
+}
+
 .content_table .div_table .div_tbody .row_wbg:hover .tddiv_elements {
   border-bottom: 2px solid var(--hrColor);
 }
