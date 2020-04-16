@@ -2443,7 +2443,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .content_table .div_table .div_tbody .tddiv_elements:first-child img {
   margin-left: 12px;
   max-height: 32px;
-  max-width: 75px;
+  max-width: 50px;
 }
 
 .content_table .div_table .div_tbody .tddiv_elements.datetime [class^="icon-"], 
