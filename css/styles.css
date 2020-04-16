@@ -1047,7 +1047,7 @@ header .top_header .button_sidebar_movil a li i:before {
 footer {
   background-color: white;
   position: relative;
-  z-index: 9555;
+  z-index: 3;
 }
 
 footer .content_footer {
@@ -2447,7 +2447,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .content_table .div_table .div_tbody .tddiv_elements:first-child img {
   margin-left: 12px;
   max-height: 32px;
-  max-width: 75px;
+  max-width: 50px;
 }
 
 .content_table .div_table .div_tbody .tddiv_elements.datetime [class^="icon-"], 
@@ -2504,6 +2504,21 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   text-align: center;
   justify-content: center;
   -webkit-justify-content: center;
+}
+
+.content_table .div_table .div_tbody .tddiv_elements:last-child {
+  position: absolute;
+  background-color: white;
+  right: 55px;
+  z-index: 4;
+}
+
+.content_table .div_table .div_tbody .tddiv_elements.show {
+  z-index: 4;
+}
+
+.content_table .div_table .div_tbody .tddiv_elements:last-child:not(.show) {
+  z-index: 1;
 }
 
 .content_table .div_table .div_tbody .row_wbg:hover .tddiv_elements {
