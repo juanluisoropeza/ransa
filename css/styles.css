@@ -1651,6 +1651,10 @@ footer .content_footer ul li a:hover {
   width: calc(100% - 102px);
 }
 
+.screens_with_tables .swt_box .row {
+  margin-right: 0px;
+}
+
 .screens_with_tables .swt_box .top_info {
   width: 100%;
 }
