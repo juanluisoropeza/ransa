@@ -31,17 +31,35 @@
   .main-login {
     width: calc(100% - 90px);
     height: calc(100vh - 85px);
+    background-color: var(--fondoSwt);
   }
   .main-login .left-side {
-    display: none!important;
   }
   .main-login .left-side .img-background {
-    max-height: 350px;
+    max-height: 295px;
+    top: 28%;
   }
   .main-login .right-side {
+    display: none;  
     padding-top: 1.5em;
     padding-left: 2.5em;
     padding-right: 2.5em;
+  }
+  .main-login .box_movil_center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .main-login #div2 {
+    display: none;
   }
   .main-login .right-side figure {
     margin-bottom: 24px;
@@ -59,6 +77,17 @@
   }
   .main-login .right-side .login-box .form-control {
     height: 28px;
+  }
+  .main-login .left-side .content h1 {
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  .main-login .left-side .content h2 {
+    display: block;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
   }
   /* Profile */
   #profile .profile_info h2 {
@@ -314,12 +343,16 @@
   .bg-login {
     min-height: 560px;
   }
+  .main-login .buttons_only_movil {
+    bottom: 50px;
+  }
   .main-login {
     width: calc(100% - 70px);
     height: calc(100vh - 70px);
   }
   .main-login .right-side .login-box {
     max-width: 225px;
+    margin: 0 auto;
   }
   .main-login .right-side .login-box h3 {
     font-size: 22px;
@@ -912,6 +945,9 @@
   /* Footer */
   .content_footer {
     font-size: 12px;
+  }
+  .main-login .buttons_only_movil {
+    bottom: 90px;
   }
 }
 
