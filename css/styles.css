@@ -536,10 +536,24 @@ a.box-card {
 	height: calc(100vh - 120px);
 	background: #fff;
 }
+.main-login #div2 {
+}
 
 .main-login .container-fluid,
 .main-login .row {
   height: 100%;
+}
+
+.main-login .buttons_only_movil {
+  position: absolute;
+  bottom: 75px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 190px;
+  background-color: var(--verdePrincipal);
+  border-color: var(--verdePrincipal);
+  color: white;
 }
 
 .main-login .left-side,
