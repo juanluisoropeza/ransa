@@ -3166,6 +3166,9 @@
   .modal .modal-content .modal-body .list-group .select_column .cont_item_chkb input:checked ~ .checkmark:after {
     display: none;
   }
+  .modal .modal-content .modal-body .list_files_cp li img {
+    max-height: 25px;
+  }
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1679px) {
