@@ -2239,8 +2239,8 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .content_table .div_table .div_thead .thdiv_elements a span {
-  color: var(--colorTextoClaro);
-  font-size: 1em;
+  color: var(--verdePrincipal);
+  font-size: 1.2em;
   margin-left: 10px;
 }
 
@@ -2510,8 +2510,12 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .content_table .div_table .div_tbody .tddiv_elements:last-child {
   position: absolute;
   background-color: white;
-  right: 55px;
+  right: 4.875em;
   z-index: 4;
+}
+
+.content_table .div_table .div_tbody .table_row:last-child .tddiv_elements:last-child {
+  border-bottom-right-radius: 10px;
 }
 
 .content_table .div_table .div_tbody .tddiv_elements.show {
