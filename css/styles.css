@@ -2521,7 +2521,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   -webkit-justify-content: center;
 }
 
-.content_table .div_table .div_tbody .tddiv_elements:last-child {
+.content_table .div_table .div_tbody .btn_action_fixed {
   position: absolute;
   background-color: white;
   right: 55px;
