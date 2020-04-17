@@ -90,6 +90,31 @@
   #profile .profile_data .box .box-card #edit_profile .boton {
     margin-top: 12px;
   }
+  /* Modals */
+  .modal .modal-content .modal-body .list-group .list-group-item,  
+  .modal .modal-content .modal-body .list-group .list-group-item .cont_item_chkb,
+  .modal .modal-content .modal-body .cont_item {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .modal .modal-content .modal-body .list-group .select_column {
+    padding: 6px 10px;
+  }
+  .modal .modal-content .modal-body .list-group .selected_column {
+    padding: 10px 10px;
+  }
+  .modal .modal-content .modal-body .list-group .select_column .checkmark {
+    height: 14px;
+    width: 14px;
+  }
+  .modal .modal-content .modal-body .list-group .select_column .cont_item_chkb input:checked ~ .checkmark:after {
+    display: none;
+  }
+  .modal .modal-content .modal-body .info {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 991px) {
