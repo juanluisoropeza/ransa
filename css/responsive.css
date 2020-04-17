@@ -33,11 +33,12 @@
     height: calc(100vh - 85px);
     background-color: var(--fondoSwt);
   }
-  .main-login .left-side {
+  .main-login .left-side .content {
+    padding-top: 10em;
   }
   .main-login .left-side .img-background {
     max-height: 295px;
-    top: 28%;
+    top: 17em;
   }
   .main-login .right-side {
     display: none;  
@@ -1000,6 +1001,15 @@
   }
   .main-login .buttons_only_movil {
     bottom: 90px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .main-login .left-side .content {
+    padding-top: 7em;
+  }
+  .main-login .left-side .img-background {
+    top: 14em;
   }
 }
 
