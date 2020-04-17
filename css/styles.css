@@ -950,6 +950,7 @@ header .top_header .cnt_right .input-group .form-group {
 }
 
 header .top_header .cnt_right .input-group .form-group label {
+  color: var(--colorTextoClaro);
   margin-bottom: 0;
   justify-content: flex-start;
   -webkit-justify-content: flex-start;
@@ -2529,6 +2530,13 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .content_table .div_table .div_tbody .tddiv_elements.show {
   z-index: 4;
+}
+
+.content_table .div_table .div_tbody .tddiv_elements .dropdown-menu {
+  right: 0px;
+  transform: none !important;
+  top: 45px !important;
+  left: auto !important;
 }
 
 .content_table .div_table .div_tbody .tddiv_elements:last-child:not(.show) {
