@@ -729,7 +729,10 @@
   /* Modals */  
   .modal .modal_message {
     max-width: 440px !important;
-    margin: 0 auto;
+    margin: 0 15px;
+  }
+  .modal .modal-content .modal-body {
+    padding-top: 10px !important;
   }
   .modal .modal-content .modal-body h4.msj_question {
     font-size: 15px;
@@ -737,6 +740,7 @@
     margin-bottom: 1em;
   }
   .modal .modal-content .modal-body .img_message img {
+    margin-bottom: 10px;
     max-height: 115px !important;
   }
   .modal .modal-content .modal-header .close {
@@ -839,6 +843,31 @@
     height: 38px;
     min-width: 120px;
     width: auto;
+  }
+  .modal .modal-content .modal-body .list_files_cp li img {
+    max-height: 25px;
+  }
+  .modal .modal-content .modal-body .mdb_breadcrumb .gray_item, 
+  .modal .modal-content .modal-body .mdb_breadcrumb .green_item {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .modal .modal-content .modal-body .list_files_cp li label:not(.cont_item) {
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 10px;
+    min-width: 155px;
+  }
+  .modal .modal-content .modal-body .list_files_cp li .cont_item {
+    width: calc(100% - 245px);
+  }
+  .modal .modal-content .modal-body .mdb_breadcrumb .link_back {
+    height: 28px;
+    margin-right: 14px;
+    width: 28px;
+  }
+  .modal .modal-content .modal-body .has-search .form-control-feedback {
+    font-size: 1.2em;
   }
   /* File Details */
   .files_details .content_files_details .preview_file {
@@ -1257,6 +1286,29 @@
   .modal .modal-content .modal-body .filter_top .input-group-text [class*=" icon-"] {
     font-size: 1.2em;
   }
+  .modal .modal-content .modal-body .list_files_cp li img {
+    max-height: 25px;
+  }
+  .modal .modal-content .modal-body .mdb_breadcrumb .gray_item, 
+  .modal .modal-content .modal-body .mdb_breadcrumb .green_item {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .modal .modal-content .modal-body .list_files_cp li label:not(.cont_item) {
+    font-size: 16px;
+    line-height: 19px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 16px;
+  }
+  .modal .modal-content .modal-body .mdb_breadcrumb .link_back {
+    height: 28px;
+    margin-right: 14px;
+    width: 28px;
+  }
+  .modal .modal-content .modal-body .has-search .form-control-feedback {
+    font-size: 1.2em;
+  }
   /* Login */
   .main-login .right-side .login-box {
     max-width: 225px;
@@ -1641,6 +1693,16 @@
   .modal .modal-content .modal-footer {
     padding: 0px 40px 20px;
   }
+  .modal .modal_message .modal-content .modal-header,
+  .modal .modal-content .modal-header.padding-equeal-body {
+    padding: 25px 40px 0px !important;
+  }
+  .modal .modal_message .modal-content .modal-body {
+    padding: 27px 40px 8px 40px;
+  }
+  .modal .modal_message .modal-content .modal-footer {
+    padding: 0px 40px 25px;
+  }
   .modal .modal-dialog {
     max-width: 650px;
   }
@@ -1705,6 +1767,29 @@
   .modal .modal-content .modal-header .modal-title {
     font-size: 19px;
     line-height: 21px;
+  }
+  .modal .modal-content .modal-body .list_files_cp li img {
+    max-height: 25px;
+  }
+  .modal .modal-content .modal-body .mdb_breadcrumb .gray_item, 
+  .modal .modal-content .modal-body .mdb_breadcrumb .green_item {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .modal .modal-content .modal-body .list_files_cp li label:not(.cont_item) {
+    font-size: 16px;
+    line-height: 19px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 16px;
+  }
+  .modal .modal-content .modal-body .mdb_breadcrumb .link_back {
+    height: 28px;
+    margin-right: 14px;
+    width: 28px;
+  }
+  .modal .modal-content .modal-body .has-search .form-control-feedback {
+    font-size: 1.2em;
   }
   /* Search Top Bar */
   .select2-container--default .select2-selection--single .select2-selection__rendered, 
@@ -2406,9 +2491,6 @@
   .modal .modal-content .modal-header.padding-equeal-body {
     padding: 27px 34px 0px 34px;
   }
-  .modal .modal-content .modal-body {
-    padding: 27px 50px 8px 50px;
-  }
   .modal .modal-content .modal-body .mdb_breadcrumb .gray_item, 
   .modal .modal-content .modal-body .mdb_breadcrumb .green_item {    
     font-size: 18px;
@@ -2430,6 +2512,16 @@
   }
   .modal .modal-content .modal-footer {
     padding: 0px 55px 25px;
+  }
+  .modal .modal_message .modal-content .modal-header,
+  .modal .modal-content .modal-header.padding-equeal-body {
+    padding: 25px 40px 0px !important;
+  }
+  .modal .modal_message .modal-content .modal-body {
+    padding: 27px 40px 8px 40px;
+  }
+  .modal .modal_message .modal-content .modal-footer {
+    padding: 0px 40px 25px;
   }
   .modal .modal-content .modal-footer .btn-success, 
   .modal .modal-content .modal-footer .btn-outline-success {
@@ -2513,6 +2605,29 @@
   }
   .modal .modal-content .modal-body .list-group .select_column .cont_item_chkb input:checked ~ .checkmark:after {
     display: none;
+  }
+  .modal .modal-content .modal-body .list_files_cp li img {
+    max-height: 25px;
+  }
+  .modal .modal-content .modal-body .mdb_breadcrumb .gray_item, 
+  .modal .modal-content .modal-body .mdb_breadcrumb .green_item {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .modal .modal-content .modal-body .list_files_cp li label:not(.cont_item) {
+    font-size: 16px;
+    line-height: 19px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 16px;
+  }
+  .modal .modal-content .modal-body .mdb_breadcrumb .link_back {
+    height: 28px;
+    margin-right: 14px;
+    width: 28px;
+  }
+  .modal .modal-content .modal-body .has-search .form-control-feedback {
+    font-size: 1.2em;
   }
   /* Search Top Bar */
   .select2-container .select2-selection--single,
@@ -3089,11 +3204,23 @@
   .modal .modal-content .modal-header {
     padding: 25px 55px 0px;
   }
+  .modal .modal-content .modal-header.padding-equeal-body {
+    padding: 45px 55px 0px 55px;
+  }
   .modal .modal-content .modal-body {
     padding: 27px 55px 8px 55px;
   }
   .modal .modal-content .modal-footer {
     padding: 0px 55px 25px;
+  }
+  .modal .modal_message .modal-content .modal-header {
+    padding: 25px 40px 0px;
+  }
+  .modal .modal_message .modal-content .modal-body {
+    padding: 27px 40px 8px 40px;
+  }
+  .modal .modal_message .modal-content .modal-footer {
+    padding: 0px 40px 25px;
   }
   .modal .modal-content .modal-footer .btn-success, 
   .modal .modal-content .modal-footer .btn-outline-success {
@@ -3129,7 +3256,7 @@
     height: 32px;
   }
   .modal .modal_message {
-    max-width: 500px;
+    max-width: 530px;
   }
   .modal .modal-content .modal-body h4.msj_question {
     font-size: 20px;
@@ -3165,6 +3292,29 @@
   }
   .modal .modal-content .modal-body .list-group .select_column .cont_item_chkb input:checked ~ .checkmark:after {
     display: none;
+  }
+  .modal .modal-content .modal-body .list_files_cp li img {
+    max-height: 25px;
+  }
+  .modal .modal-content .modal-body .mdb_breadcrumb .gray_item, 
+  .modal .modal-content .modal-body .mdb_breadcrumb .green_item {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .modal .modal-content .modal-body .list_files_cp li label:not(.cont_item) {
+    font-size: 16px;
+    line-height: 19px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 16px;
+  }
+  .modal .modal-content .modal-body .mdb_breadcrumb .link_back {
+    height: 28px;
+    margin-right: 14px;
+    width: 28px;
+  }
+  .modal .modal-content .modal-body .has-search .form-control-feedback {
+    font-size: 1.2em;
   }
 }
 

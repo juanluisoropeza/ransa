@@ -3428,6 +3428,10 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   display: none;
 }
 
+.modal .modal-body label {
+  color: var(--colorTextoClaro);
+}
+
 .modal .modal-body .list_detail {
   list-style: none;
   margin: 0;
@@ -3500,7 +3504,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .modal .modal-content .modal-body .img_message img {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   max-height: 244px;
 }
 
