@@ -614,15 +614,21 @@
   }
   /* pantallas con tablas */
   .screens_with_tables {
-    padding-top: 90px !important;
+    padding-top: 90px;
   }
-  .screens_with_tables {
-    padding-top: 125px;
+  .screens_with_tables.details_mobile {
+    padding-top: 110px;
   }
   .screens_with_tables .swt_box {
     margin-bottom:0px;
     padding: 30px 15px 30px;
     width: 100% !important;
+  }
+  .screens_with_tables .swt_box .top_info {
+    margin-bottom: 20px;
+  }
+  .dropdown_table {
+    padding: 12px 0px 6px;
   }
   .screens_with_tables .swt_box .top_folders {
     margin-bottom: 1.25em;
@@ -882,10 +888,18 @@
   }
   .files_details .top_info_details .actions_right {
     padding: 0px;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
   .files_details .top_info_details .actions_right .row {
     margin: 0px;
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
+  .files_details .top_info_details .actions_right .dw_details_options .dropdown-menu {
+    right: auto !important;
+    left: 0 !important;
+    min-width: 225px;
   }
   .files_details .top_info_details .actions_right .btn-outline-success:not(.button-search-custom) {
     font-size: 13px;
@@ -901,8 +915,8 @@
     line-height: 23px;
     padding-top: 0px;
     position: absolute;
-    right: 10px;
-    top: -85px;
+    right: 0px;
+    top: -50px;
   }
   .files_details .content_files_details .right_section .details_box .db_title {
     font-size: 17px;
@@ -1166,6 +1180,18 @@
   header .top_header .cnt_right .input-group .form-group label, 
   header .top_header .cnt_right .dropdown-menu .form-control {
     font-size: 14px;
+    line-height: 17px;
+  }
+  header .top_header .cnt_right .dropdown-menu .form-control::-webkit-input-placeholder {
+    font-size: 14px !important;
+    line-height: 17px;
+  }
+  header .top_header .cnt_right .dropdown-menu .form-control:-ms-input-placeholder {
+    font-size: 14px !important;
+    line-height: 17px;
+  }
+  header .top_header .cnt_right .dropdown-menu .form-control::placeholder {
+    font-size: 14px !important;
     line-height: 17px;
   }
   .modal .modal-content .modal-body .filter_top .form-control, .modal .modal-content .modal-body .filter_top .input-group-text {
