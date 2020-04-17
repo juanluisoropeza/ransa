@@ -119,6 +119,18 @@
   #profile .profile_data .box .box-card #edit_profile .boton {
     margin-top: 12px;
   }
+  /* Modal */
+  .modal .modal-content .modal-body .content_table .cont_hz_scroll {
+    overflow: auto;
+  }
+  .modal .modal-content .modal-body .buttons .btn-outline-success.h40 {
+    height: 35px;
+    line-height: 15px;
+    margin: 0px 10px;
+  }
+  .modal .buttons {
+    display: flex;
+  }
   /* Modals */
   .modal .modal-content .modal-body .list-group .list-group-item,  
   .modal .modal-content .modal-body .list-group .list-group-item .cont_item_chkb,
@@ -708,6 +720,18 @@
     right: calc(15px + 1px);
   }
   /* Modals */  
+  .modal .modal_message {
+    max-width: 440px !important;
+    margin: 0 auto;
+  }
+  .modal .modal-content .modal-body h4.msj_question {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 1em;
+  }
+  .modal .modal-content .modal-body .img_message img {
+    max-height: 115px !important;
+  }
   .modal .modal-content .modal-header .close {
     position: absolute;
     right: 22px;
@@ -768,6 +792,20 @@
   .modal .modal-content .modal-body .checkmark {
     height: 18px;
     width: 18px;
+  }
+  .modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements .profile_photo img {
+    margin-right: 5px;
+    max-height: 22px;
+  }
+  .modal .buttons {
+    display: flex;
+  }
+  .modal .modal-content .modal-header.padding-equeal-body {
+    padding: 18px 64px 0px 20px;
+  }
+  .modal .modal-content .txt_rename_file_name, .modal .modal-content .controls input {
+    font-size: 14px; 
+    height: 32px;
   }
   .dropdown-item {
     font-size: 15px;
@@ -1371,7 +1409,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {             
   .m-75 {
     padding-left: 15px !important;
   }
@@ -1580,6 +1618,20 @@
   }
   .modal .modal-content .modal-body .form-inline .fechas_modal .form-control.input_date {
     font-size: 14px;
+  }
+  .modal .modal_message {
+    max-width: 500px;
+  }
+  .modal .modal-content .modal-body h4.msj_question {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 2em;
+  }
+  .modal .modal-content .modal-body .img_message img {
+    max-height: 170px !important;
+  }
+  .modal .modal-content .modal-body .content_table .cont_hz_scroll {
+    overflow: auto;
   }
   .modal .modal-md {
     max-width: 500px;
@@ -2294,9 +2346,12 @@
     min-width: auto!important;
   }
   /* Modals */
+  .modal .modal-content .modal-body .content_table .cont_hz_scroll {
+    overflow: auto;
+  }
   #modalShareFiles.modal .modal-content .modal-body .content_table .div_table .div_tbody,
   #modalShareFiles.modal .modal-content .modal-body .content_table .div_table .div_thead {
-    margin: 0px -40px 0px -10px;
+    margin: 0px 0px 0px -10px;
   }
   .modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements,
   .modal .modal-content .modal-body .content_table .div_table .div_thead .thdiv_elements {
@@ -2316,7 +2371,7 @@
     padding: 27px 34px 0px 34px;
   }
   .modal .modal-content .modal-body {
-    padding: 27px 34px 24px 34px;
+    padding: 27px 50px 8px 50px;
   }
   .modal .modal-content .modal-body .mdb_breadcrumb .gray_item, 
   .modal .modal-content .modal-body .mdb_breadcrumb .green_item {    
@@ -2372,6 +2427,29 @@
   }
   .modal .modal-content .modal-body .form-inline .fechas_modal .input-group-apend .input-group-text {
     height: 32px;
+  }
+  .modal .modal_message {
+    max-width: 500px;
+  }
+  .modal .modal-content .modal-body h4.msj_question {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 2em;
+  }
+  .modal .modal-content .modal-body .img_message img {
+    max-height: 170px !important;
+  }
+  .modal .modal-content .modal-header.padding-equeal-body {
+    padding: 30px 64px 0px 64px;
+  }
+  .modal .modal-content .modal-body .buttons .btn-outline-success.h40 {
+    height: 35px;
+  }
+  .modal .modal-content .modal-body .buttons .btn-outline-success.h40 {
+    height: 35px;
+  }
+  .modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements {
+    height: 45px;
   }
   .modal .modal-content .modal-body .info {
     font-size: 16px;
@@ -3013,6 +3091,17 @@
   }
   .modal .modal-content .modal-body .form-inline .fechas_modal .input-group-apend .input-group-text {
     height: 32px;
+  }
+  .modal .modal_message {
+    max-width: 500px;
+  }
+  .modal .modal-content .modal-body h4.msj_question {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 2em;
+  }
+  .modal .modal-content .modal-body .img_message img {
+    max-height: 170px !important;
   }
   .modal .modal-content .modal-body .info {
     font-size: 14px;
