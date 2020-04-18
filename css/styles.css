@@ -303,6 +303,10 @@ a:hover {
   color: white !important;
 }
 
+.dropdown-menu .opcion_only_movil {
+  display: none;
+}
+
 .dropdown-menu {
   padding: 13px 0px 18px 0px;
   border: 1px solid #E5E5E5;
@@ -343,6 +347,7 @@ a:hover {
   margin-bottom: 18px;
   border: 1px solid #E0E0E0;
 }
+
 
 /*** SELECT 2 ***/
 
@@ -1770,7 +1775,6 @@ footer .content_footer ul li a:hover {
 .screens_with_tables .swt_box .buttons_right .btn-outline-success:hover [class*=" icon-"]:before {
   color: white;
 }
-
 .screens_with_tables .swt_box .buttons_right .dw_details_options .dropdown-menu {
   min-width: 246px;
 }
@@ -2392,12 +2396,22 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 /* INICIO CHECBOX PERSONALIZADOS PARA LAS TABLAS TIPO OUTLOOCK */
-.content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark,
+.content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
+  height: 18px;
+  width: 18px;
+  bottom: 0;
+  margin: auto;
+  right: 0!important;
+  left: -85px;
+}
+
 .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
   height: 18px;
   width: 18px;
-  left: 0;
-  top: 6px;
+  bottom: -32px;
+  margin: auto;
+  right: 0!important;
+  left: -85px;
 }
 
 .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
@@ -3895,3 +3909,12 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   border: none;
   padding: 8px 8px;
 }
+
+
+/***********************************************/
+/****************** Btn Movil *****************/
+/***********************************************/
+
+.box_options_only_movil {
+  display: none;
+} 
