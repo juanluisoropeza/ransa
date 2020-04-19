@@ -330,6 +330,29 @@
   .fixed-nav .fixed-nav-inner {
     width: 0px;
   }
+  .cont_menu_sidebar {
+    min-width: 0px;
+  }
+  .cont_menu_sidebar .sidebar_left_menu {
+    width: 0;
+  }
+  .cont_menu_sidebar .sidebar_left_menu.open_nav {
+    padding-top: 10px;
+  }
+  .cont_menu_sidebar .sidebar_left_menu ul a li svg,
+  .cont_menu_sidebar .sidebar_left_menu ul a li i.icon-icon_menu {
+    display: none;
+  }
+  .cont_menu_sidebar .sidebar_left_menu {
+    left: -350px;
+  }
+  .cont_menu_sidebar .sidebar_left_menu.enter{
+    opacity: 1;
+    left: 0;
+  }
+  .cont_menu_sidebar .sidebar_left_menu.open_nav {
+    height: calc(100% - 90px);
+  }
    /* Modal */
   .modal .modal-body .list_detail li h5,
   .modal .modal-body .list_detail li p {
@@ -348,6 +371,10 @@
   .modal .modal-content .txt_rename_file_name,
   .modal .modal-content .controls input {
     font-size: 15px;
+  }
+  /* MENU */
+  .cont_menu_sidebar .sidebar_left_menu.open_nav ul li:first-child a.nav-toggle .right_content {
+    width: 100%;
   }
 }
 
@@ -624,6 +651,9 @@
   /* Sidebar */
   .fixed-nav .fixed-nav-inner ul a li i {
     font-size: 18px;
+  }
+  .cont_menu_sidebar .sidebar_left_menu.open_nav {
+    width: 100%;
   }
   /* pantallas con tablas */
   .screens_with_tables {
@@ -1021,15 +1051,8 @@
   .files_details .top_info_details .actions_right .dw_details_options .dropdown-menu .dropdown-item {
     margin-bottom: 8px;
   }
-}
-
-@media screen and (max-width: 395px) {
-  /* Footer */
   .content_footer {
-    font-size: 12px;
-  }
-  .main-login .buttons_only_movil {
-    bottom: 90px;
+    font-size: 14px;
   }
 }
 
@@ -1039,6 +1062,13 @@
   }
   .main-login .left-side .img-background {
     top: 14em;
+  }
+  /* Footer */
+  .content_footer {
+    font-size: 12px;
+  }
+  .main-login .buttons_only_movil {
+    bottom: 90px;
   }
 }
 
@@ -1683,6 +1713,15 @@
   .content_table .search_button label .icon_search [class*=" icon-"] {
     font-size: 1.2em;
   }
+  .screens_with_tables .swt_box .buttons_right .btn-outline-success {
+    font-size: 12.4px;
+    font-size: 13px;
+    height: 35px;
+    padding: 5px;
+    margin-right: 6px;
+    min-width: 80px;
+    width: auto;
+  }
   /* Modals */
   .modal .modal-content .modal-header {
     padding: 45px 40px 0px;
@@ -1963,7 +2002,7 @@
     margin: 0px;
   }
   .files_details .top_info_details .actions_right .btn-outline-success:not(.button-search-custom) {
-    font-size: 13px;
+    font-size: 12.4px;
     height: 35px;
     padding: 5px;
   }
@@ -2333,6 +2372,12 @@
   }
   .content_table .div_table .div_tbody .tddiv_elements:last-child {
     right: 50px;
+  }
+  .screens_with_tables .swt_box .buttons_right .btn-outline-success {
+    font-size: 13px;
+    height: 32px;
+    margin-right: 6px;
+    min-width: 80px;
   }
   /* File details */
   .files_details .top_info_details {
@@ -2967,7 +3012,7 @@
     font-size: 15px;
     height: 40px;
     margin-right: 11px;
-    min-width: 140px;
+    min-width: 150px;
   }
   .screens_with_tables .swt_box .top_info h1.title {
     font-size: 19px;
@@ -3318,8 +3363,35 @@
   }
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1679px) {
-    
+@media screen and (min-width: 1440px) and (max-width: 1679px) {  
+  .files_details .content_files_details .right_section {
+    max-height: calc(100vh - 235px);
+    padding: 15px 25px;
+  }
+  .files_details .content_files_details .right_section .details_box .db_body {
+    padding: 15px 30px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment {
+    padding: 10px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment .txt_name_comment,
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment .txt_comment {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .photo {
+    margin-right: 18px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .photo_right {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment {
+    width: calc(100% - 94px);
+  }
+  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .form .buttons .btn {
+    display: inline-block;
+  }
 }
 
 @media screen and (min-width: 1680px) {
