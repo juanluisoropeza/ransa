@@ -3443,7 +3443,6 @@
   .modal .modal-content .modal-body .has-search .form-control-feedback {
     font-size: 1.2em;
   }
-
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark,
   .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
     left: -5px;
@@ -3453,11 +3452,6 @@
   }
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1650px) {
-  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark,
-  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
-    left: -60px;
-  }
 @media screen and (min-width: 1440px) and (max-width: 1679px) {  
   .files_details .content_files_details .right_section {
     max-height: calc(100vh - 235px);
@@ -3486,6 +3480,10 @@
   }
   .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .form .buttons .btn {
     display: inline-block;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark,
+  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
+    left: -60px;
   }
 }
 

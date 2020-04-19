@@ -24,6 +24,7 @@
   --myselfMsg: #CAFFAA;
   --verdeStatusBar: #4FB725;
   --verdeSubMenu: rgba(3, 137, 58, 0.98);
+  --hoverRows: #e0f1e7;
 }
 
 /*** CSS INICIAL ***/
@@ -2407,6 +2408,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
+  display: none;
   height: 18px;
   width: 18px;
   bottom: -32px;
@@ -2418,6 +2420,8 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
   top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
   margin: auto;
 }
 
@@ -2438,6 +2442,31 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   width: 5px;
   height: 8px;
 }
+
+.content_table .div_table .div_tbody .table_row:hover,
+.content_table .div_table .div_tbody .table_row:hover .btn_action_fixed,
+.content_table .div_table .div_tbody .table_row.row_checked,
+.content_table .div_table .div_tbody .table_row.row_checked .btn_action_fixed {
+  background-color: var(--hoverRows);
+}
+
+.content_table .div_table .div_tbody .table_row:hover .tddiv_elements,
+.content_table .div_table .div_tbody .table_row.row_checked {
+  border-bottom: 2px solid var(--hrColor);
+}
+
+.content_table .div_table .div_tbody .table_row .tddiv_elements .checkmark.show {
+  display: block;
+}
+
+.content_table .div_table .div_tbody .table_row:hover .tddiv_elements:first-child .cont_item_chkb .checkmark {
+  display: block;
+}
+
+.content_table .div_table .div_tbody .table_row .tddiv_elements input[type=checkbox]:checked ~ .checkmark {
+  display: block !important;
+}
+
 /* FIN CHECBOX PERSONALIZADOS PARA LAS TABLAS TIPO OUTLOOCK */
 
 .content_table .div_table .div_tbody .tddiv_elements .icon_box {
@@ -2475,7 +2504,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .content_table .div_table .div_tbody .tddiv_elements:first-child img {
-  margin-left: 12px;
+  /* margin-left: 12px; */
   max-height: 32px;
   max-width: 50px;
 }
@@ -2587,10 +2616,6 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   -webkit-align-items: center;
   justify-content: center;
   -webkit-justify-content: center;
-}
-
-.content_table .div_table .div_tbody .row:hover {
-  background-color: var(--fondoGrisClaro);
 }
 
 .content_table .search_button label {
