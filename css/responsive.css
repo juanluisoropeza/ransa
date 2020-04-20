@@ -2446,6 +2446,9 @@
     margin-right: 6px;
     min-width: 80px;
   }
+  .screens_with_tables .swt_box .buttons_right .btn-outline-success.btn_mg {
+    min-width: 134px;
+  }
   /* File details */
   .files_details .top_info_details {
     padding: 0px 12px 0px 20px;
@@ -3087,7 +3090,8 @@
     font-size: .9em;
   }
   .screens_with_tables .swt_box .buttons_right .btn-outline-success {
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 17px;
     height: 40px;
     margin-right: 11px;
     min-width: 150px;
