@@ -406,6 +406,11 @@ a:hover {
   color: var(--colorTexto);
 }
 
+.select2-container--default .select2-results__option[aria-selected=true] {
+  background-color: var(--hoverRows);
+  color: var(--verdePrincipal);
+}
+
 /*** SWIPER SLIDER ***/
 
 /* bullets */
@@ -2304,53 +2309,6 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   margin-right: 6px;
 }
 
-.content_table .div_table_wfl .div_tbody .tddiv_elements .pendiente {
-  color: var(--colorTextoClaro);
-}
-
-.content_table .div_table_wfl .div_tbody .tddiv_elements .en_proceso {
-  color: var(--naranjaStatus);
-}
-
-.content_table .div_table_wfl .div_tbody .tddiv_elements .rechazado {
-  color: var(--rojoStatus);
-}
-
-.content_table .div_table_wfl .div_tbody .tddiv_elements .finalizado {
-  color: var(--verdePrincipal);
-}
-
-.content_table .div_table_wfl .div_tbody .tddiv_elements .cerrado {
-  border-radius: 12px;
-  border-right-color: white;
-  border-top-color: var(--verdePrincipal);
-  border-bottom-color: white;
-  border-left-color: var(--verdePrincipal);
-  border-width: 10.5px;
-  border-style: solid;
-  height: 0px;
-  margin-right: 6px;
-  position: relative;
-  width: 0px;
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.content_table .div_table_wfl .div_tbody .tddiv_elements .cerrado:before {
-  content: "";
-  position: absolute;
-  top: -12px;
-  left: -12px;
-  right: 0px;
-  background-color: transparent;
-  border: 1px solid var(--verdePrincipal);
-  margin: auto;
-  border-radius: 22px;
-  width: 22px;
-  height: 22px;
-  z-index: -1;
-}
-
 .content_table .div_table_wfl .div_tbody .tddiv_elements .active {
   color: var(--verdePrincipal);
 }
@@ -4132,12 +4090,190 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   content: "\e902";
 }
 
-
-
 /***********************************************/
-/****************** Btn Movil *****************/
+/****************** Btn Movil ******************/
 /***********************************************/
 
 .box_options_only_movil {
   display: none;
 } 
+
+/***********************************************/
+/****************** Workflows ******************/
+/***********************************************/
+
+.workflows .swt_box .top_folders .items_search_wof .control-group .form-control,
+.workflows .swt_box .top_folders .items_search_wof .control-group .input-group-append .input-group-text,
+.workflows .swt_box .top_folders .items_search_wof .control-group .select2-container--default .select2-selection--single {
+  border-color: var(--verdePrincipal);
+}
+
+.workflows .swt_box .top_folders .items_search_wof  .control-group .select2-container--default .select2-selection--single .select2-selection__rendered {
+  overflow: hidden;
+  max-width: calc(100% - 30px);
+  text-overflow: unset;
+  padding: 0px 0px 0px 15px;
+}
+
+.workflows .swt_box .top_folders .items_search_wof  .control-group .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  right: 10px;
+}
+
+.workflows .content_table .div_table .div_thead .thdiv_elements a span {
+  color: var(--colorTextoClaro);
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .cerrado {
+  border-radius: 12px;
+  border-right-color: white;
+  border-top-color: var(--verdeStatusBar);
+  border-bottom-color: white;
+  border-left-color: var(--verdeStatusBar);
+  border-width: 8px;
+  border-style: solid;
+  height: 0px;
+  margin-right: 6px;
+  position: relative;
+  width: 0px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .cerrado:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 0px;
+  background-color: transparent;
+  border: 1px solid var(--verdeStatusBar);
+  margin: auto;
+  border-radius: 16px;
+  width: 16px;
+  height: 16px;
+  z-index: -1;
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .pendiente {
+  border-radius: 12px;
+  border-right-color: --colorTextoClaro;
+  border-top-color: var(--colorTextoClaro);
+  border-bottom-color: --colorTextoClaro;
+  border-left-color: var(--colorTextoClaro);
+  border-width: 8px;
+  border-style: solid;
+  height: 0px;
+  margin-right: 6px;
+  position: relative;
+  width: 0px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .pendiente:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 0px;
+  background-color: transparent;
+  border: 1px solid var(--colorTextoClaro);
+  margin: auto;
+  border-radius: 16px;
+  width: 16px;
+  height: 16px;
+  z-index: -1;
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .rechazado {
+  border-radius: 12px;
+  border-right-color: var(--rojoStatus);
+  border-top-color: var(--rojoStatus);
+  border-bottom-color: var(--rojoStatus);
+  border-left-color: var(--rojoStatus);
+  border-width: 8px;
+  border-style: solid;
+  height: 0px;
+  margin-right: 6px;
+  position: relative;
+  width: 0px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .rechazado:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 0px;
+  background-color: transparent;
+  border: 1px solid var(--rojoStatus);
+  margin: auto;
+  border-radius: 16px;
+  width: 16px;
+  height: 16px;
+  z-index: -1;
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .finalizado {
+  border-radius: 12px;
+  border-right-color: var(--verdeStatusBar);
+  border-top-color: var(--verdeStatusBar);
+  border-bottom-color: var(--verdeStatusBar);
+  border-left-color: var(--verdeStatusBar);
+  border-width: 8px;
+  border-style: solid;
+  height: 0px;
+  margin-right: 6px;
+  position: relative;
+  width: 0px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .finalizado:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 0px;
+  background-color: transparent;
+  border: 1px solid var(--verdeStatusBar);
+  margin: auto;
+  border-radius: 16px;
+  width: 16px;
+  height: 16px;
+  z-index: -1;
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .en_proceso {
+  border-radius: 12px;
+  border-right-color: var(--naranjaStatus);
+  border-top-color: var(--naranjaStatus);
+  border-bottom-color: var(--naranjaStatus);
+  border-left-color: var(--naranjaStatus);
+  border-width: 8px;
+  border-style: solid;
+  height: 0px;
+  margin-right: 6px;
+  position: relative;
+  width: 0px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .en_proceso:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 0px;
+  background-color: transparent;
+  border: 1px solid var(--naranjaStatus);
+  margin: auto;
+  border-radius: 16px;
+  width: 16px;
+  height: 16px;
+  z-index: -1;
+}

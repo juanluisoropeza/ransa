@@ -3291,13 +3291,13 @@
     margin-right: 0px;
   }
   /* Search Top Bar */
-  .select2-container .select2-selection--single,
+  header .top_header .cnt_right .select2-container .select2-selection--single,
   header .top_header .cnt_right .dropdown-menu .form-control,
   header .top_header .cnt_right .dropdown-menu .input-group-append .input-group-text {
     height: 32px;
   }
-  .select2-container--default .select2-selection--single .select2-selection__rendered,
-  .select2-results__option,
+  header .top_header .cnt_right .select2-container--default .select2-selection--single .select2-selection__rendered,
+  header .top_header .cnt_right .select2-results__option,
   header .top_header .cnt_right .input-group .form-group label,
   header .top_header .cnt_right .dropdown-menu .form-control {
     font-size: 14px;
@@ -3454,6 +3454,11 @@
   .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
     top: -5px;
   }
+  /* Workflows */
+  .seldsd {    
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1679px) {  
@@ -3502,6 +3507,18 @@
     -ms-flex: 0 0 67.9%;
     flex: 0 0 67.9%;
     max-width: 67.9%;
+  }
+  /* workflow */
+  .workflows .swt_box .top_folders .items_search_wof {
+    -ms-flex: 0 0 calc(20% - 33px);
+    flex: 0 0 calc(20% - 33px);
+    max-width: calc(20% - 33px);
+  }
+  .workflows .swt_box .top_folders .items_search_wof:last-child {
+    padding-right: 0;
+    -ms-flex: 0 0 165px;
+    flex: 0 0 165px;
+    max-width: 165px;
   }
 }
 
