@@ -346,7 +346,7 @@ a:hover {
 /*** SELECT 2 ***/
 
 .select2-container {
-  z-index: 9999;
+  z-index: 5;
 }
 
 .select2-container .select2-selection--single {
@@ -2304,37 +2304,6 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   padding: 0px 10px;
 }
 
-.content_table .div_table_wfl .div_tbody .tddiv_elements .status {
-  font-size: 1.2em;
-  margin-right: 6px;
-}
-
-.content_table .div_table_wfl .div_tbody .tddiv_elements .active {
-  color: var(--verdePrincipal);
-}
-
-.content_table .div_table_wfl .div_tbody .tddiv_elements .resp_photo {
-  display: block;
-  margin: 0;
-  width: 100%;
-}
-
-.content_table .div_table_wfl .div_tbody .tddiv_elements .resp_photo img {
-  display: block;
-  margin: 0 auto;
-  max-height: 30px;
-}
-
-.content_table .div_table_wfl .div_tbody .tddiv_elements .info_respo {
-  color: #999999;
-  font-weight: 400;
-  font-size: 12px;
-  display: block;
-  line-height: 14px;
-  margin-top: -18px;
-  width: 100%;
-}
-
 .content_table .div_table_wfl .div_tbody .tddiv_elements .dropdown_table {
   padding: 12px 0px 12px 0px;
 }
@@ -4123,6 +4092,11 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   color: var(--colorTextoClaro);
 }
 
+.workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .status {
+  font-size: 1.2em;
+  margin-right: 6px;
+}
+
 .workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .cerrado {
   border-radius: 12px;
   border-right-color: white;
@@ -4276,4 +4250,91 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   width: 16px;
   height: 16px;
   z-index: -1;
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .active {
+  color: var(--verdePrincipal);
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .resp_photo {
+  display: block;
+  margin: 0px 0px 8px;
+  width: 100%;
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .resp_photo img {
+  display: block;
+  margin: 0 auto;
+  max-height: 33px;
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .info_respo {
+  color: #999999;
+  font-weight: 400;
+  font-size: 12px;
+  display: block;
+  line-height: 14px;
+  width: 100%;
+}
+
+.workflows .content_table .cont_hz_scroll .table_row.collapse:not(.show) {
+  display: none;
+}
+
+.workflows .content_table .div_table .div_thead .table_row .thdiv_elements:nth-child(2),
+.workflows .content_table .div_table .div_thead .table_row .thdiv_elements:nth-child(3),
+.workflows .content_table .div_table .div_tbody .table_row .tddiv_elements:nth-child(3) {
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+}
+
+.workflows .content_table .div_table .div_tbody .table_row .tddiv_elements:nth-child(2),
+.workflows .content_table .div_table .div_tbody .table_row .tddiv_elements:nth-child(3) {
+  padding-left: 36px;
+}
+
+.workflows .content_table .div_table .div_tbody .collapse .tddiv_elements:nth-child(3) {
+  position: relative
+}
+
+.workflows .content_table .div_table .div_tbody .collapse .tddiv_elements:nth-child(3) .intern_clp_link {
+  color: var(--verdePrincipal);
+  position: absolute;
+  left: -16px;
+  top: 24px;
+}
+
+.workflows .content_table .div_table .div_tbody .collapse .tddiv_elements:nth-child(3) .intern_clp_link span {
+  font-size: 1.4em;
+}
+
+.workflows .content_table .div_table .div_thead .thdiv_elements a span {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.workflows .content_table .div_table .div_tbody .btn_action_fixed {
+  right: 4.4em;
+}
+
+.workflows .content_table .div_table .div_thead .table_row .thdiv_nombre,
+.workflows .content_table .div_table .div_tbody .table_row .tddiv_nombre {
+  -ms-flex: 0 0 22%;
+  flex: 0 0 22%;
+  max-width: 22%;
+}
+
+.workflows .content_table .div_table .div_thead .table_row .thdiv_resp,
+.workflows .content_table .div_table .div_tbody .table_row .tddiv_resp {
+  -ms-flex: 0 0 11.7%;
+  flex: 0 0 11.7%;
+  max-width: 11.7%;
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .table_row.collapse .tddiv_elements {
+  opacity: .75;
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .table_row.collapse .tddiv_elements.tddiv_resp {
+  opacity: 1;
 }
