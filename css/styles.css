@@ -25,6 +25,7 @@
   --verdeStatusBar: #4FB725;
   --verdeSubMenu: rgba(3, 137, 58, 0.98);
   --hoverRows: #e0f1e7;
+  --verdeActive: #019A40;
 }
 
 /*** CSS INICIAL ***/
@@ -4337,4 +4338,141 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .workflows .content_table .div_table_wfl .div_tbody .table_row.collapse .tddiv_elements.tddiv_resp {
   opacity: 1;
+}
+
+/****************** Inicio Workflows ******************/
+
+.workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card_inicio_work {
+  height: 120px;
+  max-width: 120px;
+}
+
+.workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box_icons_work {
+  box-shadow: none;
+  height: 40px;
+  width: 40px;
+}
+
+.workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box {
+  margin-right: 0px;
+}
+
+.workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box span {
+  font-size: 2.8em;
+}
+
+.workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_info p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card_inicio_work_active {
+  background-color: var(--verdeActive);
+  border: 1px solid #C4C4C4;
+}
+
+.workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card_inicio_work_active .icon_info p {
+  color: white;
+}
+
+.workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card_inicio_work_active .icon_box .box_icons_work {
+  background-color: var(--verdeActive);
+}
+
+.workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card_inicio_work_active .icon_box .box_icons_work span {
+  color: white;
+}
+
+.workflows_inicio .swb_wflow .box_content_work {
+  width: 1499px;
+  height: 666px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 30px 100px;
+}
+
+.workflows_inicio .swb_wflow .box_content_work .box_title p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #999999;
+  margin-bottom: 53px;
+}
+
+.workflows_inicio .swb_wflow .box_content_work .space {
+  margin-left: 113px;
+}
+
+.workflows_inicio .swb_wflow .box_content_work .m-40 {
+   margin-bottom: 40px;
+}
+
+.workflows_inicio .swb_wflow .box_content_work .m-60 {
+  margin-bottom: 60px;
+}
+
+.workflows_inicio .swb_wflow .box_content_work .box_textarea_work #textarea {
+  width: 100%;
+  border: 1px solid #8A8C8E;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.workflows_inicio .swb_wflow .box_content_work .adjuntar_work {
+  font-size: 18px;
+  line-height: 21px;
+  color: #999999;
+}
+
+.workflows_inicio .swb_wflow .box_content_work .box_buttons_work {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: column;
+  -webkit-flex-flow: column;
+  align-items: center;
+  -webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+
+.workflows_inicio .swb_wflow .box_content_work .contenedor_button {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: row;
+  -webkit-flex-flow: row;
+  align-items: center;
+  -webkit-align-items: center;
+	justify-content:space-between;
+	-webkit-justify-content:space-between;
+}
+
+.workflows_inicio .swb_wflow .box_content_work .box_buttons_work .btn-outline-success_work {
+  color: #999999;
+  width: 181px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+
+.workflows_inicio .swb_wflow .box_content_work .box_buttons_work .btn_work {
+  background-color: var(--verdePrincipal);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+
+.workflows_inicio .swb_wflow .box_content_work .btn_work_border {
+  width: 80px !important;
+  border-bottom: 1px solid #373838;
 }
