@@ -2176,6 +2176,8 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
 }
 
 .content_table .cont_hz_scroll .row_checked {
@@ -2419,9 +2421,9 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   max-width: 4%;
 }
 
-.content_table .div_table .div_tbody .table_row:last-child .tddiv_elements {
+/*.content_table .div_table .div_tbody .table_row:last-child .tddiv_elements {
   border-bottom: 0;
-}
+}*/
 
 .content_table .div_table .div_tbody .tddiv_elements:first-child img {
   /* margin-left: 12px; */
@@ -2503,6 +2505,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .content_table .div_table .div_tbody .tddiv_elements .dropdown-menu {
   right: 0px;
   transform: none !important;
+  will-change: initial !important;
   top: 45px !important;
   left: auto !important;
 }
@@ -4278,10 +4281,6 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   width: 100%;
 }
 
-.workflows .content_table .cont_hz_scroll .table_row.collapse:not(.show) {
-  display: none;
-}
-
 .workflows .content_table .div_table .div_thead .table_row .thdiv_elements:nth-child(2),
 .workflows .content_table .div_table .div_thead .table_row .thdiv_elements:nth-child(3),
 .workflows .content_table .div_table .div_tbody .table_row .tddiv_elements:nth-child(3) {
@@ -4292,6 +4291,11 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .workflows .content_table .div_table .div_tbody .table_row .tddiv_elements:nth-child(2),
 .workflows .content_table .div_table .div_tbody .table_row .tddiv_elements:nth-child(3) {
   padding-left: 36px;
+}
+
+.workflows .content_table .cont_hz_scroll .table_row.collapsing:not(.show),
+.workflows .content_table .cont_hz_scroll .table_row.collapse:not(.show) {
+  display: none;
 }
 
 .workflows .content_table .div_table .div_tbody .collapse .tddiv_elements:nth-child(3) {
@@ -4309,6 +4313,20 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   font-size: 1.4em;
 }
 
+.workflows .content_table .div_table_wfl .div_tbody .table_row.collapse .tddiv_elements {
+  opacity: .75;
+}
+
+.workflows .content_table .div_table .div_tbody .btn_action_fixed a [class^="icon-"], 
+.workflows .content_table .div_table .div_tbody .btn_action_fixed a [class*=" icon-"] {
+ font-size: 1em;
+ margin-right: 16px;
+} 
+
+.workflows .content_table .div_table_wfl .div_tbody .table_row.collapse .tddiv_elements.tddiv_resp {
+  opacity: 1;
+}
+
 .workflows .content_table .div_table .div_thead .thdiv_elements a span {
   margin-left: 0px;
   margin-right: 10px;
@@ -4316,13 +4334,32 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .workflows .content_table .div_table .div_tbody .btn_action_fixed {
   right: 4.4em;
+  -ms-flex: 0 0 4%;
+  flex: 0 0 4%;
+  max-width: 4%;
+  opacity: 1;
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .table_row.collapse .tddiv_elements.btn_action_fixed {
+  opacity: 1;
+  position: relative;
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .table_row.filaAbierta {
+  position: relative;
+  -ms-flex-align: flex-start!important;
+  align-items: flex-start!important;
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .table_row.filaAbierta .btn_action_fixed {
+  right: 5px;
 }
 
 .workflows .content_table .div_table .div_thead .table_row .thdiv_nombre,
 .workflows .content_table .div_table .div_tbody .table_row .tddiv_nombre {
-  -ms-flex: 0 0 22%;
-  flex: 0 0 22%;
-  max-width: 22%;
+  -ms-flex: 0 0 21.96%;
+  flex: 0 0 21.96%;
+  max-width: 21.96%;
 }
 
 .workflows .content_table .div_table .div_thead .table_row .thdiv_resp,
@@ -4332,13 +4369,54 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   max-width: 11.7%;
 }
 
-.workflows .content_table .div_table_wfl .div_tbody .table_row.collapse .tddiv_elements {
-  opacity: .75;
+.workflows .content_table .cont_hz_scroll .row_collapse {
+  position: relative;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  width: 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
-.workflows .content_table .div_table_wfl .div_tbody .table_row.collapse .tddiv_elements.tddiv_resp {
-  opacity: 1;
+.workflows .content_table .div_table_wfl .div_tbody .table_row.filaAbierta:hover .table_row, 
+.workflows .content_table .div_table_wfl .div_tbody .table_row.filaAbierta:hover .table_row .btn_action_fixed {
+  background-color: white;
 }
+
+.workflows .content_table .div_table .div_tbody .row_wbg  {
+  z-index: 6;
+}
+
+.workflows .content_table .div_table .div_tbody .filaAbierta .btn_action_fixed {
+  z-index: 7;
+}
+
+.workflows .content_table .div_table .div_tbody .tddiv_elements.show {
+  z-index: 7;
+}
+
+.workflows .content_table .div_table .div_tbody .filaAbierta .multi-collapse:not(:last-child) {
+  z-index: 5;
+}
+
+.workflows .content_table .div_table .div_tbody .filaAbierta .multi-collapse:last-child {
+  z-index: 4;
+}
+
+.workflows .content_table .div_table .div_tbody .filaAbierta .multi-collapse .multi-collapse-third {
+  z-index: 3;
+}
+
+.workflows .content_table .div_table .div_tbody .filaAbierta .multi-collapse .multi-collapse-third:last-child .tddiv_elements:last-child {
+  border-bottom-right-radius: 0px;
+}
+
+/*.workflows .content_table .div_table_wfl .div_tbody .table_row.filaAbierta .row_collapse:not(:first-child) .btn_action_fixed {
+  border: 1px solid purple;
+}*/
+
 
 /****************** Inicio Workflows ******************/
 
