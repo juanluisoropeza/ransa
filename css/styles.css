@@ -26,6 +26,8 @@
   --verdeSubMenu: rgba(3, 137, 58, 0.98);
   --hoverRows: #e0f1e7;
   --verdeActive: #019A40;
+  --fondoToolTip: #FFFDFD;
+  --borderToolTip: #EAEAEA;
 }
 
 /*** CSS INICIAL ***/
@@ -156,11 +158,11 @@ a:hover {
 }
 
 .txt_gray {
-  color: var(--colorTextoClaro);
+  color: var(--colorTextoClaro) !important;
 }
 
 .txt_green {
-  color: var(--verdePrincipal);
+  color: var(--verdePrincipal) !important;
 }
 
 /* FORMULARIOS Y CAMPOS */
@@ -347,7 +349,7 @@ a:hover {
 /*** SELECT 2 ***/
 
 .select2-container {
-  z-index: 5;
+  z-index: 9556;
 }
 
 .select2-container .select2-selection--single {
@@ -1723,10 +1725,6 @@ footer .content_footer ul li a:hover {
   -webkit-justify-content: flex-end;
 }
 
-.screens_with_tables .swt_box .buttons_right.br_wflows {
-  margin-bottom: 60px;
-}
-
 .screens_with_tables .swt_box .buttons_right.br_wflows .btn-success {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
 }
@@ -2251,6 +2249,11 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   -webkit-align-items: center;
 }
 
+.content_table .div_table .div_thead .thdiv_elements a:hover,
+.content_table .div_table .div_thead .thdiv_elements a:hover span:before {
+  color: var(--verdePrincipal);
+}
+
 .content_table .div_table .div_thead .thdiv_elements .dropdown-menu {
   min-width: 208px;
 }
@@ -2454,6 +2457,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .content_table .div_table .div_tbody .tddiv_elements:last-child a span {
   color: var(--grisSexto);
   font-size: 1em;
+  margin-right: 0 !important;
 }
 
 .content_table .div_table .div_tbody .tddiv_elements:last-child .dropdown-menu a [class^="icon-"], 
@@ -3269,6 +3273,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   font-weight: 400;
   font-size: 20px;
   line-height: 22px;
+  padding: 7px 15px 7px 0px;
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -3916,7 +3921,6 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   color: var(--verdePrincipal);
 }
 
-
 .cont_menu_sidebar .sidebar_left_menu ul li a:hover [class^="icon-"]:before, 
 .cont_menu_sidebar .sidebar_left_menu ul li a:hover [class*=" icon-"]:before {
   color: var(--verdePrincipal);
@@ -3982,10 +3986,6 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   display: block!important;
   -webkit-animation: grow .45s cubic-bezier(0.77, 0, 0.175, 1);
           animation: grow .45s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-.cont_menu_sidebar .sidebar_left_menu ul li .sub-menu-dropdown {
-  /*background-color: var(--verdeSubMenu);*/
 }
 
 .cont_menu_sidebar .sidebar_left_menu ul li .submenu-link.opened [class^="icon-"]:before,
@@ -4075,6 +4075,10 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 /***********************************************/
 /****************** Workflows ******************/
 /***********************************************/
+
+.workflows {
+  overflow: hidden;
+}
 
 .workflows .swt_box .top_folders .items_search_wof .control-group .form-control,
 .workflows .swt_box .top_folders .items_search_wof .control-group .input-group-append .input-group-text,
@@ -4321,8 +4325,12 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .workflows .content_table .div_table .div_tbody .btn_action_fixed a [class^="icon-"], 
 .workflows .content_table .div_table .div_tbody .btn_action_fixed a [class*=" icon-"] {
  font-size: 1em;
- margin-right: 16px;
-} 
+ margin-right: 0px;
+}
+
+.workflows .content_table .div_table .div_tbody .btn_action_fixed .dropdown-menu .dropdown-item span {
+  margin-right: 16px !important;
+}
 
 .workflows .content_table .div_table_wfl .div_tbody .table_row.collapse .tddiv_elements.tddiv_resp {
   opacity: 1;
@@ -4363,11 +4371,94 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   max-width: 21.96%;
 }
 
+.workflows .content_table .div_table .div_tbody .table_row .tddiv_icon_verde span {
+  color: var(--verdePrincipal);
+}
+
 .workflows .content_table .div_table .div_thead .table_row .thdiv_resp,
 .workflows .content_table .div_table .div_tbody .table_row .tddiv_resp {
   -ms-flex: 0 0 11.7%;
   flex: 0 0 11.7%;
   max-width: 11.7%;
+}
+
+.workflows .content_table .div_table .div_tbody .table_row .tddiv_resp .resp_photo {
+  position: relative;
+}
+
+.workflows .content_table .div_table .div_tbody .table_row .tddiv_resp .resp_photo .tooltip_msg p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.workflows .content_table .div_table .div_tbody .table_row .tddiv_resp .resp_photo .tooltip_msg {
+  background-color: var(--fondoToolTip);
+  border: 1px solid var(--borderToolTip);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--colorTextoClaro);
+  display: none;
+  font-weight: 400;
+  font-size: 14px;
+  left: 40%;
+  line-height: 16px;
+  min-height: 48px;
+  height: auto;
+  min-width: 130px;
+  width: auto;
+  padding: 8px;
+  position: absolute;
+  top: -70px;
+  z-index: 2;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-transition: .3 all;
+  -moz-transition: .3s all;
+  -o-transition: .3s all;
+  -ms-transition: .3s all;
+  transition: .3s all;
+}
+
+.workflows .content_table .div_table .div_tbody .table_row .tddiv_resp .resp_photo .tooltip_msg:before {
+  content: '';
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 20px solid var(--fondoToolTip);
+  box-sizing: border-box;
+  text-shadow: 0 0 20px black;
+  bottom: -20px;
+  height: 0;
+  left: 2px;
+  position: absolute;
+  width: 0;
+  z-index: 2;
+}
+
+.workflows .content_table .div_table .div_tbody .table_row .tddiv_resp .resp_photo .tooltip_msg:after {
+  content: '';
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 21px solid var(--borderToolTip);
+  box-sizing: border-box;
+  bottom: -22px;
+  height: 0;
+  left: 1px;
+  position: absolute;
+  width: 0;
+  z-index: 1;
+  filter: drop-shadow( 0px 4px 3px rgba(0,0,0,.25));
+  -webkit-filter: drop-shadow( 0px 4px 3px rgba(0,0,0,.25));
+}
+
+.workflows .content_table .div_table .div_tbody .table_row .tddiv_resp .resp_photo:hover .tooltip_msg {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 }
 
 .workflows .content_table .cont_hz_scroll .row_collapse {
@@ -4414,14 +4505,98 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   border-bottom-right-radius: 0px;
 }
 
-/*.workflows .content_table .div_table_wfl .div_tbody .table_row.filaAbierta .row_collapse:not(:first-child) .btn_action_fixed {
-  border: 1px solid purple;
-}*/
+.workflows .swb_wflow .top_folders .folders_cards.wf .card {
+  max-width: 300px;
+  position: relative;
+}
 
+.workflows .swb_wflow .top_folders .folders_cards.wf .card:hover {
+  background: var(--verdePrincipal);
+  border: 1px solid #BBBBBB;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  outline: none;
+}
+
+.workflows .swb_wflow .top_folders .folders_cards.wf .card:hover .icon_box, 
+.workflows .swb_wflow .top_folders .folders_cards.wf .card:hover .icon_info {
+  color: white;
+}
+
+.workflows .swb_wflow .top_folders .folders_cards.wf .card:hover .icon_box .box {
+  background-color: var(--verdePrincipal);
+}
+
+.workflows .swb_wflow .top_folders .folders_cards.wf .card .tooltip_msg {
+  background-color: var(--fondoToolTip);
+  border: 1px solid var(--borderToolTip);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--colorTextoClaro);
+  display: none;
+  font-weight: 400;
+  font-size: 14px;
+  left: 70%;
+  line-height: 16px;
+  height: 48px;
+  min-width: 300px;
+  padding: 0px 15px 0px 20px;
+  position: absolute;
+  top: -74px;  
+  z-index: 2;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-transition: .3 all;
+  -moz-transition: .3s all;
+  -o-transition: .3s all;
+  -ms-transition: .3s all;
+  transition: .3s all;
+}
+
+.workflows .swb_wflow .top_folders .folders_cards.wf .card .tooltip_msg:before {
+  content: '';
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 22px solid var(--fondoToolTip);
+  box-sizing: border-box;
+  text-shadow: 0 0 20px black;
+  bottom: -22px;
+  height: 0;
+  left: 2px;
+  position: absolute;
+  width: 0;
+  z-index: 2;
+}
+
+.workflows .swb_wflow .top_folders .folders_cards.wf .card .tooltip_msg:after {
+  content: '';
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 23px solid var(--borderToolTip);
+  box-sizing: border-box;
+  bottom: -24px;
+  height: 0;
+  left: 1px;
+  position: absolute;
+  width: 0;
+  z-index: 1;
+  filter: drop-shadow( 0px 4px 3px rgba(0,0,0,.25));
+  -webkit-filter: drop-shadow( 0px 4px 3px rgba(0,0,0,.25));
+}
+
+.workflows .swb_wflow .top_folders .folders_cards.wf .card:hover .tooltip_msg {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+
+.workflows .swb_wflow .buttons_right.br_wflows {
+  margin-bottom: 80px;
+}
 
 /****************** Inicio Workflows ******************/
 
-.screens_with_tables .swt_box .top_info h1.title_black {
+.workflows_inicio .screens_with_tables .swt_box .top_info h1.title_black {
   color: #000000;
 }
 
@@ -4588,7 +4763,6 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   border-bottom: 1px solid #373838;
   margin-top: 15px;
 }
-
 
 .workflows_inicio .swb_wflow .box_content_work .form_nombre {
   min-width: 560px;
