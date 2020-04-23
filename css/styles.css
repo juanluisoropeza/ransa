@@ -4420,6 +4420,14 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 /****************** Inicio Workflows ******************/
 
+.screens_with_tables .swt_box .top_info h1.title_black {
+  color: #000000;
+}
+
+.workflows_inicio .swt_box .top_folders .items_search_wof .control-group .form-control {
+  border-color: var(--verdePrincipal);
+}
+
 .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card_inicio_work {
   height: 120px;
   max-width: 120px;
@@ -4463,11 +4471,28 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .workflows_inicio .swb_wflow .box_content_work {
-  width: 1499px;
+  width: 1450px;
   height: 666px;
-  background-color: white;
   margin: 0 auto;
   padding: 30px 100px;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  position: relative;
+}
+
+.workflows_inicio .swb_wflow .box_content_work::before{
+  content: "";
+  position: absolute;
+  top: -127px;
+  left: 206px;
+  width: 160px;
+  height: 159px;
+  border-left: 92px solid transparent;
+  border-right: 92px solid transparent;
+  border-bottom: 50px solid white;
 }
 
 .workflows_inicio .swb_wflow .box_content_work .box_title p {
@@ -4479,7 +4504,11 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .workflows_inicio .swb_wflow .box_content_work .space {
-  margin-left: 113px;
+  margin-left: 124px;
+}
+
+.workflows_inicio .swb_wflow .box_content_work .space_max {
+  margin-left: 141px;
 }
 
 .workflows_inicio .swb_wflow .box_content_work .m-40 {
@@ -4492,6 +4521,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .workflows_inicio .swb_wflow .box_content_work .box_textarea_work #textarea {
   width: 100%;
+  min-height: 82px;
   border: 1px solid #8A8C8E;
   box-sizing: border-box;
   border-radius: 5px;
@@ -4532,6 +4562,8 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   color: #999999;
   width: 181px;
   height: 46px;
+  font-size: 18px;
+  line-height: 21px;
   display: flex;
   align-items: center;
   -webkit-align-items: center;
@@ -4553,4 +4585,22 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .workflows_inicio .swb_wflow .box_content_work .btn_work_border {
   width: 80px !important;
   border-bottom: 1px solid #373838;
+  margin-top: 15px;
+}
+
+
+.workflows_inicio .swb_wflow .box_content_work .form_nombre {
+  min-width: 560px;
+}
+
+.workflows_inicio .swb_wflow .box_content_work .forms_work {
+  min-width: 229px;
+}
+
+.workflows_inicio .swb_wflow .box_content_work .items_search_wof .select_iniciar_work .select_custon_select2{
+  min-width: 229px;
+}
+
+.workflows_inicio .swb_wflow .top_folders {
+  margin-bottom: 1.25em;
 }
