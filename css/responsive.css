@@ -3892,32 +3892,6 @@
     flex: 0 0 165px;
     max-width: 165px;
   }
-  /*
-  .workflows .content_table .div_table .div_thead .table_row .thdiv_elements:nth-child(3),
-  .workflows .content_table .div_table .div_tbody .table_row .tddiv_elements:nth-child(3) {
-    -ms-flex: 0 0 21%;
-    flex: 0 0 21%;
-    max-width: 21%;
-  }
-  .workflows .content_table .div_table .div_thead .table_row .thdiv_elements:nth-child(7),
-  .workflows .content_table .div_table .div_tbody .table_row .tddiv_elements:nth-child(7) {
-    -ms-flex: 0 0 13%;
-    flex: 0 0 13%;
-    max-width: 13%;
-  }
-  .workflows .content_table .div_table .div_thead .table_row .thdiv_elements:nth-child(8),
-  .workflows .content_table .div_table .div_tbody .table_row .tddiv_elements:nth-child(8) {
-    -ms-flex: 0 0 10%;
-    flex: 0 0 10%;
-    max-width: 10%;
-  }
-  .workflows .content_table .div_table .div_thead .table_row .thdiv_elements:nth-child(9),
-  .workflows .content_table .div_table .div_tbody .table_row .tddiv_elements:nth-child(9) {
-    -ms-flex: 0 0 15%;
-    flex: 0 0 15%;
-    max-width: 15%;
-  }
-  */
 }
 
 /* Media querys para los MAX HEIGHT */
