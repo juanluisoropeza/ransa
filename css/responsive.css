@@ -1091,6 +1091,81 @@
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
   }
+   /* workflows inicio */
+   .workflows_inicio .swb_wflow .box_content_work .control-group {
+    margin-bottom: 10px;
+   }
+   .workflows_inicio .swb_wflow .box_content_work {
+    width: auto;
+    height: auto;
+    padding: 25px 13px 25px 25px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_title p {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .form_nombre {
+    min-width: 0px;
+    height: 32px;
+    font-size: 14px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .items_search_wof .select_iniciar_work .select_custon_select2 {
+    min-width: 100% !important;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .forms_work {
+    min-width: 135px;
+    height: 32px;
+    font-size: 14px;
+  }
+  .workflows_inicio .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 13px;
+    padding: 0px 10px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .space {
+    margin-left: 0px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .space_max {
+    margin-left: 0px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .space_movil,
+  .workflows_inicio .swb_wflow .box_content_work .m-40,
+  .workflows_inicio .swb_wflow .box_content_work .m-60 {
+    margin-bottom: 0px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card_inicio_work {
+    height: 80px;
+    max-width: 73px;
+    min-width: 73px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box_icons_work {
+    height: 30px;
+    width: 30px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_info p {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box span {
+    font-size: 1.1em;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_textarea_work #textarea {
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 60px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_buttons_work .btn-outline-success_work {
+    width: 105px;
+    height: 43px;
+    font-size: 14px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .btn_work_border {
+    margin-top: 0px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work::before {
+    left: 97px;
+  }
 }
 
 @media screen and (max-width: 395px) {
@@ -1579,6 +1654,73 @@
   }
   .files_details .top_info_details .info_left, .files_details .top_info_details .actions_right .align-items-center .dw_details_options a {
     min-width: auto!important;
+  }
+  /* workflows inicio */
+  .workflows_inicio .swb_wflow .box_content_work {
+    width: auto;
+    height: 460px;
+    padding: 25px 35px 25px 25px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_title p {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .form_nombre {
+    min-width: 0px;
+    height: 32px;
+    font-size: 14px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .items_search_wof .select_iniciar_work .select_custon_select2 {
+    min-width: 150px !important;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .forms_work {
+    min-width: 135px;
+    height: 32px;
+    font-size: 14px;
+  }
+  .workflows_inicio .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 13px;
+    padding: 0px 10px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .space {
+    margin-left: 0px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .space_max {
+    margin-left: 0px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .space_movil,
+  .workflows_inicio .swb_wflow .box_content_work .m-40,
+  .workflows_inicio .swb_wflow .box_content_work .m-60 {
+    margin-bottom: 20px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card_inicio_work {
+    height: 80px;
+    max-width: 85px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_info p {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box span {
+    font-size: 1.3em;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_textarea_work #textarea {
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 60px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_buttons_work .btn-outline-success_work {
+    width: 160px;
+    height: 43px;
+    font-size: 15px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .btn_work_border {
+    margin-top: 0px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work::before {
+    left: 97px;
   }
 }
 
@@ -2109,6 +2251,72 @@
   }
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
     bottom: -20px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work {
+    width: auto;
+    height: 460px;
+    padding: 30px 50px 30px 40px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_title p {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .form_nombre {
+    min-width: 0px;
+    height: 32px;
+    font-size: 14px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .items_search_wof .select_iniciar_work .select_custon_select2 {
+    min-width: 150px !important;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .forms_work {
+    min-width: 150px;
+    height: 32px;
+    font-size: 14px;
+  }
+  .workflows_inicio .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 13px;
+    padding: 0px 10px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .space {
+    margin-left: 0px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .space_max {
+    margin-left: 0px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .space_movil,
+  .workflows_inicio .swb_wflow .box_content_work .m-40,
+  .workflows_inicio .swb_wflow .box_content_work .m-60 {
+    margin-bottom: 20px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card_inicio_work {
+    height: 90px;
+    max-width: 90px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_info p {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box span {
+    font-size: 1.8em;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_textarea_work #textarea {
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 60px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_buttons_work .btn-outline-success_work {
+    width: 160px;
+    height: 43px;
+    font-size: 15px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .btn_work_border {
+    margin-top: 0px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work::before {
+    left: 97px;
   }
 }
 
@@ -2829,7 +3037,85 @@
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark{
     top: -5px;
   }
+  /*Inicio Workflows */
+  .workflows_inicio .swb_wflow .box_content_work {
+    width: auto;
+    height: 445px;
+    padding: 30px 50px 30px 40px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_title p {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .form_nombre {
+    min-width: 336px;
+    height: 32px;
+    font-size: 14px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .items_search_wof .select_iniciar_work .select_custon_select2 {
+    min-width: 150px !important;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .forms_work {
+    min-width: 150px;
+    height: 32px;
+    font-size: 14px;
+  }
+  .workflows_inicio .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 13px;
+    padding: 0px 10px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .space {
+    margin-left: 67px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .space_max {
+    margin-left: 75px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .m-40,
+  .workflows_inicio .swb_wflow .box_content_work .m-60 {
+    margin-bottom: 25px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card_inicio_work {
+    height: 90px;
+    max-width: 90px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_info p {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box span {
+    font-size: 1.8em;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_textarea_work {
+    padding-right: 0px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_textarea_work #textarea {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_buttons_work .btn-outline-success_work {
+    width: 160px;
+    height: 43px;
+    font-size: 15px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .btn_work_border {
+    margin-top: 0px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work::before {
+    left: 97px;
+  }
 }
+
+@media screen and (min-width: 1020px) and (max-width: 1200px) {
+  .workflows_inicio .swb_wflow .box_content_work .space_max {
+    margin-left: 57px !important;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .form_nombre {
+    min-width: 370px; 
+  }
+}
+
 
 @media screen and (min-width: 1201px) and (max-width: 1439px) {
   .btn-success,
@@ -3459,6 +3745,73 @@
     font-size: 14px;
     line-height: 17px;
   }
+  /*Inicio Workflows */
+  .workflows_inicio .swb_wflow .box_content_work {
+    width: 990px;
+    height: 475px;
+    padding: 30px 50px 30px 40px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_title p {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .form_nombre {
+    min-width: 420px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .items_search_wof .select_iniciar_work .select_custon_select2 {
+    min-width: 180px !important;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .forms_work {
+    min-width: 180px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .workflows_inicio .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 14px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .space {
+    margin-left: 87px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .space_max {
+    margin-left: 95px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .m-40,
+  .workflows_inicio .swb_wflow .box_content_work .m-60 {
+    margin-bottom: 25px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card_inicio_work {
+    height: 90px;
+    max-width: 90px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_info p {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box span {
+    font-size: 1.8em;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_textarea_work {
+    padding-right: 0px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_textarea_work #textarea {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_buttons_work .btn-outline-success_work {
+    width: 160px;
+    height: 43px;
+    font-size: 15px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .btn_work_border {
+    margin-top: 0px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work::before {
+    left: 146px;
+  }
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1679px) {  
@@ -3493,6 +3846,25 @@
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark,
   .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
     left: -60px;
+  }
+  /*Inicio Workflows */
+  .workflows_inicio .swb_wflow .box_content_work {
+    width: 1185px;
+    padding: 30px 70px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_title p {
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 35px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .form_nombre {
+    min-width: 495px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .space {
+    margin-left: 90px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .space_max {
+    margin-left: 93px;
   }
 }
 
