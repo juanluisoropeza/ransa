@@ -480,6 +480,7 @@ a.box-card {
 }
 
 .dropdown-item {
+  color: var(--colorTextoClaro);
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
