@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>..:: RANSA ::..</title>
+    <!-- HOJAS DE ESTILO CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <link rel="stylesheet" href="./css/select2.min.css">
+    <link rel="stylesheet" href="./css/select2-bootstrap4.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="top_header">
+            <div class="cnt_logo">
+                <a href="home.html"><img src="images/logo.svg" alt="logo" class="img-fluid"></a>
+            </div>
+            <div class="cnt_right">
+                <div class="input-group dropdown search_input">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text icon_search"><i class="icon-icon_search"></i></span>
+                    </div>
+                    <form id="form2">
+                        <input type="text" class="form-control input-search" />
+                    </form>
+                    <a class="btn btn-outline-success button-search-custom dropdown-toggle" href="#" role="button" id="busquedaHeader" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>                  
+                    <div class="dropdown-menu" aria-labelledby="busquedaHeader">
+                        <form class="px-4 py-3 form-inline" id="form1">
+                            <div class="row wm-100">
+                                <div class="col-sm-2 col-md-2 col-lg-2 form-group input-group floating-label-form-group controls">
+                                    <label for="txt_tipo">Tipo</label>
+                                </div>
+                                <div class="col-sm-10 col-md-10 col-lg-10 control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_ts_tipo">
+                                        <option value="">Seleccione</option>
+                                        <option value="t1">tipo 1</option>
+                                        <option value="t2">tipo 2</option>
+                                        <option value="t3">tipo 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row wm-100">
+                                <div class="col-sm-2 col-md-2 col-lg-2 form-group input-group floating-label-form-group controls">
+                                    <label for="txt_propetario">Propietario</label>
+                                </div>
+                                <div class="col-6 col-sm-5 col-md-5 col-lg-5 control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_ts_prop">
+                                        <option value="ts_prop1">Cualquier usuario</option>
+                                        <option value="ts_prop2">De mi propiedad</option>
+                                        <option value="ts_prop3">Propiedad de otro usuario</option>
+                                        <option value="ts_prop4" selected>Persona específica</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 col-sm-5 col-md-5 col-lg-5 control-group">
+                                    <input type="text" class="form-control" name="txt_nombre" id="txt_nombre" placeholder="Ingrese nombre" />
+                                </div>
+                            </div>
+                            <div class="row wm-100">
+                                <div class="col-sm-2 col-md-2 col-lg-2 form-group input-group floating-label-form-group controls">
+                                    <label for="txt_ubicacion">Ubicación</label>
+                                </div>
+                                <div class="col-sm-10 col-md-10 col-lg-10 control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_ts_ubic">
+                                        <option value="">Seleccione</option>
+                                        <option value="ts_ubic1">Mis Accesos</option>
+                                        <option value="ts_ubic2">Mis Archivos</option>
+                                        <option value="ts_ubic3">Mis Compartidos</option>
+                                        <option value="ts_ubic4">Compartidos conmigo</option>
+                                    </select>
+                                </div>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="row wm-100">
+                                <div class="col-sm-2 col-md-2 col-lg-2 form-group input-group floating-label-form-group controls">
+                                    <label for="txt_inc_palabras">Incluye palabras</label>
+                                </div>
+                                <div class="col-sm-10 col-md-10 col-lg-10 control-group">
+                                    <input type="text" class="form-control" id="txt_inc_palabras" name="txt_inc_palabras" placeholder="Ingrese palabras">
+                                </div>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="row wm-100">
+                                <div class="col-sm-2 col-md-2 col-lg-2 form-group input-group floating-label-form-group controls">
+                                    <label for="txt_tamano">Tamaño</label>
+                                </div>
+                                <div class="col-12 col-sm control-group mb_mobile_15">
+                                    <select class="select_custon_select2 form-control" name="txt_ts_tamn" id="txt_ts_tamn">
+                                        <option value="">Seleccione</option>
+                                        <option value="ts_tamn1">Mayor que</option>
+                                        <option value="ts_tamn2">Menor que</option>
+                                        <option value="ts_tamn3">Igual a</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 col-sm control-group">
+                                    <input type="text" class="form-control" id="txt_tam_nro" name="txt_tam_nro" placeholder="">
+                                </div>
+                                <div class="col-6 col-sm control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_ts_tamn_uni" id="txt_ts_tamn_uni">
+                                        <option value="">Seleccione</option>
+                                        <option value="ts_tamn_uni1">MB</option>
+                                        <option value="ts_tamn_uni2">GB</option>
+                                        <option value="ts_tamn_uni3">TB</option>
+                                    </select>
+                                </div>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="row wm-100">
+                                <div class="col-sm-2 col-md-2 col-lg-2 form-group floating-label-form-group controls">
+                                    <label for="txt_rfechas_dias">Rango de fechas</label>
+                                </div>
+                                <div class="col-6 col-sm-5 col-md-5 col-lg-5 control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_ts_rang_fec" id="txt_ts_rang_fec">
+                                        <option value="">Seleccione</option>
+                                        <option value="ts_rang_fec1">4 días</option>
+                                        <option value="ts_rang_fec2">8 días</option>
+                                        <option value="ts_rang_fec3">12 días</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 col-sm-5 col-md-5 col-lg-5 control-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control ici_append" id="datepicker" placeholder="Seleccione fecha" name="txt_rfechas_fecha" required data-validation-required-message="Por favor, Seleccione una <b>Fecha</b>.">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">
+                                                <i class="icon-icon_calendar"><span class="path1"></span><span class="path2"></span></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="row w-100">
+                                <div class="col-lg-12 mt-4 mb-4 text-right boton">
+                                    <button id="btnSubmit" type="submit" class="btn btn-outline-success">Buscar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <ul class="navbar-nav ml-4 right_links">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dw-profile" href="#" id="navbarProfile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/user1.jpg" alt="user1" class="img-fluid">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarProfile">
+                            <a class="dropdown-item" href="profile.html">Mi perfil</a>
+                            <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="icon-icon_bell"></span>
+                            <span class="badge badge-warning">4</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="button_sidebar_movil">
+                <a href="#" id="menu-toggle" class="waves-light menu-toggle" data-toggle="offcanvas">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+                </a>
+            </div>
+        </div>
+    </header>
+     <section class="screens_with_tables workflows workflows_inicio especificos responsable">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="cont_menu_sidebar">
+                    <nav class="sidebar_left_menu" role="navigation" id="nav_sidebar">
+                        <ul>
+                            <li>
+                                <a href="#" class="nav-toggle">
+                                    <svg class="d-none d-lg-block d-xl-block" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+                                    <div class="right_content">X</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="home.html">
+                                    <i class="icon-icon_home"></i>
+                                    <div class="right_content">Inicio</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="accesos.html">
+                                    <i class="icon-icon_files"></i>
+                                    <div class="right_content">Mis Accesos</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="submenu-link">
+                                    <i class="icon-icon_cloud"></i>
+                                    <div class="right_content">Almacenamiento <span class="icon-icon_arrow-right"></span></div>
+                                </a>
+                                <ul class="sub-menu-dropdown">
+                                    <li>
+                                        <a href="almacenamiento.html">
+                                            <span class="icon-icon_files2"></span>
+                                            <div class="right_content">Mis archivos</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="compartidos.html">
+                                            <span class="icon-icon_user"></span>
+                                            <div class="right_content">Mis compartidos</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="compartidos_conmigo.html">
+                                            <span class="icon-icon_users"></span>
+                                            <div class="right_content">Compartidos conmigo</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="submenu-link">
+                                    <i class="icon-icon_workflows"></i>
+                                    <div class="right_content">Workflows <span class="icon-icon_arrow-right"></span></div>
+                                </a>
+                                <ul class="sub-menu-dropdown">
+                                    <li>
+                                        <a href="mis_workflows.html">
+                                            <span class="icon-icon_users"></span>
+                                            <div class="right_content">Mis workflow</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="icon-icon_play"></span>
+                                            <div class="right_content">Iniciar workflow</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="icon-icon_activities"></span>
+                                            <div class="right_content">Mis actividades</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <article class="swt_box swb_wflow">
+                    <div class="row">
+                        <div class="col-lg-5 top_info">
+                            <h1 class="title title_black">Iniciar Workflow</h1>
+                        </div>
+                    </div>
+                    <div class="top_folders">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-3 col-sm-3 col-lg-3 text-center folders_cards inicio_work wf">
+                                <div class="card card_inicio_work">
+                                    <div class="icon_box">
+                                        <div class="box box_icons_work">
+                                            <span class="icon-icon_arrow-next"></span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center icon_info">
+                                        <p>Ajustes generales</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-lg-3 text-center folders_cards inicio_work wf">
+                                <div class="card card_inicio_work">
+                                    <div class="icon_box">
+                                        <div class="box box_icons_work">
+                                            <span class="icon-icon_check"></span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center icon_info">
+                                        <p>Ajustes específicos</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-sm-3 col-lg-3 text-center folders_cards inicio_work wf">
+                                <div class="card card_inicio_work card_inicio_work_active">
+                                    <div class="icon_box">
+                                        <div class="box box_icons_work">
+                                            <span class="icon-icon_clock_negate"></span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center icon_info">
+                                        <p>Responsable</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_table box_content_work">
+                        <div class="row">
+                            <div class="col-lg-12 box_title">
+                                <p>Actividades y responsables</p>
+                            </div>
+                        </div>
+                        <div class="row m-18">
+                            <div class="col-sm-2 col-md-2 col-lg-2 form-group input-group floating-label-form-group controls">
+                                <label for="txt_inc_palabras">Nombre del workflow: </label>
+                            </div>
+                            <div class="col-sm-2 col-md-2 col-lg-5 form-group input-group floating-label-form-group controls input_work_respon">   
+                                <input type="text" class="form-control" id="txt_inc_palabras" name="txt_inc_palabras" placeholder="Autogenerado" >
+                            </div>
+                        </div>
+                        <div class="row m-18">
+                            <div class="col-sm-2 col-md-2 col-lg-2 form-group input-group floating-label-form-group controls">
+                                <label for="txt_inc_palabras">Código del workflow: </label>
+                            </div>
+                            <div class="col-sm-2 col-md-2 col-lg-3 form-group input-group floating-label-form-group controls input_work_respon">
+                                <input type="text" class="form-control" id="txt_inc_palabras" name="txt_inc_palabras" placeholder="Autogenerado" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 table-responsive table_work_especificos">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">N°</th>
+                                        <th scope="col">Actividad</th>
+                                        <th scope="col">Responsable</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Generar y Firmar Análisis de Trabajo Seguro (ATS) y Autorización de Trabajo de Riesgo (ATR)</td>
+                                        <td><i class="icon-icon_search"></i>1er Aprobador autorizante</td>
+                                        <td><img src="images/photo3.jpg" alt="photo" class="img-fluid rounded-circle">Cristhian Balvin</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Verificar y Firmar Análisis de Trabajo Seguro (ATS) y Autorización de Trabajo de Riesgo (ATR)</td>
+                                        <td><i class="icon-icon_search"></i>Responsable de Sede</td>
+                                        <td><img src="images/photo.jpg" alt="photo" class="img-fluid rounded-circle">Jose Perez</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Firma de Ejecutante de Análisis de Trabajo Seguro (ATS) y Autorización de Trabajo de Riesgo (ATR)</td>
+                                        <td><i class="icon-icon_search"></i>2do Aprobador autorizante</td>
+                                        <td><img src="images/photo3.jpg" alt="photo" class="img-fluid rounded-circle">Cristhian Balvin</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Inspeccionar y Firmar Análisis de Trabajo Seguro (ATS) y Autorización de Trabajo de Riesgo (ATR)</td>
+                                        <td><i class="icon-icon_search"></i>Seguridad Industrial</td>
+                                        <td><img src="images/photo.jpg" alt="photo" class="img-fluid rounded-circle">Jose Perez</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row contenedor_button">
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-2 box_buttons_work">
+                                <a href="#" class="btn-outline-success_work">Guardar</a>
+                                <a href="#" class="btn-outline-success_work btn_work_border"> < Volver</a>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-2 box_buttons_work">
+                                <button id="btnSubmit" type="submit" class="btn btn-outline-success_work btn_work">Continuar</button>
+                                <a href="#" class="btn-outline-success_work btn_work_border">Cancelar</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 content_footer">
+                    <p>©Docublock. Todos lo derechos reservados 2019</p>
+                    <ul>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-datepicker.es.min.js"></script>
+    <script type="text/javascript" src="./js/datepicker.js"></script>
+    <script type="text/javascript" src="./js/select2.min.js"></script>
+    <script type="text/javascript" src="./js/select2_initializate.js"></script>
+    <script type="text/javascript" src="./js/sidebar.js"></script>
+    <script type="text/javascript" src="./js/checkbox_tables.js"></script>
+    <script type="text/javascript" src="./js/verify_check_rows.js"></script>
+</body>
+</html>
+
