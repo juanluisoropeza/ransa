@@ -439,7 +439,7 @@
                                                 <span class="icon-icon_three-bullets"></span>
                                             </a>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalEditarWorkflow">
                                                     <span class="icon-icon_pencil"></span> Editar
                                                 </a>
                                                 <a class="dropdown-item" href="#">
@@ -785,7 +785,7 @@
                 </div>
             </div>
         </div>
-    </footer>    
+    </footer>
     <!-- Modal Add Column -->
     <div class="modal fade" id="modalTableAddColumn" tabindex="-1" role="dialog" aria-labelledby="modalTableAddColumnTitle" aria-hidden="true">
         <div class="modal-dialog modal-md modal-dialog-centered" role="document">
@@ -882,6 +882,127 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" id="btn_save_addCol">Guardar</button>
                     <button type="button" class="btn btn-outline-success" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal Editar Workflow -->
+    <div class="modal fade" id="modalEditarWorkflow" tabindex="-1" role="dialog" aria-labelledby="modalEditarWorkflowTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl edit_workflow modal-dialog-centered" role="document">
+            <div class="modal-content bg_gray">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title centered" id="modalTableAddColumnTitle">WF0106 Trabajo de Alto Riesgo:</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12 content_item">
+                            <h4 class="st_ewfl">Ajustes Generales:</h4>
+                            <hr class="sp_h4stl" />
+                        </div>
+                    </div>
+                    <div class="container ctn_md_edit">
+                        <div class="row mb-40">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 item_form_edit">
+                                <div class="control-group">
+                                    <input type="text" class="form-control form_nombre" name="txt_nombre_work" id="txt_nombre_work" placeholder="Nombre del workflow:">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                                <div class="control-group">
+                                    <input type="text" class="form-control forms_work" name="txt_codigo_work" id="txt_codigo_work" placeholder="Código del workflow:">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-40">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                                <div class="control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_empresa_work">
+                                        <option value="">* Empresa / Área:</option>
+                                        <option value="empresa_work1">Empresa 1</option>
+                                        <option value="empresa_work2">Empresa 2</option>
+                                        <option value="empresa_work3">Empresa 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                                <div class="control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_categoria_work">
+                                        <option value="">Categoría:</option>
+                                        <option value="categoria_work1">Categoria 1</option>
+                                        <option value="categoria_work2">Categoria 2</option>
+                                        <option value="categoria_workt3">Categoria 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                                <div class="control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_workflow_inicio">
+                                        <option value="">Workflow:</option>
+                                        <option value="workflow_inicio1">Workflow 1</option>
+                                        <option value="workflow_inicio2">Workflow 2</option>
+                                        <option value="workflow_inicio3">Workflow 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                                <div class="control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_tipos_work">
+                                        <option value="">Tipos:</option>
+                                        <option value="tipos_work1">Sede 1</option>
+                                        <option value="tipos_work2">Sede 2</option>
+                                        <option value="tipos_work3">Sede 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-40">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                                <div class="control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_sede_work">
+                                        <option value="">Sede</option>
+                                        <option value="sede_work1">Categoria 1</option>
+                                        <option value="sede_work2">Categoria 2</option>
+                                        <option value="sede_work3">Categoria 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                                <div class="control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_sector_work">
+                                        <option value="">*Almacén/Sector</option>
+                                        <option value="sector_work1">Categoria 1</option>
+                                        <option value="sector_work2">Categoria 2</option>
+                                        <option value="sector_work3">Categoria 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                                <div class="control-group">
+                                    <input type="text" class="form-control forms_work" name="txt_nro_aviso" id="txt_nro_aviso" placeholder="* N° aviso">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 box_textarea_work">
+                                <textarea id="textarea" class="form-control" rows="3" name="txt_descripcion_work" placeholder="Descripción:"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 content_item">
+                            <h4 class="st_ewfl">Ajustes Específicos:</h4>
+                            <hr class="sp_h4stl" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 content_item">
+                            <h4 class="st_ewfl st_ewfl_light">Actividades y responsables:</h4>
+                            <hr class="sp_h4stl" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
