@@ -161,7 +161,7 @@
                 </ul>
             </div>
             <div class="button_sidebar_movil">
-                <a href="#" id="menu-toggle" class="waves-light menu-toggle" data-toggle="offcanvas">
+                <a href="#" id="menu-toggle" class="waves-light menu-toggle nav-toggle" data-toggle="offcanvas">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
                 </a>
             </div>
@@ -259,7 +259,7 @@
                     </div>
                     <div class="top_folders">
                         <div class="row justify-content-center align-items-center mb-70">
-                            <div class="col-lg-4 text-center folders_cards wf">
+                            <a href="#" class="col-lg-4 text-center folders_cards wf">
                                 <div class="card">
                                     <div class="icon_box">
                                         <div class="box">
@@ -270,9 +270,10 @@
                                         <h2>8</h2>
                                         <p>En proceso</p>
                                     </div>
+                                    <div class="tooltip_msg">Workflows con actividades en curso.</div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 text-center folders_cards wf">
+                            </a>
+                            <a href="#" class="col-lg-4 text-center folders_cards wf">
                                 <div class="card">
                                     <div class="icon_box">
                                         <div class="box">
@@ -283,9 +284,10 @@
                                         <h2>8</h2>
                                         <p>Finalizado</p>
                                     </div>
+                                    <div class="tooltip_msg">Workflows  con activiidades culminadas.</div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 text-center folders_cards wf">
+                            </a>
+                            <a href="#" class="col-lg-4 text-center folders_cards wf">
                                 <div class="card">
                                     <div class="icon_box">
                                         <div class="box">
@@ -296,8 +298,9 @@
                                         <h2>8</h2>
                                         <p>Cerrado</p>
                                     </div>
+                                    <div class="tooltip_msg">Workflows culminados con actividades incompletas en un tiempo determinado.</div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="row justify-content-center align-items-center">
                             <div class="col-lg-2 items_search_wof">
@@ -435,8 +438,8 @@
                                             <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span class="icon-icon_three-bullets"></span>
                                             </a>
-                                            <div class="dropdown-menu dropdown_table" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalEditarWorkflow">
                                                     <span class="icon-icon_pencil"></span> Editar
                                                 </a>
                                                 <a class="dropdown-item" href="#">
@@ -480,7 +483,7 @@
                                             <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span class="icon-icon_three-bullets"></span>
                                             </a>
-                                            <div class="dropdown-menu dropdown_table" aria-labelledby="dropdownMenuButton">
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                 <a class="dropdown-item" href="#">
                                                     <span class="icon-icon_pencil"></span> Editar
                                                 </a>
@@ -492,8 +495,8 @@
                                     </div>
                                     <div class="table_row h-100 align-items-center row_wbg">
                                         <div class="col col-xl-1 tddiv_elements">
-                                            <a class="icon_box" data-toggle="collapse" href="#collapseRow3" role="button" aria-expanded="false" aria-controls="collapseRow3">
-                                                <span class="icon-icon_arrow-right"></span>
+                                            <a class="icon_box collapsed" data-toggle="collapse" href="#collapseRow2" role="button" data-target=".multi-collapse" aria-expanded="false" aria-controls="collapseRow2 collapseRow3">
+                                                <span class="icon-icon_arrow-down1"></span>
                                             </a>
                                         </div>
                                         <div class="col col-xl-1 tddiv_elements">
@@ -525,7 +528,7 @@
                                             <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span class="icon-icon_three-bullets"></span>
                                             </a>
-                                            <div class="dropdown-menu dropdown_table" aria-labelledby="dropdownMenuButton">
+                                            <div class="dropdown-menu">
                                                 <a class="dropdown-item" href="#">
                                                     <span class="icon-icon_pencil"></span> Editar
                                                 </a>
@@ -534,85 +537,174 @@
                                                 </a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="table_row h-100 align-items-center row_wbg collapse" id="collapseRow3">
-                                        <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
-                                        <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
-                                        <div class="col col-xl-2 tddiv_elements tddiv_nombre">
-                                            <a href="#" class="intern_clp_link"><span class="icon-icon_arrow-down1"></span></a>
-                                            Etapa 1
-                                        </div>
-                                        <div class="col col-xl-1 tddiv_elements">
-                                            3 de 3
-                                        </div>
-                                        <div class="col col-xl-1 tddiv_elements">
-                                            25/03/2020
-                                        </div>
-                                        <div class="col col-xl-1 tddiv_elements">
-                                            28/03/2020
-                                        </div>
-                                        <div class="col col-xl-2 tddiv_elements">
-                                            <span class="finalizado"></span> Cerrado
-                                        </div>
-                                        <div class="col col-xl-1 tddiv_elements tddiv_resp">&nbsp;</div>
-                                        <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
-                                        <div class="col col-xl-1 tddiv_elements btn_action_fixed">
-                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span class="icon-icon_three-bullets"></span>
-                                            </a>
-                                            <div class="dropdown-menu dropdown_table" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">
-                                                    <span class="icon-icon_pencil"></span> Editar
+                                        <div class="break"></div>
+                                        <div class="table_row h-100 align-items-center row_wbg row_collapse collapse multi-collapse" id="collapseRow2">
+                                            <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                            <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                            <div class="col col-xl-2 tddiv_elements tddiv_nombre">
+                                                <a href="#" class="intern_clp_link"><span class="icon-icon_arrow-down1"></span></a>
+                                                Etapa 1
+                                            </div>
+                                            <div class="col col-xl-1 tddiv_elements">
+                                                3 de 3
+                                            </div>
+                                            <div class="col col-xl-1 tddiv_elements">
+                                                25/03/2020
+                                            </div>
+                                            <div class="col col-xl-1 tddiv_elements">
+                                                28/03/2020
+                                            </div>
+                                            <div class="col col-xl-2 tddiv_elements">
+                                                <span class="finalizado"></span> Cerrado
+                                            </div>
+                                            <div class="col col-xl-1 tddiv_elements tddiv_resp">&nbsp;</div>
+                                            <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                            <div class="col col-xl-1 tddiv_elements btn_action_fixed">
+                                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon-icon_three-bullets"></span>
                                                 </a>
-                                                <a class="dropdown-item" href="#">
-                                                    <span class="icon-icon_trash-light"></span> Eliminar
-                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon-icon_pencil"></span> Editar
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon-icon_trash-light"></span> Eliminar
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="table_row h-100 align-items-center row_wbg collapse" id="collapseRow3">
-                                        <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
-                                        <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
-                                        <div class="col col-xl-2 tddiv_elements tddiv_nombre">
-                                            <a href="#" class="intern_clp_link"><span class="icon-icon_arrow-right"></span></a>
-                                            Etapa 2
-                                        </div>
-                                        <div class="col col-xl-1 tddiv_elements">
-                                            2 de 3
-                                        </div>
-                                        <div class="col col-xl-1 tddiv_elements">
-                                            25/03/2020
-                                        </div>
-                                        <div class="col col-xl-1 tddiv_elements">
-                                            28/03/2020
-                                        </div>
-                                        <div class="col col-xl-2 tddiv_elements">
-                                            <span class="pendiente"></span> Pendiente
-                                        </div>
-                                        <div class="col col-xl-1 tddiv_elements tddiv_resp">
-                                            <figure class="resp_photo">
-                                                <img src="images/user1.jpg" alt="user1" class="img-fluid rounded-circle">
-                                            </figure>
-                                            <p class="mb-0 info_respo">Ayer a las 4:40 pm</p></div>
-                                        <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
-                                        <div class="col col-xl-1 tddiv_elements btn_action_fixed">
-                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span class="icon-icon_three-bullets"></span>
-                                            </a>
-                                            <div class="dropdown-menu dropdown_table" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">
-                                                    <span class="icon-icon_pencil"></span> Editar
+                                        <div class="table_row h-100 align-items-center row_wbg row_collapse collapse multi-collapse" id="collapseRow3">
+                                            <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                            <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                            <div class="col col-xl-2 tddiv_elements tddiv_nombre">
+                                                <a class="intern_clp_link collapsed" data-toggle="collapse" href="#collapseThirdMenu" role="button" data-target=".multi-collapse-third" aria-expanded="false" aria-controls="collapseThirdMenu">
+                                                    <span class="icon-icon_arrow-down1"></span>
                                                 </a>
-                                                <a class="dropdown-item" href="#">
-                                                    <span class="icon-icon_trash-light"></span> Eliminar
+                                                Etapa 2
+                                            </div>
+                                            <div class="col col-xl-1 tddiv_elements">
+                                                2 de 3
+                                            </div>
+                                            <div class="col col-xl-1 tddiv_elements">
+                                                25/03/2020
+                                            </div>
+                                            <div class="col col-xl-1 tddiv_elements">
+                                                28/03/2020
+                                            </div>
+                                            <div class="col col-xl-2 tddiv_elements">
+                                                <span class="pendiente"></span> Pendiente
+                                            </div>
+                                            <div class="col col-xl-1 tddiv_elements tddiv_resp">
+                                                <figure class="resp_photo">
+                                                    <img src="images/user1.jpg" alt="user1" class="img-fluid rounded-circle">
+                                                </figure>
+                                                <p class="mb-0 info_respo">Ayer a las 4:40 pm</p>
+                                            </div>
+                                            <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                            <div class="col col-xl-1 tddiv_elements btn_action_fixed">
+                                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon-icon_three-bullets"></span>
                                                 </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon-icon_pencil"></span> Editar
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon-icon_trash-light"></span> Eliminar
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="break"></div>
+                                            <div class="table_row h-100 align-items-center row_wbg row_collapse multi-collapse-third collapse" id="collapseThirdMenu">
+                                                <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                                <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                                <div class="col col-xl-2 tddiv_elements tddiv_nombre">
+                                                    Registrar y adjuntar archivo
+                                                </div>
+                                                <div class="col col-xl-1 tddiv_elements tddiv_icon_verde">
+                                                    <span class="icon-icon_clock_exclamate2"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                                                </div>
+                                                <div class="col col-xl-1 tddiv_elements">
+                                                    25/03/2020
+                                                </div>
+                                                <div class="col col-xl-1 tddiv_elements">
+                                                    28/03/2020
+                                                </div>
+                                                <div class="col col-xl-2 tddiv_elements">
+                                                    <span class="pendiente"></span> Pendiente
+                                                </div>
+                                                <div class="col col-xl-1 tddiv_elements tddiv_resp">
+                                                    <figure class="resp_photo m-0">
+                                                        <img src="images/photo9.jpg" alt="photo9" class="img-fluid rounded-circle">
+                                                        <div class="tooltip_msg">
+                                                            <p>Maria Alejandra Ramirez</p>
+                                                            <p>Aprobador</p>
+                                                        </div>
+                                                    </figure>
+                                                </div>
+                                                <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                                <div class="col col-xl-1 tddiv_elements btn_action_fixed">
+                                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="icon-icon_three-bullets"></span>
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="icon-icon_pencil"></span> Editar
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="icon-icon_trash-light"></span> Eliminar
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table_row h-100 align-items-center row_wbg row_collapse multi-collapse-third collapse" id="collapseThirdMenu">
+                                                <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                                <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                                <div class="col col-xl-2 tddiv_elements tddiv_nombre">
+                                                    Revisar y firmar
+                                                </div>
+                                                <div class="col col-xl-1 tddiv_elements tddiv_icon_verde">
+                                                    <span class="icon-icon_clock_exclamate"></span>
+                                                </div>
+                                                <div class="col col-xl-1 tddiv_elements">
+                                                    25/03/2020
+                                                </div>
+                                                <div class="col col-xl-1 tddiv_elements">
+                                                    28/03/2020
+                                                </div>
+                                                <div class="col col-xl-2 tddiv_elements">
+                                                    <span class="pendiente"></span> Pendiente
+                                                </div>
+                                                <div class="col col-xl-1 tddiv_elements tddiv_resp">
+                                                    <figure class="resp_photo m-0">
+                                                        <img src="images/photo8.jpg" alt="photo9" class="img-fluid rounded-circle">
+                                                        <div class="tooltip_msg">
+                                                            <p>Patricio Camacho</p>
+                                                            <p>Aprobador</p>
+                                                        </div>
+                                                    </figure>
+                                                </div>
+                                                <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                                <div class="col col-xl-1 tddiv_elements btn_action_fixed">
+                                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="icon-icon_three-bullets"></span>
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="icon-icon_pencil"></span> Editar
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="icon-icon_trash-light"></span> Eliminar
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="table_row h-100 align-items-center row_wbg">
                                         <div class="col col-xl-1 tddiv_elements">
                                             <div class="icon_box">
-                                                <span class="icon-icon_arrow-right"></span>
+                                                <span class="icon-icon_arrow-down1"></span>
                                             </div>
                                         </div>
                                         <div class="col col-xl-1 tddiv_elements">
@@ -644,7 +736,7 @@
                                             <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span class="icon-icon_three-bullets"></span>
                                             </a>
-                                            <div class="dropdown-menu dropdown_table" aria-labelledby="dropdownMenuButton">
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                 <a class="dropdown-item" href="#">
                                                     <span class="icon-icon_pencil"></span> Editar
                                                 </a>
@@ -694,6 +786,227 @@
             </div>
         </div>
     </footer>
+    <!-- Modal Add Column -->
+    <div class="modal fade" id="modalTableAddColumn" tabindex="-1" role="dialog" aria-labelledby="modalTableAddColumnTitle" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title txt_gray" id="modalTableAddColumnTitle">Selecciona los datos de visualización:</h5>
+                    <hr />
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group items_selection">
+                        <li class="list-group-item select_column">
+                            <label class="cont_item_chkb">Código
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="list-group-item select_column">
+                            <label class="cont_item_chkb">Área
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="list-group-item select_column">
+                            <label class="cont_item_chkb">Sede
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="list-group-item select_column">
+                            <label class="cont_item_chkb">Tracking
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="list-group-item select_column">
+                            <label class="cont_item_chkb">Hora de inicio
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="list-group-item select_column">
+                            <label class="cont_item_chkb">Hora de fin
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="list-group-item select_column">
+                            <label class="cont_item_chkb">Estado
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="list-group-item select_column">
+                            <label class="cont_item_chkb">Nombre
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="list-group-item select_column">
+                            <label class="cont_item_chkb">Tipo
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="list-group-item select_column">
+                            <label class="cont_item_chkb">Responsable
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="list-group-item select_column">
+                            <label class="cont_item_chkb">Resultado
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="list-group-item select_column">
+                            <label class="cont_item_chkb">Fecha inicio
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="list-group-item select_column">
+                            <label class="cont_item_chkb">Fecha fin
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="btn_save_addCol">Guardar</button>
+                    <button type="button" class="btn btn-outline-success" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal Editar Workflow -->
+    <div class="modal fade" id="modalEditarWorkflow" tabindex="-1" role="dialog" aria-labelledby="modalEditarWorkflowTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl edit_workflow modal-dialog-centered" role="document">
+            <div class="modal-content bg_gray">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title centered" id="modalTableAddColumnTitle">WF0106 Trabajo de Alto Riesgo:</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12 content_item">
+                            <h4 class="st_ewfl">Ajustes Generales:</h4>
+                            <hr class="sp_h4stl" />
+                        </div>
+                    </div>
+                    <div class="container ctn_md_edit">
+                        <div class="row mb-40">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 item_form_edit">
+                                <div class="control-group">
+                                    <input type="text" class="form-control form_nombre" name="txt_nombre_work" id="txt_nombre_work" placeholder="Nombre del workflow:">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                                <div class="control-group">
+                                    <input type="text" class="form-control forms_work" name="txt_codigo_work" id="txt_codigo_work" placeholder="Código del workflow:">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-40">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                                <div class="control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_empresa_work">
+                                        <option value="">* Empresa / Área:</option>
+                                        <option value="empresa_work1">Empresa 1</option>
+                                        <option value="empresa_work2">Empresa 2</option>
+                                        <option value="empresa_work3">Empresa 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                                <div class="control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_categoria_work">
+                                        <option value="">Categoría:</option>
+                                        <option value="categoria_work1">Categoria 1</option>
+                                        <option value="categoria_work2">Categoria 2</option>
+                                        <option value="categoria_workt3">Categoria 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                                <div class="control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_workflow_inicio">
+                                        <option value="">Workflow:</option>
+                                        <option value="workflow_inicio1">Workflow 1</option>
+                                        <option value="workflow_inicio2">Workflow 2</option>
+                                        <option value="workflow_inicio3">Workflow 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                                <div class="control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_tipos_work">
+                                        <option value="">Tipos:</option>
+                                        <option value="tipos_work1">Sede 1</option>
+                                        <option value="tipos_work2">Sede 2</option>
+                                        <option value="tipos_work3">Sede 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-40">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                                <div class="control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_sede_work">
+                                        <option value="">Sede</option>
+                                        <option value="sede_work1">Categoria 1</option>
+                                        <option value="sede_work2">Categoria 2</option>
+                                        <option value="sede_work3">Categoria 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                                <div class="control-group">
+                                    <select class="select_custon_select2 form-control" name="txt_sector_work">
+                                        <option value="">*Almacén/Sector</option>
+                                        <option value="sector_work1">Categoria 1</option>
+                                        <option value="sector_work2">Categoria 2</option>
+                                        <option value="sector_work3">Categoria 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                                <div class="control-group">
+                                    <input type="text" class="form-control forms_work" name="txt_nro_aviso" id="txt_nro_aviso" placeholder="* N° aviso">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 box_textarea_work">
+                                <textarea id="textarea" class="form-control" rows="3" name="txt_descripcion_work" placeholder="Descripción:"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 content_item">
+                            <h4 class="st_ewfl">Ajustes Específicos:</h4>
+                            <hr class="sp_h4stl" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 content_item">
+                            <h4 class="st_ewfl st_ewfl_light">Actividades y responsables:</h4>
+                            <hr class="sp_h4stl" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- SCRIPTS -->
     <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
@@ -706,6 +1019,7 @@
     <script type="text/javascript" src="./js/sidebar.js"></script>
     <script type="text/javascript" src="./js/checkbox_tables.js"></script>
     <script type="text/javascript" src="./js/verify_check_rows.js"></script>
+    <script type="text/javascript" src="./js/mis_workflows.js"></script>
 </body>
 </html>
 

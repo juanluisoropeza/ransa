@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconos';
-  src:  url('../fonts/icomoon.eot?6z7psx');
-  src:  url('../fonts/icomoon.eot?6z7psx#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?6z7psx') format('truetype'),
-    url('../fonts/icomoon.woff?6z7psx') format('woff'),
-    url('../fonts/icomoon.svg?6z7psx#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?mgdm6e');
+  src:  url('../fonts/icomoon.eot?mgdm6e#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?mgdm6e') format('truetype'),
+    url('../fonts/icomoon.woff?mgdm6e') format('woff'),
+    url('../fonts/icomoon.svg?mgdm6e#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-icon_user_check:before {
+  content: "\e935";
+}
+.icon-icon_wf_settings:before {
+  content: "\e936";
+}
+.icon-icon_clock_exclamate:before {
+  content: "\e937";
+}
+.icon-icon_clock_exclamate2 .path1:before {
+  content: "\e938";
+  color: rgb(1, 154, 64);
+}
+.icon-icon_clock_exclamate2 .path2:before {
+  content: "\e939";
+  margin-left: -1em;
+  color: rgb(1, 154, 64);
+}
+.icon-icon_clock_exclamate2 .path3:before {
+  content: "\e93a";
+  margin-left: -1em;
+  color: rgb(1, 154, 64);
+}
+.icon-icon_clock_exclamate2 .path4:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
 .icon-icon_activities:before {
   content: "\e900";
 }
