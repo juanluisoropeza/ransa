@@ -4144,6 +4144,10 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   overflow: hidden;
 }
 
+.workflows .swt_box .row {
+  margin: 0px -10px;
+}
+
 .workflows .swt_box .top_folders .items_search_wof .control-group .form-control,
 .workflows .swt_box .top_folders .items_search_wof .control-group .input-group-append .input-group-text,
 .workflows .swt_box .top_folders .items_search_wof .control-group .select2-container--default .select2-selection--single {
