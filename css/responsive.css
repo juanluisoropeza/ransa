@@ -3116,7 +3116,6 @@
   }
 }
 
-
 @media screen and (min-width: 1201px) and (max-width: 1439px) {
   .btn-success,
   .btn-outline-success {
@@ -3909,6 +3908,16 @@
   .workflows_inicio .swb_wflow .box_content_work::before {
     left: 146px;
   }
+   /*Inicio Workflows Responsable*/
+   .workflows_inicio.responsable .swb_wflow .box_content_work {
+    width: 990px;
+    height: auto;
+  }
+  .workflows_inicio.responsable .table_work_especificos table tbody tr td:nth-child(0n+2),
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td,
+  .workflows_inicio.especificos .table_work_especificos table tbody tr th {
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1679px) {  
@@ -3962,6 +3971,11 @@
   }
   .workflows_inicio .swb_wflow .box_content_work .space_max {
     margin-left: 93px;
+  }
+   /*Inicio Workflows Responsable*/
+  .workflows_inicio.responsable .swb_wflow .box_content_work {
+    width: 1200px;
+    height: auto;
   }
 }
 
