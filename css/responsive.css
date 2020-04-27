@@ -3191,6 +3191,140 @@
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark{
     top: -5px;
   }
+  /* Workflows */
+  .seldsd {    
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .workflows .swb_wflow .buttons_right.br_wflows {
+    margin-bottom: 65px;
+  }
+  .workflows .swb_wflow .top_folders .folders_cards.wf {
+    max-width: 286px;
+  }
+  .workflows .swb_wflow .top_folders .folders_cards.wf .card {
+    height: 80px;
+    max-width: 155px;
+  }
+  .workflows .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box {
+    height: 45px;
+    width: 47px;
+  }
+  .screens_with_tables .swt_box .top_folders .folders_cards.wf .card .icon_box .box span {
+    font-size: 1.7em;
+  }
+  .workflows .swb_wflow .top_folders .folders_cards.wf .card .icon_info h2 {
+    font-size: 25px;
+    line-height: 31px;
+  }
+  .workflows .swb_wflow .top_folders .folders_cards.wf .card .icon_info p {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .workflows .swb_wflow .top_folders .folders_cards.wf .card .tooltip_msg {
+    font-size: 12px;
+    height: 40px;
+    line-height: 14px;
+    padding: 0px 10px 0px 15px;
+    min-width: 240px;
+    top: -62px;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+  }
+  .workflows .swb_wflow .top_folders .folders_cards.wf .card .tooltip_msg:before {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 18px solid var(--fondoToolTip);
+    text-shadow: 0 0 18px black;
+    bottom: -18px;
+  }
+  .workflows .swb_wflow .top_folders .folders_cards.wf .card .tooltip_msg:after {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 19px solid var(--borderToolTip);
+    bottom: -20px;
+  }
+  .workflows .swb_wflow .top_folders .items_search_wof {
+    padding: 0px 10px;
+  }
+  .workflows .swb_wflow .top_folders .items_search_wof .form-control,
+  .workflows .swb_wflow .top_folders .items_search_wof .control-group .select2-container--default .select2-selection--single .select2-selection__rendered,
+  .workflows .swb_wflow .top_folders .items_search_wof .control-group .select2-container .select2-selection--single {
+    font-size: 12px;
+    line-height: 15px;
+    height: 28px;
+  }
+  .workflows .swb_wflow .top_folders .items_search_wof .control-group .input-group-append .input-group-text {
+    height: 28px;
+  }
+  .workflows .swb_wflow .top_folders .items_search_wof .btn-success:not(.btn-select) {
+    font-size: 12px;
+    line-height: 15px;
+    height: 28px;
+  }
+  .select2-results__option {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .resp_photo img {
+    max-height: 24px;
+  }
+  .workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .resp_photo {
+    margin-bottom: 4px;
+  }
+  .workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .info_respo {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .workflows .swb_wflow .top_folders {
+    margin-bottom: 25px;
+  }
+  .workflows .swb_wflow .top_folders .mb-70 {
+    margin-bottom: 34px;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements .icon_box {
+    height: 12px;
+    width: 12px;
+  }
+  .workflows .content_table .div_table .div_thead .thdiv_elements a span {
+    margin-right: 1px;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements .icon_box span {
+    font-size: 1.1em;
+  }
+  .workflows .content_table .div_table .div_thead .thdiv_elements, 
+  .workflows .content_table .div_table .div_thead .thdiv_elements a {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .workflows .content_table .div_table .div_tbody .tddiv_elements {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .workflows .content_table .div_table .div_tbody .collapse .tddiv_elements:nth-child(3) .intern_clp_link {
+    left: -12px;
+    top: 18px;
+  }
+  .workflows .content_table .div_table .div_tbody .table_row .tddiv_resp .resp_photo .tooltip_msg p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .status  {
+    border-radius: 8px;
+    border-width: 6px;
+    margin-right: 6px;
+  }
+  .workflows .content_table .div_table_wfl .div_tbody .tddiv_elements .status:before {
+    top: -6px;
+    left: -6px;
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+  }
+  .workflows .content_table .div_table .div_tbody .table_row .tddiv_elements:nth-child(2), 
+  .workflows .content_table .div_table .div_tbody .table_row .tddiv_elements:nth-child(3) {
+    padding-left: 14px;
+  }
   /*Inicio Workflows */
   .workflows_inicio .swb_wflow .box_content_work {
     width: auto;

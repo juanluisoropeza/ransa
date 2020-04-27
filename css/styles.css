@@ -2187,8 +2187,6 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
 }
 
 .content_table .cont_hz_scroll .row_checked {
@@ -2381,11 +2379,16 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   height: 8px;
 }
 
-.content_table .div_table .div_tbody .table_row:hover,
-.content_table .div_table .div_tbody .table_row:hover .btn_action_fixed,
-.content_table .div_table .div_tbody .table_row.row_checked,
-.content_table .div_table .div_tbody .table_row.row_checked .btn_action_fixed {
+.content_table .div_table .div_tbody .table_row:hover .tddiv_elements,
+.content_table .div_table .div_tbody .table_row:hover .tddiv_elements .btn_action_fixed,
+.content_table .div_table .div_tbody .table_row.row_checked .tddiv_elements,
+.content_table .div_table .div_tbody .table_row.row_checked .tddiv_elements .btn_action_fixed {
   background-color: var(--hoverRows);
+}
+
+.content_table .div_table .div_tbody .table_row.filaAbierta:hover .table_row .tddiv_elements,
+.content_table .div_table .div_tbody .table_row.filaAbierta:hover .table_row .tddiv_elements .btn_action_fixed {
+  background-color: white;
 }
 
 .content_table .div_table .div_tbody .table_row:hover .tddiv_elements,
@@ -4148,6 +4151,10 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   margin: 0px -10px;
 }
 
+.workflows .swb_wflow .top_folders .mb-70 {
+  margin-bottom: 70px;
+}
+
 .workflows .swt_box .top_folders .items_search_wof .control-group .form-control,
 .workflows .swt_box .top_folders .items_search_wof .control-group .input-group-append .input-group-text,
 .workflows .swt_box .top_folders .items_search_wof .control-group .select2-container--default .select2-selection--single {
@@ -4427,6 +4434,14 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   position: relative;
   -ms-flex-align: flex-start!important;
   align-items: flex-start!important;
+  
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.workflows .content_table .div_table_wfl .div_tbody .table_row.filaAbierta .break {
+  flex-basis: 100%;
+  height: 0;
 }
 
 .workflows .content_table .div_table_wfl .div_tbody .table_row.filaAbierta .btn_action_fixed {
@@ -4979,4 +4994,17 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .workflows_inicio.responsable .swb_wflow .box_content_work label {
   font-size: 18px;
   line-height: 21px;
+}
+
+
+
+/*******************/
+
+.workflows .new_content .new_row {
+  overflow-x: auto;
+}
+
+.workflows .new_content .new_row .break {
+  flex-basis: 100%;
+  height: 0;
 }
