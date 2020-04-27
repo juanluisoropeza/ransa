@@ -1166,6 +1166,58 @@
   .workflows_inicio .swb_wflow .box_content_work::before {
     left: 97px;
   }
+    /*Inicio Workflows Responsable*/
+  .workflows_inicio.responsable .swb_wflow .box_content_work {
+    width: auto;
+    height: auto;
+    padding: 10px 10px;
+  }
+  .workflows_inicio.responsable .table_work_especificos table tbody tr td:nth-child(0n+2),
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td,
+  .workflows_inicio.especificos .table_work_especificos table tbody tr th {
+    font-size: 15px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work .box_title p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work label {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work .input_work_respon input {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work .m-18 {
+    margin-bottom: 0px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table thead tr th {
+    text-align: initial!important;
+    height: 50px;
+    padding: 11px 0px 11px 15px;
+    font-size: 14px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr th {
+    height: 50px;
+    padding: 11px 0px 11px 15px !important;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td:nth-child(0n+2) {
+    min-width: 400px;
+    padding: 11px 0px 11px 15px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td {
+    padding: 11px 0px 11px 15px !important;
+    min-width: 230px;
+  }
+  .workflows_inicio.responsable .table_work_especificos table tbody tr td:nth-child(0n+2), 
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td {
+    font-size: 13px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td:last-child {
+    padding: 11px 11px 11px 15px !important;
+  }
 }
 
 @media screen and (max-width: 395px) {
@@ -1721,6 +1773,57 @@
   }
   .workflows_inicio .swb_wflow .box_content_work::before {
     left: 97px;
+  }
+    /*Inicio Workflows Responsable*/
+  .workflows_inicio.responsable .swb_wflow .box_content_work {
+    width: auto;
+    height: auto;
+    padding: 30px 40px;
+  }
+  .workflows_inicio.responsable .table_work_especificos table tbody tr td:nth-child(0n+2),
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td,
+  .workflows_inicio.especificos .table_work_especificos table tbody tr th {
+    font-size: 15px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work .box_title p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work label {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work .input_work_respon input {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work .m-18 {
+    margin-bottom: 0px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table thead tr th {
+    text-align: initial!important;
+    height: 50px;
+    padding: 11px 0px 11px 15px;
+    font-size: 14px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr th {
+    height: 50px;
+    padding: 11px 0px 11px 15px !important;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td:nth-child(0n+2) {
+    width: 380px !important;
+    padding: 11px 0px 11px 15px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td {
+    padding: 11px 0px 11px 15px !important;
+  }
+  .workflows_inicio.responsable .table_work_especificos table tbody tr td:nth-child(0n+2), 
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td {
+    font-size: 14px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td:last-child {
+    padding: 11px 11px 11px 15px !important;
   }
 }
 
@@ -2317,6 +2420,57 @@
   }
   .workflows_inicio .swb_wflow .box_content_work::before {
     left: 97px;
+  }
+    /*Inicio Workflows Responsable*/
+  .workflows_inicio.responsable .swb_wflow .box_content_work {
+    width: auto;
+    height: auto;
+    padding: 30px 40px;
+  }
+  .workflows_inicio.responsable .table_work_especificos table tbody tr td:nth-child(0n+2),
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td,
+  .workflows_inicio.especificos .table_work_especificos table tbody tr th {
+    font-size: 15px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work .box_title p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work label {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work .input_work_respon input {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work .m-18 {
+    margin-bottom: 0px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table thead tr th {
+    text-align: initial!important;
+    height: 50px;
+    padding: 11px 0px 11px 15px;
+    font-size: 14px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr th {
+    height: 50px;
+    padding: 11px 0px 11px 15px !important;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td:nth-child(0n+2) {
+    width: 380px !important;
+    padding: 11px 0px 11px 15px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td {
+    padding: 11px 0px 11px 15px !important;
+  }
+  .workflows_inicio.responsable .table_work_especificos table tbody tr td:nth-child(0n+2), 
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td {
+    font-size: 14px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td:last-child {
+    padding: 11px 11px 11px 15px !important;
   }
 }
 
@@ -3105,6 +3259,57 @@
   .workflows_inicio .swb_wflow .box_content_work::before {
     left: 97px;
   }
+    /*Inicio Workflows Responsable*/
+  .workflows_inicio.responsable .swb_wflow .box_content_work {
+    width: auto;
+    height: auto;
+    padding: 30px 40px;
+  }
+  .workflows_inicio.responsable .table_work_especificos table tbody tr td:nth-child(0n+2),
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td,
+  .workflows_inicio.especificos .table_work_especificos table tbody tr th {
+    font-size: 15px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work .box_title p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work label {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work .input_work_respon input {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work .m-18 {
+    margin-bottom: 0px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table thead tr th {
+    text-align: initial!important;
+    height: 50px;
+    padding: 11px 0px 11px 15px;
+    font-size: 14px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr th {
+    height: 50px;
+    padding: 11px 0px 11px 15px !important;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td:nth-child(0n+2) {
+    width: 380px !important;
+    padding: 11px 0px 11px 15px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td {
+    padding: 11px 0px 11px 15px !important;
+  }
+  .workflows_inicio.responsable .table_work_especificos table tbody tr td:nth-child(0n+2), 
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td {
+    font-size: 14px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td:last-child {
+    padding: 11px 11px 11px 15px !important;
+  }
 }
 
 @media screen and (min-width: 1020px) and (max-width: 1200px) {
@@ -3755,8 +3960,8 @@
     max-width: 214px;
   }
   .workflows .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box {
-    height: 62px;
-    width: 64px;
+    height: 20px;
+    width: 20px;
   }
   .workflows .swb_wflow .top_folders .folders_cards.wf .card .icon_info h2 {
     font-size: 35px;
@@ -3917,6 +4122,43 @@
   .workflows_inicio.especificos .table_work_especificos table tbody tr td,
   .workflows_inicio.especificos .table_work_especificos table tbody tr th {
     font-size: 15px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work .box_title p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work label {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work .input_work_respon input {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .workflows_inicio.responsable .swb_wflow .box_content_work .m-18 {
+    margin-bottom: 0px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table thead tr th {
+    text-align: initial!important;
+    height: 50px;
+    padding: 11px 0px 11px 15px;
+    font-size: 14px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr th {
+    height: 50px;
+    padding: 11px 0px 11px 15px !important;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td:nth-child(0n+2) {
+    width: 400px !important;
+    padding: 11px 0px 11px 15px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td {
+    padding: 11px 0px 11px 15px !important;
+  }
+  .workflows_inicio.responsable .table_work_especificos table tbody tr td:nth-child(0n+2), 
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td {
+    font-size: 14px;
   }
 }
 

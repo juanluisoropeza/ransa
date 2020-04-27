@@ -4576,7 +4576,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .workflows .swb_wflow .top_folders .folders_cards.wf .card {
   max-width: 300px;
-  position: relative;
+  position: relative; 
 }
 
 .workflows .swb_wflow .top_folders .folders_cards.wf .card:hover {
@@ -4974,4 +4974,9 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .workflows_inicio.responsable .table_work_especificos table tbody tr td:nth-child(0n+2) {
   width: 685px;
+}
+
+.workflows_inicio.responsable .swb_wflow .box_content_work label {
+  font-size: 18px;
+  line-height: 21px;
 }
