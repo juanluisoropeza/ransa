@@ -1177,7 +1177,7 @@
   .workflows_inicio.especificos .table_work_especificos table tbody tr th {
     font-size: 15px;
   }
-  .workflows_inicio.responsable .swb_wflow .box_content_work .box_title p {
+  .workflows_inicio.responsable .swb_wflow .box_content_work .box_title p { 
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 20px;
@@ -4355,6 +4355,21 @@
   .workflows_inicio.responsable .swb_wflow .box_content_work {
     width: 1200px;
     height: auto;
+  }
+  /*Inicio Workflows Especificos*/
+  .workflows_inicio.especificos .swb_wflow .box_content_work {
+    height: 730px;
+    width: 1200px;
+    padding: 30px 35px;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos label {
+    min-width: 145px;
+    margin-right: 10px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos label.max_width {
+    min-width: 163px !important;
   }
 }
 

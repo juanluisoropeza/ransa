@@ -4964,8 +4964,18 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse .selected {
-  min-width: 60px;
-  width: 60px;
+  min-width: 72px;
+  width: 72px;
+}
+
+.workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse.choose_left {
+  position: absolute;
+  left: 448px;
+}
+
+.workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse.choose_rigth {
+  position: absolute;
+  right: 60px;
 }
 
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse  .btn_attach1 {
@@ -4978,7 +4988,6 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   font-size: 20px;
   line-height: 23px;
   color: #019A40;
-
 }
 
 /****************** Inicio Workflows Responsable******************/
@@ -5010,4 +5019,98 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .workflows_inicio.responsable .swb_wflow .box_content_work label {
   font-size: 18px;
   line-height: 21px;
+}
+
+/*************/
+
+.workflows_inicio input.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.workflows_inicio .inputfile + label {
+  display: inline-block;
+}
+
+.workflows_inicio .btn-outline-success:not(.active):hover i:before {
+  color: white;
+}
+
+.workflows_inicio .inputs_work_especificos_chosse .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 119px;
+  height: 46px;
+}
+
+.workflows_inicio .inputs_work_especificos_chosse .btn span {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.workflows_inicio .inputs_work_especificos_chosse .btn i { 
+  font-size: 25px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+
+.workflows_inicio .inputs_work_especificos_chosse .btn-outline-success:not(:disabled):not(.disabled).active:focus, 
+.workflows_inicio .inputs_work_especificos_chosse .btn-outline-success:not(:disabled):not(.disabled):active:focus, 
+.workflows_inicio .inputs_work_especificos_chosse .show>.btn-outline-success.dropdown-toggle:focus
+.workflows_inicio .inputs_work_especificos_chosse .btn:hover,
+.workflows_inicio .inputs_work_especificos_chosse .btn:focus {
+  box-shadow: none;
+  border: 0;
+  outline: 0;
+}
+
+.workflows_inicio .inputs_work_especificos_chosse .btn.active,
+.workflows_inicio .inputs_work_especificos_chosse .btn.active:focus,
+.workflows_inicio .inputs_work_especificos_chosse .btn.active:hover {
+  background-color: transparent !important;
+  border: 0;
+  color: var(--verdePrincipal) !important;
+  outline: 0 !important;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active {
+  color: white;
+}
+
+.workflows_inicio .inputs_work_especificos_chosse .inputfile + label span {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.workflows_inicio .inputs_work_especificos_chosse label.active,
+.workflows_inicio .inputs_work_especificos_chosse label i:before,
+.workflows_inicio .inputs_work_especificos_chosse label:focus i:before {
+  color:var(--verdePrincipal);
+}
+
+.workflows_inicio .inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+.workflows_inicio .inputfile:focus + label {
+  border:0;
+  background-color: transparent;
+}
+
+.workflows_inicio .inputfile:focus + label:hover i:before {
+  color: var(--verdePrincipal);
+}
+
+.workflows_inicio .inputfile + label * {
+	pointer-events: none;
+}
+
+.workflows_inicio .inputs_work_especificos_chosse .ocultar_borde {
+  border: 0 !important;
+  background-color: transparent !important;
 }
