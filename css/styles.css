@@ -4726,6 +4726,8 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box {
   margin-right: 0px;
+  height: 40px;
+  width: 55px;
 }
 
 .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box span {
@@ -4975,7 +4977,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse.choose_rigth {
   position: absolute;
-  right: 60px;
+  right: -430px;
 }
 
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse  .btn_attach1 {
