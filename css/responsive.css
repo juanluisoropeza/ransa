@@ -4094,8 +4094,8 @@
     max-width: 214px;
   }
   .workflows .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box {
-    height: 20px;
-    width: 20px;
+    height: 60px;
+    width: 62px;
   }
   .workflows .swb_wflow .top_folders .folders_cards.wf .card .icon_info h2 {
     font-size: 35px;
@@ -4179,6 +4179,9 @@
   .workflows .content_table .div_table .div_tbody .table_row .tddiv_resp .resp_photo .tooltip_msg p {
     font-size: 12px;
     line-height: 14px;
+  }
+  .workflows .content_table .div_table .div_tbody .btn_action_fixed {
+    right: 55px;
   }
   /*Inicio Workflows */
   .workflows_inicio .swb_wflow .box_content_work {

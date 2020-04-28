@@ -4680,6 +4680,29 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 
+
+
+
+/*******************/
+
+.workflows .new_content {
+  height: auto;
+}
+
+.workflows .new_content .new_row {
+  overflow-x: auto;
+}
+
+.workflows .new_content .new_row .break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+
+
+
+
+
 /****************** Inicio Workflows ******************/
 
 .workflows_inicio .screens_with_tables .swt_box .top_info h1.title_black {
@@ -4898,6 +4921,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   height: 60px;
   padding: 11px 30px;
 }
+
 .workflows_inicio.especificos .table_work_especificos table tbody  tr th,
 .workflows_inicio.especificos .table_work_especificos table tbody  tr td {
   text-align: initial!important;
@@ -4919,18 +4943,22 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   display: flex;
   align-items: center;
 }
+
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos label.max_width {
   min-width: 195px !important;
 }
+
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos input,
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .select2  {
   max-width: 200px;
   min-width: 200px!important;
 }
+
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .input_calendar_work {
   max-width: 152px;
   min-width: 152px !important;
 }
+
 .workflows_inicio.especificos .swb_wflow .box_content_work .m-18 {
   margin-bottom: 18px;
 }
@@ -4953,19 +4981,6 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 }
 
-[value=getFile]{
-  background:teal;
-  cursor:pointer;
-  color:white;
-  padding:0 5px;
-  font-family:Trebuchet MS;
-  border:0;
-}
-
-[value=getFile]:hover{
-  background:#0aa;
-}
-
 /****************** Inicio Workflows Responsable******************/
 
 .workflows_inicio.responsable .swb_wflow .box_content_work .input_work_respon input {
@@ -4978,6 +4993,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   font-size: 18px;
   margin-right: 18px;
 }
+
 .workflows_inicio.responsable .table_work_especificos table tbody  tr td img {
   margin-right: 5px;
   max-height: 32px;
@@ -4994,17 +5010,4 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .workflows_inicio.responsable .swb_wflow .box_content_work label {
   font-size: 18px;
   line-height: 21px;
-}
-
-
-
-/*******************/
-
-.workflows .new_content .new_row {
-  overflow-x: auto;
-}
-
-.workflows .new_content .new_row .break {
-  flex-basis: 100%;
-  height: 0;
 }
