@@ -352,9 +352,9 @@ a:hover {
 
 /*** SELECT 2 ***/
 
-.select2-container {
+/* .select2-container {
   z-index: 9999;
-}
+} */
 
 .select2-container--open {
   z-index: 9557;
@@ -4757,6 +4757,10 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   color: white;
 }
 
+.workflows_inicio .swb_wflow .box_content_work .movil_calendar_box {
+  display: flex;
+}
+
 .workflows_inicio .swb_wflow .box_content_work {
   width: 1450px;
   height: 666px;
@@ -4968,6 +4972,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse .selected {
   min-width: 72px;
   width: 72px;
+  color: #999999;
 }
 
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse.choose_left {
@@ -4990,6 +4995,12 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   font-size: 20px;
   line-height: 23px;
   color: #019A40;
+}
+
+.workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .input-group-append .input-group-text {
+  border-color: var(--verdeActive)!important;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
 }
 
 /****************** Inicio Workflows Responsable******************/
