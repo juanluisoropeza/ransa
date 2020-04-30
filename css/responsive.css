@@ -1193,13 +1193,13 @@
   .workflows_inicio.responsable .swb_wflow .box_content_work .m-18 {
     margin-bottom: 0px;
   }
-  .workflows_inicio.especificos .table_work_especificos table thead tr th {
+  .workflows_inicio.responsable .table_work_especificos table thead tr th {
     text-align: initial!important;
     height: 50px;
     padding: 11px 0px 11px 15px;
     font-size: 14px;
   }
-  .workflows_inicio.especificos .table_work_especificos table tbody tr th {
+  .workflows_inicio.responsable .table_work_especificos table tbody tr th {
     height: 50px;
     padding: 11px 0px 11px 15px !important;
   }
@@ -1217,6 +1217,121 @@
   }
   .workflows_inicio.especificos .table_work_especificos table tbody tr td:last-child {
     padding: 11px 11px 11px 15px !important;
+  }
+ /*Inicio Workflows Especificos*/
+ .workflows_inicio.especificos .swb_wflow .box_content_work .box_title p {
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 10px;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work {
+    height: auto;
+    width: auto;
+    padding: 30px 20px;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos label { 
+    min-width: 130px;
+    margin-right: 5px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos label.max_width {
+    min-width: 115px !important;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse.choose_left {
+    position: initial;
+    height: 65px;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse.choose_rigth { 
+    position: initial;
+    height: 60px;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse .selected {
+    min-width: 98px;
+    width: 98px;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 5px;
+  }
+  .workflows_inicio.especificos .inputs_work_especificos .end {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .workflows_inicio .inputs_work_especificos_chosse .btn {
+    max-width: 72px !important;
+    height: 32px;
+    min-width: 0px;
+    margin-bottom: 20px;
+  }
+  .workflows_inicio .inputs_work_especificos_chosse .btn i { 
+    font-size: 17px;
+    line-height: 18px;
+    margin-right: 0px;
+  }
+  .workflows_inicio .inputs_work_especificos_chosse .inputfile + label span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr td {
+    font-size: 14px;
+    line-height: 18px;
+    height: 50px;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .select2 {
+    max-width: 100%;
+    min-width: 0px!important;
+    width: 100% !important;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .input_calendar_work {
+    max-width: 84%;
+    min-width: 84%!important;
+    height: 30px;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos input {
+    max-width: 100%;
+    min-width: 100%!important;
+    height: 30px;
+    max-height: 30px;
+  }
+
+  .workflows_inicio.especificos .swb_wflow .box_content_work .input-group-append {
+    height: 30px;
+  }
+  .workflows_inicio.especificos .title_table {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .m-18 {
+    margin-bottom: 7px;
+  }
+  .workflows_inicio.especificos .inputs_work_especificos.box_movil {
+    display: flex;
+    flex-direction: column;
+  }
+  .workflows_inicio.especificos .inputs_work_especificos .box_content_movil {
+    display: flex;
+    flex-direction: column;
+  }
+  .workflows_inicio.especificos .inputs_work_especificos .box_content_movil .movil_calendar_box {
+    display: flex;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .input_work_respon input {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .m-18 {
+    margin-bottom: 0px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table thead tr th {
+    text-align: initial!important;
+    height: 50px;
+    padding: 11px 0px 11px 15px;
+    font-size: 14px;
+  }
+  .workflows_inicio.especificos .table_work_especificos table tbody tr th {
+    height: 50px;
+    padding: 11px 0px 11px 15px !important;
+    min-width: 160px;
   }
 }
 
@@ -1832,7 +1947,7 @@
     margin-bottom: 10px;
   }
    .workflows_inicio.especificos .swb_wflow .box_content_work {
-    height: 600px;
+    height: auto;
     width: auto;
     padding: 30px 35px;
   }
@@ -1847,21 +1962,19 @@
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse.choose_left {
     position: initial;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    height: 65px;
+    padding-top: 20px;
+    margin-left: 20px;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse.choose_rigth { 
     position: initial;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    height: 60px;
+    padding-top: 20px;
+    margin-left: 20px;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse .selected {
-    min-width: 100px;
-    width: 120px;
+    min-width: 72px;
+    width: 72px;
     font-size: 13px;
   }
   .workflows_inicio.especificos .inputs_work_especificos .end {
@@ -1870,8 +1983,9 @@
   }
   .workflows_inicio .inputs_work_especificos_chosse .btn {
     max-width: 72px !important;
-    height: 40px;
+    height: 32px;
     min-width: 0px;
+    margin-bottom: 20px;
   }
   .workflows_inicio .inputs_work_especificos_chosse .btn i { 
     font-size: 17px;
@@ -1900,6 +2014,7 @@
     max-width: 160px;
     min-width: 160px!important;
     height: 30px;
+    max-height: 30px;
   }
 
   .workflows_inicio.especificos .swb_wflow .box_content_work .input-group-append {
@@ -1909,14 +2024,12 @@
     font-size: 15px;
     margin-bottom: 10px;
   }
-  .workflows_inicio .inputs_work_especificos_chosse .btn {
-    max-width: 160px !important;
-    width: 160px;
-    height: 30px;
-    min-width: 0px;
-  }
   .workflows_inicio.especificos .swb_wflow .box_content_work .m-18 {
     margin-bottom: 7px;
+  }
+  .workflows_inicio.especificos .inputs_work_especificos.box_movil {
+    display: flex;
+    flex-direction: column;
   }
 }
 
