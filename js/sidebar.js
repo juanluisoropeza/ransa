@@ -35,4 +35,14 @@ $(document).ready(function () {
     $(this).parent().find(".third-menu-dropdown").toggleClass("show");
   });
 
+
+  /* MENU OPCION DESPLEGABLE / BUSQUEDA HEADER */
+
+  $('#ddm_busqueda .select2-selection__arrow').click(function(){
+    $(".select2-container--open").addClass("select2-header-option");
+  });
+  $('.dropdown').on('hide.bs.dropdown', function() {
+    $('.select2-container--open').removeClass();
+  });
+  
 });

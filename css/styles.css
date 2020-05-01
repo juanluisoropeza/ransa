@@ -360,6 +360,10 @@ a:hover {
   z-index: 9557;
 }
 
+.select2-header-option {
+  z-index: 9700 !important;
+}
+
 .select2-container .select2-selection--single {
   height: 40px;
 }
@@ -855,7 +859,7 @@ a.box-card {
 header {
   position: fixed;
   width: 100%;
-  z-index: 9555;
+  z-index: 9600;
 }
 
 header .top_header {
@@ -978,7 +982,7 @@ header .top_header .cnt_right .input-group .form-control {
   padding-left: 21px;
 }
 
-header .top_header .cnt_right .dropdown-menu .control-group .select2-container {
+header .top_header .cnt_right .dropdown-menu .control-group .select2-container .select2-container--open {
   z-index: 9556;
 }
 
