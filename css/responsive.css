@@ -3269,7 +3269,8 @@
   }
   .screens_with_tables .swt_box {
     min-height: calc(100vh - 147px);
-    padding: 40px 50px;
+    width: calc(100% - 72px);
+    padding: 40px 50px 0px 50px;
   }
   .screens_with_tables .swt_box .top_folders .card .card-header {
     height: 80px;
@@ -3279,12 +3280,6 @@
   }
   .screens_with_tables .swt_box .top_folders .card .card-body {
     padding: 8px 16px;
-  }
-  .screens_with_tables .swt_box .top_folders .card .card-body .txt_dark_gray {
-    font-size: .9em;
-  }
-  .screens_with_tables .swt_box .top_folders .card .card-body .txt_light_gray {
-    font-size: .8em;
   }
   .screens_with_tables .swt_box .buttons_right .btn-outline-success {
     font-size: 14px;
@@ -3299,13 +3294,13 @@
     margin-right: 4px;
   }
   .screens_with_tables .swt_box .top_info h1.title {
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 17px;
+    line-height: 20px;
   }
   .screens_with_tables .swt_box .top_info h2.subtitle {
-    font-size: 16px;
-    margin-bottom: 10px;
-    margin-top: 25px;
+    font-size: 14px;
+    margin-bottom: 0em;
+    margin-top: 17px;
   }
   .content_table .div_table .div_thead .thdiv_elements, 
   .content_table .div_table .div_thead .thdiv_elements {
@@ -3331,6 +3326,11 @@
     height: 25px;
     width: 25px;
   }
+  .content_table .div_table .div_thead {
+    height: 52px;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements {
+    height: 40px;
   .content_table .div_table .div_thead,
   .content_table .div_table .div_tbody .tddiv_elements, 
   .workflows .row_wfl_ppal .div_thead, 
@@ -3374,12 +3374,12 @@
   }
   .content_table .div_table .div_thead .thdiv_elements, 
   .content_table .div_table .div_thead .thdiv_elements a {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 12.1435px;
+    line-height: 14px;
   }
   .content_table .div_table .div_tbody .tddiv_elements {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 12.1435px;
+    line-height: 14px;
   }
   .dropdown_table {
     padding: 10px 0px 0px 0px;
@@ -3387,6 +3387,33 @@
   }
   .screens_with_tables .swt_box hr {
     margin-bottom: 12px;
+    margin-top: 6px;
+  }
+  .screens_with_tables .swt_box .top_folders .folders_cards {
+    max-width: 218.62px;
+    width: 218.62px;
+    padding: 0px 20px;
+  }
+  .screens_with_tables .swt_box .top_folders .folders_cards .card {
+    height: 119.83px;
+  }
+  .screens_with_tables .swt_box .top_folders .card .card-header img {
+    max-height: 53px;
+    width: 55.17px;
+  }
+  .screens_with_tables .swt_box .top_folders .card .card-body .txt_dark_gray {
+    font-size: 12.8243px;
+    line-height: 15px;
+  }
+  .screens_with_tables .swt_box .top_folders .card .card-body .txt_light_gray {
+    font-size: 11.5419px;
+    line-height: 16px;
+  }
+  .content_table .search_button label .input-group-text.icon_search, .content_table .search_button label button, .content_table .search_button label input {
+    height: 27.63px;
+  }
+  .content_table .search_button label input {
+    width: 75px;
   }
   .screens_with_tables .swt_box .dropdown-item {
     font-size: 14px;
@@ -4173,6 +4200,24 @@
   .workflows_inicio.especificos .swb_wflow .box_content_work .m-18 {
     margin-bottom: 7px;
   }
+  .pagination li a {
+    font-size: 9.96042px;
+    line-height: 14px;
+    width: 19.21px;
+    height: 19.21px;
+  }
+  /* Sidebar */
+  .cont_menu_sidebar,
+  .cont_menu_sidebar .sidebar_left_menu {
+    width: 72px;
+    min-width: 72px;
+  }
+  .cont_menu_sidebar .sidebar_left_menu ul li a i {
+    font-size: 1.3em;
+  }
+  .cont_menu_sidebar .sidebar_left_menu ul li:first-child {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 1020px) and (max-width: 1200px) {
@@ -4276,7 +4321,7 @@
     min-width: 800px;
   }
   header .top_header {
-    height: 90px;
+    height: 76px;
   }
   header .top_header .cnt_right .input-group {
     height: 32px;
@@ -4422,25 +4467,37 @@
   /* Pantallas con tablas */
   .screens_with_tables {
     min-height: calc(100vh - 147px);
-    padding-top: 90px;
+    padding-top: 77px;
   }
   .screens_with_tables .swt_box {
-    padding: 40px 55px;
+    padding: 40px 55px 0px 55px;
+    width: calc(100% - 72px);
+  }
+  .screens_with_tables .swt_box .top_folders .folders_cards {
+    max-width: 218.62px;
+    width: 218.62px;
+    padding: 0px 20px;
+  }
+  .screens_with_tables .swt_box .top_folders .folders_cards .card {
+    height: 119.83px;
   }
   .screens_with_tables .swt_box .top_folders .card .card-header {
     height: 84px;
   }
   .screens_with_tables .swt_box .top_folders .card .card-header img {
-    max-height: 43px;
+    max-height: 53px;
+    width: 55.17px;
   }
   .screens_with_tables .swt_box .top_folders .card .card-body {
     padding: 10px 18px;
   }
   .screens_with_tables .swt_box .top_folders .card .card-body .txt_dark_gray {
-    font-size: .9em;
+    font-size: 12.8243px;
+    line-height: 15px;
   }
   .screens_with_tables .swt_box .top_folders .card .card-body .txt_light_gray {
-    font-size: .9em;
+    font-size: 11.5419px;
+    line-height: 16px;
   }
   .screens_with_tables .swt_box .buttons_right .btn-outline-success {
     font-size: 14px;
@@ -4450,8 +4507,13 @@
     min-width: 150px;
   }
   .screens_with_tables .swt_box .top_info h1.title {
-    font-size: 19px;
-    line-height: 22px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .screens_with_tables .swt_box .top_info h2.subtitle {
+    font-size: 14px;
+    margin-bottom: 0em;
+    margin-top: 17px;
   }
   .screens_with_tables .swt_box .top_folders .card .card-body .users img {
     max-height: 26px;
@@ -4464,11 +4526,7 @@
     padding: 40px 55px;
   }
   .content_table .div_table .div_thead,
-  .content_table .div_table .div_tbody .tddiv_elements,
-  .workflows .row_wfl_ppal .div_thead,
-  .workflows .row_wfl_ppal .div_tbody .item_column, 
-  .workflows .row_wfl_ppal .second_table .item_column, 
-  .workflows .row_wfl_ppal .third_table .item_column {
+  .content_table .div_table .div_tbody .tddiv_elements {
     height: 54px;
   }
   .content_table .div_table_wfl .div_thead .thdiv_elements, 
@@ -4479,14 +4537,17 @@
   .content_table .search_button label .input-group-text.icon_search,
   .content_table .search_button label button,
   .content_table .search_button label input {
-    height: 30px;
+    height: 27.63px;
+  }
+  .content_table .search_button label input {
+    width: 75px;
   }
   .content_table .search_button label .icon_search [class^="icon-"], 
   .content_table .search_button label .icon_search [class*=" icon-"] {
     font-size: 1.2em;
   }
   .content_table .div_table .div_tbody .tddiv_elements:first-child img {
-    max-height: 26px;
+    max-height: 19px;
   }
   .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark,
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
@@ -4508,12 +4569,12 @@
   }
   .content_table .div_table .div_thead .thdiv_elements, 
   .content_table .div_table .div_thead .thdiv_elements a {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 12.1435px;
+    line-height: 14px;
   }
   .content_table .div_table .div_tbody .tddiv_elements {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 12.1435px;
+    line-height: 14px;
   }
   .dropdown_table {
     padding: 10px 0px 0px 0px;
@@ -4521,6 +4582,7 @@
   }
   .screens_with_tables .swt_box hr {
     margin-bottom: 12px;
+    margin-top: 6px;
   }
   .screens_with_tables .swt_box .dropdown-item {
     font-size: 16px;
@@ -5136,6 +5198,24 @@
   }
   .workflows_inicio.especificos .title_table {
     font-size: 15px;
+  }
+  /* Sidebar */
+  .cont_menu_sidebar,
+  .cont_menu_sidebar .sidebar_left_menu {
+    width: 72px;
+    min-width: 72px;
+  }
+  .cont_menu_sidebar .sidebar_left_menu ul li a i {
+    font-size: 1.3em;
+  }
+  .cont_menu_sidebar .sidebar_left_menu ul li:first-child {
+    margin-bottom: 0px;
+  }
+  .pagination li a {
+    font-size: 9.96042px;
+    line-height: 14px;
+    width: 19.21px;
+    height: 19.21px;
   }
 }
  
