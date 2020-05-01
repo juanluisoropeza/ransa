@@ -823,6 +823,26 @@
   .modal .modal-content .modal-body .form-inline {
     justify-content: center;
   }
+  .modal_downloadfile_workflows .btn_modal_workflows_resp {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .modal_downloadfile_workflows .btn_modal_workflows_resp i {
+    padding: 8px;
+    font-size: 15px;
+    margin-right: 5px;
+  } 
+  .modal_downloadfile_workflows .modal-body h4 {
+    margin-bottom: 1em !important;
+  }
+  .modal_downloadfile_workflows .modal-body p {
+    font-size: 15px !important;
+    line-height: 18px !important;
+    text-align: center;
+  }
+  .modal_downloadfile_workflows .box_button_modal_work {
+    margin-top: 20px;
+  }
   .modal .modal-content .modal-body .form-inline .form-group label,
   .select_new .btn-select .btn-select-value {
     font-size: 16px;
@@ -936,6 +956,9 @@
     font-size: 1.2em;
   }
   /* File Details */
+  .files_details .content_files_details .toggle {
+    display: none;
+  }
   .files_details .content_files_details .preview_file {
     min-height: 400px;
   }
@@ -1296,7 +1319,7 @@
 
   .workflows_inicio.especificos .swb_wflow .box_content_work .input-group-append {
     height: 30px;
-  }
+  } 
   .workflows_inicio.especificos .title_table {
     font-size: 15px;
     margin-bottom: 10px;
@@ -1579,6 +1602,21 @@
     height: 38px;
     min-width: 120px;
     width: auto;
+  }
+  .modal_downloadfile_workflows .btn_modal_workflows_resp {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .modal_downloadfile_workflows .btn_modal_workflows_resp i {
+    padding: 12px;
+  } 
+  .modal_downloadfile_workflows .modal-body h4 {
+    margin-bottom: 1em !important;
+  }
+  .modal_downloadfile_workflows .modal-body p {
+    font-size: 15px !important;
+    line-height: 18px !important;
+    text-align: center;
   }
   /* Search Top Bar */
   .modal .modal-content .modal-body .form-inline .form-group label, .select_new .btn-select .btn-select-value {
@@ -2338,6 +2376,21 @@
   .modal .modal-content .modal-body .has-search .form-control-feedback {
     font-size: 1.2em;
   }
+  .modal_downloadfile_workflows .btn_modal_workflows_resp {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .modal_downloadfile_workflows .btn_modal_workflows_resp i {
+    padding: 12px;
+  } 
+  .modal_downloadfile_workflows .modal-body h4 {
+    margin-bottom: 1em !important;
+  }
+  .modal_downloadfile_workflows .modal-body p {
+    font-size: 15px !important;
+    line-height: 18px !important;
+    text-align: center;
+  }
   /* Search Top Bar */
   .select2-container--default .select2-selection--single .select2-selection__rendered, 
   .select2-results__option, 
@@ -2554,6 +2607,9 @@
   .files_details .top_info_details .info_left, .files_details .top_info_details .actions_right .align-items-center .dw_details_options a {
     min-width: auto!important;
   }
+  .files_details .content_files_details .toggle {
+    display: none;
+  }
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark,
   .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
     left: -32px;
@@ -2685,7 +2741,7 @@
     margin-bottom: 10px;
   }
    .workflows_inicio.especificos .swb_wflow .box_content_work {
-    height: 600px;
+    height: auto;
     width: auto;
     padding: 30px 35px;
   }
@@ -3401,6 +3457,21 @@
   .modal .modal-content .modal-body .has-search .form-control-feedback {
     font-size: 1.2em;
   }
+  .modal_downloadfile_workflows .btn_modal_workflows_resp {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .modal_downloadfile_workflows .btn_modal_workflows_resp i {
+    padding: 12px;
+  } 
+  .modal_downloadfile_workflows .modal-body h4 {
+    margin-bottom: 1em !important;
+  }
+  .modal_downloadfile_workflows .modal-body p {
+    font-size: 15px !important;
+    line-height: 18px !important;
+    text-align: center;
+  }
   /* Search Top Bar */
   .select2-container .select2-selection--single,
   header .top_header .cnt_right .dropdown-menu .form-control,
@@ -3746,7 +3817,7 @@
     margin-bottom: 10px;
   }
    .workflows_inicio.especificos .swb_wflow .box_content_work {
-    height: 600px;
+    height: auto;
     width: auto;
     padding: 30px 35px;
   }
@@ -4461,6 +4532,21 @@
   }
   .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
     top: -5px;
+  }
+  .modal_downloadfile_workflows .btn_modal_workflows_resp {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .modal_downloadfile_workflows .btn_modal_workflows_resp i {
+    padding: 12px;
+  } 
+  .modal_downloadfile_workflows .modal-body h4 {
+    margin-bottom: 1em !important;
+  }
+  .modal_downloadfile_workflows .modal-body p {
+    font-size: 15px !important;
+    line-height: 18px !important;
+    text-align: center;
   }
   /* Workflows */
   .seldsd {    
