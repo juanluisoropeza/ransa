@@ -259,7 +259,7 @@
                     </div>
                     <div class="top_folders">
                         <div class="row justify-content-center align-items-center mb-70">
-                            <a href="#" class="col-6 col-sm-4 text-center folders_cards wf">
+                            <a href="#" class="col-lg-4 text-center folders_cards wf">
                                 <div class="card">
                                     <div class="icon_box">
                                         <div class="box">
@@ -273,7 +273,7 @@
                                     <div class="tooltip_msg">Workflows con actividades en curso.</div>
                                 </div>
                             </a>
-                            <a href="#" class="col-6 col-sm-4 text-center folders_cards wf">
+                            <a href="#" class="col-lg-4 text-center folders_cards wf">
                                 <div class="card">
                                     <div class="icon_box">
                                         <div class="box">
@@ -287,7 +287,7 @@
                                     <div class="tooltip_msg">Workflows  con activiidades culminadas.</div>
                                 </div>
                             </a>
-                            <a href="#" class="col-6 col-sm-4 text-center folders_cards wf">
+                            <a href="#" class="col-lg-4 text-center folders_cards wf">
                                 <div class="card">
                                     <div class="icon_box">
                                         <div class="box">
@@ -303,7 +303,7 @@
                             </a>
                         </div>
                         <div class="row justify-content-center align-items-center">
-                            <div class="col-6 col-sm-4 col-lg-2 items_search_wof">
+                            <div class="col-lg-2 items_search_wof">
                                 <div class="control-group input-group">
                                     <input type="text" class="form-control ici_append" id="fecha3" placeholder="Seleccione fecha" name="txt_rfechas_fecha" required="" data-validation-required-message="Por favor, Seleccione una <b>Fecha</b>.">
                                     <div class="input-group-append">
@@ -313,7 +313,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-sm-4 col-lg-2 items_search_wof">
+                            <div class="col-lg-2 items_search_wof">
                                 <div class="control-group">
                                     <select class="select_custon_select2 form-control" name="txt_mwf_categoria">
                                         <option value="">Categoría</option>
@@ -323,7 +323,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-6 col-sm-4 col-lg-2 items_search_wof">
+                            <div class="col-lg-2 items_search_wof">
                                 <div class="control-group">
                                     <select class="select_custon_select2 form-control" name="txt_mwf_workflow">
                                         <option value="">Workflow</option>
@@ -333,7 +333,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-6 col-sm-4 col-lg-2 items_search_wof">
+                            <div class="col-lg-2 items_search_wof">
                                 <div class="control-group">
                                     <select class="select_custon_select2 form-control" name="txt_mwf_sede">
                                         <option value="">Sede</option>
@@ -343,26 +343,24 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-6 col-sm-4 col-lg-2 items_search_wof">
+                            <div class="col-lg-2 items_search_wof">
                                 <div class="control-group">
                                     <input type="text" class="form-control" name="txt_escribir_wfl" id="txt_escribir_wfl" placeholder="Escribir">
                                 </div>
                             </div>
-                            <div class="col-6 col-sm-4 col-lg-2 items_search_wof">
+                            <div class="col-lg-2 items_search_wof">
                                 <a href="#" class="btn btn-success">Buscar</a>
                             </div>
                         </div>
                     </div>
                     <div class="content_table">
-                        <div class="container-fluid sp">
-                            <div class="row sm flex-nowrap flex-column row_wfl_ppal">
-                                <div class="ppal_table div_thead">
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">&nbsp;</div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">
-                                            <a href="#" class="sort" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="w-100 cont_hz_scroll">
+                            <div class="container-fluid w-100 div_table div_table_wfl">
+                                <div class="div_thead">
+                                    <div class="table_row h-100">
+                                        <div class="col col-lg-1 col-xl-1 thdiv_elements">&nbsp;</div>
+                                        <div class="col col-lg-1 col-xl-1 thdiv_elements">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span class="icon-icon_arrow-down2"></span> Código
                                             </a>
                                             <div class="dropdown-menu">
@@ -370,10 +368,8 @@
                                                 <a class="dropdown-item" href="#">Descendente</a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-5 col-sm-4 col-lg-4 col-xl-2 item_column item_colmumn_name">
-                                        <div class="item">
-                                            <a href="#" class="sort" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="col col-xl-2 thdiv_elements thdiv_nombre">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span class="icon-icon_arrow-down2"></span> Nombre del workflow
                                             </a>
                                             <div class="dropdown-menu">
@@ -381,82 +377,68 @@
                                                 <a class="dropdown-item" href="#">Descendente</a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">Tracking</div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">Tracking</div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">Fecha de inicio</div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">Fecha de fin</div>
-                                    </div>
-                                    <div class="col-4 col-sm-3 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">Estado</div>
-                                    </div>
-                                    <div class="col-4 col-sm-3 col-lg-2 col-xl-2 item_column">
-                                        <div class="item">Responsable</div>
-                                    </div>
-                                    <div class="col-5 col-sm-3 col-lg-2 col-xl-1 item_column item_colmumn_type">
-                                        <div class="item">Tipo</div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">
+                                        <div class="col col-lg-2 col-xl-1 thdiv_elements">
+                                            Tracking
+                                        </div>
+                                        <div class="col col-lg-1 col-xl-1 thdiv_elements">
+                                            Fecha de inicio
+                                        </div>
+                                        <div class="col col-lg-1 col-xl-1 thdiv_elements">
+                                            Fecha de fin
+                                        </div>
+                                        <div class="col col-lg-1 col-xl-2 thdiv_elements">
+                                            Estado
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 thdiv_elements thdiv_resp">
+                                            Responsable
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 thdiv_elements">
+                                            Tipo
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 thdiv_elements">
                                             <a href="#" data-toggle="modal" data-target="#modalTableAddColumn">
                                                 <span class="icon-icon_plus2"></span>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="ppal_table div_tbody">
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">
-                                            <a class="icon_box collapsed" data-toggle="collapse" href="#submenu1" role="button" aria-expanded="false" aria-controls="submenu1">
+                                <div class="div_tbody">
+                                    <div class="table_row h-100 align-items-center row_wbg">
+                                        <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                            <div class="icon_box">
                                                 <span class="icon-icon_arrow-down1"></span>
-                                            </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">WF0025</div>
-                                    </div>
-                                    <div class="col-5 col-sm-4 col-lg-4 col-xl-2 item_column item_colmumn_name">
-                                        <div class="item">Procedimiento horas extras</div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">0 de 2</div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">0 de 2</div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">25/03/2020</div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">10/01/2020</div>
-                                    </div>
-                                    <div class="col-4 col-sm-3 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">
-                                            <span class="status cerrado"></span> Cerrado
+                                        <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                            WF0023
                                         </div>
-                                    </div>
-                                    <div class="col-4 col-sm-3 col-lg-2 col-xl-2 item_column">
-                                        <div class="item responsable">
-                                            <figure class="resp_photo"><img src="images/user1.jpg" alt="user1" class="img-fluid rounded-circle"></figure>
-                                            <p class="mb-0 info_respo">Ayer a las 3:20 pm</p>
+                                        <div class="col col-xl-2 tddiv_elements tddiv_nombre">
+                                            Trabajo de Alto Riesgo
                                         </div>
-                                    </div>
-                                    <div class="col-5 col-sm-3 col-lg-2 col-xl-1 item_column item_colmumn_type">
-                                        <div class="item">&nbsp;</div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column btn_action_fixed ic_ddwn">
-                                        <div class="item">
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements">
+                                            0 de 11
+                                        </div>
+                                        <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                            10/01/2020
+                                        </div>
+                                        <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                            10/01/2020
+                                        </div>
+                                        <div class="col col-lg-1 col-xl-2 tddiv_elements">
+                                            <span class="icon-icon_ellipse-point status pendiente"></span> Pendiente
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements tddiv_resp">
+                                            <figure class="resp_photo">
+                                                <img src="images/user1.jpg" alt="user1" class="img-fluid rounded-circle">
+                                            </figure>
+                                            <p class="mb-0 info_respo">Ayer a las 4:40 pm</p>
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements">&nbsp;</div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements btn_action_fixed">
                                             <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span class="icon-icon_three-bullets"></span>
                                             </a>
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalEditarWorkflow">
                                                     <span class="icon-icon_pencil"></span> Editar
                                                 </a>
@@ -466,66 +448,123 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="break"></div>
-                                    <div class="second_table w-100 collapse" id="submenu1">
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                &nbsp;
+                                    <div class="table_row h-100 align-items-center row_wbg">
+                                        <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                            <div class="icon_box">
+                                                <span class="icon-icon_arrow-down1"></span>
                                             </div>
                                         </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                &nbsp;
-                                            </div>
+                                        <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                            WF0024
                                         </div>
-                                        <div class="col-5 col-sm-4 col-lg-4 col-xl-2 item_column item_colmumn_name">
-                                            <div class="item">
-                                                <a class="intern_clp_link collapsed" data-toggle="collapse" href="#thirdMenu1" role="button" aria-expanded="false" aria-controls="thirdMenu1">
-                                                    <span class="icon-icon_arrow-down1"></span>
+                                        <div class="col col-xl-2 tddiv_elements tddiv_nombre">
+                                            Validación de seguridad
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements">
+                                            0 de 12
+                                        </div>
+                                        <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                            10/01/2020
+                                        </div>
+                                        <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                            10/01/2020
+                                        </div>
+                                        <div class="col col-lg-1 col-xl-2 tddiv_elements">
+                                            <span class="icon-icon_ellipse-point status rechazado"></span> Rechazado
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements tddiv_resp">
+                                            <figure class="resp_photo">
+                                                <img src="images/user1.jpg" alt="user1" class="img-fluid rounded-circle">
+                                            </figure>
+                                            <p class="mb-0 info_respo">Ayer a las 3:20 pm</p>
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements">&nbsp;</div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements btn_action_fixed">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-icon_three-bullets"></span>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon-icon_pencil"></span> Editar
                                                 </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon-icon_trash-light"></span> Eliminar
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_row h-100 align-items-center row_wbg">
+                                        <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                            <a class="icon_box collapsed" data-toggle="collapse" href="#collapseRow2" role="button" data-target=".multi-collapse" aria-expanded="false" aria-controls="collapseRow2 collapseRow3">
+                                                <span class="icon-icon_arrow-down1"></span>
+                                            </a>
+                                        </div>
+                                        <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                            WF0025
+                                        </div>
+                                        <div class="col col-xl-2 tddiv_elements tddiv_nombre">
+                                            Procedimiento horas extras
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements">
+                                            0 de 2
+                                        </div>
+                                        <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                            25/03/2020
+                                        </div>
+                                        <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                            10/01/2020
+                                        </div>
+                                        <div class="col col-lg-1 col-xl-2 tddiv_elements">
+                                            <span class="status cerrado"></span> Cerrado
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements tddiv_resp">
+                                            <figure class="resp_photo">
+                                                <img src="images/user1.jpg" alt="user1" class="img-fluid rounded-circle">
+                                            </figure>
+                                            <p class="mb-0 info_respo">Ayer a las 3:20 pm</p>
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements">&nbsp;</div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements btn_action_fixed">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-icon_three-bullets"></span>
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon-icon_pencil"></span> Editar
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon-icon_trash-light"></span> Eliminar
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="break"></div>
+                                        <div class="table_row h-100 align-items-center row_wbg row_collapse collapse multi-collapse" id="collapseRow2">
+                                            <div class="col col-lg-1 col-xl-1 tddiv_elements">&nbsp;</div>
+                                            <div class="col col-lg-1 col-xl-1 tddiv_elements">&nbsp;</div>
+                                            <div class="col col-xl-2 tddiv_elements tddiv_nombre">
+                                                <a href="#" class="intern_clp_link"><span class="icon-icon_arrow-down1"></span></a>
                                                 Etapa 1
                                             </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">0 de 2</div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                Card4
+                                            <div class="col col-lg-2 col-xl-1 tddiv_elements">
+                                                3 de 3
                                             </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                Card5
+                                            <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                                25/03/2020
                                             </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                Card6
+                                            <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                                28/03/2020
                                             </div>
-                                        </div>
-                                        <div class="col-4 col-sm-3 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                Card7
+                                            <div class="col col-lg-1 col-xl-2 tddiv_elements">
+                                                <span class="status finalizado"></span> Finalizado
                                             </div>
-                                        </div>
-                                        <div class="col-4 col-sm-3 col-lg-2 col-xl-2 item_column">
-                                            <div class="item">
-                                                Card8
-                                            </div>
-                                        </div>
-                                        <div class="col-5 col-sm-3 col-lg-2 col-xl-1 item_column item_colmumn_type">
-                                            <div class="item">
-                                                Card9
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column btn_action_fixed ic_ddwn">
-                                            <div class="item">
+                                            <div class="col col-lg-2 col-xl-1 tddiv_elements tddiv_resp">&nbsp;</div>
+                                            <div class="col col-lg-2 col-xl-1 tddiv_elements">&nbsp;</div>
+                                            <div class="col col-lg-2 col-xl-1 tddiv_elements btn_action_fixed">
                                                 <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     <span class="icon-icon_three-bullets"></span>
                                                 </a>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalEditarWorkflow">
+                                                    <a class="dropdown-item" href="#">
                                                         <span class="icon-icon_pencil"></span> Editar
                                                     </a>
                                                     <a class="dropdown-item" href="#">
@@ -534,62 +573,82 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="third_table w-100 collapse multi-collapse" id="thirdMenu1">
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column"> 
-                                                <div class="item">
-                                                    &nbsp;
+                                        <div class="table_row h-100 align-items-center row_wbg row_collapse collapse multi-collapse" id="collapseRow3">
+                                            <div class="col col-lg-1 col-xl-1 tddiv_elements">&nbsp;</div>
+                                            <div class="col col-lg-1 col-xl-1 tddiv_elements">&nbsp;</div>
+                                            <div class="col col-xl-2 tddiv_elements tddiv_nombre">
+                                                <a class="intern_clp_link collapsed" data-toggle="collapse" href="#collapseThirdMenu" role="button" data-target=".multi-collapse-third" aria-expanded="false" aria-controls="collapseThirdMenu">
+                                                    <span class="icon-icon_arrow-down1"></span>
+                                                </a>
+                                                Etapa 2
+                                            </div>
+                                            <div class="col col-lg-2 col-xl-1 tddiv_elements">
+                                                2 de 3
+                                            </div>
+                                            <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                                25/03/2020
+                                            </div>
+                                            <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                                28/03/2020
+                                            </div>
+                                            <div class="col col-lg-1 col-xl-2 tddiv_elements">
+                                                <span class="status pendiente"></span> Pendiente
+                                            </div>
+                                            <div class="col col-lg-2 col-xl-1 tddiv_elements tddiv_resp">
+                                                <figure class="resp_photo">
+                                                    <img src="images/user1.jpg" alt="user1" class="img-fluid rounded-circle">
+                                                </figure>
+                                                <p class="mb-0 info_respo">Ayer a las 4:40 pm</p>
+                                            </div>
+                                            <div class="col col-lg-2 col-xl-1 tddiv_elements">&nbsp;</div>
+                                            <div class="col col-lg-2 col-xl-1 tddiv_elements btn_action_fixed">
+                                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon-icon_three-bullets"></span>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon-icon_pencil"></span> Editar
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon-icon_trash-light"></span> Eliminar
+                                                    </a>
                                                 </div>
                                             </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column"> 
-                                                <div class="item">
-                                                    &nbsp;
+                                            <div class="break"></div>
+                                            <div class="table_row h-100 align-items-center row_wbg row_collapse multi-collapse-third collapse" id="collapseThirdMenu">
+                                                <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                                <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                                <div class="col col-xl-2 tddiv_elements tddiv_nombre">
+                                                    Registrar y adjuntar archivo
                                                 </div>
-                                            </div>
-                                            <div class="col-5 col-sm-4 col-lg-4 col-xl-2 item_column item_colmumn_name">
-                                                <div class="item">
-                                                    Card3
+                                                <div class="col col-xl-1 tddiv_elements tddiv_icon_verde">
+                                                    <span class="icon-icon_clock_exclamate2"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
                                                 </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">0 de 2</div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">
-                                                    Card4
+                                                <div class="col col-xl-1 tddiv_elements">
+                                                    25/03/2020
                                                 </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">
-                                                    Card5
+                                                <div class="col col-xl-1 tddiv_elements">
+                                                    28/03/2020
                                                 </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">
-                                                    Card6
+                                                <div class="col col-xl-2 tddiv_elements">
+                                                    <span class="pendiente"></span> Pendiente
                                                 </div>
-                                            </div>
-                                            <div class="col-4 col-sm-3 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">
-                                                    Card7
+                                                <div class="col col-xl-1 tddiv_elements tddiv_resp">
+                                                    <figure class="resp_photo m-0">
+                                                        <img src="images/photo9.jpg" alt="photo9" class="img-fluid rounded-circle">
+                                                        <div class="tooltip_msg">
+                                                            <p>Maria Alejandra Ramirez</p>
+                                                            <p>Aprobador</p>
+                                                        </div>
+                                                    </figure>
                                                 </div>
-                                            </div>
-                                            <div class="col-4 col-sm-3 col-lg-2 col-xl-2 item_column">
-                                                <div class="item">
-                                                    Card7
-                                                </div>
-                                            </div>
-                                            <div class="col-5 col-sm-3 col-lg-2 col-xl-1 item_column item_colmumn_type">
-                                                <div class="item">
-                                                    Card8
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column btn_action_fixed ic_ddwn">
-                                                <div class="item">
+                                                <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                                <div class="col col-xl-1 tddiv_elements btn_action_fixed">
                                                     <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <span class="icon-icon_three-bullets"></span>
                                                     </a>
                                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalEditarWorkflow">
+                                                        <a class="dropdown-item" href="#">
                                                             <span class="icon-icon_pencil"></span> Editar
                                                         </a>
                                                         <a class="dropdown-item" href="#">
@@ -597,6 +656,93 @@
                                                         </a>
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div class="table_row h-100 align-items-center row_wbg row_collapse multi-collapse-third collapse" id="collapseThirdMenu">
+                                                <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                                <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                                <div class="col col-xl-2 tddiv_elements tddiv_nombre">
+                                                    Revisar y firmar
+                                                </div>
+                                                <div class="col col-xl-1 tddiv_elements tddiv_icon_verde">
+                                                    <span class="icon-icon_clock_exclamate"></span>
+                                                </div>
+                                                <div class="col col-xl-1 tddiv_elements">
+                                                    25/03/2020
+                                                </div>
+                                                <div class="col col-xl-1 tddiv_elements">
+                                                    28/03/2020
+                                                </div>
+                                                <div class="col col-xl-2 tddiv_elements">
+                                                    <span class="status pendiente"></span> Pendiente
+                                                </div>
+                                                <div class="col col-xl-1 tddiv_elements tddiv_resp">
+                                                    <figure class="resp_photo m-0">
+                                                        <img src="images/photo8.jpg" alt="photo9" class="img-fluid rounded-circle">
+                                                        <div class="tooltip_msg">
+                                                            <p>Patricio Camacho</p>
+                                                            <p>Aprobador</p>
+                                                        </div>
+                                                    </figure>
+                                                </div>
+                                                <div class="col col-xl-1 tddiv_elements">&nbsp;</div>
+                                                <div class="col col-xl-1 tddiv_elements btn_action_fixed">
+                                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="icon-icon_three-bullets"></span>
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="icon-icon_pencil"></span> Editar
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="icon-icon_trash-light"></span> Eliminar
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_row h-100 align-items-center row_wbg">
+                                        <div class="col col-lg-1 col-lg-1 col-xl-1 tddiv_elements">
+                                            <div class="icon_box">
+                                                <span class="icon-icon_arrow-down1"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col col-lg-1 col-lg-1 col-xl-1 tddiv_elements">
+                                            WF0025
+                                        </div>
+                                        <div class="col col-xl-2 tddiv_elements tddiv_nombre">
+                                            Procedimiento horas extras
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements">
+                                            0 de 2
+                                        </div>
+                                        <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                            25/03/2020
+                                        </div>
+                                        <div class="col col-lg-1 col-xl-1 tddiv_elements">
+                                            10/01/2020
+                                        </div>
+                                        <div class="col col-lg-1 col-xl-2 tddiv_elements">
+                                            <span class="status en_proceso"></span> En Proceso
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements tddiv_resp">
+                                            <figure class="resp_photo">
+                                                <img src="images/user1.jpg" alt="user1" class="img-fluid rounded-circle">
+                                            </figure>
+                                            <p class="mb-0 info_respo">Ayer a las 3:20 pm</p>
+                                        </div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements">&nbsp;</div>
+                                        <div class="col col-lg-2 col-xl-1 tddiv_elements btn_action_fixed">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-icon_three-bullets"></span>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon-icon_pencil"></span> Editar
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon-icon_trash-light"></span> Eliminar
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
