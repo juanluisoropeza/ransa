@@ -351,12 +351,16 @@ a:hover {
 
 /*** SELECT 2 ***/
 
-.select2-container {
+/* .select2-container {
   z-index: 9999;
-}
+} */
 
 .select2-container--open {
   z-index: 9557;
+}
+
+.select2-header-option {
+  z-index: 9700 !important;
 }
 
 .select2-container .select2-selection--single {
@@ -854,7 +858,7 @@ a.box-card {
 header {
   position: fixed;
   width: 100%;
-  z-index: 9555;
+  z-index: 9600;
 }
 
 header .top_header {
@@ -977,7 +981,7 @@ header .top_header .cnt_right .input-group .form-control {
   padding-left: 21px;
 }
 
-header .top_header .cnt_right .dropdown-menu .control-group .select2-container {
+header .top_header .cnt_right .dropdown-menu .control-group .select2-container .select2-container--open {
   z-index: 9556;
 }
 
@@ -2781,6 +2785,11 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   min-height: calc(100vh - 264px);
 }
 
+.files_details .content_files_details .toggle{
+  width: 100%;
+  height: 100%;
+}
+
 .files_details .content_files_details .row {
   height: auto;
   min-height: calc(100vh - 264px);
@@ -3776,6 +3785,42 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   max-width: 229px;
 }
 
+.modal_downloadfile_workflows .box_button_modal_work {
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal_downloadfile_workflows .btn_modal_workflows_resp {
+  background-color: transparent;
+  border: 0px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #999999;
+}
+
+.modal_downloadfile_workflows .btn_modal_workflows_resp i {
+  border: 1px solid rgba(226, 226, 226, 0.64);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  border-radius: 50%;
+  margin-right: 15px;
+} 
+
+.modal_downloadfile_workflows .btn_modal_workflows_resp i:before {
+  color: var(--verdePrincipal);
+}
+
+.modal_downloadfile_workflows .modal-body h4 {
+  margin-bottom: 1em !important;
+}
+
+.modal_downloadfile_workflows .modal-body p {
+  font-size: 17px !important;
+  line-height: 21px !important;
+  color: #999999 !important;
+  margin-bottom: 40px!important;
+}
 /***********************************************/
 /****************** PAGINATION *****************/
 /***********************************************/
@@ -5014,6 +5059,8 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box {
   margin-right: 0px;
+  height: 40px;
+  width: 55px;
 }
 
 .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box span {
@@ -5041,6 +5088,10 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card_inicio_work_active .icon_box .box_icons_work span {
   color: white;
+}
+
+.workflows_inicio .swb_wflow .box_content_work .movil_calendar_box {
+  display: flex;
 }
 
 .workflows_inicio .swb_wflow .box_content_work {
@@ -5254,6 +5305,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse .selected {
   min-width: 72px;
   width: 72px;
+  color: #999999;
 }
 
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse.choose_left {
@@ -5263,7 +5315,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse.choose_rigth {
   position: absolute;
-  right: 60px;
+  right: -430px;
 }
 
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse  .btn_attach1 {
@@ -5276,6 +5328,12 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   font-size: 20px;
   line-height: 23px;
   color: #019A40;
+}
+
+.workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .input-group-append .input-group-text {
+  border-color: var(--verdeActive)!important;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
 }
 
 /****************** Inicio Workflows Responsable******************/
