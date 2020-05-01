@@ -169,6 +169,30 @@ a:hover {
   color: var(--verdePrincipal) !important;
 }
 
+/* DROPDOWN DE LA TABLA PRINCIPAL DE WORKFLOWS */
+.dd_table_workflow {
+  padding: 10px 0px;
+  width: 191px;
+}
+
+.dd_table_workflow .dropdown-item {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 15px;
+}
+
+.dd_table_workflow .dropdown-item span {
+  font-size: 1.1em;
+  margin-right: 12px;
+}
+
+.dd_table_workflow .dropdown-item:hover span,
+.dd_table_workflow .dropdown-item:hover span:before {
+  color: var(--verdePrincipal);
+}
+
+
 /* FORMULARIOS Y CAMPOS */
 
 .form-control {
@@ -351,10 +375,6 @@ a:hover {
 
 /*** SELECT 2 ***/
 
-/* .select2-container {
-  z-index: 9999;
-} */
-
 .select2-container--open {
   z-index: 9557;
 }
@@ -416,6 +436,7 @@ a:hover {
   font-size: 18px;
   line-height: 21px;
 }
+
 .select2-container--default .select2-search--dropdown .select2-search__field {
   color: var(--colorTexto);
 }
@@ -554,8 +575,6 @@ a.box-card {
 	width: calc(100% - 240px);
 	height: calc(100vh - 120px);
 	background: #fff;
-}
-.main-login #div2 {
 }
 
 .main-login .container-fluid,

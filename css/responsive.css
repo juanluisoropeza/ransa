@@ -414,6 +414,17 @@
     line-height: 17px;
   }
   /* WORKFLOWS */  
+  .dd_table_workflow {
+    padding: 9px 0px 13px;
+    width: 136px;
+  }
+  .dd_table_workflow .dropdown-item {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .dd_table_workflow .dropdown-item span {
+    margin-right: 9px;
+  }
   .workflows .swb_wflow .top_folders .folders_cards.wf {
     max-width: 200px;
   }
@@ -3827,6 +3838,17 @@
     top: -5px;
   }
   /* Workflows */
+  .dd_table_workflow {
+    padding: 9px 0px 13px;
+    width: 136px;
+  }
+  .dd_table_workflow .dropdown-item {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .dd_table_workflow .dropdown-item span {
+    margin-right: 9px;
+  }
   .workflows .swb_wflow .buttons_right.br_wflows {
     margin-bottom: 65px;
   }
@@ -3935,7 +3957,7 @@
     font-size: 1.1em;
   }
   .workflows .content_table .div_table .div_thead .thdiv_elements, 
-  .workflows .content_table .div_table .div_thead .thdiv_elements a, {
+  .workflows .content_table .div_table .div_thead .thdiv_elements a {
     font-size: 12px;
     line-height: 15px;
   }
@@ -4889,9 +4911,16 @@
     text-align: center;
   }
   /* Workflows */
-  .seldsd {    
+  .dd_table_workflow {
+    padding: 9px 0px 13px;
+    width: 136px;
+  }
+  .dd_table_workflow .dropdown-item {
     font-size: 14px;
     line-height: 17px;
+  }
+  .dd_table_workflow .dropdown-item span {
+    margin-right: 9px;
   }
   .workflows .swb_wflow .buttons_right.br_wflows {
     margin-bottom: 65px;
