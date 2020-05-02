@@ -3424,7 +3424,12 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .modal {
-  z-index: 9557;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 9999;
+}
+
+.modal-backdrop.show {
+  opacity: 0;
 }
 
 .modal .modal-content .modal-footer {
@@ -3840,6 +3845,350 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   color: #999999 !important;
   margin-bottom: 40px!important;
 }
+
+.modal .inputs_work_especificos .control-group {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+.modal .choose_left {
+  padding: 0;
+}
+
+.modal .inputs_work_especificos .control-group .input-group .form-control {
+  max-width: 152px;
+}
+
+.modal .inputs_work_especificos .control-group .form-control:not(.input_calendar_work),
+.modal .inputs_work_especificos .control-group .select2-container--default {
+  min-width: 203px;
+  max-width: 203px;
+}
+
+.modal .inputs_work_especificos.iw_resp .control-group {
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+}
+
+.modal .inputs_work_especificos.iw_resp .control-group label {
+  margin-right: 25px;
+  min-width: 156px;
+}
+
+.modal .inputs_work_especificos.iw_resp .control-group .form-control.w-100 {
+  min-width: 346px;
+  max-width: 346px;
+}
+
+.modal .inputs_work_especificos .control-group .input-group .input-group-append .input-group-text {
+  border-color: var(--verdePrincipal);
+  border-left: 0;
+  padding: 4px 12px;
+}
+
+.modal .inputs_work_especificos .control-group .select2-container--default .select2-selection--single .select2-selection__rendered {
+  padding: 0px 10px;
+  white-space: nowrap;
+  width: calc(100% - 38px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modal .inputs_work_especificos .control-group .input-group .form-control,
+.modal .select2-container--default .select2-selection--single .select2-selection__rendered {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.modal.inputs_work_especificos_chosse .inputfile + label span {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.modal .inputs_work_especificos_chosse .inputfile + label span {
+  color: var(--verdePrincipal);
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.modal .inputfile + label * {
+  font-size: 1.2em;
+}
+
+.workflows_inicio.especificos .title_table {
+  font-size: 18px;
+  line-height: 21px;
+  color: #999999;
+}
+
+.modal .table_work_especificos table {
+  background: #FFFFFF;
+  border: 1px solid rgba(226, 226, 226, 0.64);
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.modal .table_work_especificos table {
+  background: #FFFFFF;
+  border: 1px solid rgba(226, 226, 226, 0.64);
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.modal .table_work_especificos table thead tr th {
+  text-align: initial!important;
+  height: 60px;
+  padding: 11px 30px;
+}
+
+.modal .table_work_especificos table tbody  tr th,
+.modal .table_work_especificos table tbody  tr td {
+  text-align: initial!important;
+  color: var(--colorTextoClaro);
+  font-weight: normal;
+  height: 60px;
+  padding: 11px 30px;
+  vertical-align:inherit;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.modal .table_work_especificos table thead tr th {
+  color: var(--colorTextoClaro);
+  text-align: initial!important;
+  height: 60px;
+  padding: 20px 30px;
+}
+
+.modal .status {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-right: 6px;
+}
+
+.modal .cerrado {
+  border-radius: 12px;
+  border-right-color: white;
+  border-top-color: var(--verdeStatusBar);
+  border-bottom-color: white;
+  border-left-color: var(--verdeStatusBar);
+  border-width: 8px;
+  border-style: solid;
+  height: 0px;
+  margin-right: 6px;
+  position: relative;
+  width: 0px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.modal .cerrado:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 0px;
+  background-color: transparent;
+  border: 1px solid var(--verdeStatusBar);
+  margin: auto;
+  border-radius: 16px;
+  width: 16px;
+  height: 16px;
+  z-index: -1;
+}
+
+.modal .finalizado {
+  border-radius: 12px;
+  border-right-color: var(--verdeStatusBar);
+  border-top-color: var(--verdeStatusBar);
+  border-bottom-color: var(--verdeStatusBar);
+  border-left-color: var(--verdeStatusBar);
+  border-width: 8px;
+  border-style: solid;
+  height: 0px;
+  margin-right: 6px;
+  position: relative;
+  width: 0px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.modal .finalizado:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 0px;
+  background-color: transparent;
+  border: 1px solid var(--verdeStatusBar);
+  margin: auto;
+  border-radius: 16px;
+  width: 16px;
+  height: 16px;
+  z-index: -1;
+}
+
+.modal .pendiente {
+  border-radius: 12px;
+  border-right-color: --colorTextoClaro;
+  border-top-color: var(--colorTextoClaro);
+  border-bottom-color: --colorTextoClaro;
+  border-left-color: var(--colorTextoClaro);
+  border-width: 8px;
+  border-style: solid;
+  height: 0px;
+  margin-right: 6px;
+  position: relative;
+  width: 0px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.modal .pendiente:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 0px;
+  background-color: transparent;
+  border: 1px solid var(--colorTextoClaro);
+  margin: auto;
+  border-radius: 16px;
+  width: 16px;
+  height: 16px;
+  z-index: -1;
+}
+
+.modal .rechazado {
+  border-radius: 12px;
+  border-right-color: var(--rojoStatus);
+  border-top-color: var(--rojoStatus);
+  border-bottom-color: var(--rojoStatus);
+  border-left-color: var(--rojoStatus);
+  border-width: 8px;
+  border-style: solid;
+  height: 0px;
+  margin-right: 6px;
+  position: relative;
+  width: 0px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.modal .rechazado:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 0px;
+  background-color: transparent;
+  border: 1px solid var(--rojoStatus);
+  margin: auto;
+  border-radius: 16px;
+  width: 16px;
+  height: 16px;
+  z-index: -1;
+}
+
+.modal .finalizado {
+  border-radius: 12px;
+  border-right-color: var(--verdeStatusBar);
+  border-top-color: var(--verdeStatusBar);
+  border-bottom-color: var(--verdeStatusBar);
+  border-left-color: var(--verdeStatusBar);
+  border-width: 8px;
+  border-style: solid;
+  height: 0px;
+  margin-right: 6px;
+  position: relative;
+  width: 0px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.modal .finalizado:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 0px;
+  background-color: transparent;
+  border: 1px solid var(--verdeStatusBar);
+  margin: auto;
+  border-radius: 16px;
+  width: 16px;
+  height: 16px;
+  z-index: -1;
+}
+
+.modal .en_proceso {
+  border-radius: 12px;
+  border-right-color: var(--naranjaStatus);
+  border-top-color: var(--naranjaStatus);
+  border-bottom-color: var(--naranjaStatus);
+  border-left-color: var(--naranjaStatus);
+  border-width: 8px;
+  border-style: solid;
+  height: 0px;
+  margin-right: 6px;
+  position: relative;
+  width: 0px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.modal .en_proceso:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 0px;
+  background-color: transparent;
+  border: 1px solid var(--naranjaStatus);
+  margin: auto;
+  border-radius: 16px;
+  width: 16px;
+  height: 16px;
+  z-index: -1;
+}
+
+.modal .box_buttons_work .btn_work {
+  background-color: var(--verdePrincipal);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.modal .box_buttons_work .btn-outline-success_work {
+  color: white;
+  width: 181px;
+  height: 46px;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.modal .box_buttons_work .btn_work_border {
+  color: #373838;
+}
+
 /***********************************************/
 /****************** PAGINATION *****************/
 /***********************************************/
@@ -5073,6 +5422,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box_icons_work {
   box-shadow: none;
   height: 40px;
+  margin: 0 auto;
   width: 40px;
 }
 
@@ -5129,13 +5479,45 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .workflows_inicio .swb_wflow .box_content_work::before{
   content: "";
   position: absolute;
-  top: -127px;
-  left: 206px;
-  width: 160px;
-  height: 159px;
-  border-left: 92px solid transparent;
-  border-right: 92px solid transparent;
-  border-bottom: 50px solid white;
+  left: 16.5%;
+  top: -15px;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 15px solid white;
+  z-index: 2;
+}
+
+.workflows_inicio .swb_wflow .box_content_work::after{
+  content: "";
+  position: absolute;
+  left: calc(16.5% - 2px);
+  top: calc(-15px - 2px);
+  width: 0;
+  height: 0;
+  border-left: 32px solid transparent;
+  border-right: 32px solid transparent;
+  border-bottom: 17px solid #F2F2F2;
+  z-index: 1;
+}
+
+.workflows_inicio .swb_wflow .box_content_work.wf_esp::before {
+  left: 48%;
+}
+
+.workflows_inicio .swb_wflow .box_content_work.wf_esp::after {
+  left: calc(48% - 2px);
+}
+
+.workflows_inicio .swb_wflow .box_content_work.wf_resp::before {
+  left: auto;
+  right: 17.8%;
+}
+
+.workflows_inicio .swb_wflow .box_content_work.wf_resp::after {
+  left: auto;
+  right: calc(17.8% - 2px);
 }
 
 .workflows_inicio .swb_wflow .box_content_work .box_title p {
@@ -5321,10 +5703,12 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   margin-bottom: 18px;
 }
 
-.workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse .selected {
+.workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse .selected,
+.modal .inputs_work_especificos_chosse .selected {
   min-width: 72px;
   width: 72px;
   color: #999999;
+  margin-bottom: 0;
 }
 
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse.choose_left {
@@ -5332,12 +5716,14 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   left: 448px;
 }
 
-.workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse.choose_rigth {
+.workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse.choose_rigth,
+.modal .inputs_work_especificos_chosse.choose_rigth  {
   position: absolute;
   right: -430px;
 }
 
-.workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse  .btn_attach1 {
+.workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse .btn_attach1,
+.modal .inputs_work_especificos_chosse .btn_attach1 {
   width: 119px;
   height: 46px;
   background: #FFFFFF;
@@ -5382,13 +5768,13 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .workflows_inicio.responsable .swb_wflow .box_content_work label {
+  color: var(--colorTextoClaro);
   font-size: 18px;
   line-height: 21px;
 }
 
-/*************/
-
-.workflows_inicio input.inputfile {
+.workflows_inicio input.inputfile,
+.modal input.inputfile {
 	width: 0.1px;
 	height: 0.1px;
 	opacity: 0;
@@ -5397,7 +5783,8 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 	z-index: -1;
 }
 
-.workflows_inicio .inputfile + label {
+.workflows_inicio .inputfile + label
+.modal .inputfile + label {
   display: inline-block;
 }
 
@@ -5405,7 +5792,8 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   color: white;
 }
 
-.workflows_inicio .inputs_work_especificos_chosse .btn {
+.workflows_inicio .inputs_work_especificos_chosse .btn,
+.modal .inputs_work_especificos_chosse .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -5413,12 +5801,18 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   height: 46px;
 }
 
-.workflows_inicio .inputs_work_especificos_chosse .btn span {
+.modal .inputs_work_especificos_chosse .btn {
+  height: 40px;
+}
+
+.workflows_inicio .inputs_work_especificos_chosse .btn span,
+.modal .inputs_work_especificos_chosse .btn span {
   font-size: 20px;
   line-height: 23px;
 }
 
-.workflows_inicio .inputs_work_especificos_chosse .btn i { 
+.workflows_inicio .inputs_work_especificos_chosse .btn i,
+.workflows.inputs_work_especificos_chosse .btn i { 
   font-size: 25px;
   line-height: 20px;
   margin-right: 10px;
@@ -5428,7 +5822,12 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .workflows_inicio .inputs_work_especificos_chosse .btn-outline-success:not(:disabled):not(.disabled):active:focus, 
 .workflows_inicio .inputs_work_especificos_chosse .show>.btn-outline-success.dropdown-toggle:focus
 .workflows_inicio .inputs_work_especificos_chosse .btn:hover,
-.workflows_inicio .inputs_work_especificos_chosse .btn:focus {
+.workflows_inicio .inputs_work_especificos_chosse .btn:focus,
+.modal .inputs_work_especificos_chosse .btn-outline-success:not(:disabled):not(.disabled).active:focus, 
+.modal .inputs_work_especificos_chosse .btn-outline-success:not(:disabled):not(.disabled):active:focus, 
+.modal .inputs_work_especificos_chosse .show>.btn-outline-success.dropdown-toggle:focus
+.modal .inputs_work_especificos_chosse .btn:hover,
+.modal .inputs_work_especificos_chosse .btn:focus {
   box-shadow: none;
   border: 0;
   outline: 0;
@@ -5436,7 +5835,10 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .workflows_inicio .inputs_work_especificos_chosse .btn.active,
 .workflows_inicio .inputs_work_especificos_chosse .btn.active:focus,
-.workflows_inicio .inputs_work_especificos_chosse .btn.active:hover {
+.workflows_inicio .inputs_work_especificos_chosse .btn.active:hover,
+.modal .inputs_work_especificos_chosse .btn.active,
+.modal .inputs_work_especificos_chosse .btn.active:focus,
+.modal .inputs_work_especificos_chosse .btn.active:hover {
   background-color: transparent !important;
   border: 0;
   color: var(--verdePrincipal) !important;
@@ -5447,35 +5849,44 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   color: white;
 }
 
-.workflows_inicio .inputs_work_especificos_chosse .inputfile + label span {
+.workflows_inicio .inputs_work_especificos_chosse .inputfile + label span,
+.modal .inputs_work_especificos_chosse .inputfile + label span {
   font-size: 20px;
   line-height: 23px;
 }
 
 .workflows_inicio .inputs_work_especificos_chosse label.active,
 .workflows_inicio .inputs_work_especificos_chosse label i:before,
-.workflows_inicio .inputs_work_especificos_chosse label:focus i:before {
+.workflows_inicio .inputs_work_especificos_chosse label:focus i:before,
+.modal .inputs_work_especificos_chosse label.active,
+.modal .inputs_work_especificos_chosse label i:before,
+.modal .inputs_work_especificos_chosse label:focus i:before {
   color:var(--verdePrincipal);
 }
 
-.workflows_inicio .inputfile + label {
+.workflows_inicio .inputfile + label,
+.modal .inputfile + label {
 	cursor: pointer; /* "hand" cursor */
 }
 
-.workflows_inicio .inputfile:focus + label {
+.workflows_inicio .inputfile:focus + label,
+.modal .inputfile:focus + label {
   border:0;
   background-color: transparent;
 }
 
-.workflows_inicio .inputfile:focus + label:hover i:before {
+.workflows_inicio .inputfile:focus + label:hover i:before,
+.modal .inputfile:focus + label:hover i:before {
   color: var(--verdePrincipal);
 }
 
-.workflows_inicio .inputfile + label * {
+.workflows_inicio .inputfile + label *,
+.modal .inputfile + label * {
 	pointer-events: none;
 }
 
-.workflows_inicio .inputs_work_especificos_chosse .ocultar_borde {
+.workflows_inicio .inputs_work_especificos_chosse .ocultar_borde,
+.modal .inputs_work_especificos_chosse .ocultar_borde {
   border: 0 !important;
   background-color: transparent !important;
 }
