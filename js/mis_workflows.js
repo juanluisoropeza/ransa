@@ -49,6 +49,7 @@ $(document).ready(function () {
 }); 
 
 $(document).on('shown.bs.dropdown', '.rw_ddfloat', function (e) {
+  // get the padding right in the table
   let right = $('.screens_with_tables .swb_wflow');
   let paddingRight = parseInt(right.css('padding-right'));
   // The .dropdown container

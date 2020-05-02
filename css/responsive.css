@@ -3342,6 +3342,7 @@
   }
   .content_table .div_table .div_tbody .tddiv_elements {
     height: 40px;
+  }
   .content_table .div_table .div_thead,
   .content_table .div_table .div_tbody .tddiv_elements, 
   .workflows .row_wfl_ppal .div_thead, 
@@ -5047,6 +5048,12 @@
   .workflows .content_table .div_table .div_tbody .btn_action_fixed {
     right: 55px;
   }
+  .workflows .row_wfl_ppal .div_thead,
+  .workflows .row_wfl_ppal .div_tbody .item_column, 
+  .workflows .row_wfl_ppal .second_table .item_column, 
+  .workflows .row_wfl_ppal .third_table .item_column {
+    height: 54px;
+  }
   /*Inicio Workflows */
   .workflows_inicio .swb_wflow .box_content_work {
     width: 990px;
@@ -5385,7 +5392,7 @@
     max-width: 1614px
   }
   .modal .modal-xl.edit_workflow .modal-content .modal-body .ctn_md_edit {
-    max-width: 1250px;
+    max-width: 1320px;
   }
 }
 
