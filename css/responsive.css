@@ -379,6 +379,96 @@
   .modal .modal-content .controls input {
     font-size: 15px;
   }
+  .modal .edit_workflow .modal-content .modal-body .ctn_md_edit {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0;
+  }
+  .modal .edit_workflow .modal-content .modal-body .ctn_md_edit .select2-container--default .select2-selection--single,
+  .modal .inputs_work_especificos_chosse .btn,
+  .modal .inputs_work_especificos .control-group .input-group .form-control:not(textarea) {
+    height: 32px;
+  }
+  .modal .box_textarea_work textarea.form-control {
+    height: auto !important;
+  }
+  .modal .inputs_work_especificos .control-group .input-group .form-control,
+  .modal .box_textarea_work textarea.form-control,
+  .modal .select2-container--default .select2-selection--single .select2-selection__rendered,
+  .modal .inputs_work_especificos_chosse .inputfile + label span,
+  .modal .table_work_especificos table tbody tr th, 
+  .modal .table_work_especificos table tbody tr td {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .modal .edit_workflow .modal-content .modal-body .ctn_md_edit .mb-40 {
+    margin-bottom: 15px;
+  }
+  .modal .edit_workflow .modal-content .modal-body .ctn_md_edit .item_form_edit:nth-child(3),
+  .modal .edit_workflow .modal-content .modal-body .ctn_md_edit .item_form_edit:nth-child(4) {
+    margin-top: 15px;
+  }
+  .modal .inputs_work_especificos .control-group .form-control:not(.input_calendar_work), 
+  .modal .inputs_work_especificos .control-group .select2-container--default {
+    min-width: 229px;
+    max-width: 229px;
+  }
+  .modal .inputs_work_especificos .control-group .input-group .form-control {
+    min-width: 186px;
+    max-width: 186px;
+  }
+  .modal .inputs_work_especificos .control-group {
+    flex-direction: column;
+    -ms-flex-direction: column;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+  }
+  .modal .inputs_work_especificos_chosse .btn-success, 
+  .modal .inputs_work_especificos_chosse .btn-outline-success {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 0;
+    min-width: 85px;
+    width: auto;
+  }
+  .modal .inputs_work_especificos_chosse .selected {
+    width: 100%;
+  }
+  .modal .choose_left {
+    margin: 5px 0px;
+    padding: 0px 15px;
+  }
+  .modal .inputs_work_especificos .control-group .input-group .input-group-append .input-group-text {
+    padding: 1px 8px;
+  }
+  .modal .table_work_especificos table thead tr th, 
+  .modal .table_work_especificos table tbody tr td {
+    height: 45px;
+    padding: 6px 14px;
+  }
+  .modal .box_buttons_work .btn-outline-success_work {
+    width: 130px;
+    height: 36px;
+    font-size: 14px;
+    margin-left: auto;
+    line-height: 17px;
+  }
+  .modal .edit_workflow .modal-content .modal-header .modal-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .modal .edit_workflow .modal-content .modal-body h4.st_ewfl {
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .modal .select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding: 0px 12px;
+  }
+  .modal .edit_workflow .form-control:not(textarea) {
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 229px;
+  }
    /* Btn Movil */
    .screens_with_tables .swt_box .buttons_right {
      padding: 0px;
@@ -1134,6 +1224,27 @@
   }
   .modal .modal-content .modal-body .has-search .form-control-feedback {
     font-size: 1.2em;
+  }
+  .modal .edit_workflow .ctn_md_edit .item_form_edit:first-child,
+  .modal .edit_workflow .ctn_md_edit .item_dob_mwfl:first-child,
+  .modal .edit_workflow .ctn_md_edit .inputs_work_especificos:first-child {
+    margin-bottom: 15px;
+  }
+  .modal .inputs_work_especificos.iw_resp .control-group .form-control.w-100 {
+    min-width: 0;
+    max-width: none;
+  }
+  .modal .edit_workflow .modal-content .modal-header .modal-title {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  .modal .edit_workflow .modal-content .modal-body h4.st_ewfl {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .modal .edit_workflow .modal-content .modal-body hr.sp_h4stl {
+    margin-bottom: 20px;
   }
   /* File Details */
   .files_details .content_files_details .toggle {
@@ -3753,6 +3864,76 @@
     line-height: 18px !important;
     text-align: center;
   }
+  .modal .edit_workflow .modal-content .modal-body .ctn_md_edit {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .modal .edit_workflow .modal-content .modal-body .ctn_md_edit .select2-container--default .select2-selection--single,
+  .modal .inputs_work_especificos_chosse .btn,
+  .modal .inputs_work_especificos .control-group .input-group .form-control:not(textarea) {
+    height: 32px;
+  }
+  .modal .box_textarea_work .form-control {
+    height: auto !important;
+  }
+  .modal .inputs_work_especificos .control-group .input-group .form-control,
+  .modal .box_textarea_work textarea.form-control,
+  .modal .select2-container--default .select2-selection--single .select2-selection__rendered,
+  .modal .inputs_work_especificos_chosse .inputfile + label span,
+  .modal .table_work_especificos table tbody tr th, 
+  .modal .table_work_especificos table tbody tr td {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .modal .edit_workflow .modal-content .modal-body .ctn_md_edit .mb-40 {
+    margin-bottom: 30px;
+  }
+  .modal .inputs_work_especificos .control-group .form-control:not(.input_calendar_work), 
+  .modal .inputs_work_especificos .control-group .select2-container--default {
+    min-width: 160px;
+    max-width: 160px;
+  }
+  .modal .inputs_work_especificos .control-group .input-group .form-control {
+    max-width: 117px;
+  }
+  .modal .inputs_work_especificos_chosse .btn-success, 
+  .modal .inputs_work_especificos_chosse .btn-outline-success {
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 0;
+    min-width: 85px;
+    width: auto;
+  }
+  .modal .inputs_work_especificos .control-group .input-group .input-group-append .input-group-text {
+    padding: 1px 8px;
+  }
+  .modal .table_work_especificos table thead tr th, 
+  .modal .table_work_especificos table tbody tr td {
+    height: 45px;
+    padding: 6px 14px;
+  }
+  .modal .box_buttons_work .btn-outline-success_work {
+    width: 130px;
+    height: 36px;
+    font-size: 14px;
+    margin-left: auto;
+    line-height: 17px;
+  }
+  .modal .edit_workflow .modal-content .modal-header .modal-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .modal .edit_workflow .modal-content .modal-body h4.st_ewfl {
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .modal .select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding: 0px 12px;
+  }
+  .modal .inputs_work_especificos_chosse .selected {
+    display: block;
+    width: auto;
+  }
   /* Search Top Bar */
   .select2-container .select2-selection--single,
   header .top_header .cnt_right .dropdown-menu .form-control,
@@ -4816,9 +4997,11 @@
   .modal .modal-content .modal-body .sep_bottom {
     margin-bottom: 10px;
   }
-  .modal .modal-content .modal-body .form-control {
+  .modal .modal-content .modal-body .form-control:not(textarea) {
     font-size: 14px;
     line-height: 17px;
+  }  
+  .modal .modal-content .modal-body .form-control:not(textarea) {
     height: 32px;
   }
   .modal .modal-content .modal-body .form-inline .form-group label {
@@ -4910,6 +5093,64 @@
     font-size: 15px !important;
     line-height: 18px !important;
     text-align: center;
+  }
+  .modal .edit_workflow .modal-content .modal-body .ctn_md_edit {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .modal .edit_workflow .modal-content .modal-body .ctn_md_edit .select2-container--default .select2-selection--single,
+  .modal .inputs_work_especificos_chosse .btn,
+  .modal .inputs_work_especificos .control-group .input-group .form-control:not(textarea) {
+    height: 32px;
+  }
+  .modal .inputs_work_especificos .control-group .input-group .form-control,
+  .modal .box_textarea_work textarea.form-control,
+  .modal .select2-container--default .select2-selection--single .select2-selection__rendered,
+  .modal .inputs_work_especificos_chosse .inputfile + label span,
+  .modal .table_work_especificos table tbody tr th, 
+  .modal .table_work_especificos table tbody tr td {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .modal .edit_workflow .modal-content .modal-body .ctn_md_edit .mb-40 {
+    margin-bottom: 30px;
+  }
+  .modal .inputs_work_especificos .control-group .form-control:not(.input_calendar_work), 
+  .modal .inputs_work_especificos .control-group .select2-container--default {
+    min-width: 160px;
+    max-width: 160px;
+  }
+  .modal .inputs_work_especificos .control-group .input-group .form-control {
+    max-width: 117px;
+  }
+  .modal .inputs_work_especificos_chosse .btn-success, 
+  .modal .inputs_work_especificos_chosse .btn-outline-success {
+    margin-top: -20px;
+    margin-bottom: 0;
+    min-width: 85px;
+    width: auto;
+  }
+  .modal .inputs_work_especificos .control-group .input-group .input-group-append .input-group-text {
+    padding: 1px 8px;
+  }
+  .modal .table_work_especificos table thead tr th, 
+  .modal .table_work_especificos table tbody tr td {
+    height: 45px;
+    padding: 6px 14px;
+  }
+  .modal .box_buttons_work .btn-outline-success_work {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .modal .edit_workflow .modal-content .modal-header .modal-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .modal .edit_workflow .modal-content .modal-body h4.st_ewfl {
+    font-size: 22px;
+    line-height: 25px;
   }
   /* Workflows */
   .dd_table_workflow {
