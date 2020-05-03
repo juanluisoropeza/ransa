@@ -881,7 +881,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row mb-40">                            
+                        <div class="row mb-40">
                             <div class="col-sm-6 col-lg-4 inputs_work_especificos">
                                 <div class="control-group box_content_movil">
                                     <label for="txt_propetario">* Inicio de labor</label>                                      
@@ -909,7 +909,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row mb-40">                            
+                        <div class="row mb-40">
                             <div class="col-sm-6 col-lg-4 inputs_work_especificos">
                                 <div class="control-group box_content_movil">
                                     <label for="txt_duracion">Duración (días)</label>
@@ -1033,6 +1033,233 @@
                                 <button id="btnSubmit" type="submit" class="btn btn-outline-success_work btn_work">Actualizar</button>
                                 <a href="#" class="btn-outline-success_work btn_work_border">Regresar</a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal Editar Workflow -->
+    <div class="modal fade" id="modalValidarDocumento" tabindex="-1" role="dialog" aria-labelledby="modalValidarDocumentoTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl edit_workflow modal-dialog-centered" role="document">
+            <div class="modal-content bg_gray">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title centered" id="modalTableAddColumnTitle">Validar documento:</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12 content_item">
+                            <h4 class="st_ewfl">Detalle de workflow:</h4>
+                            <hr class="sp_h4stl" />
+                        </div>
+                    </div>
+                    <div class="container ctn_md_edit cnt_md_valdoc">
+                        <div class="row mb-40">
+                            <div class="col-md-6 item_dob_mwfl">
+                                <div class="form-group control-group row">
+                                    <label class="col-lg-5 col-xl-3 col-form-label" for="txt_vd_creador">Creador</label>
+                                    <div class="col-lg-7 col-xl-9 input_inline">
+                                        <input type="text" class="form-control" name="txt_vd_creador" id="txt_vd_creador" value="Jefe de Compras">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 item_dob_mwfl">
+                                <div class="form-group control-group row">
+                                    <label for="txt_vd_fcreacion" class="col-lg-5 col-xl-3 col-form-label">Fecha de creación</label>
+                                    <div class="col-lg-7 col-xl-9 input_inline">
+                                        <div class="movil_calendar_box">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control ici_append input_calendar_work" id="fecha8" name="txt_vd_fcreacion" required aria-describedby="basic-addon5" value="28/02/2020">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" id="basic-addon5"><i class="icon-icon_calendar"><span class="path1"></span><span class="path2"></span></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-40">
+                            <div class="col-md-6 item_dob_mwfl">
+                                <div class="form-group control-group row">
+                                    <label class="col-lg-5 col-xl-3 col-form-label" for="txt_vd_categoria">* Categoría:</label>
+                                    <div class="col-lg-7 col-xl-9 input_inline">
+                                        <select class="select_custon_select2 form-control" name="txt_vd_categoria" id="txt_vd_categoria">
+                                            <option value="">Categoría</option>
+                                            <option value="vd_cat1" selected>Categoría 1</option>
+                                            <option value="vd_cat2">Categoría 2</option>
+                                            <option value="vd_cat3">Categoría 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 item_dob_mwfl">
+                                <div class="form-group control-group row">
+                                    <label class="col-lg-5 col-xl-3 col-form-label" for="txt_vd_sede">* Sede:</label>
+                                    <div class="col-lg-7 col-xl-9 input_inline">
+                                        <select class="select_custon_select2 form-control" name="txt_vd_sede" id="txt_vd_sede">
+                                            <option value="">Sede</option>
+                                            <option value="vd_sede1" selected>Sede 1</option>
+                                            <option value="vd_sede2">Sede 2</option>
+                                            <option value="vd_sede3">Sede 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-40">
+                            <div class="col-md-6 item_dob_mwfl">
+                                <div class="form-group control-group row">
+                                    <label class="col-lg-5 col-xl-3 col-form-label" for="txt_vd_wfl">* Workflow:</label>
+                                    <div class="col-lg-7 col-xl-9 input_inline">
+                                        <select class="select_custon_select2 form-control" name="txt_vd_wfl" id="txt_vd_wfl">
+                                            <option value="">Workflow</option>
+                                            <option value="vd_cat1" selected>WF004 - Generación y aprobación de contratos de proveedores</option>
+                                            <option value="vd_cat2">Workflow 2</option>
+                                            <option value="vd_cat3">Workflow 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 item_dob_mwfl">
+                                <div class="form-group control-group row">
+                                    <label class="col-lg-5 col-xl-3 col-form-label" for="txt_vd_area">* Área:</label>
+                                    <div class="col-lg-7 col-xl-9 input_inline">
+                                        <select class="select_custon_select2 form-control" name="txt_vd_area" id="txt_vd_area">
+                                            <option value="">Área</option>
+                                            <option value="vd_areaAdmon" selected>Administración</option>
+                                            <option value="vd_area1">Área 1</option>
+                                            <option value="vd_area2">Área 2</option>
+                                            <option value="vd_area3">Área 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-40">
+                            <div class="col-md-6 item_dob_mwfl">
+                                <div class="form-group control-group row">
+                                    <label class="col-lg-5 col-xl-3 col-form-label" for="txt_vd_tpwlf">* Tipo de workflow:</label>
+                                    <div class="col-lg-7 col-xl-9 input_inline">
+                                        <select class="select_custon_select2 form-control" name="txt_vd_tpwlf" id="txt_vd_tpwlf">
+                                            <option value="">Tipo de workflow</option>
+                                            <option value="vd_nuevo" selected>Nuevo</option>
+                                            <option value="vd_twfl1">Tipo WF 1</option>
+                                            <option value="vd_twfl2">Tipo WF 2</option>
+                                            <option value="vd_twfl3">Tipo WF 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 item_dob_mwfl">
+                                <div class="form-group control-group row">
+                                    <label class="col-lg-5 col-xl-3 col-form-label" for="txt_vd_tpcont">* Tipo de contrato:</label>
+                                    <div class="col-lg-7 col-xl-9 input_inline">
+                                        <select class="select_custon_select2 form-control" name="txt_vd_tpcont" id="txt_vd_tpcont">
+                                            <option value="">Tipo de contrato</option>
+                                            <option value="vd_servicios" selected>Servicios</option>
+                                            <option value="vd_tcnt1">Tipo Contrato 1</option>
+                                            <option value="vd_tcnt2">Tipo Contrato 2</option>
+                                            <option value="vd_tcnt3">Tipo Contrato 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-40">
+                            <div class="col-md-6 item_dob_mwfl">
+                                <div class="form-group control-group row">
+                                    <label class="col-lg-5 col-xl-3 col-form-label" for="txt_vd_estado">* Estado:</label>
+                                    <div class="col-lg-7 col-xl-9 input_inline">
+                                        <select class="select_custon_select2 form-control" name="txt_vd_estado" id="txt_vd_estado">
+                                            <option value="">Estado</option>
+                                            <option value="vd_iniciado" selected>Iniciado</option>
+                                            <option value="vd_estado1">Estado 1</option>
+                                            <option value="vd_estado2">Estado 2</option>
+                                            <option value="vd_estado3">Estado 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-40">
+                            <div class="col-md-6 item_dob_mwfl">
+                                <div class="form-group control-group row">
+                                    <label class="col-lg-5 col-xl-3 col-form-label" for="txt_vd_actant">* Actividades anteriores:</label>
+                                    <div class="col-lg-7 col-xl-9 input_inline">
+                                        <select class="form-control select_multiple" name="txt_vd_actant" id="txt_vd_actant" multiple>
+                                            <option value="vd_actant1" selected>1. Registrar datos de proveedor.</option>
+                                            <option value="vd_actant2" selected>2. Revisar y generar contrato - renovación - adenda.</option>
+                                            <option value="vd_actant3">3. otra</option>
+                                            <option value="vd_actant4">4. otra</option>
+                                            <option value="vd_actant5">5. otra</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 item_dob_mwfl">
+                                <div class="form-group control-group row">
+                                    <label class="col-lg-5 col-xl-3 col-form-label" for="txt_vd_comcoor">Comentarios del coordinador:</label>
+                                    <div class="col-lg-7 col-xl-9 input_inline">
+                                        <input type="text" class="form-control" name="txt_vd_comcoor" id="txt_vd_comcoor" value="Revisar contrato legal adjunto.">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4 margin_mobile">
+                            <div class="col-md-6 item_dob_mwfl">
+                                <div class="form-group control-group row">
+                                    <label class="col-lg-5 col-xl-5 col-form-label txt_green font-weight-bold lbl_big" for="txt_vd_valdoc">Validar documento:</label>
+                                    <div class="col-lg-6 col-xl-6 input_inline btn_eq_input">
+                                        <a href="#" id="txt_vd_valdoc" class="btn btn-outline-success">Ver Archivo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 item_dob_mwfl">
+                                <div class="form-group control-group row">
+                                    <label class="col-lg-5 col-xl-5 col-form-label txt_green font-weight-bold lbl_big" for="txt_vd_adjdoc">Adjuntar documento:</label>
+                                    <div class="col-lg-7 col-xl-6 input_inline btn_eq_input">
+                                        <label for="file-upload_docs" class="btn btn-outline-success custom-file-upload">Seleccionar archivos</label>
+                                        <input id="file-upload_docs" type="file"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-40 mb-m15 margin_mobile">
+                        <div class="col-lg-12 col-xl-6 item_dob_mwfl">
+                            <div class="form-group control-group row">
+                                <label class="col-lg-3 col-xl-4 col-form-label" for="txt_vd_acc">* Acción:</label>
+                                <div class="col-lg-6 input_inline">
+                                    <select class="select_custon_select2 form-control" name="txt_vd_acc" id="txt_vd_acc">
+                                        <option value="">Acción</option>
+                                        <option value="vd_acc1" selected>Aprobado</option>
+                                        <option value="vd_acc2">Rechazado</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-40 mb-m15">
+                        <div class="col-md-12 item_dob_mwfl col_complete">
+                            <div class="form-group control-group row">
+                                <label class="col-lg-3 col-xl-2 col-form-label" for="txt_vd_comentarios">* Comentarios:</label>
+                                <div class="col-lg-9 col-xl-10 input_inline">
+                                    <textarea name="txt_vd_comentarios" id="txt_vd_comentarios" rows="4" class="form-control">Aprobar el contrato legal adjunto.</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row contenedor_button">
+                        <div class="col-6 col-sm-6 offset-sm-0 col-lg-3 text-left box_buttons_work">
+                            <button id="btnSubmit" type="submit" class="btn btn-outline-success">Guardar</button>
+                        </div>
+                        <div class="col-6 col-sm-6 offset-sm-0 col-lg-3 offset-lg-6 col-xl-3 offset-xl-6 ml-auto text-right box_buttons_work">
+                            <button type="submit" class="btn btn-outline-success_work ml-auto btn_work">Enviar</button>
+                            <a href="#" class="btn-outline-success_work ml-auto mt-2 btn_work_border">Cancelar</a>
                         </div>
                     </div>
                 </div>
