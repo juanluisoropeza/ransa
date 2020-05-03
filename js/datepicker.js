@@ -62,4 +62,31 @@ $(document).ready(function () {
     autoclose: true,
     language: "es"
   });
+  $('#fecha7').datepicker({
+    todayBtn: "linked",
+    keyboardNavigation: false,
+    forceParse: false,
+    calendarWeeks: true,
+    format: "dd/mm/yyyy",
+    autoclose: true,
+    language: "es"
+  });
+  $('#fecha8').datepicker({
+    todayBtn: "linked",
+    keyboardNavigation: false,
+    forceParse: false,
+    calendarWeeks: true,
+    format: "dd/mm/yyyy",
+    autoclose: true,
+    language: "es"
+  });
+  $('#fecha9').datepicker({
+    todayBtn: "linked",
+    keyboardNavigation: false,
+    forceParse: false,
+    calendarWeeks: true,
+    format: "dd/mm/yyyy",
+    autoclose: true,
+    language: "es"
+  });
 });

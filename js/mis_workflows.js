@@ -46,33 +46,38 @@ $(document).ready(function () {
     $(this).css("padding-bottom", 0);
   })
   */
+
+  $(document).on('shown.bs.dropdown', '.rw_ddfloat', function (e) {
+    // get the padding right in the table
+    let right = $('.screens_with_tables .swb_wflow');
+    let paddingRight = parseInt(right.css('padding-right'));
+    // The .dropdown container
+    var $container = $(e.target);
+
+    // Find the actual .dropdown-menu
+    var $dropdown = $container.find('.dropdown-menu');
+    if ($dropdown.length) {
+        // Save a reference to it, so we can find it after we've attached it to the body
+        $container.data('dropdown-menu', $dropdown);
+    } else {
+        $dropdown = $container.data('dropdown-menu');
+    }
+
+    $dropdown.css('top', ($container.offset().top + $container.outerHeight() - 20) + 'px');
+    $dropdown.css('right', (paddingRight)+'px');
+    $dropdown.css('left', 'auto');
+    $dropdown.css('position', 'absolute');
+    $dropdown.css('display', 'block');
+    $dropdown.appendTo('body');
+  });
+
+  $(document).on('hide.bs.dropdown', '.rw_ddfloat', function (e) {
+    // Hide the dropdown menu bound to this button
+    $(e.target).data('dropdown-menu').remove();
+  });
+
+  $(window).on('load',function(){
+    $('#modalValidarDocumento').modal('show');
+  });
+
 }); 
-
-$(document).on('shown.bs.dropdown', '.rw_ddfloat', function (e) {
-  // get the padding right in the table
-  let right = $('.screens_with_tables .swb_wflow');
-  let paddingRight = parseInt(right.css('padding-right'));
-  // The .dropdown container
-  var $container = $(e.target);
-
-  // Find the actual .dropdown-menu
-  var $dropdown = $container.find('.dropdown-menu');
-  if ($dropdown.length) {
-      // Save a reference to it, so we can find it after we've attached it to the body
-      $container.data('dropdown-menu', $dropdown);
-  } else {
-      $dropdown = $container.data('dropdown-menu');
-  }
-
-  $dropdown.css('top', ($container.offset().top + $container.outerHeight() - 20) + 'px');
-  $dropdown.css('right', (paddingRight)+'px');
-  $dropdown.css('left', 'auto');
-  $dropdown.css('position', 'absolute');
-  $dropdown.css('display', 'block');
-  $dropdown.appendTo('body');
-});
-
-$(document).on('hide.bs.dropdown', '.rw_ddfloat', function (e) {
-  // Hide the dropdown menu bound to this button
-  $(e.target).data('dropdown-menu').remove();
-});
