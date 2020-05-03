@@ -3966,7 +3966,8 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   color: var(--colorTextoClaro);
   text-align: initial!important;
   height: 60px;
-  padding: 20px 30px;
+  padding: 20px 30px;  
+  vertical-align: middle;
 }
 
 .modal .status {
@@ -4187,6 +4188,10 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .modal .box_buttons_work .btn_work_border {
   color: #373838;
+}
+
+.modal.show ~ .select2-container--open {
+  z-index: 9999;
 }
 
 /***********************************************/
