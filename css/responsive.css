@@ -1470,7 +1470,7 @@
   .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_info p {
     font-weight: normal;
     font-size: 11px;
-    line-height: 18px;
+    line-height: 14px;
   }
   .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box span {
     font-size: 1.1em;
@@ -1489,7 +1489,25 @@
     margin-top: 0px;
   }
   .workflows_inicio .swb_wflow .box_content_work::before {
-    left: 97px;
+    left: 15%;
+  }
+  .workflows_inicio .swb_wflow .box_content_work::after {
+    left: calc(15% - 2px);
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_esp::before {
+    left: 41.5%;
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_esp::after {
+    left: calc(41.5% - 2px);
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_resp::before {
+    right: 14%;
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_resp::after {
+    right: calc(14% - 2px);
+  }
+  .screens_with_tables .swt_box .top_info {
+    margin-bottom: 15px;
   }
     /*Inicio Workflows Responsable*/
   .workflows_inicio.responsable .swb_wflow .box_content_work {
@@ -1618,7 +1636,6 @@
     height: 30px;
     max-height: 30px;
   }
-
   .workflows_inicio.especificos .swb_wflow .box_content_work .input-group-append {
     height: 30px;
   } 
@@ -1657,6 +1674,9 @@
     height: 50px;
     padding: 11px 0px 11px 15px !important;
     min-width: 160px;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf {
+    margin-bottom: 15px;
   }
   /* workflows */
   .workflows .row_wfl_ppal .ppal_table .item_column:first-child, 
@@ -2275,9 +2295,27 @@
     margin-top: 0px;
   }
   .workflows_inicio .swb_wflow .box_content_work::before {
-    left: 97px;
+    left: 19.5%;
   }
-    /*Inicio Workflows Responsable*/
+  .workflows_inicio .swb_wflow .box_content_work::after {
+    left: calc(19.5% - 2px);
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_esp::before {
+    left: 45%;
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_esp::after {
+    left: calc(45% - 2px);
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_resp::before {
+    right: 19%;
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_resp::after {
+    right: calc(19% - 2px);
+  }
+  .screens_with_tables .swt_box .top_info {
+    margin-bottom: 15px;
+  }
+  /*Inicio Workflows Responsable*/
   .workflows_inicio.responsable .swb_wflow .box_content_work {
     width: auto;
     height: auto;
@@ -3063,7 +3101,22 @@
     margin-top: 0px;
   }
   .workflows_inicio .swb_wflow .box_content_work::before {
-    left: 97px;
+    left: 21.5%;
+  }
+  .workflows_inicio .swb_wflow .box_content_work::after {
+    left: calc(21.5% - 2px);
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_esp::before {
+    left: 46.5%;
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_esp::after {
+    left: calc(46.5% - 2px);
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_resp::before {
+    right: 21%;
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_resp::after {
+    right: calc(21% - 2px);
   }
     /*Inicio Workflows Responsable*/
   .workflows_inicio.responsable .swb_wflow .box_content_work {
@@ -4295,7 +4348,22 @@
     margin-top: 0px;
   }
   .workflows_inicio .swb_wflow .box_content_work::before {
-    left: 97px;
+    left: 23%;
+  }
+  .workflows_inicio .swb_wflow .box_content_work::after {
+    left: calc(23% - 2px);
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_esp::before {
+    left: 46.5%;
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_esp::after {
+    left: calc(46.5% - 2px);
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_resp::before {
+    right: 22.5%;
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_resp::after {
+    right: calc(22.5% - 2px);
   }
     /*Inicio Workflows Responsable*/
   .workflows_inicio.responsable .swb_wflow .box_content_work {
@@ -5398,7 +5466,16 @@
     margin-top: 0px;
   }
   .workflows_inicio .swb_wflow .box_content_work::before {
-    left: 146px;
+    left: 18%;
+  }
+  .workflows_inicio .swb_wflow .box_content_work::after {
+    left: calc(18% - 2px);
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_esp::before {
+    left: 47%;
+  }
+  .workflows_inicio .swb_wflow .box_content_work.wf_esp::after {
+    left: calc(47% - 2px);
   }
    /*Inicio Workflows Responsable*/
    .workflows_inicio.responsable .swb_wflow .box_content_work {

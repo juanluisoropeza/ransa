@@ -5488,6 +5488,11 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card_inicio_work {
   height: 120px;
   max-width: 120px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
 }
 
 .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box_icons_work {
