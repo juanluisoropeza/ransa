@@ -585,9 +585,9 @@
   .workflows .row_wfl_ppal .div_tbody .item_colmumn_type, 
   .workflows .row_wfl_ppal .second_table .item_colmumn_type, 
   .workflows .row_wfl_ppal .third_table .item_colmumn_type {
-    -ms-flex: 0 0 35%;
-    flex: 0 0 35%;
-    max-width: 35%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
   }
   .workflows .swb_wflow .top_folders .mb-70 {
     margin-bottom: 20px !important;
@@ -688,6 +688,39 @@
     line-height: 15px;
     height: 28px;
     width: 162px;
+  }
+  .workflows .row_wfl_ppal .div_thead .item_column_status, 
+  .workflows .row_wfl_ppal .div_tbody .item_column_status, 
+  .workflows .row_wfl_ppal .second_table .item_column_status, 
+  .workflows .row_wfl_ppal .third_table .item_column_status {
+    -ms-flex: 0 0 16%;
+    flex: 0 0 16%;
+    max-width: 16%;
+  }
+  .workflows .row_wfl_ppal .div_tbody .item_column .intern_clp_link, 
+  .workflows .row_wfl_ppal .second_table .item_column .intern_clp_link {
+    left: -50px;
+    top: 15px;
+  }  
+  .workflows .row_wfl_ppal .div_tbody .item_column .cerrado,
+  .workflows .row_wfl_ppal .div_tbody .item_column .pendiente,
+  .workflows .row_wfl_ppal .div_tbody .item_column .rechazado,
+  .workflows .row_wfl_ppal .div_tbody .item_column .finalizado,
+  .workflows .row_wfl_ppal .div_tbody .item_column .en_proceso {
+    border-radius: 9px;
+    border-width: 7px;
+    margin-right: 3px;
+  }
+  .workflows .row_wfl_ppal .div_tbody .item_column .cerrado:before,
+  .workflows .row_wfl_ppal .div_tbody .item_column .pendiente:before,
+  .workflows .row_wfl_ppal .div_tbody .item_column .rechazado:before,
+  .workflows .row_wfl_ppal .div_tbody .item_column .finalizado:before,
+  .workflows .row_wfl_ppal .div_tbody .item_column .en_proceso:before {
+    top: -7px;
+    left: -7px;
+    border-radius: 16px;
+    width: 14px;
+    height: 14px;
   }
 }
 
@@ -1415,6 +1448,15 @@
   .screens_with_tables .swt_box .buttons_right {
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
+  }
+  /* workflows */  
+  .workflows .row_wfl_ppal .div_thead .item_column_status, 
+  .workflows .row_wfl_ppal .div_tbody .item_column_status, 
+  .workflows .row_wfl_ppal .second_table .item_column_status, 
+  .workflows .row_wfl_ppal .third_table .item_column_status {
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+    max-width: 32%;
   }
    /* workflows inicio */
    .workflows_inicio .swb_wflow .box_content_work .control-group {
@@ -2229,6 +2271,15 @@
   }
   .files_details .top_info_details .info_left, .files_details .top_info_details .actions_right .align-items-center .dw_details_options a {
     min-width: auto!important;
+  }
+  /* WORKFLOWS */
+  .workflows .row_wfl_ppal .div_thead .item_column_status, 
+  .workflows .row_wfl_ppal .div_tbody .item_column_status, 
+  .workflows .row_wfl_ppal .second_table .item_column_status, 
+  .workflows .row_wfl_ppal .third_table .item_column_status {
+    -ms-flex: 0 0 26%;
+    flex: 0 0 26%;
+    max-width: 26%;
   }
   /* workflows inicio */
   .workflows_inicio .swb_wflow .box_content_work {
@@ -4282,6 +4333,34 @@
   .workflows .content_table .div_table .div_tbody .table_row .tddiv_elements:nth-child(3) {
     padding-left: 14px;
   }
+  .workflows .row_wfl_ppal .div_tbody .item_column .cerrado,
+  .workflows .row_wfl_ppal .div_tbody .item_column .pendiente,
+  .workflows .row_wfl_ppal .div_tbody .item_column .rechazado,
+  .workflows .row_wfl_ppal .div_tbody .item_column .finalizado,
+  .workflows .row_wfl_ppal .div_tbody .item_column .en_proceso {
+    border-radius: 9px;
+    border-width: 7px;
+    margin-right: 3px;
+  }
+  .workflows .row_wfl_ppal .div_tbody .item_column .cerrado:before,
+  .workflows .row_wfl_ppal .div_tbody .item_column .pendiente:before,
+  .workflows .row_wfl_ppal .div_tbody .item_column .rechazado:before,
+  .workflows .row_wfl_ppal .div_tbody .item_column .finalizado:before,
+  .workflows .row_wfl_ppal .div_tbody .item_column .en_proceso:before {
+    top: -7px;
+    left: -7px;
+    border-radius: 16px;
+    width: 14px;
+    height: 14px;
+  }
+  .workflows .row_wfl_ppal .div_thead .item_column_status, 
+  .workflows .row_wfl_ppal .div_tbody .item_column_status, 
+  .workflows .row_wfl_ppal .second_table .item_column_status, 
+  .workflows .row_wfl_ppal .third_table .item_column_status {
+    -ms-flex: 0 0 15%;
+    flex: 0 0 15%;
+    max-width: 15%;
+  }
   /*Inicio Workflows */
   .workflows_inicio .swb_wflow .box_content_work {
     width: auto;
@@ -5259,6 +5338,13 @@
     padding: 0px 8px;
   }
   /* Workflows */
+  .workflows {
+    min-height: calc(100vh - 57px);
+  }
+  .workflows .cont_menu_sidebar,
+  .workflows .swb_wflow {
+    min-height: calc(100vh - 134px);
+  }
   .dd_table_workflow {
     padding: 9px 0px 13px;
     width: 136px;
@@ -5369,7 +5455,7 @@
   }
   .workflows .row_wfl_ppal .div_thead .item_column, 
   .workflows .row_wfl_ppal .div_tbody .item_column {
-    padding: 0px 10px;
+    padding: 0px 6px;
   }
   .workflows .row_wfl_ppal .div_tbody .item_column:nth-child(2), 
   .workflows .row_wfl_ppal .div_tbody .item_column:nth-child(3) {
@@ -5400,6 +5486,28 @@
   .workflows .row_wfl_ppal .second_table .item_column, 
   .workflows .row_wfl_ppal .third_table .item_column {
     height: 54px;
+  }
+  .workflows .row_wfl_ppal .div_tbody .item_column .cerrado,
+  .workflows .row_wfl_ppal .div_tbody .item_column .pendiente,
+  .workflows .row_wfl_ppal .div_tbody .item_column .rechazado,
+  .workflows .row_wfl_ppal .div_tbody .item_column .finalizado,
+  .workflows .row_wfl_ppal .div_tbody .item_column .en_proceso,
+  .workflows .row_wfl_ppal .div_tbody .item_column .en_proceso {
+    border-radius: 9px;
+    border-width: 7px;
+    margin-right: 3px;
+  }
+  .workflows .row_wfl_ppal .div_tbody .item_column .cerrado:before,
+  .workflows .row_wfl_ppal .div_tbody .item_column .pendiente:before,
+  .workflows .row_wfl_ppal .div_tbody .item_column .rechazado:before,
+  .workflows .row_wfl_ppal .div_tbody .item_column .finalizado:before,
+  .workflows .row_wfl_ppal .div_tbody .item_column .en_proceso:before,
+  .workflows .row_wfl_ppal .div_tbody .item_column .en_proceso:before {
+    top: -7px;
+    left: -7px;
+    border-radius: 16px;
+    width: 14px;
+    height: 14px;
   }
   /*Inicio Workflows */
   .workflows_inicio .swb_wflow .box_content_work {
@@ -5525,7 +5633,7 @@
     font-size: 14px;
   }
    /*Inicio Workflows Especificos*/
-   .workflows_inicio.especificos .swb_wflow .box_content_work .box_title p {
+  .workflows_inicio.especificos .swb_wflow .box_content_work .box_title p {
     font-size: 15px;
     line-height: 18px;
     margin-bottom: 10px;
