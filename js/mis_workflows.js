@@ -47,7 +47,7 @@ $(document).ready(function () {
   })
   */
 
-  $(document).on('shown.bs.dropdown', '.rw_ddfloat', function (e) {
+  $(document).on('shown.bs.dropdown', '.row_float_dropdown', function (e) {
     // get the padding right in the table
     let right = $('.screens_with_tables .swb_wflow');
     let paddingRight = parseInt(right.css('padding-right'));
@@ -71,13 +71,21 @@ $(document).ready(function () {
     $dropdown.appendTo('body');
   });
 
-  $(document).on('hide.bs.dropdown', '.rw_ddfloat', function (e) {
+  $(document).on('hide.bs.dropdown', '.row_float_dropdown', function (e) {
     // Hide the dropdown menu bound to this button
     $(e.target).data('dropdown-menu').remove();
   });
 
+
+  /*
+
+  ESTA ES UNA FUNCION PARA CARGAR EL MODAL DE VALIDACION DE DOCUMENTOS AL CARGAR LA PAGINA
+  COMO ESTE MODAL NO ESTA ASIGNADO A NINGUN BOTON O CALL TO ACTION LO CARGABA AL INICIAR LA PAGINA PARA PODER VISUALIZAR LA MAQUETACION
+
   $(window).on('load',function(){
     $('#modalValidarDocumento').modal('show');
   });
+
+  */
 
 }); 
