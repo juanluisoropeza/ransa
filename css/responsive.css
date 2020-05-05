@@ -4736,7 +4736,7 @@
   }
   /* Home */
   #home {
-    padding-top: 90px;
+    padding-top: 75px;
   }
   #home .content_right .box-content .box-card {
     height: 190px;
@@ -5689,7 +5689,7 @@
     min-width: 158px!important;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .input_calendar_work {
-    max-width: 112px;
+    max-width: 112px; 
     min-width: 112px !important;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos input {
@@ -5705,8 +5705,12 @@
     width: 72px;
     min-width: 72px;
   }
-  .cont_menu_sidebar .sidebar_left_menu ul li a i {
+  .cont_menu_sidebar .sidebar_left_menu ul li a i,
+  .cont_menu_sidebar .sidebar_left_menu ul li .sub-menu-dropdown li a span {
     font-size: 1.3em;
+  }
+  .cont_menu_sidebar .sidebar_left_menu ul li .sub-menu-dropdown li a span.max_icon {
+    font-size: 1.8em !important;
   }
   .cont_menu_sidebar .sidebar_left_menu ul li:first-child {
     margin-bottom: 0px;
@@ -5716,6 +5720,27 @@
     line-height: 14px;
     width: 19.21px;
     height: 19.21px;
+  }
+}
+
+/* ------------------RESPONSIVE DE ESTILOS GENERALES ---------------------------*/
+@media screen and (max-width: 1439px) {
+  
+  /* ---header ---*/
+  header .top_header .cnt_right .right_links .dropdown-menu .dropdown-item {
+    font-size: 14px;
+    line-height: 17px;
+    min-width: 155px;
+  }
+  /* ---footer ---*/
+  footer .content_footer {
+    color: var(--grisFooter);
+    height: 40px;
+  }
+  footer .content_footer p,
+  footer .content_footer ul li a {
+    font-size: 11.3833px;
+    line-height: 183.69%;
   }
 }
  

@@ -167,7 +167,7 @@
             </div>
         </div>
     </header>
-    <section class="screens_with_tables workflows">
+    <section class="screens_with_tables workflows pendientes">
         <div class="container-fluid">
             <div class="row">
                 <div class="cont_menu_sidebar">
@@ -249,7 +249,8 @@
                 <article class="swt_box swb_wflow">
                     <div class="row">
                         <div class="col-lg-5 top_info">
-                            <h1 class="title">Mis workflows <span class="icon-icon_arrow-down1"></span></h1>
+                            <h1 class="title">Actividades en workflows</h1>
+                            <p>Aquellas actividades asignadas que tengo por realizar en un workflow</p>
                         </div>
                         <div class="col-lg-7 buttons_right br_wflows">
                             <a href="workflows_generales.html" class="btn btn-success">
@@ -260,7 +261,7 @@
                     <div class="top_folders">
                         <div class="row justify-content-center align-items-center mb-70">
                             <a href="#" class="col-6 col-sm-4 text-center folders_cards wf">
-                                <div class="card">
+                                <div class="card active">
                                     <div class="icon_box">
                                         <div class="box">
                                             <span class="icon-icon_arrow-next"></span>
@@ -268,9 +269,23 @@
                                     </div>
                                     <div class="text-center icon_info">
                                         <h2>8</h2>
-                                        <p>En proceso</p>
+                                        <p>Pendientes</p>
                                     </div>
-                                    <div class="tooltip_msg">Workflows con actividades en curso.</div>
+                                    <!-- <div class="tooltip_msg">Workflows con actividades en curso.</div> -->
+                                </div>
+                            </a>
+                            <a href="#" class="col-6 col-sm-4 text-center folders_cards wf">
+                                <div class="card">
+                                    <div class="icon_box">
+                                        <div class="box">
+                                            <span class="icon-icon_check"></span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center icon_info">
+                                        <h2>8</h2>
+                                        <p>Cerrado</p>
+                                    </div>
+                                    <!-- <div class="tooltip_msg">Workflows  con activiidades culminadas.</div> -->
                                 </div>
                             </a>
                             <a href="#" class="col-6 col-sm-4 text-center folders_cards wf">
@@ -284,28 +299,14 @@
                                         <h2>8</h2>
                                         <p>Finalizado</p>
                                     </div>
-                                    <div class="tooltip_msg">Workflows  con activiidades culminadas.</div>
-                                </div>
-                            </a>
-                            <a href="#" class="col-6 col-sm-4 text-center folders_cards wf">
-                                <div class="card">
-                                    <div class="icon_box">
-                                        <div class="box">
-                                            <span class="icon-icon_clock_negate"></span>
-                                        </div>
-                                    </div>
-                                    <div class="text-center icon_info">
-                                        <h2>8</h2>
-                                        <p>Cerrado</p>
-                                    </div>
-                                    <div class="tooltip_msg">Workflows culminados con actividades incompletas en un tiempo determinado.</div>
+                                    <!-- <div class="tooltip_msg">Workflows culminados con actividades incompletas en un tiempo determinado.</div> -->
                                 </div>
                             </a>
                         </div>
                         <div class="row justify-content-center align-items-center">
                             <div class="col-6 col-sm-4 col-lg-2 items_search_wof">
                                 <div class="control-group input-group">
-                                    <input type="text" class="form-control ici_append" id="fecha3" placeholder="Seleccione fecha" name="txt_rfechas_fecha" required="" data-validation-required-message="Por favor, Seleccione una <b>Fecha</b>.">
+                                    <input type="text" class="form-control ici_append" id="fecha3" placeholder="Fecha" name="txt_rfechas_fecha" required="" data-validation-required-message="Por favor, Seleccione una <b>Fecha</b>.">
                                     <div class="input-group-append">
                                         <span class="input-group-text">
                                             <i class="icon-icon_calendar"><span class="path1"></span><span class="path2"></span></i>
@@ -457,526 +458,6 @@
                                                 <a class="dropdown-item" href="#">
                                                     <span class="icon-icon_trash-light"></span> Eliminar
                                                 </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row_float_dropdown second_table w-100 collapse mc_submenuTop" id="submenuPri">
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                &nbsp;
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                &nbsp;
-                                            </div>
-                                        </div>
-                                        <div class="col-5 col-sm-4 col-lg-4 col-xl-2 item_column item_colmumn_name">
-                                            <div class="item">
-                                                <a class="intern_clp_link collapsed" data-toggle="collapse" data-target=".mc_thirdMenuTop" href="#thirdMenuTop1" role="button" aria-expanded="false" aria-controls="thirdMenuTop1">
-                                                    <span class="icon-icon_arrow-down1"></span>
-                                                </a>
-                                                Etapa A
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                3 de 3
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                25/03/2020
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                28/03/2020
-                                            </div>
-                                        </div>
-                                        <div class="col-4 col-sm-3 col-lg-2 col-xl-1 item_column item_column_status">
-                                            <div class="item">
-                                                <span class="status en_proceso"></span> En Proceso
-                                            </div>
-                                        </div>
-                                        <div class="col-4 col-sm-3 col-lg-2 col-xl-2 item_column">
-                                            <div class="item">
-                                                &nbsp;
-                                            </div>
-                                        </div>
-                                        <div class="col-5 col-sm-3 col-lg-2 col-xl-1 item_column item_colmumn_type">
-                                            <div class="item">
-                                                &nbsp;
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column btn_action_fixed ic_ddwn">
-                                            <div class="item">
-                                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-                                                    <span class="icon-icon_three-bullets"></span>
-                                                </a>
-                                                <div class="dropdown-menu dd_table_workflow" aria-labelledby="dropdownMenuButton">
-                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalEditarWorkflow">
-                                                        <span class="icon-icon_pencil"></span> Editar
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        <span class="icon-icon_trash-light"></span> Eliminar
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="third_table w-100 collapse mc_thirdMenuTop" id="thirdMenuTop1">
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column"> 
-                                                <div class="item">
-                                                    &nbsp;
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column"> 
-                                                <div class="item">
-                                                    &nbsp;
-                                                </div>
-                                            </div>
-                                            <div class="col-5 col-sm-4 col-lg-4 col-xl-2 item_column item_colmumn_name">
-                                                <div class="item">
-                                                    Revisar y firmar
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">
-                                                    <span class="icon-icon_clock_exclamate"></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">
-                                                    25/03/2020
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">
-                                                    28/03/2020
-                                                </div>
-                                            </div>
-                                            <div class="col-4 col-sm-3 col-lg-2 col-xl-1 item_column item_column_status">
-                                                <div class="item">
-                                                    <span class="status en_proceso"></span> En Proceso
-                                                </div>
-                                            </div>
-                                            <div class="col-4 col-sm-3 col-lg-2 col-xl-2 item_column">
-                                                <div class="item responsable">
-                                                    <figure class="resp_photo">
-                                                        <img src="images/photo10.jpg" alt="photo10" class="img-fluid rounded-circle" />
-                                                        <div class="tooltip_msg">
-                                                            <p>Andres Lopez</p>
-                                                            <p>Aprobador</p>
-                                                        </div>
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                            <div class="col-5 col-sm-3 col-lg-2 col-xl-1 item_column item_colmumn_type">
-                                                <div class="item">
-                                                    Card8
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column btn_action_fixed ic_ddwn">
-                                                <div class="item">
-                                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-                                                        <span class="icon-icon_three-bullets"></span>
-                                                    </a>
-                                                    <div class="dropdown-menu dd_table_workflow" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalEditarWorkflow">
-                                                            <span class="icon-icon_pencil"></span> Editar
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            <span class="icon-icon_trash-light"></span> Eliminar
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row_float_dropdown second_table w-100 collapse mc_submenuTop" id="submenuSeg">
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                &nbsp;
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                &nbsp;
-                                            </div>
-                                        </div>
-                                        <div class="col-5 col-sm-4 col-lg-4 col-xl-2 item_column item_colmumn_name">
-                                            <div class="item">
-                                                <a class="intern_clp_link collapsed" data-toggle="collapse" data-target=".mc_thirdMenuTop2" href="#thirdMenuTop2" role="button" aria-expanded="false" aria-controls="thirdMenuTop2">
-                                                    <span class="icon-icon_arrow-down1"></span>
-                                                </a>
-                                                Etapa B
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                3 de 3
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                25/03/2020
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                28/03/2020
-                                            </div>
-                                        </div>
-                                        <div class="col-4 col-sm-3 col-lg-2 col-xl-1 item_column item_column_status">
-                                            <div class="item">
-                                                <span class="status en_proceso"></span> En Proceso
-                                            </div>
-                                        </div>
-                                        <div class="col-4 col-sm-3 col-lg-2 col-xl-2 item_column">
-                                            <div class="item">
-                                                &nbsp;
-                                            </div>
-                                        </div>
-                                        <div class="col-5 col-sm-3 col-lg-2 col-xl-1 item_column item_colmumn_type">
-                                            <div class="item">
-                                                &nbsp;
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column btn_action_fixed ic_ddwn">
-                                            <div class="item">
-                                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-                                                    <span class="icon-icon_three-bullets"></span>
-                                                </a>
-                                                <div class="dropdown-menu dd_table_workflow" aria-labelledby="dropdownMenuButton">
-                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalEditarWorkflow">
-                                                        <span class="icon-icon_pencil"></span> Editar
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        <span class="icon-icon_trash-light"></span> Eliminar
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="third_table w-100 collapse mc_thirdMenuTop2" id="thirdMenuTop2">
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column"> 
-                                                <div class="item">
-                                                    &nbsp;
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column"> 
-                                                <div class="item">
-                                                    &nbsp;
-                                                </div>
-                                            </div>
-                                            <div class="col-5 col-sm-4 col-lg-4 col-xl-2 item_column item_colmumn_name">
-                                                <div class="item">
-                                                    Registrar y adjuntar archivo
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">
-                                                    <span class="icon-icon_clock_exclamate"></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">
-                                                    25/03/2020
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">
-                                                    28/03/2020
-                                                </div>
-                                            </div>
-                                            <div class="col-4 col-sm-3 col-lg-2 col-xl-1 item_column item_column_status">
-                                                <div class="item">
-                                                    <span class="status rechazado"></span> Rechazado
-                                                </div>
-                                            </div>
-                                            <div class="col-4 col-sm-3 col-lg-2 col-xl-2 item_column">
-                                                <div class="item responsable">
-                                                    <figure class="resp_photo">
-                                                        <img src="images/photo6.jpg" alt="photo10" class="img-fluid rounded-circle" />
-                                                        <div class="tooltip_msg">
-                                                            <p>Vanessa Pfaff</p>
-                                                            <p>Supervisor</p>
-                                                        </div>
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                            <div class="col-5 col-sm-3 col-lg-2 col-xl-1 item_column item_colmumn_type">
-                                                <div class="item">
-                                                    Card8
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column btn_action_fixed ic_ddwn">
-                                                <div class="item">
-                                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-                                                        <span class="icon-icon_three-bullets"></span>
-                                                    </a>
-                                                    <div class="dropdown-menu dd_table_workflow" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalEditarWorkflow">
-                                                            <span class="icon-icon_pencil"></span> Editar
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            <span class="icon-icon_trash-light"></span> Eliminar
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row_float_dropdown ppal_table div_tbody">
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">
-                                            <a class="icon_box collapsed" data-toggle="collapse" data-target=".mc_submenu1" href="#submenu1" role="button" aria-expanded="false" aria-controls="submenu1">
-                                                <span class="icon-icon_arrow-down1"></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">WF0025</div>
-                                    </div>
-                                    <div class="col-5 col-sm-4 col-lg-4 col-xl-2 item_column item_colmumn_name">
-                                        <div class="item">Procedimiento horas extras</div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">13 de 13</div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">25/03/2020</div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                        <div class="item">10/01/2020</div>
-                                    </div>
-                                    <div class="col-4 col-sm-3 col-lg-2 col-xl-1 item_column item_column_status">
-                                        <div class="item">
-                                            <span class="status cerrado"></span> Cerrado
-                                        </div>
-                                    </div>
-                                    <div class="col-4 col-sm-3 col-lg-2 col-xl-2 item_column">
-                                        <div class="item responsable">
-                                            <figure class="resp_photo"><img src="images/user1.jpg" alt="user1" class="img-fluid rounded-circle"></figure>
-                                            <p class="mb-0 info_respo">Ayer a las 3:20 pm</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-5 col-sm-3 col-lg-2 col-xl-1 item_column item_colmumn_type">
-                                        <div class="item">&nbsp;</div>
-                                    </div>
-                                    <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column btn_action_fixed ic_ddwn">
-                                        <div class="item">
-                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-                                                <span class="icon-icon_three-bullets"></span>
-                                            </a>
-                                            <div class="dropdown-menu dd_table_workflow" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalEditarWorkflow">
-                                                    <span class="icon-icon_pencil"></span> Editar
-                                                </a>
-                                                <a class="dropdown-item" href="#">
-                                                    <span class="icon-icon_trash-light"></span> Eliminar
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row_float_dropdown second_table w-100 collapse mc_submenu1" id="submenu1">
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                &nbsp;
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                &nbsp;
-                                            </div>
-                                        </div>
-                                        <div class="col-5 col-sm-4 col-lg-4 col-xl-2 item_column item_colmumn_name">
-                                            <div class="item">
-                                                <a class="intern_clp_link collapsed" data-toggle="collapse" data-target=".mc_thirdMenu" href="#thirdMenu1" role="button" aria-expanded="false" aria-controls="thirdMenu1 thirdMenu2">
-                                                    <span class="icon-icon_arrow-down1"></span>
-                                                </a>
-                                                Etapa 1
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                3 de 3
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                25/03/2020
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                            <div class="item">
-                                                28/03/2020
-                                            </div>
-                                        </div>
-                                        <div class="col-4 col-sm-3 col-lg-2 col-xl-1 item_column item_column_status">
-                                            <div class="item">
-                                                <span class="status finalizado"></span> Finalizado
-                                            </div>
-                                        </div>
-                                        <div class="col-4 col-sm-3 col-lg-2 col-xl-2 item_column">
-                                            <div class="item">
-                                                Card8
-                                            </div>
-                                        </div>
-                                        <div class="col-5 col-sm-3 col-lg-2 col-xl-1 item_column item_colmumn_type">
-                                            <div class="item">
-                                                Card9
-                                            </div>
-                                        </div>
-                                        <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column btn_action_fixed ic_ddwn">
-                                            <div class="item">
-                                                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-                                                    <span class="icon-icon_three-bullets"></span>
-                                                </a>
-                                                <div class="dropdown-menu dd_table_workflow" aria-labelledby="dropdownMenuButton">
-                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalEditarWorkflow">
-                                                        <span class="icon-icon_pencil"></span> Editar
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        <span class="icon-icon_trash-light"></span> Eliminar
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="third_table w-100 collapse mc_thirdMenu" id="thirdMenu1">
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column"> 
-                                                <div class="item">
-                                                    &nbsp;
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column"> 
-                                                <div class="item">
-                                                    &nbsp;
-                                                </div>
-                                            </div>
-                                            <div class="col-5 col-sm-4 col-lg-4 col-xl-2 item_column item_colmumn_name">
-                                                <div class="item">
-                                                    Registrar y adjuntar archivo
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">
-                                                    <span class="icon-icon_clock_exclamate2"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">
-                                                    25/03/2020
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">
-                                                    27/03/2020
-                                                </div>
-                                            </div>
-                                            <div class="col-4 col-sm-3 col-lg-2 col-xl-1 item_column item_column_status">
-                                                <div class="item">
-                                                    <span class="status finalizado"></span> Finalizado
-                                                </div>
-                                            </div>
-                                            <div class="col-4 col-sm-3 col-lg-2 col-xl-2 item_column">
-                                                <div class="item responsable">
-                                                    <figure class="resp_photo">
-                                                        <img src="images/photo11.jpg" alt="photo11" class="img-fluid rounded-circle" />
-                                                        <div class="tooltip_msg">
-                                                            <p>Maria Perez</p>
-                                                            <p>Supervisor</p>
-                                                        </div>
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                            <div class="col-5 col-sm-3 col-lg-2 col-xl-1 item_column item_colmumn_type">
-                                                <div class="item">
-                                                    Card8
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column btn_action_fixed ic_ddwn">
-                                                <div class="item">
-                                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-                                                        <span class="icon-icon_three-bullets"></span>
-                                                    </a>
-                                                    <div class="dropdown-menu dd_table_workflow" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalEditarWorkflow">
-                                                            <span class="icon-icon_pencil"></span> Editar
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            <span class="icon-icon_trash-light"></span> Eliminar
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="third_table w-100 collapse mc_thirdMenu" id="thirdMenu2">
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column"> 
-                                                <div class="item">
-                                                    &nbsp;
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column"> 
-                                                <div class="item">
-                                                    &nbsp;
-                                                </div>
-                                            </div>
-                                            <div class="col-5 col-sm-4 col-lg-4 col-xl-2 item_column item_colmumn_name">
-                                                <div class="item">
-                                                    Validar documento
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">
-                                                    <span class="icon-icon_clock_exclamate"></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">
-                                                    25/03/2020
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column">
-                                                <div class="item">
-                                                    28/03/2020
-                                                </div>
-                                            </div>
-                                            <div class="col-4 col-sm-3 col-lg-2 col-xl-1 item_column item_column_status">
-                                                <div class="item">
-                                                    <span class="status pendiente"></span> Pendiente
-                                                </div>
-                                            </div>
-                                            <div class="col-4 col-sm-3 col-lg-2 col-xl-2 item_column">
-                                                <div class="item responsable">
-                                                    <figure class="resp_photo">
-                                                        <img src="images/photo10.jpg" alt="photo10" class="img-fluid rounded-circle" />
-                                                        <div class="tooltip_msg">
-                                                            <p>Andres Lopez</p>
-                                                            <p>Aprobador</p>
-                                                        </div>
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                            <div class="col-5 col-sm-3 col-lg-2 col-xl-1 item_column item_colmumn_type">
-                                                <div class="item">
-                                                    Card8
-                                                </div>
-                                            </div>
-                                            <div class="col-3 col-sm-2 col-lg-2 col-xl-1 item_column btn_action_fixed ic_ddwn">
-                                                <div class="item">
-                                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-                                                        <span class="icon-icon_three-bullets"></span>
-                                                    </a>
-                                                    <div class="dropdown-menu dd_table_workflow" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalEditarWorkflow">
-                                                            <span class="icon-icon_pencil"></span> Editar
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            <span class="icon-icon_trash-light"></span> Eliminar
-                                                        </a>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1432,7 +913,7 @@
             </div>
         </div>
     </div>
-    <!-- modal Validar Documento -->
+    <!-- modal Editar Workflow -->
     <div class="modal fade" id="modalValidarDocumento" tabindex="-1" role="dialog" aria-labelledby="modalValidarDocumentoTitle" aria-hidden="true">
         <div class="modal-dialog modal-xl edit_workflow modal-dialog-centered" role="document">
             <div class="modal-content bg_gray">
@@ -1440,7 +921,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h5 class="modal-title centered" id="modalValidarDocumentoTitle">Validar documento:</h5>
+                    <h5 class="modal-title centered" id="modalTableAddColumnTitle">Validar documento:</h5>
                 </div>
                 <div class="modal-body">
                     <div class="row">
@@ -1659,27 +1140,10 @@
             </div>
         </div>
     </div>
-    <!-- modal Detalle de Workflows -->
-    <div class="modal fade" id="modalDetalleWorkflow" tabindex="-1" role="dialog" aria-labelledby="modalDetalleWorkflowTitle" aria-hidden="true">
-        <div class="modal-dialog modal-xl edit_workflow modal-dialog-centered" role="document">
-            <div class="modal-content bg_gray">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h5 class="modal-title centered" id="modalDetalleWorkflowTitle">Actividad-ACT00004 - Aprobar contrato - renovación - adenda.</h5>
-                </div>
-                <div class="modal-body">
-                    hola
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- SCRIPTS -->
     <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./js/top_bar.js"></script>
     <script type="text/javascript" src="./js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap-datepicker.es.min.js"></script>
     <script type="text/javascript" src="./js/datepicker.js"></script>
