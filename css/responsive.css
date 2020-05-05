@@ -131,11 +131,6 @@
   .modal .modal-content .modal-body .content_table .cont_hz_scroll {
     overflow: auto;
   }
-  .modal .modal-content .modal-body .buttons .btn-outline-success.h40 {
-    height: 35px;
-    line-height: 15px;
-    margin: 0px 10px;
-  }
   .modal .buttons {
     display: flex;
   }
@@ -371,11 +366,6 @@
     height: calc(100% - 90px);
   }
    /* Modal */
-  .modal .modal-body .list_detail li h5,
-  .modal .modal-body .list_detail li p {
-    font-size: 16px;
-    text-align: initial;
-  }
   .modal .modal-body .list_detail li {
     margin-bottom: 10px;
   }
@@ -722,6 +712,11 @@
     width: 14px;
     height: 14px;
   }
+  .pagination li a {
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -954,12 +949,6 @@
     -webkit-flex-flow: column !important;
     background-color: var(--fondoSwt)!important;
   }
-  .txt_ppal,
-  .txt_info,
-  .txt_status {
-    font-size: 16px !important;
-    line-height: 20px !important;
-  }
   #profile .profile_info .info_box h5.txt_status {
     margin-top: 0px !important;
   }
@@ -1109,7 +1098,7 @@
   /* Modals */  
   .modal .modal_message {
     max-width: 440px !important;
-    margin: 0 15px;
+    margin: 0 auto;
   }
   .modal .modal-content .modal-body {
     padding-top: 10px !important;
@@ -1157,10 +1146,6 @@
   .modal_downloadfile_workflows .box_button_modal_work {
     margin-top: 20px;
   }
-  .modal .modal-content .modal-body .form-inline .form-group label,
-  .select_new .btn-select .btn-select-value {
-    font-size: 16px;
-  }
   .modal .modal-content .modal-body .form-inline .fechas_modal .form-control.input_date {
     font-size: 16px;
     height: 40px;
@@ -1181,18 +1166,9 @@
   .modal .modal-content .modal-body .form-inline .fechas_modal .form-control.border-left {
     max-width: initial;
   }
-  .modal .modal-content .modal-body .filter_top .form-control {
-    font-size: 15px;
-  }
   .modal .modal-content .modal-body .cont_item,
   .modal .modal-content .modal-body .list-group .list-group-item {
     font-size: 16px;
-  }
-  .modal .modal-content .modal-header .modal-title,
-  .modal .modal-content .modal-body p {
-    font-size: 16px;
-    text-align: center;
-    margin: 0px;
   }
   .modal .modal-content .modal-header {
     padding: 40px 27px 0px 27px;
@@ -1225,7 +1201,7 @@
     font-size: 16px;
   }  
   .modal .modal-content .modal-body .input-group-apend .input-group-text {
-    height: 37px;
+    height: 32px;
   }
   .modal .modal-content .modal-body .form-group {
     margin-bottom: 0;
@@ -1998,15 +1974,8 @@
   .modal .modal-content .modal-body .list-group .list-group-item {
     font-size: 16px;
   }
-  .modal .modal-content .modal-header .modal-title,
-  .modal .modal-content .modal-body p {
-    font-size: 18px;
-  }
   .modal .modal-content .modal-header {
     padding: 40px 27px 0px 27px;
-  }
-  .modal .modal-content .modal-header hr {
-    margin-top: 18px;
   }
   .modal .modal-content .modal-footer .btn-success, 
   .modal .modal-content .modal-footer .btn-outline-success {
@@ -2031,10 +2000,6 @@
     text-align: center;
   }
   /* Search Top Bar */
-  .modal .modal-content .modal-body .form-inline .form-group label, .select_new .btn-select .btn-select-value {
-    font-size: 14px;
-    line-height: 17px;
-  }
   .select2-container--default .select2-selection--single .select2-selection__rendered, 
   .select2-results__option, 
   header .top_header .cnt_right .input-group .form-group label, 
@@ -2754,24 +2719,11 @@
   .modal .modal-content .modal-body {
     padding: 27px 35px 45px 35px;
   }
-  .modal .modal-content .modal-body .form-inline .form-group label,
-  .select_new .btn-select .btn-select-value {
-    font-size: 14px;
-    line-height: 17px;
-  }
   .modal .modal-content .modal-body .form-inline .fechas_modal .form-control.input_date {
     font-size: 14px;
   }
   .modal .modal_message {
     max-width: 500px;
-  }
-  .modal .modal-content .modal-body h4.msj_question {
-    font-size: 20px;
-    line-height: 25px;
-    margin-bottom: 2em;
-  }
-  .modal .modal-content .modal-body .img_message img {
-    max-height: 170px !important;
   }
   .modal .modal-content .modal-body .content_table .cont_hz_scroll {
     overflow: auto;
@@ -2808,10 +2760,6 @@
     height: 38px;
     min-width: 120px;
     width: auto;
-  }
-  .modal .modal-content .modal-header .modal-title {
-    font-size: 19px;
-    line-height: 21px;
   }
   .modal .modal-content .modal-body .list_files_cp li img {
     max-height: 25px;
@@ -3623,12 +3571,12 @@
   }
   .content_table .div_table .div_thead .thdiv_elements, 
   .content_table .div_table .div_thead .thdiv_elements a {
-    font-size: 12.1435px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 17px;
   }
   .content_table .div_table .div_tbody .tddiv_elements {
-    font-size: 12.1435px;
-    line-height: 14px;
+    font-size: 13px;
+    line-height: 16px;
   }
   .dropdown_table {
     padding: 10px 0px 0px 0px;
@@ -3667,9 +3615,6 @@
   .screens_with_tables .swt_box .dropdown-item {
     font-size: 14px;
     line-height: 17px;
-  }
-  .content_table .div_table .div_tbody .tddiv_elements:last-child {
-    right: 50px;
   }
   .screens_with_tables .swt_box .buttons_right .btn-outline-success {
     font-size: 13px;
@@ -3824,10 +3769,6 @@
   .modal .modal-content .modal-body .content_table .div_table .div_thead .thdiv_elements {
     padding: 0px 10px;
   }
-  #modalShareFiles.modal .modal-content .modal-body .content_table .div_table .div_tbody .tddiv_elements {
-    font-size: 13.5px;
-    line-height: 16px;
-  }
   #modalShareFiles.modal .modal-content .modal-body .buttons .btn {
     font-size: 14px;
     height: 36px;
@@ -3897,23 +3838,11 @@
     line-height: 17px;
     height: 32px;
   }
-  .modal .modal-content .modal-body .form-inline .form-group label {
-    font-size: 14px;
-    line-height: 17px;
-  }
   .modal .modal-content .modal-body .form-inline .fechas_modal .input-group-apend .input-group-text {
     height: 32px;
   }
   .modal .modal_message {
     max-width: 500px;
-  }
-  .modal .modal-content .modal-body h4.msj_question {
-    font-size: 20px;
-    line-height: 25px;
-    margin-bottom: 2em;
-  }
-  .modal .modal-content .modal-body .img_message img {
-    max-height: 170px !important;
   }
   .modal .modal-content .modal-header.padding-equeal-body {
     padding: 30px 64px 0px 64px;
@@ -3934,12 +3863,6 @@
   .modal .modal-content .modal-header .modal-title {
     font-size: 19px;
     line-height: 21px;
-  }
-  .modal .modal-content .modal-body .list-group .list-group-item,  
-  .modal .modal-content .modal-body .list-group .list-group-item .cont_item_chkb,
-  .modal .modal-content .modal-body .cont_item {
-    font-size: 16px;
-    line-height: 19px;
   }
   .modal .modal-content .modal-body .list-group .select_column {
     padding: 6px 10px;
@@ -4951,11 +4874,6 @@
     width: 4px;
     height: 7px;
   }
-  .content_table .div_table .div_thead .thdiv_elements, 
-  .content_table .div_table .div_thead .thdiv_elements a {
-    font-size: 12.1435px;
-    line-height: 14px;
-  }
   .content_table .div_table .div_tbody .tddiv_elements {
     font-size: 12.1435px;
     line-height: 14px;
@@ -4967,13 +4885,6 @@
   .screens_with_tables .swt_box hr {
     margin-bottom: 12px;
     margin-top: 6px;
-  }
-  .screens_with_tables .swt_box .dropdown-item {
-    font-size: 16px;
-    line-height: 19px;
-  }
-  .content_table .div_table .div_tbody .tddiv_elements:last-child {
-    right: 55px;
   }
   /* File Details */
   .files_details .content_files_details .right_section {
@@ -5141,9 +5052,6 @@
   .modal .modal-content .modal-header.padding-equeal-body {
     padding: 45px 55px 0px 55px;
   }
-  .modal .modal-content .modal-body {
-    padding: 27px 55px 8px 55px;
-  }
   .modal .modal-content .modal-footer {
     padding: 0px 55px 25px;
   }
@@ -5155,13 +5063,6 @@
   }
   .modal .modal_message .modal-content .modal-footer {
     padding: 0px 40px 25px;
-  }
-  .modal .modal-content .modal-footer .btn-success, 
-  .modal .modal-content .modal-footer .btn-outline-success {
-    font-size: 14px;
-    height: 38px;
-    min-width: 120px;
-    width: auto;
   }
   .modal .modal-content .modal-body .filter_top {
     margin-bottom: 10px;
@@ -5178,15 +5079,7 @@
     margin-bottom: 10px;
   }
   .modal .modal-content .modal-body .form-control:not(textarea) {
-    font-size: 14px;
-    line-height: 17px;
-  }  
-  .modal .modal-content .modal-body .form-control:not(textarea) {
     height: 32px;
-  }
-  .modal .modal-content .modal-body .form-inline .form-group label {
-    font-size: 14px;
-    line-height: 17px;
   }
   .modal .modal-content .modal-body .form-inline .fechas_modal .input-group-apend .input-group-text {
     height: 32px;
@@ -5194,22 +5087,10 @@
   .modal .modal_message {
     max-width: 530px;
   }
-  .modal .modal-content .modal-body h4.msj_question {
-    font-size: 20px;
-    line-height: 25px;
-    margin-bottom: 2em;
-  }
-  .modal .modal-content .modal-body .img_message img {
-    max-height: 170px !important;
-  }
   .modal .modal-content .modal-body .info {
     font-size: 14px;
     line-height: 17px;
-  }
-  .modal .modal-content .modal-header .modal-title {
-    font-size: 19px;
-    line-height: 21px;
-  }  
+  } 
   .modal .modal-content .modal-body .list-group .list-group-item,  
   .modal .modal-content .modal-body .list-group .list-group-item .cont_item_chkb,
   .modal .modal-content .modal-body .cont_item {
@@ -5231,23 +5112,6 @@
   }
   .modal .modal-content .modal-body .list_files_cp li img {
     max-height: 25px;
-  }
-  .modal .modal-content .modal-body .mdb_breadcrumb .gray_item, 
-  .modal .modal-content .modal-body .mdb_breadcrumb .green_item {
-    font-size: 16px;
-    line-height: 19px;
-  }
-  .modal .modal-content .modal-body .list_files_cp li label:not(.cont_item) {
-    font-size: 16px;
-    line-height: 19px;
-    font-size: 16px;
-    line-height: 19px;
-    margin-left: 16px;
-  }
-  .modal .modal-content .modal-body .mdb_breadcrumb .link_back {
-    height: 28px;
-    margin-right: 14px;
-    width: 28px;
   }
   .modal .modal-content .modal-body .has-search .form-control-feedback {
     font-size: 1.2em;
@@ -5724,55 +5588,6 @@
 }
 
 /* ------------------RESPONSIVE DE ESTILOS GENERALES ---------------------------*/
-@media screen and (max-width: 1439px) {
-  
-  /* ---header ---*/
-  header .top_header .cnt_right .right_links .dropdown-menu .dropdown-item {
-    font-size: 14px;
-    line-height: 17px;
-    min-width: 155px;
-  }
-  /* ---footer ---*/
-  footer .content_footer {
-    color: var(--grisFooter);
-    height: 40px;
-  }
-  footer .content_footer p,
-  footer .content_footer ul li a {
-    font-size: 11.3833px;
-    line-height: 183.69%;
-  }
-}
- 
-@media screen and (min-width: 1440px) and (max-width: 1679px) {  
-  .files_details .content_files_details .right_section {
-    max-height: calc(100vh - 235px);
-    padding: 15px 25px;
-  }
-  .files_details .content_files_details .right_section .details_box .db_body {
-    padding: 15px 30px;
-  }
-  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment {
-    padding: 10px;
-  }
-  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment .txt_name_comment,
-  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment .txt_comment {
-    font-size: 16px;
-    line-height: 19px;
-  }
-  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .photo {
-    margin-right: 18px;
-  }
-  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .photo_right {
-    margin-right: 0;
-    margin-left: 12px;
-  }
-  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment {
-    width: calc(100% - 94px);
-  }
-  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .form .buttons .btn {
-    display: inline-block;
-  }
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark,
   .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
     left: -60px;
