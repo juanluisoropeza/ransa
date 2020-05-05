@@ -6,9 +6,9 @@
     <title>..:: RANSA ::..</title>
     <!-- HOJAS DE ESTILO CSS -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/datepicker.min.css">
-    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/select2.min.css">
     <link rel="stylesheet" href="./css/select2-bootstrap4.min.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -160,16 +160,16 @@
                     </li>
                 </ul>
             </div>
-            <div class="button_sidebar_movil d-none">
+            <div class="button_sidebar_movil">
                 <a href="#" id="menu-toggle" class="waves-light menu-toggle" data-toggle="offcanvas">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
                 </a>
             </div>
         </div>
     </header>
-    <section id="home">
+     <section class="screens_with_tables workflows workflows_inicio">
         <div class="container-fluid">
-            <div class="row row_ppal">
+            <div class="row">
                 <div class="cont_menu_sidebar">
                     <nav class="sidebar_left_menu" role="navigation" id="nav_sidebar">
                         <ul>
@@ -246,54 +246,156 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 slider_left">
-                    <!--
-                    <figure><img src="./images/home_img_ppal.svg" alt="home_img_ppal" class="img-fluid" /></figure>
-                    <h1><span class="res">Gestiona y comparte</span> información en un espacio visual y colaborativo</h1>
-                    -->
-                    <div class="swiper-container">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <figure><img src="./images/home_img_ppal.svg" alt="home_img_ppal" class="img-fluid" /></figure>
-                                <h1><span class="res">Gestiona y comparte</span> información en un espacio visual y colaborativo</h1>
-                            </div>
-                            <div class="swiper-slide">
-                                <figure><img src="./images/home_img_ppal2.svg" alt="home_img_ppal" class="img-fluid" /></figure>
-                                <h1><span class="res">Flujos de trabajo</span> colaborativos y automatizados para conectar tus procesos</h1>
-                            </div>
-                            <div class="swiper-slide">
-                                <figure><img src="./images/home_img_ppal3.svg" alt="home_img_ppal" class="img-fluid" /></figure>
-                                <h1><span class="res">Firmar y aprobar documentos</span> con herramientas digitales</h1>
-                            </div>
-                        </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5 content_right">
-                    <div class="row align-content-center">
-                        <div class="col-7 col-sm-6 col-md-6 col-lg-6 box-content">
-                            <a href="accesos.html" class="box-card">
-                                <figure><img src="./images/home_accesos.svg" alt="icon_folder_wbg" class="img-fluid"></figure>
-                                <h4>Accesos</h4>
-                            </a>
-                        </div>
-                        <div class="col-7 col-sm-6 col-md-6 col-lg-6 box-content">
-                            <a href="almacenamiento.html" class="box-card">
-                                <figure><img src="./images/home_nube.svg" alt="icon_folder_wbg" class="img-fluid"></figure>
-                                <h4>Nube</h4>
-                            </a>
-                        </div>
-                        <div class="col-7 col-sm-6 offset-sm-0 col-md-6 offset-md-3 col-lg-6 offset-lg-3 box-content">
-                            <a href="workflows.html" class="box-card">
-                                <figure><img src="./images/home_workflows.svg" alt="icon_folder_wbg" class="img-fluid"></figure>
-                                <h4>Workflows</h4>
-                            </a>
+                <article class="swt_box swb_wflow">
+                    <div class="row">
+                        <div class="col-lg-5 top_info">
+                            <h1 class="title title_black">Iniciar Workflow</h1>
                         </div>
                     </div>
-                </div>
+                    <div class="top_folders">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-3 col-sm-3 col-lg-3 text-center folders_cards inicio_work wf">
+                                <a href="workflows_generales.html" class="card card_inicio_work card_inicio_work_active">
+                                    <div class="icon_box">
+                                        <div class="box box_icons_work">
+                                            <span class="icon-icon_arrow-next"></span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center icon_info">
+                                        <p>Ajustes generales</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-3 col-sm-3 col-lg-3 text-center folders_cards inicio_work wf">
+                                <a href="workflows_especificos.html" class="card card_inicio_work">
+                                    <div class="icon_box">
+                                        <div class="box box_icons_work">
+                                            <span class="icon-icon_check"></span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center icon_info">
+                                        <p>Ajustes específicos</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-3 col-sm-3 col-lg-3 text-center folders_cards inicio_work wf">
+                                <a href="workflows_responsables.html" class="card card_inicio_work">
+                                    <div class="icon_box">
+                                        <div class="box box_icons_work">
+                                            <span class="icon-icon_clock_negate"></span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center icon_info">
+                                        <p>Responsables</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_table box_content_work">
+                        <div class="row">
+                            <div class="col-lg-12 box_title">
+                                <p>Ajustes Generales:</p>
+                            </div>
+                        </div>
+                        <div class="row m-40">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-5">
+                                <div class="control-group">
+                                    <input type="text" class="form-control form_nombre" name="txt_nombre_work" id="txt_nombre_work" placeholder="Nombre del workflow:">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-2 space_max">
+                                <div class="control-group">
+                                    <input type="text" class="form-control forms_work" name="txt_codigo_work" id="txt_codigo_work" placeholder="Código del workflow:">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-60">
+                            <div class="col-12 col-sm-6 col-sm-6 col-lg-2 items_search_wof space_movil">
+                                <div class="control-group select_iniciar_work">
+                                    <select class="select_custon_select2 form-control" name="txt_empresa_work">
+                                        <option value="">* Empresa / Área:</option>
+                                        <option value="empresa_work1">Categoria 1</option>
+                                        <option value="empresa_work2">Categoria 2</option>
+                                        <option value="empresa_work3">Categoria 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-sm-6 col-lg-2 items_search_wof space space_movil">
+                                <div class="control-group select_iniciar_work">
+                                    <select class="select_custon_select2 form-control" name="txt_categoria_work">
+                                        <option value="">Categoría:</option>
+                                        <option value="categoria_work1">Categoria 1</option>
+                                        <option value="categoria_work2">Categoria 2</option>
+                                        <option value="categoria_workt3">Categoria 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-sm-6 col-lg-2 items_search_wof space">
+                                <div class="control-group select_iniciar_work">
+                                    <select class="select_custon_select2 form-control" name="txt_workflow_inicio">
+                                        <option value="">Workflow:</option>
+                                        <option value="workflow_inicio1">Workflow 1</option>
+                                        <option value="workflow_inicio2">Workflow 2</option>
+                                        <option value="workflow_inicio3">Workflow 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-sm-6 col-lg-2 items_search_wof space">
+                                <div class="control-group select_iniciar_work">
+                                    <select class="select_custon_select2 form-control" name="txt_tipos_work">
+                                        <option value="">Tipos:</option>
+                                        <option value="tipos_work1">Sede 1</option>
+                                        <option value="tipos_work2">Sede 2</option>
+                                        <option value="tipos_work3">Sede 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-60">
+                            <div class="col-12 col-sm-4 col-sm-4 col-lg-2 items_search_wof">
+                                <div class="control-group select_iniciar_work">
+                                    <select class="select_custon_select2 form-control" name="txt_sede_work">
+                                        <option value="">Sede</option>
+                                        <option value="sede_work1">Categoria 1</option>
+                                        <option value="sede_work2">Categoria 2</option>
+                                        <option value="sede_work3">Categoria 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 col-sm-4 col-lg-2 items_search_wof space">
+                                <div class="control-group select_iniciar_work">
+                                    <select class="select_custon_select2 form-control" name="txt_sector_work">
+                                        <option value="">*Almacén/Sector</option>
+                                        <option value="sector_work1">Categoria 1</option>
+                                        <option value="sector_work2">Categoria 2</option>
+                                        <option value="sector_work3">Categoria 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 col-sm-4 col-lg-2 space">
+                                <div class="control-group">
+                                    <input type="text" class="form-control forms_work" name="txt_numero_aviso" id="txt_numero_aviso" placeholder="* N° aviso ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 box_textarea_work">
+                                <textarea id="textarea" class="form-control" name="txt_descripcion_work" placeholder="Descripción:"></textarea>
+                            </div>
+                        </div>
+                        <div class="row contenedor_button">
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-2 box_buttons_work">
+                                <a href="#" class="btn-outline-success_work">Guardar</a>
+                                <a href="#" class="btn-outline-success_work btn_work_border"> < Volver</a>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-2 box_buttons_work">
+                                <button id="btnSubmit" type="submit" class="btn btn-outline-success_work btn_work">Continuar</button>
+                                <a href="#" class="btn-outline-success_work btn_work_border">Cancelar</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -317,10 +419,12 @@
     <script type="text/javascript" src="./js/top_bar.js"></script>
     <script type="text/javascript" src="./js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap-datepicker.es.min.js"></script>
-    <script type="text/javascript" src="./js/swiper.min.js"></script>
     <script type="text/javascript" src="./js/datepicker.js"></script>
     <script type="text/javascript" src="./js/select2.min.js"></script>
     <script type="text/javascript" src="./js/select2_initializate.js"></script>
-    <script type="text/javascript" src="./js/home.js"></script>
+    <script type="text/javascript" src="./js/sidebar.js"></script>
+    <script type="text/javascript" src="./js/checkbox_tables.js"></script>
+    <script type="text/javascript" src="./js/verify_check_rows.js"></script>
 </body>
 </html>
+

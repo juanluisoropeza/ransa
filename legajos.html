@@ -30,7 +30,7 @@
                     </form>
                     <a class="btn btn-outline-success button-search-custom dropdown-toggle" href="#" role="button" id="busquedaHeader" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     </a>                  
-                    <div class="dropdown-menu" aria-labelledby="busquedaHeader">
+                    <div class="dropdown-menu" aria-labelledby="busquedaHeader" id="ddm_busqueda">
                         <form class="px-4 py-3 form-inline" id="form1">
                             <div class="row wm-100">
                                 <div class="col-sm-2 col-md-2 col-lg-2 form-group input-group floating-label-form-group controls">
@@ -170,37 +170,81 @@
     <section class="screens_with_tables">
         <div class="container-fluid">
             <div class="row">
-                <div class="fixed-nav sidebar_menu">
-                    <div class="fixed-nav-inner">
-                        <ul class="text-center">
-                        <a href="#" id="menu-toggle" class="waves-light menu-toggle" data-toggle="offcanvas">
+                <div class="cont_menu_sidebar">
+                    <nav class="sidebar_left_menu" role="navigation" id="nav_sidebar">
+                        <ul>
                             <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+                                <a href="#" class="nav-toggle">
+                                    <svg class="d-none d-lg-block d-xl-block" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+                                    <div class="right_content">X</div>
+                                </a>
                             </li>
-                            <li>X</li>
-                        </a>
-                        <a href="home.html" class="waves-light" data-toggle="tooltip" data-placement="right" title="Inicio">
-                            <li><i class="icon-icon_home"></i></li>
-                            <li>Inicio</li>
-                        </a>
-                        <a href="legajos.html" class="waves-light active" data-toggle="tooltip" data-placement="right" title="Legajos">
-                            <li><i class="icon-icon_signature"></i></li>
-                            <li>Legajos</li>
-                        </a>
-                        <a href="accesos.html" class="waves-light" data-toggle="tooltip" data-placement="right" title="Mis Accesos">
-                            <li><i class="icon-icon_files"></i></li>
-                            <li>Mis Accesos</li>
-                        </a>
-                        <a href="almacenamiento.html" class="waves-light" data-toggle="tooltip" data-placement="right" title="Almacenamiento">
-                            <li><i class="icon-icon_cloud"></i></li>
-                            <li>Almacenamiento</li>
-                        </a>
-                        <a href="workflows.html" class="waves-light" data-toggle="tooltip" data-placement="right" title="Workflows">
-                            <li><i class="icon-icon_workflows"></i></li>
-                            <li>Workflows</li>
-                        </a>
+                            <li>
+                                <a href="home.html">
+                                    <i class="icon-icon_home"></i>
+                                    <div class="right_content">Inicio</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="accesos.html">
+                                    <i class="icon-icon_files"></i>
+                                    <div class="right_content">Mis Accesos</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="submenu-link">
+                                    <i class="icon-icon_cloud"></i>
+                                    <div class="right_content">Almacenamiento <span class="icon-icon_arrow-right"></span></div>
+                                </a>
+                                <ul class="sub-menu-dropdown">
+                                    <li>
+                                        <a href="almacenamiento.html">
+                                            <span class="icon-icon_files2"></span>
+                                            <div class="right_content">Mis archivos</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="compartidos.html">
+                                            <span class="icon-icon_user"></span>
+                                            <div class="right_content">Mis compartidos</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="compartidos_conmigo.html">
+                                            <span class="icon-icon_users max_icon"></span>
+                                            <div class="right_content">Compartidos conmigo</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="submenu-link">
+                                    <i class="icon-icon_workflows"></i>
+                                    <div class="right_content">Workflows <span class="icon-icon_arrow-right"></span></div>
+                                </a>
+                                <ul class="sub-menu-dropdown">
+                                    <li>
+                                        <a href="mis_workflows.html">
+                                            <span class="icon-icon_users max_icon"></span>
+                                            <div class="right_content">Mis workflow</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="icon-icon_play"></span>
+                                            <div class="right_content">Iniciar workflow</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="icon-icon_activities"></span>
+                                            <div class="right_content">Mis actividades</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
                 <article class="swt_box">
                     <div class="row align-items-center">
@@ -883,6 +927,7 @@
     <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/top_bar.js"></script>
     <script type="text/javascript" src="./js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap-datepicker.es.min.js"></script>
     <script type="text/javascript" src="./js/datepicker.js"></script>
@@ -891,5 +936,6 @@
     <script type="text/javascript" src="./js/sidebar.js"></script>
     <script type="text/javascript" src="./js/accesos-dnd.js"></script>
     <script type="text/javascript" src="./js/checkbox_tables.js"></script>
+    <script type="text/javascript" src="./js/verify_check_rows.js"></script>
 </body>
 </html>

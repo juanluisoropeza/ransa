@@ -7,6 +7,7 @@ $(function () {
         } else {
             $("input:checkbox[name='row-check']").prop("checked", false);
             $("input:checkbox[name='row-check']").parent().parent().parent().removeClass("row_checked");
+            $('.div_tbody').find('.checkmark').removeClass('show');
         }
     });
 
@@ -21,9 +22,9 @@ $(function () {
         // If all checked manually then check master checkbox
         if (total_check_boxes === total_checked_boxes) {
             $("#masterCheck").prop("checked", true);
-        }
-        else {
+        } else {
             $("#masterCheck").prop("checked", false);
         }
     });
+
 });

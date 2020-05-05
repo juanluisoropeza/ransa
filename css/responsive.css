@@ -3569,6 +3569,15 @@
     width: 4px;
     height: 7px;
   }
+  .content_table .div_table .div_thead .thdiv_elements, 
+  .content_table .div_table .div_thead .thdiv_elements a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements {
+    font-size: 13px;
+    line-height: 16px;
+  }
   .dropdown_table {
     padding: 10px 0px 0px 0px;
     min-width: 200px;
@@ -5579,160 +5588,6 @@
 }
 
 /* ------------------RESPONSIVE DE ESTILOS GENERALES ---------------------------*/
-@media screen and (max-width: 1439px) {
-  
-  /* ---header ---*/
-  header .top_header .cnt_right .right_links .dropdown-menu .dropdown-item {
-    font-size: 14px;
-    line-height: 17px;
-    min-width: 155px;
-  }
-  /* ---footer ---*/
-  footer .content_footer {
-    color: var(--grisFooter);
-    height: 40px;
-  }
-  footer .content_footer p,
-  footer .content_footer ul li a {
-    font-size: 11.3833px;
-    line-height: 183.69%;
-  }
-   /* ---Modales Almacenamiento ---*/
-   .modal .modal-content .modal-body .form-inline .form-group label {
-    font-size: 12px;
-    line-height: 183.69%;
-  }
-  .select2-container .select2-selection--single {
-    height: 32px;
-  }
-  .modal .inputs_work_especificos .control-group .input-group .form-control, 
-  .modal .box_textarea_work textarea.form-control, 
-  .modal .select2-container--default .select2-selection--single .select2-selection__rendered, 
-  .modal .inputs_work_especificos_chosse .inputfile + label span, 
-  .modal .table_work_especificos table tbody tr th, 
-  .modal .table_work_especificos table tbody tr td,
-  .modal .modal-content .modal-body .form-control:not(textarea),
-  .modal .modal-body label {
-    font-size: 12px;
-    line-height: 183.69%;
-  }
-  .modal .modal-content .modal-header .modal-title {
-    font-size: 15px;
-    line-height: 21px;
-  }
-  .modal .modal-content .modal-body {
-    padding: 15px 55px 8px 55px;
-  }
-  .modal .modal-content .modal-footer .btn-success, 
-  .modal .modal-content .modal-footer .btn-outline-success,
-  .modal .modal-content .modal-body .buttons .btn-outline-success.h40 {
-    font-size: 12px;
-    height: 30px;
-    min-width: 100px;
-    width: auto;
-  }
-  .modal .modal-content .modal-body .filter_top .input-group-text, 
-  .modal .modal-content .modal-body .filter_top .form-control {
-    height: 30px;
-  }
-  .modal .modal-content .modal-body .input-group-apend .input-group-text i,
-  .modal .modal-content .modal-body .filter_top .input-group-text i {
-    font-size: 1.2em;
-  }
-  .content_table .div_table .div_thead .thdiv_elements, .content_table .div_table .div_thead .thdiv_elements a {
-    font-size: 12.1435px;
-    line-height: 14px;
-  }
-  .content_table .div_table .div_thead .thdiv_elements .dropdown-menu {
-    min-width: 180px;
-  }
-  .modal .modal-body .list_detail li h5,
-  .modal .modal-body .list_detail li p,
-  .content_table .div_table .div_tbody .tddiv_elements {
-    font-size: 12px;
-    text-align: initial;
-  }
-  .modal_detalle{
-    max-width: 470px !important;
-  }
-  .modal .modal-content .modal-body h6.txt_info {
-    font-size: 14px;
-    line-height: 18px;
-  }
-  .modal .modal-content .modal-body .mdb_breadcrumb .gray_item,
-  .modal .modal-content .modal-body .mdb_breadcrumb .green_item, 
-  .modal .modal-content .modal-body h6.txt_info.mb-35,
-  .txt_ppal,
-  .txt_info,
-  .txt_status, {
-    font-size: 14px;
-  }
-  .modal .modal-content .modal-body .list_files_cp li label:not(.cont_item) {
-    font-size: 12px;
-  }
-  .modal .modal-content .modal-body .mdb_breadcrumb .link_back {
-    height: 25px;
-    margin-right: 14px;
-    width: 25px;
-  }
-  .modal .modal-content .modal-body .mdb_breadcrumb .link_back span {
-    font-size: 0.90em;
-  }
-  .modal .modal-content .modal-body h6.txt_info.mb-35 {
-    margin-bottom: 12px;
-  }
-  .modal .modal-content .modal-body .list_files_cp li .icon {
-    margin-left: 15px;
-  }
-  .modal .modal-content .modal-body .list_files_cp li .icon span {
-    font-size: 1.4em;
-  }
-  .modal .modal-content .modal-body h4.msj_question {
-    font-size: 16px;
-    line-height: 25px;
-    margin-bottom: 2em;
-  }
-  .modal .modal-content .modal-body .img_message img {
-    max-height: 170px;
-  }
-  .modal .modal-content .modal-body p {
-    font-size: 14px;
-    line-height: 18px;
-  }
-  .dropdown-item {
-    font-size: 14px;
-  }
-}
- 
-@media screen and (min-width: 1440px) and (max-width: 1679px) {  
-  .files_details .content_files_details .right_section {
-    max-height: calc(100vh - 235px);
-    padding: 15px 25px;
-  }
-  .files_details .content_files_details .right_section .details_box .db_body {
-    padding: 15px 30px;
-  }
-  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment {
-    padding: 10px;
-  }
-  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment .txt_name_comment,
-  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment .txt_comment {
-    font-size: 16px;
-    line-height: 19px;
-  }
-  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .photo {
-    margin-right: 18px;
-  }
-  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .photo_right {
-    margin-right: 0;
-    margin-left: 12px;
-  }
-  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .comment {
-    width: calc(100% - 94px);
-  }
-  .files_details .content_files_details .right_section .details_box .bd_body_comments .comments .form .buttons .btn {
-    display: inline-block;
-  }
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark,
   .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
     left: -60px;

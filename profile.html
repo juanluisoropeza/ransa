@@ -29,7 +29,7 @@
                     </form>
                     <a class="btn btn-outline-success button-search-custom dropdown-toggle" href="#" role="button" id="busquedaHeader" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     </a>                  
-                    <div class="dropdown-menu" aria-labelledby="busquedaHeader">
+                    <div class="dropdown-menu" aria-labelledby="busquedaHeader" id="ddm_busqueda">
                         <form class="px-4 py-3 form-inline" id="form1">
                             <div class="row wm-100">
                                 <div class="col-sm-2 col-md-2 col-lg-2 form-group input-group floating-label-form-group controls">
@@ -212,29 +212,25 @@
                                     <div class="control-group">
                                         <div class="form-group input-group floating-label-form-group controls">
                                             <label for="txt_usuario">Usuario</label>
-                                            <input type="text" class="form-control w-50" name="txt_usuario" id="txt_usuario" placeholder="Josezapatar@ransa.net" data-validation-required-message="Por favor, Ingrese el <b>usuario</b>." />
-                                            <p class="help-block text-danger"></p>
+                                            <input type="text" class="form-control w-50" name="txt_usuario" id="txt_usuario" placeholder="Josezapatar@ransa.net" data-validation-required-message="Por favor, Ingrese el <b>usuario</b>." required />
                                         </div>
                                     </div>
                                     <div class="control-group">
                                         <div class="form-group input-group floating-label-form-group controls">
                                             <label for="txt_clavea">Contraseña actual</label>
-                                            <input type="password" class="form-control w-50" name="txt_clavea" id="txt_clavea" placeholder="&#9679&#9679&#9679&#9679&#9679&#9679&#9679" data-validation-required-message="Por favor, Ingrese la <b>contraseña actual</b>." />
-                                            <p class="help-block text-danger"></p>
+                                            <input type="password" class="form-control w-50" name="txt_clavea" id="txt_clavea" placeholder="&#9679&#9679&#9679&#9679&#9679&#9679&#9679" data-validation-required-message="Por favor, Ingrese la <b>contraseña actual</b>." required />
                                         </div>
                                     </div>
                                     <div class="control-group">
                                         <div class="form-group input-group floating-label-form-group controls">
                                             <label for="txt_nclave">Cambiar contraseña</label>
-                                            <input type="password" class="form-control w-50" name="txt_nclave" id="txt_nclave" placeholder="&#9679&#9679&#9679&#9679&#9679&#9679&#9679" data-validation-required-message="Por favor, Ingrese la <b>nueva contraseña</b>."  />
-                                            <p class="help-block text-danger"></p>
+                                            <input type="password" class="form-control w-50" name="txt_nclave" id="txt_nclave" placeholder="&#9679&#9679&#9679&#9679&#9679&#9679&#9679" data-validation-required-message="Por favor, Ingrese la <b>nueva contraseña</b>." required />
                                         </div>
                                     </div>
                                     <div class="control-group">
                                         <div class="form-group input-group floating-label-form-group controls">
                                             <label for="txt_rep_nclave">Repetir nueva contraseña</label>
-                                            <input type="password" class="form-control w-50" name="txt_rep_nclave" id="txt_rep_nclave" placeholder="&#9679&#9679&#9679&#9679&#9679&#9679&#9679" data-validation-required-message="Por favor, repita la <b>nueva contraseña</b>." />
-                                            <p class="help-block text-danger"></p>
+                                            <input type="password" class="form-control w-50" name="txt_rep_nclave" id="txt_rep_nclave" placeholder="&#9679&#9679&#9679&#9679&#9679&#9679&#9679" data-validation-required-message="Por favor, repita la <b>nueva contraseña</b>." required />
                                         </div>
                                     </div>
                                     <div class="text-center boton">
@@ -270,15 +266,17 @@
         </div>
     </footer>
     <!-- SCRIPTS -->
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/top_bar.js"></script>
     <script type="text/javascript" src="./js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap-datepicker.es.min.js"></script>
     <script type="text/javascript" src="./js/datepicker.js"></script>
+    <script type="text/javascript" src="./js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="./js/messages_es_PE.min.js"></script>
     <script type="text/javascript" src="./js/select2.min.js"></script>
     <script type="text/javascript" src="./js/select2_initializate.js"></script>
-    <script type="text/javascript" src="./js/jqBootstrapValidation.js"></script>
     <script type="text/javascript" src="./js/profile.js"></script>
 </body>
 </html>

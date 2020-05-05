@@ -6,9 +6,9 @@
     <title>..:: RANSA ::..</title>
     <!-- HOJAS DE ESTILO CSS -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/datepicker.min.css">
-    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/select2.min.css">
     <link rel="stylesheet" href="./css/select2-bootstrap4.min.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -160,16 +160,16 @@
                     </li>
                 </ul>
             </div>
-            <div class="button_sidebar_movil d-none">
+            <div class="button_sidebar_movil">
                 <a href="#" id="menu-toggle" class="waves-light menu-toggle" data-toggle="offcanvas">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
                 </a>
             </div>
         </div>
     </header>
-    <section id="home">
+     <section class="screens_with_tables workflows workflows_inicio especificos responsable">
         <div class="container-fluid">
-            <div class="row row_ppal">
+            <div class="row">
                 <div class="cont_menu_sidebar">
                     <nav class="sidebar_left_menu" role="navigation" id="nav_sidebar">
                         <ul>
@@ -246,54 +246,126 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 slider_left">
-                    <!--
-                    <figure><img src="./images/home_img_ppal.svg" alt="home_img_ppal" class="img-fluid" /></figure>
-                    <h1><span class="res">Gestiona y comparte</span> información en un espacio visual y colaborativo</h1>
-                    -->
-                    <div class="swiper-container">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <figure><img src="./images/home_img_ppal.svg" alt="home_img_ppal" class="img-fluid" /></figure>
-                                <h1><span class="res">Gestiona y comparte</span> información en un espacio visual y colaborativo</h1>
-                            </div>
-                            <div class="swiper-slide">
-                                <figure><img src="./images/home_img_ppal2.svg" alt="home_img_ppal" class="img-fluid" /></figure>
-                                <h1><span class="res">Flujos de trabajo</span> colaborativos y automatizados para conectar tus procesos</h1>
-                            </div>
-                            <div class="swiper-slide">
-                                <figure><img src="./images/home_img_ppal3.svg" alt="home_img_ppal" class="img-fluid" /></figure>
-                                <h1><span class="res">Firmar y aprobar documentos</span> con herramientas digitales</h1>
-                            </div>
-                        </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5 content_right">
-                    <div class="row align-content-center">
-                        <div class="col-7 col-sm-6 col-md-6 col-lg-6 box-content">
-                            <a href="accesos.html" class="box-card">
-                                <figure><img src="./images/home_accesos.svg" alt="icon_folder_wbg" class="img-fluid"></figure>
-                                <h4>Accesos</h4>
-                            </a>
-                        </div>
-                        <div class="col-7 col-sm-6 col-md-6 col-lg-6 box-content">
-                            <a href="almacenamiento.html" class="box-card">
-                                <figure><img src="./images/home_nube.svg" alt="icon_folder_wbg" class="img-fluid"></figure>
-                                <h4>Nube</h4>
-                            </a>
-                        </div>
-                        <div class="col-7 col-sm-6 offset-sm-0 col-md-6 offset-md-3 col-lg-6 offset-lg-3 box-content">
-                            <a href="workflows.html" class="box-card">
-                                <figure><img src="./images/home_workflows.svg" alt="icon_folder_wbg" class="img-fluid"></figure>
-                                <h4>Workflows</h4>
-                            </a>
+                <article class="swt_box swb_wflow">
+                    <div class="row">
+                        <div class="col-lg-5 top_info">
+                            <h1 class="title title_black">Iniciar Workflow</h1>
                         </div>
                     </div>
-                </div>
+                    <div class="top_folders">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-3 col-sm-3 col-lg-3 text-center folders_cards inicio_work wf">
+                                <a href="workflows_generales.html" class="card card_inicio_work">
+                                    <div class="icon_box">
+                                        <div class="box box_icons_work">
+                                            <span class="icon-icon_arrow-next"></span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center icon_info">
+                                        <p>Ajustes generales</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-3 col-sm-3 col-lg-3 text-center folders_cards inicio_work wf">
+                                <a href="workflows_especificos.html" class="card card_inicio_work">
+                                    <div class="icon_box">
+                                        <div class="box box_icons_work">
+                                            <span class="icon-icon_check"></span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center icon_info">
+                                        <p>Ajustes específicos</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-3 col-sm-3 col-lg-3 text-center folders_cards inicio_work wf">
+                                <a href="workflows_responsables.html" class="card card_inicio_work card_inicio_work_active">
+                                    <div class="icon_box">
+                                        <div class="box box_icons_work">
+                                            <span class="icon-icon_clock_negate"></span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center icon_info">
+                                        <p>Responsable</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_table box_content_work wf_resp">
+                        <div class="row">
+                            <div class="col-lg-12 box_title">
+                                <p>Actividades y responsables</p>
+                            </div>
+                        </div>
+                        <div class="row m-18">
+                            <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 form-group input-group floating-label-form-group controls">
+                                <label for="txt_inc_palabras">Nombre del workflow: </label>
+                            </div>
+                            <div class="col-sm-5 col-md-5 col-lg-5 form-group input-group floating-label-form-group controls input_work_respon">   
+                                <input type="text" class="form-control" id="txt_inc_palabras" name="txt_inc_palabras" placeholder="Autogenerado" >
+                            </div>
+                        </div>
+                        <div class="row m-18">
+                            <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 form-group input-group floating-label-form-group controls">
+                                <label for="txt_inc_palabras">Código del workflow: </label>
+                            </div>
+                            <div class="col-sm-5 col-md-5 col-lg-3 form-group input-group floating-label-form-group controls input_work_respon">
+                                <input type="text" class="form-control" id="txt_inc_palabras" name="txt_inc_palabras" placeholder="Autogenerado" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 table-responsive table_work_especificos">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">N°</th>
+                                        <th scope="col">Actividad</th>
+                                        <th scope="col">Responsable</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Generar y Firmar Análisis de Trabajo Seguro (ATS) y Autorización de Trabajo de Riesgo (ATR)</td>
+                                        <td><i class="icon-icon_search"></i>1er Aprobador autorizante</td>
+                                        <td><img src="images/photo3.jpg" alt="photo" class="img-fluid rounded-circle">Cristhian Balvin</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Verificar y Firmar Análisis de Trabajo Seguro (ATS) y Autorización de Trabajo de Riesgo (ATR)</td>
+                                        <td><i class="icon-icon_search"></i>Responsable de Sede</td>
+                                        <td><img src="images/photo.jpg" alt="photo" class="img-fluid rounded-circle">Jose Perez</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Firma de Ejecutante de Análisis de Trabajo Seguro (ATS) y Autorización de Trabajo de Riesgo (ATR)</td>
+                                        <td><i class="icon-icon_search"></i>2do Aprobador autorizante</td>
+                                        <td><img src="images/photo3.jpg" alt="photo" class="img-fluid rounded-circle">Cristhian Balvin</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Inspeccionar y Firmar Análisis de Trabajo Seguro (ATS) y Autorización de Trabajo de Riesgo (ATR)</td>
+                                        <td><i class="icon-icon_search"></i>Seguridad Industrial</td>
+                                        <td><img src="images/photo.jpg" alt="photo" class="img-fluid rounded-circle">Jose Perez</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row contenedor_button">
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-2 box_buttons_work">
+                                <a href="#" class="btn-outline-success_work" data-toggle="modal" data-target="#modalDownloadfiles">Guardar</a>
+                                <a href="#" class="btn-outline-success_work btn_work_border"> < Volver</a>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-2 box_buttons_work">
+                                <button id="btnSubmit" type="submit" class="btn btn-outline-success_work btn_work">Continuar</button>
+                                <a href="#" class="btn-outline-success_work btn_work_border">Cancelar</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -310,6 +382,30 @@
             </div>
         </div>
     </footer>
+    <!-- Modal #modalDownloadfiles -->
+    <div class="modal fade modal_downloadfile_workflows" id="modalDownloadfiles" tabindex="-1" role="dialog" aria-labelledby="modalDownloadfilesTitle" aria-hidden="true">
+        <div class="modal-dialog modal-707 modal_message modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header padding-equeal-body">
+                <h5 class="modal-title" id="modalTableSearchTitle">&nbsp;</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4 class="text-center msj_question">¡ Buen flujo de trabajo!</h4>
+                <p>Felicidades, haz completado el envío de tu flujo de trabajo correctamente.</p>
+                <figure class="img_message"><img src="images/undraw_confirmation_work.svg" alt="download_files_complete_workflows" class="img-fluid"></figure>
+                <div class="box_button_modal_work">
+                    <button class="btn_modal_workflows_resp"><i class="icon-icon_pencil"></i>Editar flujo</button>
+                    <button class="btn_modal_workflows_resp"><i class="icon-icon_workflows"></i>Crear otro</button>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-center">
+            </div>
+        </div>
+        </div>
+    </div>
     <!-- SCRIPTS -->
     <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
@@ -317,10 +413,12 @@
     <script type="text/javascript" src="./js/top_bar.js"></script>
     <script type="text/javascript" src="./js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap-datepicker.es.min.js"></script>
-    <script type="text/javascript" src="./js/swiper.min.js"></script>
     <script type="text/javascript" src="./js/datepicker.js"></script>
     <script type="text/javascript" src="./js/select2.min.js"></script>
     <script type="text/javascript" src="./js/select2_initializate.js"></script>
-    <script type="text/javascript" src="./js/home.js"></script>
+    <script type="text/javascript" src="./js/sidebar.js"></script>
+    <script type="text/javascript" src="./js/checkbox_tables.js"></script>
+    <script type="text/javascript" src="./js/verify_check_rows.js"></script>
 </body>
 </html>
+
