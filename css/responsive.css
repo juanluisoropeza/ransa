@@ -3081,12 +3081,15 @@
   .files_details .content_files_details .toggle {
     display: none;
   }
-  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark,
-  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
-    left: -32px;
-  }
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
-    bottom: -20px;
+    left: -42px !important;
+    top: 18px !important;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark:after {
+    left: 3px;
+    top: 1px;
+    width: 5px;
+    height: 8px;
   }
   .workflows_inicio .swb_wflow .box_content_work {
     width: auto;
@@ -3559,10 +3562,6 @@
     font-size: 15px;
     line-height: 17px;
   }
-  .content_table .div_table .div_tbody .tddiv_elements {
-    font-size: 14px;
-    line-height: 16px;
-  }
   .content_table .div_table .div_tbody .tddiv_elements:first-child img {
     max-height: 26px;
     max-width: 50px;
@@ -3576,17 +3575,11 @@
   }
   .content_table .div_table .div_thead {
     height: 52px;
-  }
-  .content_table .div_table .div_tbody .tddiv_elements {
-    height: 40px;
-  }
-  .content_table .div_table .div_thead,
-  .content_table .div_table .div_tbody .tddiv_elements, 
-  .workflows .row_wfl_ppal .div_thead, 
-  .workflows .row_wfl_ppal .div_tbody .item_column, 
-  .workflows .row_wfl_ppal .second_table .item_column, 
-  .workflows .row_wfl_ppal .third_table .item_column {
-    height: 54px;
+  }  
+  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
+    bottom: 0 !important;
+    left: -50px !important;
+    top: 20px !important;
   }
   .content_table .div_table_wfl .div_thead .thdiv_elements, 
   .content_table .div_table_wfl .div_thead .thdiv_elements a {
@@ -3602,17 +3595,6 @@
   .content_table .search_button label .icon_search [class*=" icon-"] {
     font-size: 1.2em;
   }
-  .content_table .div_table .div_tbody .tddiv_elements:first-child img {
-    max-height: 24px;
-    max-width: 24px;
-  }
-  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark,
-  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
-    height: 13px;
-    left: -4px;
-    top: 7px;
-    width: 13px;
-  }
   .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark:after, 
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark:after {
     border-width: 0 2px 2px 0;
@@ -3623,10 +3605,6 @@
   }
   .content_table .div_table .div_thead .thdiv_elements, 
   .content_table .div_table .div_thead .thdiv_elements a {
-    font-size: 12.1435px;
-    line-height: 14px;
-  }
-  .content_table .div_table .div_tbody .tddiv_elements {
     font-size: 12.1435px;
     line-height: 14px;
   }
@@ -4148,13 +4126,6 @@
   }
   header .top_header .cnt_right .navbar-nav .nav-item:last-child .nav-link {
     padding: 1.5px 0px;
-  }
-  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark,
-  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
-    left: -40px;
-  }
-  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark{
-    top: -5px;
   }
   /* Workflows */
   .dd_table_workflow {
@@ -4909,10 +4880,6 @@
   .screens_with_tables .swb_wflow {
     padding: 40px 55px;
   }
-  .content_table .div_table .div_thead,
-  .content_table .div_table .div_tbody .tddiv_elements {
-    height: 54px;
-  }
   .content_table .div_table_wfl .div_thead .thdiv_elements, 
   .content_table .div_table_wfl .div_thead .thdiv_elements a {
     font-size: 14px;
@@ -4933,11 +4900,14 @@
   .content_table .div_table .div_tbody .tddiv_elements:first-child img {
     max-height: 19px;
   }
-  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark,
+  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
+    height: 14px;
+    width: 14px;
+  }
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
     height: 14px;
     width: 14px;
-    top: 6px;
+    top: 2px;
     margin: 0;
   }
   .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark:first-child{
@@ -4951,15 +4921,6 @@
     width: 4px;
     height: 7px;
   }
-  .content_table .div_table .div_thead .thdiv_elements, 
-  .content_table .div_table .div_thead .thdiv_elements a {
-    font-size: 12.1435px;
-    line-height: 14px;
-  }
-  .content_table .div_table .div_tbody .tddiv_elements {
-    font-size: 12.1435px;
-    line-height: 14px;
-  }
   .dropdown_table {
     padding: 10px 0px 0px 0px;
     min-width: 200px;
@@ -4972,7 +4933,7 @@
     font-size: 16px;
     line-height: 19px;
   }
-  .content_table .div_table .div_tbody .tddiv_elements:last-child {
+  .content_table .div_table .div_tbody .tddiv_elements.btn_action_fixed {
     right: 55px;
   }
   /* File Details */
@@ -5251,13 +5212,6 @@
   }
   .modal .modal-content .modal-body .has-search .form-control-feedback {
     font-size: 1.2em;
-  }
-  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark,
-  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
-    left: -5px;
-  }
-  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
-    top: -5px;
   }
   .modal_downloadfile_workflows .btn_modal_workflows_resp {
     font-size: 15px;
@@ -5726,13 +5680,13 @@
 /* ------------------RESPONSIVE DE ESTILOS GENERALES ---------------------------*/
 @media screen and (max-width: 1439px) {
   
-  /* ---header ---*/
+  /* --- header ---*/
   header .top_header .cnt_right .right_links .dropdown-menu .dropdown-item {
     font-size: 14px;
     line-height: 17px;
     min-width: 155px;
   }
-  /* ---footer ---*/
+  /* --- footer ---*/
   footer .content_footer {
     color: var(--grisFooter);
     height: 40px;
@@ -5741,6 +5695,36 @@
   footer .content_footer ul li a {
     font-size: 11.3833px;
     line-height: 183.69%;
+  }
+  /* --- tablas ---*/
+  .content_table .div_table .div_thead, 
+  .content_table .div_table .div_tbody .tddiv_elements {
+    height: 40px;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements {
+    font-size: 12.1435px;
+    line-height: 14px;
+    padding: 0px 8px;
+    position: relative;
+  }
+  .content_table .div_table .div_thead .thdiv_elements, 
+  .content_table .div_table .div_thead .thdiv_elements a {
+    font-size: 12.1435px;
+    line-height: 14px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark, 
+  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
+    height: 13px;
+    width: 13px;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
+    bottom: 0;
+    left: 0;
+    top: 4px;
+  }
+  .content_table .div_table .div_tbody .tddiv_elements:first-child img {
+    max-height: 20px;
+    max-width: 24px;
   }
 }
  

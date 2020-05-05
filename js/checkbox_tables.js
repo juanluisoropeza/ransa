@@ -26,5 +26,36 @@ $(function () {
             $("#masterCheck").prop("checked", false);
         }
     });
+    
+    /* DROPDOWN FLOTANTE */
+
+    $(document).on('shown.bs.dropdown', '.row_float_dropdown', function (e) {
+        // get the padding right in the table
+        let right = $('.screens_with_tables .swt_box');
+        let paddingRight = parseInt(right.css('padding-right'));
+        // The .dropdown container
+        var container = $(e.target);
+    
+        // Find the actual .dropdown-menu
+        var dropdown_float = container.find('.dropdown-menu');
+        if (dropdown_float.length) {
+            // Save a reference to it, so we can find it after we've attached it to the body
+            container.data('dropdown-menu', dropdown_float);
+        } else {
+            dropdown_float = container.data('dropdown-menu');
+        }
+        dropdown_float.css('top', (container.offset().top + container.outerHeight() - 20) + 'px');
+        dropdown_float.css('right', (paddingRight)+'px');
+        dropdown_float.css('left', 'auto');
+        dropdown_float.css('position', 'absolute');
+        dropdown_float.css('display', 'block');
+        dropdown_float.appendTo('body');
+    });
+
+    $(document).on('hide.bs.dropdown', '.row_float_dropdown', function (e) {
+        // Hide the dropdown menu bound to this button
+        $(e.target).data('dropdown-menu').remove();
+    });
+
 
 });
