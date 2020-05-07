@@ -14,4 +14,5 @@ $(document).ready(function () {
         $('#modal_cnt_2').hide();
         $('#modal_cnt_1').show();
     });
+    
 });

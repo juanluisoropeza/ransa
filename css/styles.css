@@ -318,7 +318,7 @@ a:hover {
   background-color: white;
   color: var(--verdePrincipal);
   border-color: var(--verdePrincipal);
-  height: 47px;
+  height: 44px;
   width: 142px;
 }
 
@@ -1712,7 +1712,7 @@ footer .content_footer ul li a:hover {
 
 .screens_with_tables .swt_box {
   background-color: var(--fondoSwt);
-  padding: 3.5em 4.875em;
+  padding: 20px 78px;
   min-height: calc(100vh - 164px);
   height: auto;
   width: calc(100% - 102px);
@@ -1751,14 +1751,15 @@ footer .content_footer ul li a:hover {
   font-weight: 400;
   font-size: 1.25em;
   line-height: 23px;
-  margin-bottom: 1.15em;
-  margin-top: 40px;
+  margin-bottom: 0px;
+  margin-top: 15px;
   width: 100%;
 }
 
 .screens_with_tables .swt_box hr {
   border-top: 2px solid var(--hrColor);
-  margin-bottom: 2.25em;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 .screens_with_tables .swt_box .buttons_right {
@@ -1777,7 +1778,7 @@ footer .content_footer ul li a:hover {
   font-size: 20px;
   line-height: 23px;
   margin-right: 26px;
-  min-width: 196px;
+  min-width: 180px;
   width: auto;
   display: flex;
   display: -ms-flexbox;
@@ -1850,13 +1851,13 @@ footer .content_footer ul li a:hover {
 }
 
 .screens_with_tables .swt_box .top_folders {
-  margin-bottom: 2.25em;
+  margin-bottom: 15px;
   width: 100%;
 }
 
 .screens_with_tables .swt_box .top_folders .folders_cards {
-  max-width: 320px;
-  padding: 0px 10px;
+  max-width: 280px;
+  padding: 0px 25px;
 }
 
 .screens_with_tables .swt_box .top_folders .folders_cards.wf {
@@ -1969,7 +1970,7 @@ footer .content_footer ul li a:hover {
 .screens_with_tables .swt_box .top_folders .card .card-header {
   background-color: #FFFFFF;
   border-bottom: 2px solid var(--hrColor);
-  height: 118px;
+  height: 90px;
   padding: 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1983,27 +1984,27 @@ footer .content_footer ul li a:hover {
 }
 
 .screens_with_tables .swt_box .top_folders .card .card-header img {
-  max-height: 61px;
-  max-width: 180px;
+  max-height: 45px;
+  max-width: 175px;
 }
 
 .screens_with_tables .swt_box .top_folders .card .card-body {
-  padding: 14px 10px 14px 25px;
+  padding: 4px 10px 4px 16px;
 }
 
 .screens_with_tables .swt_box .top_folders .card .card-body .txt_dark_gray {
   color: var(--colorTextoOscuro);
   font-weight: 400;
-  font-size: 1.1em;
-  line-height: 23px;
+  font-size: 16px;
+  line-height: 20px;
   margin: 0;
 }
 
 .screens_with_tables .swt_box .top_folders .card .card-body .txt_light_gray {
   color: var(--grisSexto);
   font-weight: normal;
-  font-size: 1em;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 17px;
   margin: 0;
 }
 
@@ -2246,11 +2247,16 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .content_table .div_table .div_thead {
-  height: 76px;
+  height: 52px;
 }
 
 .content_table .div_table {
   padding: 0;
+}
+
+.content_table .div_table .div_tbody {
+  overflow-y: auto;
+  max-height: 364px;
 }
 
 .content_table .div_table .div_thead .thdiv_elements {
@@ -2337,7 +2343,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .content_table .div_table .div_tbody .tddiv_elements {
-  height: 75px;
+  height: 50px;
   border-bottom: 1px solid var(--hrColor);
   display: flex;
   display: -ms-flexbox;
@@ -2479,7 +2485,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .content_table .div_table .div_tbody .tddiv_elements:first-child img {
   /* margin-left: 12px; */
-  max-height: 32px;
+  max-height: 24px;
   max-width: 45px;
 }
 
@@ -2593,6 +2599,16 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   -webkit-justify-content: center;
 }
 
+.content_table .search_button {  
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+
 .content_table .search_button label {
   position: relative;
   display: -ms-flexbox;
@@ -2639,6 +2655,27 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   position: relative;
   z-index: 2;
   width: 38px;
+}
+
+.content_table .search_button .btn-light {
+  color: var(--verdePrincipal);
+  display: inline-flex;
+  height: 38px;
+  margin-left: 4px;
+  margin-top: -6px;
+  position: relative;
+}
+
+.content_table .search_button .btn-light:hover,
+.content_table .search_button .btn-light:focus,
+.content_table .search_button .btn-light.active {
+  background: transparent;
+  background-color: transparent;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+  transition: none;
+  transform: none;
 }
 
 /***********************************************/

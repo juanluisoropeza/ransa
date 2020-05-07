@@ -4583,9 +4583,6 @@
     line-height: 23px;
   }
   /* Profile */  
-  #profile {
-    padding-top: 90px;
-  }
   #profile .profile_info {
     -ms-flex: 0 0 22.95%;
     flex: 0 0 22.95%;
@@ -4682,10 +4679,6 @@
     min-height: calc(100vh - 147px);
   }
   /* Pantallas con tablas */
-  .screens_with_tables .swt_box {
-    padding: 40px 55px 0px 55px;
-    width: calc(100% - 72px);
-  }
   .screens_with_tables .swt_box .top_folders .card .card-body .users img {
     max-height: 26px;
   }
@@ -5420,10 +5413,6 @@
     font-size: 15px;
   }
   /* Sidebar */
-  .cont_menu_sidebar .sidebar_left_menu ul li a i,
-  .cont_menu_sidebar .sidebar_left_menu ul li .sub-menu-dropdown li a span {
-    font-size: 1.3em;
-  }
   .cont_menu_sidebar .sidebar_left_menu ul li .sub-menu-dropdown li a span.max_icon {
     font-size: 1.8em !important;
   }
@@ -5440,6 +5429,18 @@
 
 /* ------------------RESPONSIVE DE ESTILOS GENERALES ---------------------------*/
 @media screen and (max-width: 1439px) {
+  /* --- login ---*/  
+  .main-login .right-side .login-box .form-control::-webkit-input-placeholder,
+  .main-login .right-side .login-box .form-control:-ms-input-placeholder,
+  .main-login .right-side .login-box .form-control::placeholder,
+  .main-login .right-side .login-box .form-control {
+    font-size: 12px;
+    line-height: 183.69%;
+  }
+  #profile {
+    height: calc(100vh - 40px);
+    padding-top: 76px;
+  }
   /* --- home ---*/
   #home {
     height: calc(100vh - 40px);
@@ -5450,6 +5451,23 @@
     font-size: 14px;
     line-height: 17px;
     min-width: 155px;
+  }
+  /* --- menu ---*/
+  .cont_menu_sidebar .sidebar_left_menu ul li a {
+    height: 40px;
+  }
+  .cont_menu_sidebar .sidebar_left_menu ul {
+    padding: 15px 0px 0px;
+  }
+  .cont_menu_sidebar .sidebar_left_menu ul li a i, 
+  .cont_menu_sidebar .sidebar_left_menu ul li .sub-menu-dropdown li a span {
+    font-size: 18px;
+  }
+  .cont_menu_sidebar .sidebar_left_menu ul li a svg {
+    max-height: 18px;
+  }
+  .cont_menu_sidebar .sidebar_left_menu.open_nav ul li a .right_content {
+    font-size: 14px;
   }
   /* --- footer ---*/
   footer .content_footer {
@@ -5621,6 +5639,13 @@
   .dropdown_table .dropdown-item:last-child {
     margin-bottom: 0;
   }
+  .screens_with_tables .swt_box {
+    padding: 17px 55px 0px 55px;
+    width: calc(100% - 72px);
+  }
+  .screens_with_tables .swt_box .top_folders {
+    margin-bottom: 8px;
+  }
   .screens_with_tables .swt_box .top_folders .folders_cards {
     margin-bottom: 15px;
     max-width: 218px;
@@ -5777,6 +5802,81 @@
   .workflows_inicio.especificos .table_work_especificos table tbody tr td {
     font-size: 16px;
     line-height: 18px;
+  }
+  /* ajustes full height */
+  .content_table .search_button label input,
+  .content_table .search_button label .input-group-text.icon_search,
+  .content_table .search_button label button {
+    height: 30px;
+  }
+  .content_table .search_button .input-group-prepend .icon_search .icon-icon_search {
+    font-size: 1.1em;
+  }
+  .screens_with_tables,
+  .cont_menu_sidebar {
+    min-height: calc(100vh - 157px);
+  }
+  .screens_with_tables .swt_box .buttons_right .btn-outline-success {
+    font-size: 18px;
+    height: 38px;
+    line-height: 21px;
+  }
+  .screens_with_tables .swt_box .top_folders {
+    margin-bottom: 8px;
+  }
+  .screens_with_tables .swt_box {
+    padding: 12px 65px;
+  }
+  .screens_with_tables .swt_box .top_info h1.title {
+    font-size: 19px;
+    line-height: 21px;
+  }
+  .screens_with_tables .swt_box .top_info h2.subtitle {
+    font-size: 1.15em;
+    line-height: 21px;
+    margin-top: 8px;
+  }
+  .screens_with_tables .swt_box hr {
+    margin-bottom: 10px;
+    margin-top: 6px;
+  }
+  .screens_with_tables .swt_box .top_folders .folders_cards {
+    max-width: 260px;
+    padding: 0px 25px;
+  }
+  .screens_with_tables .swt_box .top_folders .card .card-header {
+    height: 73px;
+  }
+  .screens_with_tables .swt_box .top_folders .card .card-header img {
+    max-height: 38px;
+    max-width: 160px;
+  }
+  .screens_with_tables .swt_box .top_folders .card .card-body .txt_dark_gray {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .screens_with_tables .swt_box .top_folders .card .card-body .txt_light_gray {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .content_table .col_pagination {
+    margin-top: 8px;
+  }
+  .content_table .col_pagination .pagination {
+    margin-bottom: 8px;
+  }
+  .content_table .div_table .div_thead,
+  .content_table .div_table .div_tbody .tddiv_elements {
+    height: 40px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements, 
+  .content_table .div_table .div_thead .thdiv_elements a,
+  .content_table .div_table .div_tbody .tddiv_elements {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  footer .content_footer {
+    height: 50px;
   }
 }
 
