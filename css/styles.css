@@ -1117,10 +1117,20 @@ footer {
   z-index: 3;
 }
 
+footer .div_green_separator {
+  background-color: var(--verdePrincipal);
+  bottom: 0;
+  height: 57px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 102px;
+}
+
 footer .content_footer {
   color: var(--grisFooter);
   height: 57px;
-  padding: 0px 2em;
+  padding: 0px 2em 0px 0px;
   width: 100%;
   display: -webkit-box;
 	display: -ms-flexbox;
@@ -4532,7 +4542,11 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .cont_menu_sidebar .sidebar_left_menu.open_nav {
-  height: calc(100% - 52px);
+  height: calc(100% - 107px);
+}
+
+.screens_with_tables .cont_menu_sidebar .sidebar_left_menu.open_nav {
+  height: calc(100% - 50px);
 }
 
 .cont_menu_sidebar .sidebar_left_menu.open_nav ul li a {
