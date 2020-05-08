@@ -38,7 +38,7 @@
   }
   .main-login .left-side .img-background {
     max-height: 295px;
-    top: 11em;
+    top: 42%;
   }
   .main-login .buttons_only_movil {
     position: absolute;
@@ -49,22 +49,6 @@
     padding-top: 1.5em;
     padding-left: 2.5em;
     padding-right: 2.5em;
-  }
-  .main-login .box_movil_center {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    height: 100%;
-  }
-  .main-login #div2 {
-    display: none;
   }
   .main-login .right-side figure {
     margin-bottom: 24px;
@@ -126,6 +110,35 @@
   }
   #profile .profile_data .box .box-card #edit_profile .boton {
     margin-top: 12px;
+  }#profile .profile_info {
+    height: calc(100vh - 90px) !important;
+  }
+  #profile .profile_info .info_box {
+    top: 50% !important;
+  }
+  #profile .profile_info .profile_img {
+    margin-top: 0px !important;
+  }
+  #profile .profile_info h2 {
+    top: 15% !important;
+    font-size: 22px;
+  }
+  #profile .profile_info .info_box {
+    height: calc(37vh + 45px) !important;
+    flex-flow: column !important;
+    -webkit-flex-flow: column !important;
+    background-color: var(--fondoSwt)!important;
+  }
+  #profile .profile_data {
+    padding: 20px !important;
+  }
+  #profile .profile_data {
+    height: auto !important;
+    overflow-y: visible !important;
+  }  
+  #profile .profile_info .info_box h5 {
+    font-size: 18px;
+    line-height: 21px;
   }
   /* Modal */
   .modal .modal-content .modal-body .content_table .cont_hz_scroll {
@@ -181,9 +194,32 @@
     height: calc(100vh - 81px);
     padding-top: 90px;
   }
-  /* Login */
   #home .slider_left .swiper-container {
     padding: 65px 0px;
+  }
+  /* Login */  
+  .main-login #div2 {
+    display: none;
+  }
+  .main-login .left-side .content {
+    padding-top: 15%;
+  }
+  .main-login .left-side .img-background {
+    max-height: 330px !important;
+    top: 40%;
+  }
+  .main-login .box_movil_center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
   }
   /* Search Top Bar */
   .select2-container .select2-selection--single,
@@ -218,7 +254,7 @@
   header .top_header {
     align-items: flex-start; 
     -webkit-align-items: flex-start;
-    height: 90px;
+    height: 90px !important;
     padding: 10px 30px 0px;
   }
   header .top_header .cnt_logo a img {
@@ -299,21 +335,27 @@
     font-size: 18px;
     line-height: 20px;
   }
-  /* Profile */  
+  /* Profile */
+  #profile {
+    height: calc(100vh - 75px) !important;
+    padding-top: 90px !important;
+  }
   #profile .profile_info .info_box {
-    height: 75%;
+    height: 50%;
     justify-content: flex-start;
     -webkit-justify-content: flex-start;
-    top: 375px;
+    bottom: 0;
   }
   #profile .profile_info .info_box h5.txt_ppal {
     margin-top: 30px;
   }
   #profile .profile_data {
     padding: 35px 20px;
+    height: calc(100vh - 165px);
+    overflow-y: auto;
   }
   #profile .profile_info {
-    height: auto;
+    height: calc(100vh - 165px);
   }
   #profile .profile_data .box:first-child {
     padding-right: 15px;
@@ -329,6 +371,26 @@
   }
   #profile .profile_info .profile_img img {
     max-height: 13em;
+  }
+  #profile .profile_data .pd_into_boxcard,
+  #profile .profile_data .box .box-card {
+    padding: 30px;
+  }
+  #profile .profile_data .box .box-card h4 {
+    margin-bottom: 10px;
+  }
+  #profile .profile_data .box .box-card .label_info, 
+  #profile .profile_data .box .box-card .form-control {
+    height: 40px;
+    padding: 0px 15px;
+    margin-bottom: 8px;
+  }
+  #profile .profile_data .box .box-card #edit_profile .boton {
+    margin-top: 10px;
+  }
+  #profile .profile_data .pd_into_boxcard, 
+  #profile .profile_data .box .box-card {
+    margin-bottom: 15px;
   }
   /* Sidebar */
   .fixed-nav .fixed-nav-inner.open-nav {
@@ -499,7 +561,14 @@
   /* MENU */
   .cont_menu_sidebar .sidebar_left_menu.open_nav ul li:first-child a.nav-toggle .right_content {
     width: 100%;
-  }  
+  }
+  .cont_menu_sidebar {
+    min-height: calc(100vh - 165px) !important;
+  }
+  .screens_with_tables .cont_menu_sidebar .sidebar_left_menu.open_nav {
+    height: calc(100% + 10px) !important;
+  }
+  /* FOOTER */
   footer .content_footer p,
   footer .content_footer ul li a {
     font-size: 14px;
@@ -718,6 +787,17 @@
     height: 20px;
     width: 20px;
   }
+  /* tablas */
+  .screens_with_tables {
+    min-height: calc(100vh - 165px) !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #profile {
+    height: auto !important;
+    padding-top: 90px !important;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -931,30 +1011,11 @@
   #profile {
     padding-top: 91px;  
   }
-  #profile .profile_info h2 {
-    top: 49px !important;
-    font-size: 22px;
-  }
-  #profile .profile_info .profile_img {
-    margin-top: 90px !important;
-  }
   #profile .profile_info .profile_img img {
     max-height: 125px;
   }
-  #profile .profile_info .info_box {
-    top: 135px!important;
-  }
-  #profile .profile_info .info_box {
-    height: 100% !important;
-    flex-flow: column !important;
-    -webkit-flex-flow: column !important;
-    background-color: var(--fondoSwt)!important;
-  }
   #profile .profile_info .info_box h5.txt_status {
     margin-top: 0px !important;
-  }
-  #profile .profile_data {
-    padding: 135px 20px 40px !important;
   }
   #profile .profile_data .pd_into_boxcard,
   #profile .profile_data .pd_into_boxcard2 {
@@ -1847,7 +1908,7 @@
     background-color: var(--fondoSwt) !important;
   }
   #profile .profile_data {
-    padding: 178px 20px 40px;
+    margin-top: 170px;
   }
   #profile .profile_info .info_box h5.txt_status {
     margin-top: 0px;
@@ -1856,7 +1917,7 @@
     top: 48px;
   }
   #profile .profile_info .profile_img {
-    margin-top: 110px;
+    margin-top: 110px !important;
   }
   #profile .profile_info .profile_img img {
     max-height: 175px;
@@ -2819,12 +2880,6 @@
     font-size: 21px;
     line-height: 25px;
     max-width: 320px;
-  }
-  .main-login .left-side .img-background {
-    max-height: 330px !important;
-  }
-  .main-login .left-side .content {
-    padding-top: 15em;
   }
   .main-login .right-side .login-box {
     max-width: 225px;
@@ -3957,9 +4012,6 @@
   header .top_header .cnt_right .search_input.dropdown .dropdown-menu {
     min-width: 750px;
   }
-  header .top_header {
-    height: 90px;
-  }
   header .top_header .cnt_right .input-group {
     height: 32px;
   }
@@ -4497,11 +4549,6 @@
   .main-login .right-side .login-box .input-group-prepend .input-group-text [class*=" icon-"] {
     font-size: 1em;
   }
-  .main-login .right-side .login-box .form-control {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    height: 32px;
-  }
   .main-login .right-side .login-box .form-control::-webkit-input-placeholder { /* Edge */
     font-size: 16px;
     line-height: 19px;
@@ -4540,9 +4587,6 @@
   header .top_header .cnt_right .search_input.dropdown .dropdown-menu {
     min-width: 800px;
   }
-  header .top_header {
-    height: 76px;
-  }
   header .top_header .cnt_right .input-group {
     height: 32px;
   }
@@ -4571,12 +4615,17 @@
     padding: 1.5px 0px;
   }
   /* Home */
+  #home .content_right {
+    -ms-flex: 0 0 calc(50% - 72px);
+    flex: 0 0 calc(50% - 72px);
+    max-width: calc(50% - 72px);
+  }
   #home .content_right .box-content .box-card {
-    height: 190px;
-    width: 213px;
+    height: 175px;
+    width: 195px;
   }
   #home .content_right .box-content .box-card figure img {
-    max-height: 90px;
+    max-height: 80px;
   }
   #home .content_right .box-content .box-card h4 {
     font-size: 20px;
@@ -4735,8 +4784,8 @@
     min-width: 200px;
   }
   .screens_with_tables .swt_box hr {
-    margin-bottom: 12px;
-    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-top: 2px;
   }
   .screens_with_tables .swt_box .dropdown-item {
     font-size: 16px;
@@ -5432,10 +5481,16 @@
   /* --- login ---*/  
   .main-login .right-side .login-box .form-control::-webkit-input-placeholder,
   .main-login .right-side .login-box .form-control:-ms-input-placeholder,
-  .main-login .right-side .login-box .form-control::placeholder,
+  .main-login .right-side .login-box .form-control::placeholder {
+    font-size: 12px !important;
+    line-height: 15px !important;
+  }  
   .main-login .right-side .login-box .form-control {
-    font-size: 12px;
-    line-height: 183.69%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 32px;
+    font-size: 12px !important;
+    line-height: 15px !important;
   }
   #profile {
     height: calc(100vh - 40px);
@@ -5446,7 +5501,21 @@
     height: calc(100vh - 40px);
     padding-top: 75px;
   }
+  #home .slider_left h1 {
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 475px;
+  }
+  #home .content_right .box-content {
+    padding-left: 35px;
+  }
+  #home .slider_left figure img {
+    max-height: 375px;
+  }
   /* --- header ---*/
+  header .top_header {
+    height: 76px;
+  }
   header .top_header .cnt_right .right_links .dropdown-menu .dropdown-item {
     font-size: 14px;
     line-height: 17px;
@@ -5469,6 +5538,12 @@
   .cont_menu_sidebar .sidebar_left_menu.open_nav ul li a .right_content {
     font-size: 14px;
   }
+  .cont_menu_sidebar .sidebar_left_menu.open_nav {
+    height: calc(100% - 75px);
+  }
+  .screens_with_tables .cont_menu_sidebar .sidebar_left_menu.open_nav {
+    height: calc(100% - 37px);
+  }
   /* --- footer ---*/
   footer .content_footer {
     color: var(--grisFooter);
@@ -5481,6 +5556,10 @@
   }
   .select2-container .select2-selection--single {
     height: 32px;
+  }
+  footer .div_green_separator {
+    height: 40px;
+    width: 72px;
   }
   /* ---Modales Tablas ---*/
   .modal .modal-content .modal-body .form-inline .form-group label {
@@ -5591,7 +5670,7 @@
   }
   .content_table .div_table .div_thead, 
   .content_table .div_table .div_tbody .tddiv_elements {
-    height: 40px;
+    height: 38px;
   }
   .content_table .div_table .div_tbody .tddiv_elements {
     font-size: 12.1435px;
@@ -5640,27 +5719,33 @@
     margin-bottom: 0;
   }
   .screens_with_tables .swt_box {
-    padding: 17px 55px 0px 55px;
+    padding: 12px 55px 0px 55px;
     width: calc(100% - 72px);
   }
   .screens_with_tables .swt_box .top_folders {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
   }
   .screens_with_tables .swt_box .top_folders .folders_cards {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     max-width: 218px;
     padding: 0px 20px;
     width: 218px;
   }
   .screens_with_tables .swt_box .top_folders .card .card-header {
-    height: 117px;
+    height: 59px;
   }
   .screens_with_tables .swt_box .top_folders .card .card-header img {
-    max-height: 35px;
-    width: 100px;
+    max-height: 28px;
+    width: 90px;
+  }
+  .screens_with_tables .content_table .div_table .div_tbody {
+    max-height: 227px;
+  }
+  .screens_with_tables .content_table .col_pagination ul {
+    margin-bottom: 8px;
   }
   .screens_with_tables .swt_box .top_folders .card .card-body {
-    height: 68px;
+    height: 37px;
     padding: 4px 12px;
     display: flex;
     align-items: flex-start;
@@ -5668,7 +5753,7 @@
     justify-content: center;
   }
   .screens_with_tables .swt_box .top_folders .folders_cards .card {
-    height: 120px;
+    /*height: 120px;*/
   }
   .screens_with_tables .swt_box .top_folders .card .card-body .txt_dark_gray {
     font-size: 12.8243px;
@@ -5693,7 +5778,7 @@
   .screens_with_tables .swt_box .top_info h2.subtitle {
     font-size: 14px;
     margin-bottom: 0em;
-    margin-top: 12px;
+    margin-top: 8px;
   }
   .screens_with_tables .swt_box .top_info h1.title {
     font-size: 17px;
@@ -5881,6 +5966,12 @@
 }
 
 @media screen and (min-width: 1680px) {
+  /* Home */
+  #home .content_right {
+    -ms-flex: 0 0 calc(50% - 102px);
+    flex: 0 0 calc(50% - 102px);
+    max-width: calc(50% - 102px);
+  }
   /* Profile */
   #profile .profile_info {
     -ms-flex: 0 0 32.1%;
@@ -5941,6 +6032,9 @@
   #home .slider_left h1 {
     font-size: 23px;
     max-width: 475px;
+  }
+  .main-login .right-side .login-box .control-group:nth-child(3) {
+    margin-bottom: 30px;
   }
 }
 
