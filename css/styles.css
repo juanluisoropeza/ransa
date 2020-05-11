@@ -2206,7 +2206,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   overflow: auto;
-  max-height: 364px;
+  max-height: 416px;
 }
 
 .content_table .cont_hz_scroll::-webkit-scrollbar {
@@ -2402,7 +2402,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
   top: 0;
   bottom: 0;
-  left: 0;
+  left: -50px;
   right: 0;
   margin: auto;
 }
@@ -2439,7 +2439,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .content_table .div_table .div_tbody .table_row:hover .tddiv_elements,
 .content_table .div_table .div_tbody .table_row.row_checked {
-  border-bottom: 2px solid var(--hrColor);
+  /*border-bottom: 2px solid var(--hrColor);*/
 }
 
 .content_table .div_table .div_tbody .table_row .tddiv_elements .checkmark.show {
