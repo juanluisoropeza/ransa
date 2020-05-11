@@ -1258,6 +1258,7 @@
   }
   .cont_item_chkb {
     font-size: 16px;
+    margin-right: 4px;
   }  
   .modal .modal-content .modal-body .input-group-apend .input-group-text {
     height: 32px;
@@ -1972,6 +1973,7 @@
   }
   .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark, 
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
+    left: -33px;
     top: 0px;
   }
   .content_table .search_button label .input-group-text.icon_search, 
@@ -1998,7 +2000,7 @@
     max-width: 18px !important;
   }
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
-    left: -32px !important;
+    left: -35px !important;
     top: 14px !important;
   }
   /* Modals */
@@ -2700,6 +2702,7 @@
   .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark, 
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
     height: 14px;
+    left: -32px;
     width: 14px;
   }
   .content_table .div_table .div_thead, 
@@ -3058,6 +3061,7 @@
     left: -42px !important;
     top: 18px !important;
   }
+  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark:after, 
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark:after {
     left: 3px;
     top: 1px;
@@ -6000,6 +6004,13 @@
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
     height: 14px;
     width: 14px;
+  }
+  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark:after, 
+  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark:after {
+    left: 3px;
+    top: 1px;
+    width: 6px;
+    height: 9px;
   }
   footer .content_footer {
     height: 50px;
