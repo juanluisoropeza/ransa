@@ -2665,6 +2665,8 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .content_table .search_button .btn-light {
+  background-color: transparent;
+  border-color: transparent;
   color: var(--verdePrincipal);
   display: inline-flex;
   height: 38px;
