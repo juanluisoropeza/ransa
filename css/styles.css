@@ -2402,7 +2402,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
   top: 0;
   bottom: 0;
-  left: -50px;
+  left: -65px;
   right: 0;
   margin: auto;
 }
