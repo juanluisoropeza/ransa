@@ -3297,6 +3297,9 @@
     width: 72px;
     min-width: 72px;
   }
+  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
+    left: -50px;
+  }
   /* Home */
   .btn-success {
     font-size: 14px;
@@ -4502,6 +4505,18 @@
   }
 }
 
+@media screen and (min-width: 1201px) and (max-width: 1299px) { 
+  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
+    left: -2px !important;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1380px) { 
+  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
+    left: 2px !important;
+  }
+}
+
 @media screen and (min-width: 1201px) and (max-width: 1439px) {
   .btn-success,
   .btn-outline-success {
@@ -4542,7 +4557,7 @@
     line-height: 21px;
   }
   .main-login .left-side .img-background {
-    max-height: 330px !important;
+    /*max-height: 330px !important;*/
   }
   .main-login .left-side .content {
     padding-top: 41px;
@@ -5514,8 +5529,8 @@
   }
   /* --- home ---*/
   #home {
-    height: calc(100vh - 40px);
-    padding-top: 75px;
+    height: calc(100vh - 35px);
+    padding-top: 62px;
   }
   #home .slider_left h1 {
     font-size: 24px;
@@ -5565,7 +5580,7 @@
   footer .content_footer p,
   footer .content_footer ul li a {
     font-size: 11px;
-    line-height: 14px;
+    line-height: 21px;
   }
   .select2-container .select2-selection--single {
     height: 32px;
@@ -5704,7 +5719,7 @@
   }
   .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
     bottom: 0;
-    left: 0;
+    left: 4px;
     top: 4px;
   }
   .content_table .div_table .div_tbody .tddiv_elements:first-child img {
@@ -5740,7 +5755,7 @@
     margin-bottom: 4px;
   }
   .screens_with_tables .swt_box .top_folders .folders_cards {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     max-width: 218px;
     padding: 0px 20px;
     width: 218px;
@@ -6012,6 +6027,10 @@
     width: 6px;
     height: 9px;
   }
+  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark,
+  .content_table .div_table .div_tbody .tddiv_elements .cont_item_chkb .checkmark {
+    left: -70px;
+  }
   footer .content_footer {
     height: 50px;
   }
@@ -6107,6 +6126,9 @@
     -ms-flex: 0 0 12.6%;
     flex: 0 0 12.6%;
     max-width: 12.6%;
+  }
+  .content_table .div_table .div_thead .thdiv_elements .cont_item_chkb .checkmark {
+    left: -84px;
   }
 }
 
