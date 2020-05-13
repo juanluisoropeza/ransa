@@ -2271,7 +2271,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 4;
 }
 
 .content_table .div_table .fijar_thead .thdiv_elements {
@@ -2588,6 +2588,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .content_table .div_table .div_tbody .tddiv_elements:last-child:not(.show) {
+  background-color: white;
   position: sticky;
   right: 0;
   z-index: 1;
