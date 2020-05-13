@@ -380,7 +380,7 @@ a:hover {
 .dropdown_table .separador {
   margin: 0px;
   margin-bottom: 18px;
-  border: 1px solid #E0E0E0;
+  /*border: 1px solid #E0E0E0;*/
 }
 
 /*** SELECT 2 ***/
@@ -654,11 +654,10 @@ a.box-card {
 .main-login .left-side .content h2 {
   display: block;
   font-weight: 300;
-  font-size: 32px;
-  line-height: 37px;
+  font-size: 26px;
+  line-height: 29px;
   margin: 0 auto;
   text-align: center;
-  max-width: 500px;
 }
 
 .main-login .right-side {
@@ -2589,6 +2588,8 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .content_table .div_table .div_tbody .tddiv_elements:last-child:not(.show) {
+  position: sticky;
+  right: 0;
   z-index: 1;
 }
 

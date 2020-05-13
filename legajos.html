@@ -161,7 +161,7 @@
                 </ul>
             </div>
             <div class="button_sidebar_movil">
-                <a href="#" id="menu-toggle" class="waves-light menu-toggle" data-toggle="offcanvas">
+                <a href="#" id="menu-toggle" class="waves-light menu-toggle nav-toggle" data-toggle="offcanvas">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
                 </a>
             </div>
@@ -268,9 +268,9 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="w-100 cont_hz_scroll">
+                        <div class="w-100 cont_hz_scroll" id="table_scroll">
                             <div class="container-fluid w-100 div_table">
-                                <div class="div_thead">
+                                <div class="div_thead" id="thead_sticky">
                                     <div class="table_row h-100">
                                         <div class="col-2 col-sm-1 col-md-1 col-lg-1 thdiv_elements">
                                             <label class="cont_item_chkb">
@@ -313,7 +313,7 @@
                                     </div>
                                 </div>
                                 <div class="div_tbody">
-                                    <div class="table_row h-100 align-items-center">
+                                    <div class="row_float_dropdown table_row h-100 align-items-center">
                                         <div class="col-2 col-sm-1 col-md-1 col-lg-1 text-center tddiv_elements">
                                             <label class="cont_item_chkb">
                                                 <input class="form-check-input" type="checkbox" id="row1" name="row-check" value="Abad Rosas Lucia">
@@ -333,7 +333,7 @@
                                             35KB
                                         </div>
                                         <div class="col-2 col-sm-1 col-md-1 col-lg-1 text-center tddiv_elements btn_action_fixed">
-                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
                                                 <span class="icon-icon_three-bullets"></span>
                                             </a>
                                             <div class="dropdown-menu dropdown_table" aria-labelledby="dropdownMenuButton">
@@ -348,7 +348,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="table_row h-100 align-items-center">
+                                    <div class="row_float_dropdown table_row h-100 align-items-center">
                                         <div class="col-2 col-sm-1 col-md-1 col-lg-1 text-center tddiv_elements">
                                             <label class="cont_item_chkb">
                                                 <input class="form-check-input" type="checkbox" id="row2" name="row-check" value="Acero Huapaya Giannina Maria">
@@ -368,7 +368,7 @@
                                             2MB
                                         </div>
                                         <div class="col-2 col-sm-1 col-md-1 col-lg-1 text-center tddiv_elements btn_action_fixed">
-                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
                                                 <span class="icon-icon_three-bullets"></span>
                                             </a>
                                             <div class="dropdown-menu dropdown_table" aria-labelledby="dropdownMenuButton">
@@ -383,7 +383,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="table_row h-100 align-items-center">
+                                    <div class="row_float_dropdown table_row h-100 align-items-center">
                                         <div class="col-2 col-sm-1 col-md-1 col-lg-1 text-center tddiv_elements">
                                             <label class="cont_item_chkb">
                                                 <input class="form-check-input" type="checkbox" id="row3" name="row-check" value="Alfaro Palacios Maria">
@@ -403,7 +403,7 @@
                                             2MB
                                         </div>
                                         <div class="col-2 col-sm-1 col-md-1 col-lg-1 text-center tddiv_elements btn_action_fixed">
-                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
                                                 <span class="icon-icon_three-bullets"></span>
                                             </a>
                                             <div class="dropdown-menu dropdown_table" aria-labelledby="dropdownMenuButton">
@@ -418,7 +418,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="table_row h-100 align-items-center">
+                                    <div class="row_float_dropdown table_row h-100 align-items-center">
                                         <div class="col-2 col-sm-1 col-md-1 col-lg-1 text-center tddiv_elements">
                                             <label class="cont_item_chkb">
                                                 <input class="form-check-input" type="checkbox" id="row4" name="row-check" value="Atunez Nelson Andres">
@@ -438,7 +438,7 @@
                                             63KB
                                         </div>
                                         <div class="col-2 col-sm-1 col-md-1 col-lg-1 text-center tddiv_elements btn_action_fixed">
-                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
                                                 <span class="icon-icon_three-bullets"></span>
                                             </a>
                                             <div class="dropdown-menu dropdown_table" aria-labelledby="dropdownMenuButton">
@@ -482,8 +482,9 @@
     </section>
     <footer>
         <div class="container-fluid">
+            <div class="d-none d-lg-block div_green_separator"></div>
             <div class="row">
-                <div class="col-lg-12 content_footer">
+                <div class="col-lg-11 offset-lg-1 content_footer">
                     <p>©Docublock. Todos lo derechos reservados 2019</p>
                     <ul>
                         <li><a href="#">Políticas de privacidad</a></li>

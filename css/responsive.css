@@ -5556,6 +5556,9 @@
   .cont_menu_sidebar .sidebar_left_menu ul {
     padding: 15px 0px 0px;
   }
+  .cont_menu_sidebar .sidebar_left_menu ul li .sub-menu-dropdown {
+    padding-top: 0px;
+  }
   .cont_menu_sidebar .sidebar_left_menu ul li a i, 
   .cont_menu_sidebar .sidebar_left_menu ul li .sub-menu-dropdown li a span {
     font-size: 18px;
