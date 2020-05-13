@@ -4904,9 +4904,6 @@
     font-size: 15px;
     line-height: 20px;
   }
-  .files_details .content_files_details .right_section {
-    max-height: calc(100vh - 235px);
-  }
   .files_details .top_info_details .actions_right .btn-outline-success [class^="icon-"], 
   .files_details .top_info_details .actions_right .btn-outline-success [class*=" icon-"], 
   .files_details .top_info_details .actions_right .btn-outline-success [class^="icon-"]:before, 
@@ -5785,9 +5782,6 @@
     flex-direction: column;
     justify-content: center;
   }
-  .screens_with_tables .swt_box .top_folders .folders_cards .card {
-    /*height: 120px;*/
-  }
   .screens_with_tables .swt_box .top_folders .card .card-body .txt_dark_gray {
     font-size: 12.8243px;
     line-height: 15px;
@@ -5816,6 +5810,11 @@
   .screens_with_tables .swt_box .top_info h1.title {
     font-size: 17px;
     line-height: 20px;
+  }
+  /* File Details*/
+  .files_details .content_files_details,
+  .files_details .content_files_details .right_section {
+    min-height: calc(100vh - 173px);
   }
 }
  
@@ -5848,10 +5847,6 @@
   }
   #home .content_right .box-content .box-card figure img {
     max-height: 95px;
-  }
-  .files_details .content_files_details .right_section {
-    max-height: calc(100vh - 235px);
-    padding: 15px 25px;
   }
   .files_details .content_files_details .right_section .details_box .db_body {
     padding: 15px 30px;

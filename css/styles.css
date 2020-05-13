@@ -2849,6 +2849,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .files_details .top_info_details .actions_right .dw_details_options .dropdown-menu {
   min-width: 246px;
+  top: 35px !important;
 }
 
 .files_details .top_info_details .actions_right .dw_details_options .dropdown-menu .dropdown-item {
@@ -2873,7 +2874,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .files_details .content_files_details {
   height: auto;
-  min-height: calc(100vh - 264px);
+  min-height: calc(100vh - 261px);
 }
 
 .files_details .content_files_details .toggle{
@@ -2906,7 +2907,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .files_details .content_files_details .right_section {
   padding: 15px 60px;
   overflow-y: auto;
-  max-height: calc(100vh - 294px);
+  max-height: calc(100vh - 261px);
 }
 
 .files_details .content_files_details .right_section::-webkit-scrollbar {
