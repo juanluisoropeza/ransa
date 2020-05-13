@@ -2258,12 +2258,25 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   flex-basis: 35%;
 }
 
+.content_table .div_table {
+  padding: 0;
+  position: relative;
+}
+
 .content_table .div_table .div_thead {
   height: 52px;
 }
 
-.content_table .div_table {
-  padding: 0;
+.content_table .div_table .fijar_thead {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.content_table .div_table .fijar_thead .thdiv_elements {
+  background-color: white;
 }
 
 .content_table .div_table .div_thead .thdiv_elements {
