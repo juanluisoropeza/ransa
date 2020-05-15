@@ -1729,6 +1729,9 @@ footer .content_footer ul li a:hover {
 
 .screens_with_tables .swt_box .row {
   margin-right: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-grow: 1;
 }
 
 .screens_with_tables .swt_box .top_info {
@@ -1828,8 +1831,14 @@ footer .content_footer ul li a:hover {
 .screens_with_tables .swt_box .buttons_right .btn-outline-success:hover [class*=" icon-"]:before {
   color: white;
 }
+
 .screens_with_tables .swt_box .buttons_right .dw_details_options .dropdown-menu {
   min-width: 246px;
+}
+
+
+.screens_with_tables .swt_box .buttons_right .dw_details_options .dropdown-menu.peq {
+  min-width: 165px;
 }
 
 .screens_with_tables .swt_box .buttons_right .dw_details_options .dropdown-menu .dropdown-item {
@@ -1998,7 +2007,8 @@ footer .content_footer ul li a:hover {
 }
 
 .screens_with_tables .swt_box .top_folders .card .card-body {
-  padding: 4px 10px 4px 16px;
+  padding: 4px 10px 4px 10px;
+  flex: 1 1 100%;
 }
 
 .screens_with_tables .swt_box .top_folders .card .card-body .txt_dark_gray {
@@ -2007,6 +2017,10 @@ footer .content_footer ul li a:hover {
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .screens_with_tables .swt_box .top_folders .card .card-body .txt_light_gray {
@@ -2018,11 +2032,16 @@ footer .content_footer ul li a:hover {
 }
 
 .screens_with_tables .swt_box .top_folders .card .card-body .info {
-  padding: 0px 4px 0px 8px;
+  padding: 0px 2px 0px 0px;
 }
 
 .screens_with_tables .swt_box .top_folders .card .card-body .users {
-  padding: 0px 10px 0px 0px;
+  padding: 0px;
+}
+
+.screens_with_tables .swt_box .top_folders .card .card-body .info,
+.screens_with_tables .swt_box .top_folders .card .card-body .users {
+  flex-grow: 1;
 }
 
 .screens_with_tables .swt_box .top_folders .card .card-body .users img {
@@ -2439,6 +2458,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .content_table .div_table .div_tbody .table_row:hover .tddiv_elements,
 .content_table .div_table .div_tbody .table_row:hover .tddiv_elements .btn_action_fixed,
+.content_table .div_table .div_tbody .table_row:hover .tddiv_elements:last-child:not(.show),
 .content_table .div_table .div_tbody .table_row.row_checked .tddiv_elements,
 .content_table .div_table .div_tbody .table_row.row_checked .tddiv_elements .btn_action_fixed {
   background-color: var(--hoverRows);

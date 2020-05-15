@@ -791,6 +791,14 @@
   .screens_with_tables {
     min-height: calc(100vh - 165px) !important;
   }
+  .screens_with_tables .swt_box .top_folders .card .card-body .info, 
+  .screens_with_tables .swt_box .top_folders .card .card-body .users {
+    text-align: center;
+    justify-content: center !important;
+  }
+  .screens_with_tables .swt_box .top_folders .card .card-body .info {
+    margin-bottom: 5px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2731,6 +2739,11 @@
     margin-right: 6px;
     min-width: 80px;
     width: auto;
+  }
+  .screens_with_tables .swt_box .buttons_right .dw_details_options .dropdown-menu.peq {
+    left: auto !important;
+    right: 0px;
+    top: 40px !important;
   }
   /* Modals */
   .modal .modal-content .modal-header {
@@ -4761,13 +4774,6 @@
     min-height: calc(100vh - 147px);
   }
   /* Pantallas con tablas */
-  .screens_with_tables .swt_box .top_folders .card .card-body .users img {
-    max-height: 26px;
-  }
-  .screens_with_tables .swt_box .top_folders .card .card-body .users .badge {
-    height: 26px;
-    width: 26px;
-  }
   .screens_with_tables .swb_wflow {
     padding: 40px 55px;
   }
@@ -5575,7 +5581,7 @@
     height: calc(100% - 75px);
   }
   .screens_with_tables .cont_menu_sidebar .sidebar_left_menu.open_nav {
-    height: calc(100% - 37px);
+    height: calc(100% - 27px);
   }
   /* --- footer ---*/
   footer .content_footer {
@@ -5744,8 +5750,8 @@
     padding: 10px 0px;
   }
   .dropdown_table .dropdown-item {
-    font-size: 12.1435px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 16px;
     margin-bottom: 8px;
   }
   .dropdown_table .dropdown-item:last-child {
@@ -5810,6 +5816,15 @@
   .screens_with_tables .swt_box .top_info h1.title {
     font-size: 17px;
     line-height: 20px;
+  }  
+  .screens_with_tables .swt_box .top_folders .card .card-body .users img,
+  .content_table .div_table .div_tbody .tddiv_elements.share_users img {
+    max-height: 23px;
+  }
+  .screens_with_tables .swt_box .top_folders .card .card-body .users .badge,
+  .content_table .div_table .div_tbody .tddiv_elements.share_users .badge {
+    height: 23px;
+    width: 23px;
   }
   /* File Details*/
   .files_details .content_files_details,
@@ -5994,12 +6009,26 @@
     max-width: 160px;
   }
   .screens_with_tables .swt_box .top_folders .card .card-body .txt_dark_gray {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 13px;
+    line-height: 16px;
   }
   .screens_with_tables .swt_box .top_folders .card .card-body .txt_light_gray {
     font-size: 12px;
     line-height: 15px;
+  }
+  .screens_with_tables .swt_box .top_folders .card .card-body .users {
+    padding: 0;
+  }
+  .screens_with_tables .swt_box .top_folders .card .card-body .users .badge,
+  .content_table .div_table .div_tbody .tddiv_elements.share_users .badge {
+    height: 22px;
+    margin-right: 2px;
+    width: 23px;
+  }
+  .screens_with_tables .swt_box .top_folders .card .card-body .users img,
+  .content_table .div_table .div_tbody .tddiv_elements.share_users img {
+    margin-right: 2px;
+    max-height: 22px;
   }
   .content_table .col_pagination {
     margin-top: 8px;
@@ -6222,6 +6251,12 @@
   }
   #profile .profile_data .box .pd_into_boxcard2 {
     padding: 20px 26px;
+  }
+}
+
+@media screen and (max-height: 580px) {
+  .content_table .cont_hz_scroll {
+    max-height: 175px;
   }
 }
 
