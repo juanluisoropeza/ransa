@@ -533,6 +533,9 @@
     line-height: 17px;
     max-width: 229px;
   }
+  .modal .modal-content .modal-body .sep_bottom .control-group:not(.lbl_text):nth-child(3) {
+    margin-top: 10px;
+  }
    /* Btn Movil */
    .screens_with_tables .swt_box .buttons_right {
      padding: 0px;
@@ -2741,6 +2744,11 @@
     width: auto;
   }
   .screens_with_tables .swt_box .buttons_right .dw_details_options .dropdown-menu.peq {
+    left: auto !important;
+    right: 0px;
+    top: 40px !important;
+  }
+  .screens_with_tables .swt_box .buttons_right .dw_details_options .dropdown-menu {
     left: auto !important;
     right: 0px;
     top: 40px !important;
@@ -5781,7 +5789,7 @@
     margin-bottom: 8px;
   }
   .screens_with_tables .swt_box .top_folders .card .card-body {
-    height: 35px;
+    height: 40px;
     padding: 4px 12px;
     display: flex;
     align-items: flex-start;
@@ -5801,8 +5809,11 @@
     line-height: 17px;
     height: 32px;
     margin-right: 11px;
-    min-width: 138px;
+    min-width: 100px;
     padding: 9px;
+  }
+  .screens_with_tables .swt_box .buttons_right .btn-outline-success.large {
+    min-width: 138px;
   }
   .screens_with_tables .swt_box .buttons_right .btn-outline-success [class^="icon-"],
   .screens_with_tables .swt_box .buttons_right .btn-outline-success [class*=" icon-"] {

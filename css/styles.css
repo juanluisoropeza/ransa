@@ -1801,6 +1801,10 @@ footer .content_footer ul li a:hover {
   -webkit-justify-content: center;
 }
 
+.screens_with_tables .swt_box .buttons_right .btn-outline-success.large {
+  min-width: 198px;
+}
+
 .screens_with_tables .swt_box .buttons_right .get_back {
   color: var(--colorTextoClaro);
   font-weight: 400;
@@ -3327,6 +3331,9 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .modal .modal-content .modal-body .sep_bottom {
   margin-bottom: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-grow: 1;
 }
 
 .modal .modal-content .modal-body .form-inline .form-group label {
