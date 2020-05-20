@@ -5586,7 +5586,7 @@
     font-size: 14px;
   }
   .cont_menu_sidebar .sidebar_left_menu.open_nav {
-    height: calc(100% - 75px);
+    height: calc(100% - 62px);
   }
   .screens_with_tables .cont_menu_sidebar .sidebar_left_menu.open_nav {
     height: calc(100% - 27px);
@@ -5766,7 +5766,7 @@
     margin-bottom: 0;
   }
   .screens_with_tables .swt_box {
-    padding: 12px 55px 0px 55px;
+    padding: 25px 55px 0px 55px;
     width: calc(100% - 72px);
   }
   .screens_with_tables .swt_box .top_folders {
@@ -5805,15 +5805,15 @@
     line-height: 14px;
   }
   .screens_with_tables .swt_box .buttons_right .btn-outline-success {
-    font-size: 14.2292px;
-    line-height: 17px;
-    height: 32px;
-    margin-right: 11px;
-    min-width: 100px;
-    padding: 9px;
+    font-size: 14px;
+    line-height: 16px;
+    height: 30px;
+    margin-right: 16px;
+    min-width: 80px;
+    padding: 4px;
   }
   .screens_with_tables .swt_box .buttons_right .btn-outline-success.large {
-    min-width: 138px;
+    min-width: 130px;
   }
   .screens_with_tables .swt_box .buttons_right .btn-outline-success [class^="icon-"],
   .screens_with_tables .swt_box .buttons_right .btn-outline-success [class*=" icon-"] {
