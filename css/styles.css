@@ -2293,16 +2293,24 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   height: 52px;
 }
 
-.content_table .div_table .fijar_thead,
-.workflows .content_table .fijar_thead {
+.content_table .div_table .fijar_thead {
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 4;
+  z-index: 5;
   background-color: white;
 }
 
+.workflows .content_table .fijar_thead {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  background-color: white;
+}
+
+.workflows .content_table .fijar_thead .item_column,
 .content_table .div_table .fijar_thead .thdiv_elements {
   background-color: white;
 }
@@ -5586,7 +5594,8 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .workflows .row_wfl_ppal .div_tbody,
 .workflows .row_wfl_ppal .second_table,
 .workflows .row_wfl_ppal .third_table {
-  position: relative
+  position: relative;
+  z-index: 4;
 }
 
 .workflows .row_wfl_ppal .div_tbody .btn_action_fixed,
