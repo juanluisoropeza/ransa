@@ -27,5 +27,14 @@ $(document).ready(function () {
     $(this).toggleClass("opened");
     $(this).parent().find(".third-menu-dropdown").toggleClass("show");
   });
+
+  /* THEAD EN TABLAS STICKY */
+  $("#table_scroll").scroll(function(){
+    var scrollTop = $("#table_scroll").scrollTop();
+    if(scrollTop != 0)
+        $('#thead_sticky').addClass("fijar_thead");
+    else    
+        $('#thead_sticky').removeClass("fijar_thead");
+});
   
 });
