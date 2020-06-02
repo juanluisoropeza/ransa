@@ -4614,7 +4614,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .screens_with_tables .cont_menu_sidebar .sidebar_left_menu.open_nav {
-  height: calc(100% - 50px);
+  height: calc(100% - 27px);
 }
 
 .cont_menu_sidebar .sidebar_left_menu.open_nav ul li a {
