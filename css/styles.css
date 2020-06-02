@@ -6011,17 +6011,21 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos input,
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .select2  {
   border-radius: 5px;
-  max-width: 200px;
-  min-width: 200px!important;
+  max-width: 183px;
+  min-width: 183px!important;
 }
 
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .input_calendar_work {
-  max-width: 152px;
-  min-width: 152px !important;
+  max-width: 135px;
+  min-width: 135px !important;
 }
 
 .workflows_inicio.especificos .swb_wflow .box_content_work .m-13 {
   margin-bottom: 13px;
+}
+
+.workflows_inicio.especificos .swb_wflow .box_content_work .upload_files {
+  position: relative;
 }
 
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse .selected,
@@ -6127,7 +6131,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 119px;
+  width: 100px;
   height: 40px;
   margin-top: -7px;
 }
@@ -6144,9 +6148,9 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .workflows_inicio .inputs_work_especificos_chosse .btn i,
 .workflows.inputs_work_especificos_chosse .btn i { 
-  font-size: 25px;
-  line-height: 20px;
-  margin-right: 10px;
+  font-size: 23px;
+  line-height: 26px;
+  margin-right: 2px;
 }
 
 .workflows_inicio .inputs_work_especificos_chosse .btn-outline-success:not(:disabled):not(.disabled).active:focus, 
@@ -6233,4 +6237,11 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .workflows.pendientes .swb_wflow .top_folders .folders_cards.wf .card.active .icon_info {
   color: white!important;
+}
+
+.workflows.workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card,
+.workflows.especificos .swb_wflow .top_folders .folders_cards.wf .card,
+.workflows.responsable .swb_wflow .top_folders .folders_cards.wf .card {
+  flex-flow: column wrap;
+  -webkit-flex-flow: column wrap;
 }

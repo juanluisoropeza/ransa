@@ -184,7 +184,16 @@
   }
   .workflows .swb_wflow .top_folders .folders_cards.wf .card {
     height: 75px !important;
-    max-width: 150px !important;
+    max-width: 90px !important;
+  }
+  .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box {
+    margin-right: 0px;
+    height: 25px;
+    width: 34px;
+  }
+  .workflows .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box {
+    height: 20px !important;
+    width: 25px !important;
   }
 }
 
@@ -423,6 +432,7 @@
     display: none;
   }
   .cont_menu_sidebar .sidebar_left_menu {
+    min-height: calc(100vh - 165px);
     left: -350px;
   }
   .cont_menu_sidebar .sidebar_left_menu.enter{
@@ -790,6 +800,11 @@
     border-radius: 16px;
     width: 14px;
     height: 14px;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .bcw_scroll,
+  .workflows_inicio.especificos .swb_wflow .box_content_work .bcw_wf_esp {
+    overflow-y: initial !important;
+    max-height: none !important;
   }
   .pagination li a {
     font-size: 12px;
@@ -1538,7 +1553,8 @@
   }
   /* workflows inicio */
   .workflows_inicio .swb_wflow .box_content_work .control-group {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    margin-top: 6px;
   }
   .workflows_inicio .swb_wflow .box_content_work {
     width: auto;
@@ -1724,7 +1740,7 @@
     max-width: 72px !important;
     height: 32px;
     min-width: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   .workflows_inicio .inputs_work_especificos_chosse .btn i { 
     font-size: 17px;
@@ -1851,6 +1867,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 5px;
+    margin: 0 auto;
   }
   .workflows .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box {
     height: 33px !important;
@@ -1858,6 +1875,28 @@
   }
   .workflows .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box span {
     font-size: 1em;
+  }
+  .workflows.workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box,
+  .workflows.especificos .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box {
+    height: 42px !important;
+    width: 60px !important;
+  }
+  .workflows.workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box span,
+  .workflows.especificos .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box span {
+    font-size: 1.4em;
+  }
+  .workflows.workflows_inicio .swt_box .top_folders .folders_cards.wf .card .icon_info p,
+  .workflows.especificos .swt_box .top_folders .folders_cards.wf .card .icon_info p {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .bcw_scroll, 
+  .workflows_inicio.especificos .swb_wflow .box_content_work .bcw_scroll {
+    padding: 25px !important;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .bcw_scroll .row, 
+  .workflows_inicio.especificos .swb_wflow .box_content_work .bcw_scroll .row {
+    margin: 0;
   }
   .workflows .swb_wflow .top_folders .folders_cards.wf .card .icon_info h2 {
     font-size: 15px;
@@ -2543,11 +2582,18 @@
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse .selected {
     min-width: 72px;
     width: 72px;
-    font-size: 13px;
+    font-size: 12px;
+  }
+  .workflows_inicio .inputs_work_especificos_chosse .btn, 
+  .modal .inputs_work_especificos_chosse .btn {
+    margin-top: 7px;
   }
   .workflows_inicio.especificos .inputs_work_especificos .end {
     display: flex;
     justify-content: flex-end;
+  }
+  .workflows_inicio .inputs_work_especificos_chosse {
+    padding: 0px
   }
   .workflows_inicio .inputs_work_especificos_chosse .btn {
     max-width: 72px !important;
@@ -3267,8 +3313,8 @@
   }
   .workflows_inicio.especificos .table_work_especificos table thead tr th {
     text-align: initial!important;
-    height: 50px;
-    padding: 11px 0px 11px 15px;
+    height: 40px;
+    padding: 4px 0px 4px 15px;
     font-size: 14px;
   }
   .workflows_inicio.especificos .table_work_especificos table tbody tr th {
@@ -3345,11 +3391,12 @@
   .workflows_inicio.especificos .table_work_especificos table tbody tr td {
     font-size: 14px;
     line-height: 18px;
-    height: 50px;
+    height: 40px;
+    padding: 4px 0px 4px 15px;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .select2 {
-    max-width: 158px;
-    min-width: 158px!important;
+    max-width: 180px;
+    min-width: 180px!important;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .input_calendar_work {
     max-width: 109px;
@@ -3369,10 +3416,9 @@
     margin-bottom: 10px;
   }
   .workflows_inicio .inputs_work_especificos_chosse .btn {
-    max-width: 160px !important;
-    width: 160px;
     height: 30px;
     min-width: 0px;
+    margin-top: 7px;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .m-18 {
     margin-bottom: 7px;
@@ -4457,10 +4503,9 @@
     line-height: 18px;
     margin-bottom: 10px;
   }
-   .workflows_inicio.especificos .swb_wflow .box_content_work {
+  .workflows_inicio.especificos .swb_wflow .box_content_work {
     height: auto;
     width: auto;
-    padding: 30px 35px;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos label { 
     min-width: 165px;
@@ -4510,8 +4555,8 @@
     height: 50px;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .select2 {
-    max-width: 158px;
-    min-width: 158px!important;
+    max-width: 180px;
+    min-width: 180px!important;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .input_calendar_work {
     max-width: 109px;
@@ -4532,10 +4577,9 @@
     margin-bottom: 10px;
   }
   .workflows_inicio .inputs_work_especificos_chosse .btn {
-    max-width: 160px !important;
-    width: 160px;
     height: 30px;
     min-width: 0px;
+    margin-top: 7px;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .m-18 {
     margin-bottom: 7px;
@@ -4572,9 +4616,6 @@
 @media screen and (min-width: 1020px) and (max-width: 1200px) {
   .workflows_inicio .swb_wflow .box_content_work .space_max {
     margin-left: 57px !important;
-  }
-  .workflows_inicio .swb_wflow .box_content_work .form_nombre {
-    min-width: 370px; 
   }
 }
 
@@ -5323,8 +5364,7 @@
   /*Inicio Workflows */
   .workflows_inicio .swb_wflow .box_content_work {
     width: 990px;
-    height: 475px;
-    padding: 30px 50px 30px 40px;
+    height: auto;
   }
   .workflows_inicio .swb_wflow .box_content_work .box_title p {
     font-size: 18px;
@@ -5346,6 +5386,7 @@
   }
   .workflows_inicio .select2-container--default .select2-selection--single .select2-selection__rendered {
     font-size: 14px;
+    padding: 0px 12px;
   }
   .workflows_inicio .swb_wflow .box_content_work .space {
     margin-left: 87px;
@@ -5367,34 +5408,25 @@
     line-height: 16px;
   }
   .workflows_inicio .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box span {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
   .workflows_inicio .swb_wflow .box_content_work .box_textarea_work {
     padding-right: 0px;
-  }
-  .workflows_inicio .swb_wflow .box_content_work .box_textarea_work #textarea {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .workflows_inicio .swb_wflow .box_content_work .box_buttons_work .btn-outline-success_work {
-    width: 160px;
-    height: 43px;
-    font-size: 15px;
   }
   .workflows_inicio .swb_wflow .box_content_work .btn_work_border {
     margin-top: 0px;
   }
   .workflows_inicio .swb_wflow .box_content_work::before {
-    left: 18%;
+    left: 17%;
   }
   .workflows_inicio .swb_wflow .box_content_work::after {
-    left: calc(18% - 2px);
+    left: calc(17% - 2px);
   }
   .workflows_inicio .swb_wflow .box_content_work.wf_esp::before {
-    left: 47%;
+    left: 46%;
   }
   .workflows_inicio .swb_wflow .box_content_work.wf_esp::after {
-    left: calc(47% - 2px);
+    left: calc(46% - 2px);
   }
    /*Inicio Workflows Responsable*/
    .workflows_inicio.responsable .swb_wflow .box_content_work {
@@ -5424,8 +5456,8 @@
   }
   .workflows_inicio.especificos .table_work_especificos table thead tr th {
     text-align: initial!important;
-    height: 50px;
-    padding: 11px 0px 11px 15px;
+    height: 42px;
+    padding: 6px 0px 6px 15px;
     font-size: 14px;
   }
   .workflows_inicio.especificos .table_work_especificos table tbody tr th {
@@ -5441,7 +5473,7 @@
   }
   .workflows_inicio.responsable .table_work_especificos table tbody tr td:nth-child(0n+2), 
   .workflows_inicio.especificos .table_work_especificos table tbody tr td {
-    font-size: 14px;
+    font-size: 13px;
   }
    /*Inicio Workflows Especificos*/
   .workflows_inicio.especificos .swb_wflow .box_content_work .box_title p {
@@ -5449,19 +5481,23 @@
     line-height: 18px;
     margin-bottom: 10px;
   }
-   .workflows_inicio.especificos .swb_wflow .box_content_work {
-    height: 625px;
+  .workflows_inicio.especificos .swb_wflow .box_content_work {
+    height: auto;
     width: 990px;
-    padding: 30px 35px;
+    padding: 0px;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos label { 
-    min-width: 115px;
+    min-width: 119px;
     margin-right: 10px;
-    font-size: 15px;
-    line-height: 18px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse {
+    padding: 0;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos label.max_width {
-    min-width: 163px !important;
+    min-width: 151px !important;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse.choose_left {
     position: absolute;
@@ -5476,10 +5512,14 @@
     width: 55px;
     font-size: 14px;
   }
+  .workflows_inicio .swb_wflow .box_content_work .input-group-append {
+    height: 32px;
+  }
   .workflows_inicio .inputs_work_especificos_chosse .btn {
     max-width: 72px !important;
-    height: 40px;
+    height: 32px;
     min-width: 0px;
+    margin-top: -13px;
   }
   .workflows_inicio .inputs_work_especificos_chosse .btn i {
     font-size: 17px;
@@ -5491,21 +5531,27 @@
     line-height: 20px;
   }
   .workflows_inicio.especificos .table_work_especificos table tbody tr td {
-    font-size: 14px;
-    line-height: 18px;
-    height: 50px;
+    font-size: 13px;
+    line-height: 15px;
+    height: 40px;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .select2 {
-    max-width: 158px;
-    min-width: 158px!important;
+    max-width: auto;
+    min-width: auto!important;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .input_calendar_work {
-    max-width: 112px; 
-    min-width: 112px !important;
+    max-width: 104px; 
+    min-width: 104px !important;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .input-group-append .input-group-text {
+    height: 32px;
   }
   .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos input {
-    max-width: 165px;
-    min-width: 165px!important;
+    max-width: 148px;
+    min-width: 148px!important;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos .input-group-append .input-group-text {
+    padding: 6px 8.5px;
   }
   .workflows_inicio.especificos .title_table {
     font-size: 15px;
@@ -5851,8 +5897,7 @@
   }
  /* Workflows */
   .workflows .swb_wflow .top_folders .folders_cards.wf .card {
-    height: 90px;
-    max-width: 200px;
+    height: 80px;
   }
   .workflows .swb_wflow .top_folders .folders_cards.wf .card .icon_box .box {
     height: 50px;
@@ -5898,6 +5943,57 @@
   .workflows .row_wfl_ppal .div_tbody .item_column:nth-child(3) {
     padding-left: 15px;
     padding-right: 2px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .form-control, 
+  .workflows_inicio .swb_wflow .box_content_work .select2-container--default .select2-selection--single {
+    height: 32px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .m-25,
+  .workflows_inicio .swb_wflow .box_content_work .m-35 {
+    margin-bottom: 15px;
+  }  
+  .workflows_inicio.especificos .swb_wflow .box_content_work .bcw_wf_esp {
+    padding: 30px 35px !important;
+    max-height: 375px;
+    overflow-y: auto;
+  }
+  .workflows_inicio.especificos .swb_wflow .box_content_work .bcw_wf_esp::-webkit-scrollbar {
+    height: 5px;
+    width: 8px;
+    margin: 0px 10px;
+    background-color: #F5F5F5;
+  }  
+  .workflows_inicio.especificos .swb_wflow .box_content_work .bcw_wf_esp::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+  }  
+  .workflows_inicio.especificos .swb_wflow .box_content_work .bcw_wf_esp::-webkit-scrollbar-thumb {
+    background-color:#b3b3b3;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work,  
+  .workflows_inicio.especificos .swb_wflow .box_content_work {
+    height: auto;
+    padding: 0px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .bcw_scroll,
+  .workflows_inicio.especificos .swb_wflow .box_content_work .bcw_scroll {
+    max-height: 375px;
+    overflow-y: auto;
+    padding: 25px 50px 25px 40px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_textarea_work #textarea {
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 50px;
+    margin-bottom: 15px;
+  }
+  .workflows_inicio .swb_wflow .box_content_work .box_buttons_work .btn-outline-success_work {
+    width: 130px;
+    height: 34px;
+    font-size: 14px;
   }
   .modal .edit_workflow .modal-content .modal-header .modal-title {
     font-size: 20px;
