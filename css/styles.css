@@ -147,6 +147,10 @@ a:hover {
   margin-bottom: 18px !important;
 }
 
+.mb-m15 {
+  margin-bottom: 15px;
+}
+
 .w-input-50 {
   max-width: 216px;
 }
@@ -1757,7 +1761,15 @@ footer .content_footer ul li a:hover {
 	align-items: center;
 	-webkit-align-items: center;
 }
-
+.screens_with_tables .swt_box .top_info h1.title.active {
+  color: var(--verdePrincipal);
+}
+.screens_with_tables .swt_box .top_info .txt_title {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: #999999;
+}
 .screens_with_tables .swt_box .top_info h1.title span.active {
   color: var(--verdePrincipal);
 }
@@ -3941,7 +3953,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 }
 
 .modal .edit_workflow .modal-content .modal-body {
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 .modal .edit_workflow .modal-content .modal-body .ctn_md_edit .item_dob_mwfl .lbl_big {
@@ -6233,4 +6245,147 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 
 .workflows.pendientes .swb_wflow .top_folders .folders_cards.wf .card.active .icon_info {
   color: white!important;
+}
+
+.workflows.pendientes .div_flex {
+  display: flex;
+}
+
+.workflows.pendientes .box_progress {
+  padding-top: 10px !important;
+}
+
+.workflows.pendientes .box_progress .progress{
+  background-color: white!important;
+  height: 10px;
+  width: 60px;
+  border-radius: 50px;
+  border: 1px solid #8A8C8E;
+}
+
+.workflows.pendientes .box_progress .progress .one{
+  background-color:  #8A8C8E;
+  height: 10px;
+  width: 20px;
+}
+.workflows.pendientes .box_progress .progress .two{
+  background-color:  #8A8C8E;
+  height: 10px;
+  width: 20px;
+  margin-left: 20px;
+}
+.workflows.pendientes .box_progress .progress .three{
+  background-color:  #8A8C8E;
+  height: 10px;
+  width: 20px;
+  margin-left: 40px;
+}
+.workflows.pendientes .row_wfl_ppal .div_thead .item_colmumn_name, 
+.workflows.pendientes .row_wfl_ppal .div_tbody .item_colmumn_name {
+  -ms-flex: 0 0 12%;
+  flex: 0 0 12%;
+  max-width: 12%;
+}
+
+.workflows.pendientes .row_wfl_ppal .div_tbody .item_column .en_proceso {
+  border-radius: 12px;
+  border-right-color: #8A8C8E;
+  border-top-color: #8A8C8E;
+  border-bottom-color: #8A8C8E;
+  border-left-color: #8A8C8E;
+  border-width: 8px;
+  border-style: solid;
+  height: 0px;
+  margin-right: 6px;
+  position: relative;
+  width: 0px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.workflows.pendientes .row_wfl_ppal .div_tbody .item_column .en_proceso:before {
+  border: 1px solid #8A8C8E;
+}
+
+
+
+/****************** Actividades Workflows Cerrados******************/
+
+.workflows.cerrados .row_wfl_ppal .div_tbody .item_column .en_proceso:before {
+  border: 1px solid  #DA251C;
+}
+.workflows.cerrados .row_wfl_ppal .div_tbody .item_column .en_proceso {
+  border-radius: 12px;
+  border-right-color:  #DA251C;
+  border-top-color:  #DA251C;
+  border-bottom-color:  #DA251C;
+  border-left-color:  #DA251C;
+  border-width: 8px;
+  border-style: solid;
+  height: 0px;
+  margin-right: 6px;
+  position: relative;
+  width: 0px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.workflows.cerrados .box_progress {
+  padding-top: 10px !important;
+}
+.workflows.cerrados .box_progress .progress .one{
+  background-color:  #DA251C;
+  height: 10px;
+  width: 20px;
+}
+.workflows.cerrados .box_progress .progress .two{
+  background-color:  #DA251C;
+  height: 10px;
+  width: 20px;
+  margin-left: 20px;
+}
+.workflows.cerrados .box_progress .progress .three{
+  background-color:  #DA251C;
+  height: 10px;
+  width: 20px;
+  margin-left: 40px;
+}
+
+/****************** Actividades Workflows Finalizados******************/
+
+.workflows.finalizados .row_wfl_ppal .div_tbody .item_column .en_proceso:before {
+  border: 1px solid  var(--verdePrincipal);
+}
+.workflows.finalizados .row_wfl_ppal .div_tbody .item_column .en_proceso {
+  border-radius: 12px;
+  border-right-color:  var(--verdePrincipal);
+  border-top-color:  var(--verdePrincipal);
+  border-bottom-color:  var(--verdePrincipal);
+  border-left-color:  var(--verdePrincipal);
+  border-width: 8px;
+  border-style: solid;
+  height: 0px;
+  margin-right: 6px;
+  position: relative;
+  width: 0px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.workflows.finalizados .box_progress {
+  padding-top: 10px !important;
+}
+.workflows.finalizados .box_progress .progress .one{
+  background-color:  var(--verdePrincipal);
+  height: 10px;
+  width: 20px;
+}
+.workflows.finalizados .box_progress .progress .two{
+  background-color:  var(--verdePrincipal);
+  height: 10px;
+  width: 20px;
+  margin-left: 20px;
+}
+.workflows.finalizados .box_progress .progress .three{
+  background-color:  var(--verdePrincipal);
+  height: 10px;
+  width: 20px;
+  margin-left: 40px;
 }
