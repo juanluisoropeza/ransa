@@ -3933,8 +3933,9 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   color: var(--colorTextoClaro);
   font-size: 16px;
   font-weight: 300;
-  height: 38px;
+  height: 110px;
   line-height: 19px;
+
 }
 
 .modal .edit_workflow .modal-content .modal-body .ctn_md_edit .item_dob_mwfl .col-form-label {
@@ -6051,6 +6052,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse.choose_left {
   position: absolute;
   left: 448px;
+  display: flex;
 }
 
 .workflows_inicio.especificos .swb_wflow .box_content_work .inputs_work_especificos_chosse.choose_rigth,
@@ -6190,6 +6192,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   border: 0;
   color: var(--verdePrincipal) !important;
   outline: 0 !important;
+  display: block;
 }
 
 .btn-outline-success:not(:disabled):not(.disabled):active {
@@ -6399,4 +6402,20 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
   height: 10px;
   width: 20px;
   margin-left: 40px;
+}
+
+.box_check .custom-checkbox .custom-control-input,
+.custom-checkbox .custom-control-label::before, 
+.custom-control-label::after {
+  position: absolute !important;
+  left: 150px !important;
+  top: 0px;
+}
+
+.box_check .custom-checkbox .custom-control-input:focus {
+  outline: none!important;
+}
+
+.box_check .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+  background-color: var(--verdePrincipal);
 }

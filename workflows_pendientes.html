@@ -259,7 +259,7 @@
                                 <div class="card active">
                                     <div class="icon_box">
                                         <div class="box">
-                                            <span class="icon-icon_arrow-next"></span>
+                                            <span class="icon-icon_exclamation"></span>
                                         </div>
                                     </div>
                                     <div class="text-center icon_info">
@@ -273,7 +273,7 @@
                                 <div class="card">
                                     <div class="icon_box">
                                         <div class="box">
-                                            <span class="icon-icon_check"></span>
+                                            <span class="icon-icon_user_x"></span>
                                         </div>
                                     </div>
                                     <div class="text-center icon_info">
@@ -452,7 +452,7 @@
                                                 <span class="icon-icon_three-bullets"></span>
                                             </a>
                                             <div class="dropdown-menu dd_table_workflow" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalEditarWorkflow">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalEditarWorkflowPendientes">
                                                     <span class="icon-icon_pencil"></span> Editar
                                                 </a>
                                                 <a class="dropdown-item" href="#">
@@ -1095,8 +1095,9 @@
     </section>
     <footer>
         <div class="container-fluid">
+            <div class="d-none d-lg-block div_green_separator"></div>
             <div class="row">
-                <div class="col-lg-12 content_footer">
+                <div class="col-lg-11 offset-lg-1 content_footer">
                     <p>©Docublock. Todos lo derechos reservados 2019</p>
                     <ul>
                         <li><a href="#">Políticas de privacidad</a></li>
@@ -1207,38 +1208,49 @@
         </div>
     </div>
     <!-- modal Editar Workflow -->
-    <div class="modal fade" id="modalEditarWorkflow" tabindex="-1" role="dialog" aria-labelledby="modalEditarWorkflowTitle" aria-hidden="true">
+    <div class="modal fade" id="modalEditarWorkflowPendientes" tabindex="-1" role="dialog" aria-labelledby="modalEditarWorkflowTitle" aria-hidden="true">
         <div class="modal-dialog modal-xl edit_workflow modal-dialog-centered" role="document">
             <div class="modal-content bg_gray">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h5 class="modal-title centered" id="modalTableAddColumnTitle">WF0106 Trabajo de Alto Riesgo:</h5>
+                    <h5 class="modal-title centered" id="modalTableAddColumnTitle">Generar y Firmar Análisis de Trabajo Seguro (ATS) y Autorización de Trabajo de Riesgo (ATR)</h5>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-lg-12 content_item">
-                            <h4 class="st_ewfl">Ajustes Generales:</h4>
+                            <h4 class="st_ewfl">Detalle de workflow:</h4>
                             <hr class="sp_h4stl" />
                         </div>
                     </div>
                     <div class="container ctn_md_edit">
                         <div class="row mb-40">
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 item_form_edit">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-1 item_form_edit">
                                 <div class="control-group">
-                                    <input type="text" class="form-control form_nombre" name="txt_nombre_work" id="txt_nombre_work" placeholder="Nombre del workflow:">
+                                    <label for="formGroupExampleInput">Creador</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 item_form_edit">
+                                <div class="control-group">
+                                    <input type="text" class="form-control form_nombre" name="txt_creador" id="txt_creador">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-2 item_form_edit">
+                                <div class="control-group">
+                                    <label for="formGroupExampleInput">Fecha de creación</label>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
                                 <div class="control-group">
-                                    <input type="text" class="form-control forms_work" name="txt_codigo_work" id="txt_codigo_work" placeholder="Código del workflow:">
+                                    <input type="text" class="form-control forms_work" name="txt_fechaCreacion" id="txt_fechaCreacion" >
                                 </div>
                             </div>
                         </div>
                         <div class="row mb-40">
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 text-center item_form_edit">
                                 <div class="control-group">
+                                    <label for="formGroupExampleInput">Creador</label>
                                     <select class="select_custon_select2 form-control" name="txt_empresa_work">
                                         <option value="">* Empresa / Área:</option>
                                         <option value="empresa_work1">Empresa 1</option>
@@ -1247,8 +1259,9 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 text-center item_form_edit">
                                 <div class="control-group">
+                                    <label for="formGroupExampleInput">Creador</label>
                                     <select class="select_custon_select2 form-control" name="txt_categoria_work">
                                         <option value="">Categoría:</option>
                                         <option value="categoria_work1">Categoria 1</option>
@@ -1257,8 +1270,9 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 text-center item_form_edit">
                                 <div class="control-group">
+                                    <label for="formGroupExampleInput">Creador</label>
                                     <select class="select_custon_select2 form-control" name="txt_workflow_inicio">
                                         <option value="">Workflow:</option>
                                         <option value="workflow_inicio1">Workflow 1</option>
@@ -1267,20 +1281,11 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
-                                <div class="control-group">
-                                    <select class="select_custon_select2 form-control" name="txt_tipos_work">
-                                        <option value="">Tipos:</option>
-                                        <option value="tipos_work1">Sede 1</option>
-                                        <option value="tipos_work2">Sede 2</option>
-                                        <option value="tipos_work3">Sede 3</option>
-                                    </select>
-                                </div>
-                            </div>
                         </div>
                         <div class="row mb-40">
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 text-center item_form_edit">
                                 <div class="control-group">
+                                    <label for="formGroupExampleInput">Creador</label>
                                     <select class="select_custon_select2 form-control" name="txt_sede_work">
                                         <option value="">Sede</option>
                                         <option value="sede_work1">Categoria 1</option>
@@ -1289,8 +1294,9 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 text-center item_form_edit">
                                 <div class="control-group">
+                                    <label for="formGroupExampleInput">Creador</label>
                                     <select class="select_custon_select2 form-control" name="txt_sector_work">
                                         <option value="">*Almacén/Sector</option>
                                         <option value="sector_work1">Categoria 1</option>
@@ -1299,143 +1305,83 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center item_form_edit">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p>Autorización de Trabajo Seguro (ATS)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 text-center item_form_edit">
                                 <div class="control-group">
+                                    <label for="formGroupExampleInput">Creador</label>
+                                    <input type="text" class="form-control forms_work" name="txt_nro_aviso" id="txt_nro_aviso" placeholder="* N° aviso">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 text-center item_form_edit">
+                                <div class="control-group">
+                                    <label for="formGroupExampleInput">Creador</label>
                                     <input type="text" class="form-control forms_work" name="txt_nro_aviso" id="txt_nro_aviso" placeholder="* N° aviso">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-12 box_textarea_work">
-                                <textarea id="textarea" class="form-control" rows="3" name="txt_descripcion_work" placeholder="Descripción:"></textarea>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 text-center item_form_edit">
+                                <div class="control-group">
+                                    <label for="formGroupExampleInput">Creador</label>
+                                    <input type="text" class="form-control forms_work" name="txt_nro_aviso" id="txt_nro_aviso" placeholder="* N° aviso">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 content_item">
-                            <h4 class="st_ewfl">Ajustes Específicos:</h4>
+                            <h4 class="st_ewfl">Equipo de protección personal recomendado:
+                            </h4>
                             <hr class="sp_h4stl" />
                         </div>
                     </div>
                     <div class="container ctn_md_edit">
                         <div class="row mb-40">
-                            <div class="col-md-6 item_dob_mwfl">
-                                <div class="row">
-                                    <div class="col-sm-12 col-lg-7 col-xl-8 inputs_work_especificos">
-                                        <div class="control-group">
-                                            <label for="txt_turno_horario">* Turno de horario</label>
-                                            <select class="select_custon_select2 form-control" name="txt_turno_horario" id="txt_turno_horario">
-                                                <option value="">Turno de Horario</option>
-                                                <option value="th_opt1">Turno 1</option>
-                                                <option value="th_opt2">Turno 2</option>
-                                                <option value="th_opt3">Turno 3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-lg-5 col-xl-4 control-group inputs_work_especificos_chosse choose_left">
-                                        <label class="selected">Adjuntar correo</label>
-                                        <input type="file" name="file" id="file1" class="inputfile" />
-                                        <label for="file1" id="lbl_info1" class="btn btn-outline-success"><i class="icon-icon_upload2"></i> <span>Subir</span></label>
-                                    </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 box_check">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="calzadoCheck"> 
+                                     <label class="custom-control-label" for="calzadoCheck">Calzado seguridad</label>
                                 </div>
                             </div>
-                            <div class="col-md-6 item_dob_mwfl">
-                                <div class="row">
-                                    <div class="col-sm-12 col-lg-7 col-xl-8 inputs_work_especificos">
-                                        <div class="control-group">
-                                            <label for="txt_fin_semana">¿Trabajo fin de semana?</label>
-                                            <select class="select_custon_select2 form-control" name="txt_fin_semana" id="txt_fin_semana">
-                                                <option value="">¿Trabajo fin de semana?</option>
-                                                <option value="tfs_opt1">Opcion 1</option>
-                                                <option value="tfs_opt2">Opcion 2</option>
-                                                <option value="tfs_opt3">Opcion 3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-lg-5 col-xl-4 control-group inputs_work_especificos_chosse choose_left">
-                                        <label class="selected">Adjuntar correo</label>
-                                        <input type="file" name="file" id="file2" class="inputfile" />
-                                        <label for="file2" id="lbl_info2" class="btn btn-outline-success"><i class="icon-icon_upload2"></i> <span>Subir</span></label> 
-                                    </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 box_check">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="cascoCheck"> 
+                                    <label class="custom-control-label" for="cascoCheck">Casco de seguridad</label>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row mb-40">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 box_check">
+                                <div class="custom-control custom-checkbox"> 
+                                    <input type="checkbox" class="custom-control-input" id="guantesCheck">
+                                    <label class="custom-control-label" for="guantesCheck">Guantes de seguridad</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 box_check">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="respitaroriaCheck">
+                                    <label class="custom-control-label" for="respitaroriaCheck">Protección respiratoria</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row mb-40">
-                            <div class="col-sm-6 col-lg-4 inputs_work_especificos">
-                                <div class="control-group box_content_movil">
-                                    <label for="txt_propetario">* Inicio de labor</label>                                      
-                                    <div class="movil_calendar_box">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control ici_append input_calendar_work" id="fecha5" name="txt_rfechas_fecha" required aria-describedby="basic-addon2">
-                                            <div class="input-group-append">
-                                                <span class="input-group-text" id="basic-addon2"><i class="icon-icon_calendar"><span class="path1"></span><span class="path2"></span></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 box_check">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="delantalCheck"> 
+                                    <label class="custom-control-label" for="delantalCheck">Delantal de cuello</label>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-lg-4 offset-lg-2 inputs_work_especificos">
-                                <div class="control-group end box_content_movil">
-                                    <label for="txt_propetario" class="max_width">* Fin de labor</label>
-                                    <div class="movil_calendar_box">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control ici_append input_calendar_work" id="fecha6" name="txt_rfechas_fecha" required aria-describedby="basic-addon3">
-                                            <div class="input-group-append">
-                                                <span class="input-group-text" id="basic-addon3"><i class="icon-icon_calendar"><span class="path1"></span><span class="path2"></span></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 box_check">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="otrosCheck">
+                                    <label class="custom-control-label" for="otrosCheck">Otros</label>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row mb-40">
-                            <div class="col-sm-6 col-lg-4 inputs_work_especificos">
-                                <div class="control-group box_content_movil">
-                                    <label for="txt_duracion">Duración (días)</label>
-                                    <input type="text" class="form-control" id="txt_duracion" name="txt_duracion">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12 table-responsive table_work_especificos">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Acciones</th>
-                                            <th scope="col">Etapa</th>
-                                            <th scope="col">Fecha de inicio</th>
-                                            <th scope="col">Turno</th>
-                                            <th scope="col">Horario de inicio</th>
-                                            <th scope="col">Horario de fin</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td scope="row">wsdcxfv</td>
-                                            <td>Celwsaal</td>
-                                            <td>Cewdsecwsll</td>
-                                            <td>Celwsrgttgfrdl</td>
-                                            <td>Cee3rfgthyytrfell</td>
-                                            <td>Celwedfrvl</td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="row">edfrwesdcx</td>
-                                            <td>Celwwwwwwwdl</td>
-                                            <td>Cell</td>
-                                            <td>Ceddddll</td>
-                                            <td>Cell</td>
-                                            <td>Celasdfgwdhgfddfdl</td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="row">wdefredc</td>
-                                            <td>Cewsdecfvdll</td>
-                                            <td>Cell</td>
-                                            <td>Ceedfrgbfddfdvfdll</td>
-                                            <td>Cell</td>
-                                            <td>Celewrfdgl</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
                             </div>
                         </div>
                     </div>
@@ -1443,6 +1389,11 @@
                         <div class="col-lg-12 content_item">
                             <h4 class="st_ewfl st_ewfl_light">Actividades y responsables:</h4>
                             <hr class="sp_h4stl" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 box_textarea_work">
+                            <textarea id="textarea" class="form-control" rows="3" name="txt_descripcion_work" placeholder="Descripción:"></textarea>
                         </div>
                     </div>
                     <div class="container ctn_md_edit">

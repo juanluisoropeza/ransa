@@ -37,13 +37,13 @@ $(document).ready(function () {
 	$(document).on('change', '#file1', function (e) {
 		$("#file1").toggleClass('ocultar_borde');
 		$("#lbl_info1").toggleClass('active').find('.icon-icon_upload2').removeClass('icon-icon_upload2').addClass('icon-icon_attach');
-		$("#lbl_info1 > span").css("display", "none");
+		$("#lbl_info1 > span");
 		e.stopPropagation();
 	});
 	$(document).on('change', '#file2', function (e) {
 		$("#file2").toggleClass('ocultar_borde');
 		$("#lbl_info2").toggleClass('active').find('.icon-icon_upload2').removeClass('icon-icon_upload2').addClass('icon-icon_attach');
-		$("#lbl_info2 > span").css("display", "none");
+		$("#lbl_info2 > span");
 		e.stopPropagation();
 	});
 });
