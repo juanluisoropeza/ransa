@@ -33,7 +33,9 @@ $(document).ready(function () {
     calendarWeeks: true,
     format: "dd/mm/yyyy",
     autoclose: true,
-    language: "es"
+    language: "es",
+    orientation: "bottom left"
+    
   });
   $('#fecha4').datepicker({
     todayBtn: "linked",
